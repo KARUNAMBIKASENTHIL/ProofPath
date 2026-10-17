@@ -1179,29 +1179,29 @@
     {
       "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
       "normalized_skill": "python",
-      "id": "8a713b14-3c14-4a94-8f6c-e27595326b20",
-      "skill_name": "Python Programming",
-      "claimed_source": "Resume (Karunambika_S_FlowCV_Resume_2026-07-19.pdf)",
-      "observed_evidence": "Extracted from page 1 of resume 'Karunambika_S_FlowCV_Resume_2026-07-19.pdf'. Context: ...Technical Skills Programming Languages Java, C, JavaScript, Python Backend NodeJs, ExpressJs Tool Git, Github, Vs Code Databas...",
-      "file_path_or_url": "Resume: Page 1",
-      "code_snippet": "...Technical Skills Programming Languages Java, C, JavaScript, Python Backend NodeJs, ExpressJs Tool Git, Github, Vs Code Databas...",
-      "project_id": null,
-      "project_name": "Resume Work History",
-      "status": "Partially supported",
-      "confidence": 0.5,
+      "id": "9fabd721-0e35-440a-8cf7-ece0ea8e9a4c",
+      "skill_name": "Python",
+      "claimed_source": "GitHub: GitHub Repository",
+      "observed_evidence": "Demonstrated in repository 'GitHub Repository'. Architecture: Standard Script / Flat Layout",
+      "file_path_or_url": "https://github.com/KARUNAMBIKASENTHIL",
+      "code_snippet": null,
+      "project_id": "e7c97c79-d77e-4b68-ba30-c03fd24a7785",
+      "project_name": "GitHub Repository",
+      "status": "Supported",
+      "confidence": 0.85,
       "recency": "Current",
       "rules_applied": [
-        "RULE_RESUME_EXTRACTION: Identified on page 1 with verifiable text snippet."
+        "RULE_REPO_CONNECTED: Verified code implementation in connected repository."
       ],
-      "timestamp": "2026-10-17T04:24:47.775687",
+      "timestamp": "2026-10-17T04:55:07.507412",
       "_id": "a9128f29-38b0-4c1c-8170-80a87faf2489",
       "created_at": "2026-10-17T04:03:52.176370",
-      "updated_at": "2026-10-17T04:24:47.775875"
+      "updated_at": "2026-10-17T04:55:07.507567"
     },
     {
       "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
       "normalized_skill": "git",
-      "id": "9dd0c516-4635-4bc1-b3e6-bee94db8d354",
+      "id": "6f88b3e4-9cf9-4f4a-a5a7-96f2d21f65cf",
       "skill_name": "Git Version Control & Documentation",
       "claimed_source": "Resume (Karunambika_S_FlowCV_Resume_2026-07-19.pdf)",
       "observed_evidence": "Extracted from page 1 of resume 'Karunambika_S_FlowCV_Resume_2026-07-19.pdf'. Context: ...Java, C, JavaScript, Python Backend NodeJs, ExpressJs Tool Git, Github, Vs Code Databases MongoDB Frontend HTML, CSS, Reac...",
@@ -1215,15 +1215,15 @@
       "rules_applied": [
         "RULE_RESUME_EXTRACTION: Identified on page 1 with verifiable text snippet."
       ],
-      "timestamp": "2026-10-17T04:24:47.828518",
+      "timestamp": "2026-10-17T04:54:41.229888",
       "_id": "58ccea8b-c3d4-4acc-b3cc-00b76afdc5fd",
       "created_at": "2026-10-17T04:03:52.186585",
-      "updated_at": "2026-10-17T04:24:47.828744"
+      "updated_at": "2026-10-17T04:54:41.230240"
     },
     {
       "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
       "normalized_skill": "java",
-      "id": "c30d3741-a11e-4f18-81ec-1e8537d7cf9a",
+      "id": "8b0dd2ef-832a-4ac7-aea3-cde918ca4adb",
       "skill_name": "Core Java & OOP",
       "claimed_source": "Resume (Karunambika_S_FlowCV_Resume_2026-07-19.pdf)",
       "observed_evidence": "Extracted from page 1 of resume 'Karunambika_S_FlowCV_Resume_2026-07-19.pdf'. Context: ...onsive applications. Technical Skills Programming Languages Java, C, JavaScript, Python Backend NodeJs, ExpressJs Tool Git,...",
@@ -1237,15 +1237,15 @@
       "rules_applied": [
         "RULE_RESUME_EXTRACTION: Identified on page 1 with verifiable text snippet."
       ],
-      "timestamp": "2026-10-17T04:24:47.846870",
+      "timestamp": "2026-10-17T04:54:41.254446",
       "_id": "23cd96f7-49ff-4f1c-8f77-af4ca1cadb6f",
       "created_at": "2026-10-17T04:03:52.199317",
-      "updated_at": "2026-10-17T04:24:47.847072"
+      "updated_at": "2026-10-17T04:54:41.254678"
     },
     {
       "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
       "normalized_skill": "react",
-      "id": "24ab3545-1681-4f1e-985f-df29c8709f96",
+      "id": "ea37f89a-92d4-4aa7-b91e-c9d67592b14a",
       "skill_name": "React Frontend Architecture",
       "claimed_source": "Resume (Karunambika_S_FlowCV_Resume_2026-07-19.pdf)",
       "observed_evidence": "Extracted from page 1 of resume 'Karunambika_S_FlowCV_Resume_2026-07-19.pdf'. Context: ...Git, Github, Vs Code Databases MongoDB Frontend HTML, CSS, React.js Soft Skills \u2022Problem Solving \u2022Communication \u2022Team Work \u2022... Corroborated by project experience 'MedRoute - Emergency Medical Response Platform'.",
@@ -1260,15 +1260,15 @@
         "RULE_RESUME_EXTRACTION: Identified on page 1 with verifiable text snippet.",
         "RULE_CORROBORATED: Corroborated by resume project claim 'MedRoute - Emergency Medical Response Platform'."
       ],
-      "timestamp": "2026-10-17T04:24:47.862755",
+      "timestamp": "2026-10-17T04:54:41.282218",
       "_id": "b826a3cd-e184-40dc-adc2-ed69f9d7cdc2",
       "created_at": "2026-10-17T04:03:52.211800",
-      "updated_at": "2026-10-17T04:24:47.862908"
+      "updated_at": "2026-10-17T04:54:41.282396"
     },
     {
       "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
       "normalized_skill": "typescript",
-      "id": "064cf638-0633-4d22-9ee6-025d88d310bb",
+      "id": "012d666f-37c9-45e0-88d0-cff60c99cb85",
       "skill_name": "TypeScript & Type Safety",
       "claimed_source": "Resume (Karunambika_S_FlowCV_Resume_2026-07-19.pdf)",
       "observed_evidence": "Extracted from page 1 of resume 'Karunambika_S_FlowCV_Resume_2026-07-19.pdf'. Context: ...using Leaflet for  geospatial tracking. Tech stack: React, TypeScript, Node.js, Express.js,  MongoDB Pneumonia Detection AI \u2022Deve... Corroborated by project experience 'MedRoute - Emergency Medical Response Platform'.",
@@ -1283,15 +1283,15 @@
         "RULE_RESUME_EXTRACTION: Identified on page 1 with verifiable text snippet.",
         "RULE_CORROBORATED: Corroborated by resume project claim 'MedRoute - Emergency Medical Response Platform'."
       ],
-      "timestamp": "2026-10-17T04:24:47.881023",
+      "timestamp": "2026-10-17T04:54:41.305231",
       "_id": "d8ae2db4-51b0-406a-aadf-9b0912de73b7",
       "created_at": "2026-10-17T04:03:52.219448",
-      "updated_at": "2026-10-17T04:24:47.881434"
+      "updated_at": "2026-10-17T04:54:41.305413"
     },
     {
       "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
       "normalized_skill": "javascript",
-      "id": "3a0999ff-2831-48df-b9c0-700901842b8a",
+      "id": "8cef42a4-9ee4-4d5d-9429-6290e3d81da9",
       "skill_name": "JavaScript & Modern Web",
       "claimed_source": "Resume (Karunambika_S_FlowCV_Resume_2026-07-19.pdf)",
       "observed_evidence": "Extracted from page 1 of resume 'Karunambika_S_FlowCV_Resume_2026-07-19.pdf'. Context: ...plications. Technical Skills Programming Languages Java, C, JavaScript, Python Backend NodeJs, ExpressJs Tool Git, Github, Vs Code...",
@@ -1305,15 +1305,15 @@
       "rules_applied": [
         "RULE_RESUME_EXTRACTION: Identified on page 1 with verifiable text snippet."
       ],
-      "timestamp": "2026-10-17T04:24:47.898369",
+      "timestamp": "2026-10-17T04:54:41.327795",
       "_id": "61ad3960-f2bd-4355-b512-2a5c4d33eb1a",
       "created_at": "2026-10-17T04:03:52.228465",
-      "updated_at": "2026-10-17T04:24:47.898541"
+      "updated_at": "2026-10-17T04:54:41.328071"
     },
     {
       "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
       "normalized_skill": "node",
-      "id": "69d1b579-e9cd-46d6-8340-5b5c23b836d4",
+      "id": "587198b3-3024-4c81-800c-e3f143f68ba3",
       "skill_name": "Node.js & Express Architecture",
       "claimed_source": "Resume (Karunambika_S_FlowCV_Resume_2026-07-19.pdf)",
       "observed_evidence": "Extracted from page 1 of resume 'Karunambika_S_FlowCV_Resume_2026-07-19.pdf'. Context: ...et for  geospatial tracking. Tech stack: React, TypeScript, Node.js, Express.js,  MongoDB Pneumonia Detection AI \u2022Developed... Corroborated by project experience 'MedRoute - Emergency Medical Response Platform'.",
@@ -1328,15 +1328,15 @@
         "RULE_RESUME_EXTRACTION: Identified on page 1 with verifiable text snippet.",
         "RULE_CORROBORATED: Corroborated by resume project claim 'MedRoute - Emergency Medical Response Platform'."
       ],
-      "timestamp": "2026-10-17T04:24:47.914229",
+      "timestamp": "2026-10-17T04:54:41.369212",
       "_id": "bd3b1ad1-ae89-4f0a-92e2-98e06c80e22f",
       "created_at": "2026-10-17T04:03:52.239314",
-      "updated_at": "2026-10-17T04:24:47.914389"
+      "updated_at": "2026-10-17T04:54:41.369440"
     },
     {
       "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
       "normalized_skill": "mongodb",
-      "id": "dc485cba-4d66-4abf-8658-4c528c8938e8",
+      "id": "93148112-eaaa-4bb8-9e0d-c58067890d7b",
       "skill_name": "NoSQL Databases & MongoDB",
       "claimed_source": "Resume (Karunambika_S_FlowCV_Resume_2026-07-19.pdf)",
       "observed_evidence": "Extracted from page 1 of resume 'Karunambika_S_FlowCV_Resume_2026-07-19.pdf'. Context: ...ckend NodeJs, ExpressJs Tool Git, Github, Vs Code Databases MongoDB Frontend HTML, CSS, React.js Soft Skills \u2022Problem Solving \u2022... Corroborated by project experience 'MedRoute - Emergency Medical Response Platform'.",
@@ -1351,10 +1351,10 @@
         "RULE_RESUME_EXTRACTION: Identified on page 1 with verifiable text snippet.",
         "RULE_CORROBORATED: Corroborated by resume project claim 'MedRoute - Emergency Medical Response Platform'."
       ],
-      "timestamp": "2026-10-17T04:24:47.930658",
+      "timestamp": "2026-10-17T04:54:41.391318",
       "_id": "50faf732-8085-4ccc-b85c-e25ab18eac81",
       "created_at": "2026-10-17T04:03:52.253116",
-      "updated_at": "2026-10-17T04:24:47.930865"
+      "updated_at": "2026-10-17T04:54:41.391477"
     },
     {
       "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
@@ -1382,7 +1382,7 @@
     {
       "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
       "normalized_skill": "leaflet",
-      "id": "d8b6d30e-af34-4d28-a711-9c9d78a505fe",
+      "id": "3102f4e9-2b56-41f1-8e67-60bac592ba4a",
       "skill_name": "Geospatial & Interactive Mapping",
       "claimed_source": "Resume (Karunambika_S_FlowCV_Resume_2026-07-19.pdf)",
       "observed_evidence": "Extracted from page 1 of resume 'Karunambika_S_FlowCV_Resume_2026-07-19.pdf'. Context: ...apid medical assistance. \u2022Integrated interactive maps using Leaflet for  geospatial tracking. Tech stack: React, TypeScript, No... Corroborated by project experience 'MedRoute - Emergency Medical Response Platform'.",
@@ -1397,10 +1397,10 @@
         "RULE_RESUME_EXTRACTION: Identified on page 1 with verifiable text snippet.",
         "RULE_CORROBORATED: Corroborated by resume project claim 'MedRoute - Emergency Medical Response Platform'."
       ],
-      "timestamp": "2026-10-17T04:24:47.947465",
+      "timestamp": "2026-10-17T04:54:41.416238",
       "_id": "f5a4464d-65b0-42b5-ba6d-678438a37d61",
       "created_at": "2026-10-17T04:03:52.280265",
-      "updated_at": "2026-10-17T04:24:47.947680"
+      "updated_at": "2026-10-17T04:54:41.416434"
     },
     {
       "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
@@ -1450,7 +1450,7 @@
     {
       "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
       "normalized_skill": "c",
-      "id": "f693c7c7-5df6-45be-9a10-df5fa81eed2d",
+      "id": "7a2501bc-3215-4855-8861-9a4ae14b9dbb",
       "skill_name": "Systems Programming in C",
       "claimed_source": "Resume (Karunambika_S_FlowCV_Resume_2026-07-19.pdf)",
       "observed_evidence": "Extracted from page 1 of resume 'Karunambika_S_FlowCV_Resume_2026-07-19.pdf'. Context: ...applications. Technical Skills Programming Languages Java, C, JavaScript, Python Backend NodeJs, ExpressJs Tool Git, Git... Corroborated by project experience 'MedRoute - Emergency Medical Response Platform'.",
@@ -1465,10 +1465,10 @@
         "RULE_RESUME_EXTRACTION: Identified on page 1 with verifiable text snippet.",
         "RULE_CORROBORATED: Corroborated by resume project claim 'MedRoute - Emergency Medical Response Platform'."
       ],
-      "timestamp": "2026-10-17T04:24:47.964295",
+      "timestamp": "2026-10-17T04:54:41.440098",
       "_id": "04f21975-f7e6-43a6-a3b0-9abcb030c89e",
       "created_at": "2026-10-17T04:03:52.329771",
-      "updated_at": "2026-10-17T04:24:47.964730"
+      "updated_at": "2026-10-17T04:54:41.440309"
     },
     {
       "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
@@ -1495,7 +1495,7 @@
     {
       "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
       "normalized_skill": "html",
-      "id": "40aedf8b-ab9b-4296-acd4-a4e945a8e8c8",
+      "id": "67d3f168-1aeb-4109-a339-6a716b2a88b1",
       "skill_name": "HTML5 & Semantic Web",
       "claimed_source": "Resume (Karunambika_S_FlowCV_Resume_2026-07-19.pdf)",
       "observed_evidence": "Extracted from page 1 of resume 'Karunambika_S_FlowCV_Resume_2026-07-19.pdf'. Context: ...ressJs Tool Git, Github, Vs Code Databases MongoDB Frontend HTML, CSS, React.js Soft Skills \u2022Problem Solving \u2022Communication...",
@@ -1509,15 +1509,15 @@
       "rules_applied": [
         "RULE_RESUME_EXTRACTION: Identified on page 1 with verifiable text snippet."
       ],
-      "timestamp": "2026-10-17T04:24:47.980929",
+      "timestamp": "2026-10-17T04:54:41.467725",
       "_id": "eef5fe80-56ad-4d3e-a5e1-c822e0980b2b",
       "created_at": "2026-10-17T04:03:52.349216",
-      "updated_at": "2026-10-17T04:24:47.981369"
+      "updated_at": "2026-10-17T04:54:41.467936"
     },
     {
       "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
       "normalized_skill": "css",
-      "id": "cd2446cc-167b-48f4-b2de-6803785b0e83",
+      "id": "ac30a836-5541-4d54-9093-dfcd56c16ee4",
       "skill_name": "CSS3 & Responsive Design",
       "claimed_source": "Resume (Karunambika_S_FlowCV_Resume_2026-07-19.pdf)",
       "observed_evidence": "Extracted from page 1 of resume 'Karunambika_S_FlowCV_Resume_2026-07-19.pdf'. Context: ...Tool Git, Github, Vs Code Databases MongoDB Frontend HTML, CSS, React.js Soft Skills \u2022Problem Solving \u2022Communication \u2022Team...",
@@ -1531,21 +1531,21 @@
       "rules_applied": [
         "RULE_RESUME_EXTRACTION: Identified on page 1 with verifiable text snippet."
       ],
-      "timestamp": "2026-10-17T04:24:47.999582",
+      "timestamp": "2026-10-17T04:54:41.490671",
       "_id": "3e664540-bc40-4f8a-8fc0-11ada83135a4",
       "created_at": "2026-10-17T04:03:52.356498",
-      "updated_at": "2026-10-17T04:24:47.999879"
+      "updated_at": "2026-10-17T04:54:41.490846"
     },
     {
       "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
       "normalized_skill": "fastapi",
-      "id": "2013ec83-bb78-4104-b711-34debbb3282e",
+      "id": "dc6845d4-1d9c-430a-9e54-7258c9e6888d",
       "skill_name": "FastAPI",
       "claimed_source": "GitHub: GitHub Repository",
       "observed_evidence": "Demonstrated in repository 'GitHub Repository'. Architecture: Standard Script / Flat Layout",
       "file_path_or_url": "https://github.com/KARUNAMBIKASENTHIL",
       "code_snippet": null,
-      "project_id": "f68f4491-aef1-426d-8e10-5160d289afa2",
+      "project_id": "e7c97c79-d77e-4b68-ba30-c03fd24a7785",
       "project_name": "GitHub Repository",
       "status": "Supported",
       "confidence": 0.85,
@@ -1553,21 +1553,21 @@
       "rules_applied": [
         "RULE_REPO_CONNECTED: Verified code implementation in connected repository."
       ],
-      "timestamp": "2026-10-17T04:21:33.331828",
+      "timestamp": "2026-10-17T04:55:07.480024",
       "_id": "32b9554f-4f3a-422f-b8bc-96ac44e5e714",
       "created_at": "2026-10-17T04:05:02.605417",
-      "updated_at": "2026-10-17T04:21:33.332094"
+      "updated_at": "2026-10-17T04:55:07.480211"
     },
     {
       "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
       "normalized_skill": "pandas",
-      "id": "993c5fb5-9dde-4c4b-8508-27090af8c676",
+      "id": "bb4c8a0c-8706-4df3-8b40-648e05e95949",
       "skill_name": "pandas",
       "claimed_source": "GitHub: GitHub Repository",
       "observed_evidence": "Demonstrated in repository 'GitHub Repository'. Architecture: Standard Script / Flat Layout",
       "file_path_or_url": "https://github.com/KARUNAMBIKASENTHIL",
       "code_snippet": null,
-      "project_id": "f68f4491-aef1-426d-8e10-5160d289afa2",
+      "project_id": "e7c97c79-d77e-4b68-ba30-c03fd24a7785",
       "project_name": "GitHub Repository",
       "status": "Supported",
       "confidence": 0.85,
@@ -1575,21 +1575,21 @@
       "rules_applied": [
         "RULE_REPO_CONNECTED: Verified code implementation in connected repository."
       ],
-      "timestamp": "2026-10-17T04:21:33.372296",
+      "timestamp": "2026-10-17T04:55:07.547792",
       "_id": "47653219-fd5c-4486-a2a1-b41e511483f7",
       "created_at": "2026-10-17T04:05:02.644189",
-      "updated_at": "2026-10-17T04:21:33.372535"
+      "updated_at": "2026-10-17T04:55:07.548033"
     },
     {
       "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
       "normalized_skill": "pytest",
-      "id": "ec0335a1-b067-4631-bbb6-7fac7d835c75",
+      "id": "cd39d859-39ba-4ea9-ac6d-770ad85363ba",
       "skill_name": "pytest",
       "claimed_source": "GitHub: GitHub Repository",
       "observed_evidence": "Demonstrated in repository 'GitHub Repository'. Architecture: Standard Script / Flat Layout",
       "file_path_or_url": "https://github.com/KARUNAMBIKASENTHIL",
       "code_snippet": null,
-      "project_id": "f68f4491-aef1-426d-8e10-5160d289afa2",
+      "project_id": "e7c97c79-d77e-4b68-ba30-c03fd24a7785",
       "project_name": "GitHub Repository",
       "status": "Supported",
       "confidence": 0.85,
@@ -1597,21 +1597,21 @@
       "rules_applied": [
         "RULE_REPO_CONNECTED: Verified code implementation in connected repository."
       ],
-      "timestamp": "2026-10-17T04:21:33.393416",
+      "timestamp": "2026-10-17T04:55:07.584499",
       "_id": "bc97a599-00fe-4cea-bcb8-c829c6a71148",
       "created_at": "2026-10-17T04:05:02.663515",
-      "updated_at": "2026-10-17T04:21:33.393622"
+      "updated_at": "2026-10-17T04:55:07.584801"
     },
     {
       "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
       "normalized_skill": "scikit-learn",
-      "id": "0acce672-7b11-40f9-90db-5dbf117daf3b",
+      "id": "5a2d285c-7806-45f9-aca6-3d1bd42a6304",
       "skill_name": "scikit-learn",
       "claimed_source": "GitHub: GitHub Repository",
       "observed_evidence": "Demonstrated in repository 'GitHub Repository'. Architecture: Standard Script / Flat Layout",
       "file_path_or_url": "https://github.com/KARUNAMBIKASENTHIL",
       "code_snippet": null,
-      "project_id": "f68f4491-aef1-426d-8e10-5160d289afa2",
+      "project_id": "e7c97c79-d77e-4b68-ba30-c03fd24a7785",
       "project_name": "GitHub Repository",
       "status": "Supported",
       "confidence": 0.85,
@@ -1619,15 +1619,15 @@
       "rules_applied": [
         "RULE_REPO_CONNECTED: Verified code implementation in connected repository."
       ],
-      "timestamp": "2026-10-17T04:21:33.410734",
+      "timestamp": "2026-10-17T04:55:07.621448",
       "_id": "f0ed18fe-7092-406d-80dc-c0846ab37ad3",
       "created_at": "2026-10-17T04:05:02.682786",
-      "updated_at": "2026-10-17T04:21:33.410933"
+      "updated_at": "2026-10-17T04:55:07.621707"
     },
     {
       "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
       "normalized_skill": "machine learning",
-      "id": "1dc4ae64-a130-4cdd-b93a-6e5a7cb58ec4",
+      "id": "423ea46d-dc87-4fd6-ae6a-bb0f619191e8",
       "skill_name": "Machine Learning Algorithms & Training",
       "claimed_source": "Resume (Karunambika_S_FlowCV_Resume_2026-07-19.pdf)",
       "observed_evidence": "Extracted from page 1 of resume 'Karunambika_S_FlowCV_Resume_2026-07-19.pdf'. Context: ...student with a strong interest in Full Stack  Development, Machine Learning, Deep Learning.  Skilled in Basic programming, web developm...",
@@ -1641,15 +1641,15 @@
       "rules_applied": [
         "RULE_RESUME_EXTRACTION: Identified on page 1 with verifiable text snippet."
       ],
-      "timestamp": "2026-10-17T04:24:47.792877",
+      "timestamp": "2026-10-17T04:54:41.183984",
       "_id": "d841b8ff-812b-430e-b05b-5601e2e1b764",
       "created_at": "2026-10-17T04:24:39.861131",
-      "updated_at": "2026-10-17T04:24:47.793056"
+      "updated_at": "2026-10-17T04:54:41.184249"
     },
     {
       "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
       "normalized_skill": "numpy",
-      "id": "b66389c0-e229-443a-a5f1-c504716a9fdb",
+      "id": "4c4f4fa5-3163-4c7c-b70d-fdef13b81d6b",
       "skill_name": "Data Wrangling & Pipeline Engineering",
       "claimed_source": "Resume (Karunambika_S_FlowCV_Resume_2026-07-19.pdf)",
       "observed_evidence": "Extracted from page 1 of resume 'Karunambika_S_FlowCV_Resume_2026-07-19.pdf'. Context: ...on using Streamlit. Tech Stack: Python, PyTorch, Streamlit, NumPy,  Torchvision Education Bachelor of Technology in Artificia...",
@@ -1663,10 +1663,388 @@
       "rules_applied": [
         "RULE_RESUME_EXTRACTION: Identified on page 1 with verifiable text snippet."
       ],
-      "timestamp": "2026-10-17T04:24:47.810698",
+      "timestamp": "2026-10-17T04:54:41.206598",
       "_id": "e6dea7c7-12ad-4025-bf24-86da79a903e6",
       "created_at": "2026-10-17T04:24:39.878418",
-      "updated_at": "2026-10-17T04:24:47.810881"
+      "updated_at": "2026-10-17T04:54:41.206838"
+    },
+    {
+      "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
+      "normalized_skill": "jupyter notebook",
+      "id": "8dee23c1-a413-4046-8afc-12042f5e6629",
+      "skill_name": "Jupyter Notebook",
+      "claimed_source": "ATS Profile Extractor (Data Analyst)",
+      "observed_evidence": "Verified through GitHub repositories & algorithmic benchmarks for Data Analyst.",
+      "file_path_or_url": "https://github.com/KARUNAMBIKASENTHIL",
+      "code_snippet": "Proficiency demonstrated across 12 projects and 100 solved problems.",
+      "project_id": null,
+      "project_name": "Proofpath System",
+      "status": "Supported",
+      "confidence": 0.9,
+      "recency": "Current",
+      "rules_applied": [
+        "RULE_PROFILE_EXTRACTOR: Verified through GitHub code and LeetCode algorithmic metrics."
+      ],
+      "timestamp": "2026-10-17T04:46:00.678129",
+      "_id": "564d9fd3-eb4f-46e3-9a02-f5497777e759",
+      "created_at": "2026-10-17T04:46:00.678413"
+    },
+    {
+      "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
+      "normalized_skill": "sql",
+      "id": "7fd1b365-cede-41ae-81e2-0d4688554df6",
+      "skill_name": "SQL",
+      "claimed_source": "ATS Profile Extractor (Data Analyst)",
+      "observed_evidence": "Verified through GitHub repositories & algorithmic benchmarks for Data Analyst.",
+      "file_path_or_url": "https://github.com/KARUNAMBIKASENTHIL",
+      "code_snippet": "Proficiency demonstrated across 12 projects and 100 solved problems.",
+      "project_id": null,
+      "project_name": "Proofpath System",
+      "status": "Supported",
+      "confidence": 0.9,
+      "recency": "Current",
+      "rules_applied": [
+        "RULE_PROFILE_EXTRACTOR: Verified through GitHub code and LeetCode algorithmic metrics."
+      ],
+      "timestamp": "2026-10-17T04:46:00.740341",
+      "_id": "8f7ad864-68b5-46e2-a432-5c6874d45c00",
+      "created_at": "2026-10-17T04:46:00.740569"
+    },
+    {
+      "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
+      "normalized_skill": "pytorch",
+      "id": "a7e66e4b-b56c-4c2c-b1a3-fa888fbcbdd7",
+      "skill_name": "PyTorch",
+      "claimed_source": "ATS Profile Extractor (Data Analyst)",
+      "observed_evidence": "Verified through GitHub repositories & algorithmic benchmarks for Data Analyst.",
+      "file_path_or_url": "https://github.com/KARUNAMBIKASENTHIL",
+      "code_snippet": "Proficiency demonstrated across 12 projects and 100 solved problems.",
+      "project_id": null,
+      "project_name": "Proofpath System",
+      "status": "Supported",
+      "confidence": 0.9,
+      "recency": "Current",
+      "rules_applied": [
+        "RULE_PROFILE_EXTRACTOR: Verified through GitHub code and LeetCode algorithmic metrics."
+      ],
+      "timestamp": "2026-10-17T04:46:00.761087",
+      "_id": "27022f75-74f1-40cf-b1a5-653507509f34",
+      "created_at": "2026-10-17T04:46:00.761383"
+    },
+    {
+      "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
+      "normalized_skill": "tensorflow / keras",
+      "id": "d14ac98f-4cfc-4a3d-8f84-fb6ecf09205e",
+      "skill_name": "TensorFlow / Keras",
+      "claimed_source": "ATS Profile Extractor (Data Analyst)",
+      "observed_evidence": "Verified through GitHub repositories & algorithmic benchmarks for Data Analyst.",
+      "file_path_or_url": "https://github.com/KARUNAMBIKASENTHIL",
+      "code_snippet": "Proficiency demonstrated across 12 projects and 100 solved problems.",
+      "project_id": null,
+      "project_name": "Proofpath System",
+      "status": "Supported",
+      "confidence": 0.9,
+      "recency": "Current",
+      "rules_applied": [
+        "RULE_PROFILE_EXTRACTOR: Verified through GitHub code and LeetCode algorithmic metrics."
+      ],
+      "timestamp": "2026-10-17T04:46:00.781362",
+      "_id": "be9525f4-f675-4823-8960-866410ff0ce9",
+      "created_at": "2026-10-17T04:46:00.781618"
+    },
+    {
+      "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
+      "normalized_skill": "pandas & numpy",
+      "id": "49898270-095e-49d1-83f0-533fc241d66c",
+      "skill_name": "Pandas & NumPy",
+      "claimed_source": "ATS Profile Extractor (Data Analyst)",
+      "observed_evidence": "Verified through GitHub repositories & algorithmic benchmarks for Data Analyst.",
+      "file_path_or_url": "https://github.com/KARUNAMBIKASENTHIL",
+      "code_snippet": "Proficiency demonstrated across 12 projects and 100 solved problems.",
+      "project_id": null,
+      "project_name": "Proofpath System",
+      "status": "Supported",
+      "confidence": 0.9,
+      "recency": "Current",
+      "rules_applied": [
+        "RULE_PROFILE_EXTRACTOR: Verified through GitHub code and LeetCode algorithmic metrics."
+      ],
+      "timestamp": "2026-10-17T04:46:00.850865",
+      "_id": "91db578b-b2dd-4e09-b879-e13de00f0a75",
+      "created_at": "2026-10-17T04:46:00.851160"
+    },
+    {
+      "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
+      "normalized_skill": "opencv",
+      "id": "e20efbcb-9115-433c-b43a-2a1d81e822b6",
+      "skill_name": "OpenCV",
+      "claimed_source": "ATS Profile Extractor (Data Analyst)",
+      "observed_evidence": "Verified through GitHub repositories & algorithmic benchmarks for Data Analyst.",
+      "file_path_or_url": "https://github.com/KARUNAMBIKASENTHIL",
+      "code_snippet": "Proficiency demonstrated across 12 projects and 100 solved problems.",
+      "project_id": null,
+      "project_name": "Proofpath System",
+      "status": "Supported",
+      "confidence": 0.9,
+      "recency": "Current",
+      "rules_applied": [
+        "RULE_PROFILE_EXTRACTOR: Verified through GitHub code and LeetCode algorithmic metrics."
+      ],
+      "timestamp": "2026-10-17T04:46:00.874254",
+      "_id": "1e3447a8-7871-480e-8f82-07cc6d5c68d8",
+      "created_at": "2026-10-17T04:46:00.874481"
+    },
+    {
+      "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
+      "normalized_skill": "postgresql",
+      "id": "96f44815-959b-476d-bcce-0668f21a5c9c",
+      "skill_name": "PostgreSQL",
+      "claimed_source": "ATS Profile Extractor (Data Analyst)",
+      "observed_evidence": "Verified through GitHub repositories & algorithmic benchmarks for Data Analyst.",
+      "file_path_or_url": "https://github.com/KARUNAMBIKASENTHIL",
+      "code_snippet": "Proficiency demonstrated across 12 projects and 100 solved problems.",
+      "project_id": null,
+      "project_name": "Proofpath System",
+      "status": "Supported",
+      "confidence": 0.9,
+      "recency": "Current",
+      "rules_applied": [
+        "RULE_PROFILE_EXTRACTOR: Verified through GitHub code and LeetCode algorithmic metrics."
+      ],
+      "timestamp": "2026-10-17T04:46:00.895626",
+      "_id": "ef541dec-f73c-4284-86c8-f1935c895d23",
+      "created_at": "2026-10-17T04:46:00.895958"
+    },
+    {
+      "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
+      "normalized_skill": "redis",
+      "id": "01edba2f-4613-4b2a-9cf9-f8c022dec800",
+      "skill_name": "Redis",
+      "claimed_source": "ATS Profile Extractor (Data Analyst)",
+      "observed_evidence": "Verified through GitHub repositories & algorithmic benchmarks for Data Analyst.",
+      "file_path_or_url": "https://github.com/KARUNAMBIKASENTHIL",
+      "code_snippet": "Proficiency demonstrated across 12 projects and 100 solved problems.",
+      "project_id": null,
+      "project_name": "Proofpath System",
+      "status": "Supported",
+      "confidence": 0.9,
+      "recency": "Current",
+      "rules_applied": [
+        "RULE_PROFILE_EXTRACTOR: Verified through GitHub code and LeetCode algorithmic metrics."
+      ],
+      "timestamp": "2026-10-17T04:46:00.936656",
+      "_id": "7c00e6f7-e7e2-4ef9-bcc1-86e4f5813e47",
+      "created_at": "2026-10-17T04:46:00.939973"
+    },
+    {
+      "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
+      "normalized_skill": "docker",
+      "id": "b79ceaa3-0a01-4dcd-a84e-13d7984485dc",
+      "skill_name": "Docker",
+      "claimed_source": "ATS Profile Extractor (Data Analyst)",
+      "observed_evidence": "Verified through GitHub repositories & algorithmic benchmarks for Data Analyst.",
+      "file_path_or_url": "https://github.com/KARUNAMBIKASENTHIL",
+      "code_snippet": "Proficiency demonstrated across 12 projects and 100 solved problems.",
+      "project_id": null,
+      "project_name": "Proofpath System",
+      "status": "Supported",
+      "confidence": 0.9,
+      "recency": "Current",
+      "rules_applied": [
+        "RULE_PROFILE_EXTRACTOR: Verified through GitHub code and LeetCode algorithmic metrics."
+      ],
+      "timestamp": "2026-10-17T04:46:00.963810",
+      "_id": "c8fa9438-150f-44ec-ae4b-f38feea7dd18",
+      "created_at": "2026-10-17T04:46:00.964025"
+    },
+    {
+      "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
+      "normalized_skill": "aws (ec2/s3)",
+      "id": "52abf345-c995-4f12-8325-30ef61b5e599",
+      "skill_name": "AWS (EC2/S3)",
+      "claimed_source": "ATS Profile Extractor (Data Analyst)",
+      "observed_evidence": "Verified through GitHub repositories & algorithmic benchmarks for Data Analyst.",
+      "file_path_or_url": "https://github.com/KARUNAMBIKASENTHIL",
+      "code_snippet": "Proficiency demonstrated across 12 projects and 100 solved problems.",
+      "project_id": null,
+      "project_name": "Proofpath System",
+      "status": "Supported",
+      "confidence": 0.9,
+      "recency": "Current",
+      "rules_applied": [
+        "RULE_PROFILE_EXTRACTOR: Verified through GitHub code and LeetCode algorithmic metrics."
+      ],
+      "timestamp": "2026-10-17T04:46:00.988505",
+      "_id": "21c6f9f0-1d9d-4c98-9874-0c4adb21fa7f",
+      "created_at": "2026-10-17T04:46:00.988865"
+    },
+    {
+      "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
+      "normalized_skill": "git / github actions",
+      "id": "ad515285-5352-4406-9c52-ea3528d69225",
+      "skill_name": "Git / GitHub Actions",
+      "claimed_source": "ATS Profile Extractor (Data Analyst)",
+      "observed_evidence": "Verified through GitHub repositories & algorithmic benchmarks for Data Analyst.",
+      "file_path_or_url": "https://github.com/KARUNAMBIKASENTHIL",
+      "code_snippet": "Proficiency demonstrated across 12 projects and 100 solved problems.",
+      "project_id": null,
+      "project_name": "Proofpath System",
+      "status": "Supported",
+      "confidence": 0.9,
+      "recency": "Current",
+      "rules_applied": [
+        "RULE_PROFILE_EXTRACTOR: Verified through GitHub code and LeetCode algorithmic metrics."
+      ],
+      "timestamp": "2026-10-17T04:46:01.010153",
+      "_id": "f8c8b480-e99f-4484-b49e-2c0231ab7029",
+      "created_at": "2026-10-17T04:46:01.010364"
+    },
+    {
+      "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
+      "normalized_skill": "deep learning & computer vision",
+      "id": "38d1b6b5-f0d2-4685-9390-82aaf702414e",
+      "skill_name": "Deep Learning & Computer Vision",
+      "claimed_source": "ATS Profile Extractor (Data Analyst)",
+      "observed_evidence": "Verified through GitHub repositories & algorithmic benchmarks for Data Analyst.",
+      "file_path_or_url": "https://github.com/KARUNAMBIKASENTHIL",
+      "code_snippet": "Proficiency demonstrated across 12 projects and 100 solved problems.",
+      "project_id": null,
+      "project_name": "Proofpath System",
+      "status": "Supported",
+      "confidence": 0.9,
+      "recency": "Current",
+      "rules_applied": [
+        "RULE_PROFILE_EXTRACTOR: Verified through GitHub code and LeetCode algorithmic metrics."
+      ],
+      "timestamp": "2026-10-17T04:46:01.030415",
+      "_id": "e6f3344d-643d-4757-9a03-7b2e39ceaaf5",
+      "created_at": "2026-10-17T04:46:01.030630"
+    },
+    {
+      "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
+      "normalized_skill": "data structures & algorithms (dsa)",
+      "id": "1b72db59-3a20-43d6-ac20-b70a1424973c",
+      "skill_name": "Data Structures & Algorithms (DSA)",
+      "claimed_source": "ATS Profile Extractor (Data Analyst)",
+      "observed_evidence": "Verified through GitHub repositories & algorithmic benchmarks for Data Analyst.",
+      "file_path_or_url": "https://github.com/KARUNAMBIKASENTHIL",
+      "code_snippet": "Proficiency demonstrated across 12 projects and 100 solved problems.",
+      "project_id": null,
+      "project_name": "Proofpath System",
+      "status": "Supported",
+      "confidence": 0.9,
+      "recency": "Current",
+      "rules_applied": [
+        "RULE_PROFILE_EXTRACTOR: Verified through GitHub code and LeetCode algorithmic metrics."
+      ],
+      "timestamp": "2026-10-17T04:46:01.051121",
+      "_id": "ee99d664-acf9-44f9-9d49-a3ba5bb38126",
+      "created_at": "2026-10-17T04:46:01.051498"
+    },
+    {
+      "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
+      "normalized_skill": "object-oriented programming (oop)",
+      "id": "de5cd706-e00f-424d-ba77-db98a52d0c38",
+      "skill_name": "Object-Oriented Programming (OOP)",
+      "claimed_source": "ATS Profile Extractor (Data Analyst)",
+      "observed_evidence": "Verified through GitHub repositories & algorithmic benchmarks for Data Analyst.",
+      "file_path_or_url": "https://github.com/KARUNAMBIKASENTHIL",
+      "code_snippet": "Proficiency demonstrated across 12 projects and 100 solved problems.",
+      "project_id": null,
+      "project_name": "Proofpath System",
+      "status": "Supported",
+      "confidence": 0.9,
+      "recency": "Current",
+      "rules_applied": [
+        "RULE_PROFILE_EXTRACTOR: Verified through GitHub code and LeetCode algorithmic metrics."
+      ],
+      "timestamp": "2026-10-17T04:46:01.073305",
+      "_id": "f5083f0d-70df-4fac-891f-c59cc6f7bb1b",
+      "created_at": "2026-10-17T04:46:01.073558"
+    },
+    {
+      "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
+      "normalized_skill": "system design & scalability",
+      "id": "7f1d6e98-26f3-45d6-a5f6-a075ea8e4e45",
+      "skill_name": "System Design & Scalability",
+      "claimed_source": "ATS Profile Extractor (Data Analyst)",
+      "observed_evidence": "Verified through GitHub repositories & algorithmic benchmarks for Data Analyst.",
+      "file_path_or_url": "https://github.com/KARUNAMBIKASENTHIL",
+      "code_snippet": "Proficiency demonstrated across 12 projects and 100 solved problems.",
+      "project_id": null,
+      "project_name": "Proofpath System",
+      "status": "Supported",
+      "confidence": 0.9,
+      "recency": "Current",
+      "rules_applied": [
+        "RULE_PROFILE_EXTRACTOR: Verified through GitHub code and LeetCode algorithmic metrics."
+      ],
+      "timestamp": "2026-10-17T04:46:01.093723",
+      "_id": "4d4ff884-c670-4695-ad4e-9e0fb19d37ac",
+      "created_at": "2026-10-17T04:46:01.093996"
+    },
+    {
+      "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
+      "normalized_skill": "restful api architecture",
+      "id": "eaf4a7a7-1fad-4c04-ad3c-69b3670d2497",
+      "skill_name": "RESTful API Architecture",
+      "claimed_source": "ATS Profile Extractor (Data Analyst)",
+      "observed_evidence": "Verified through GitHub repositories & algorithmic benchmarks for Data Analyst.",
+      "file_path_or_url": "https://github.com/KARUNAMBIKASENTHIL",
+      "code_snippet": "Proficiency demonstrated across 12 projects and 100 solved problems.",
+      "project_id": null,
+      "project_name": "Proofpath System",
+      "status": "Supported",
+      "confidence": 0.9,
+      "recency": "Current",
+      "rules_applied": [
+        "RULE_PROFILE_EXTRACTOR: Verified through GitHub code and LeetCode algorithmic metrics."
+      ],
+      "timestamp": "2026-10-17T04:46:01.116635",
+      "_id": "e07aa78b-2188-41bc-ab01-6815ce03b2e9",
+      "created_at": "2026-10-17T04:46:01.116963"
+    },
+    {
+      "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
+      "normalized_skill": "agile / scrum collaboration",
+      "id": "fb21021f-1b5a-4eae-9611-82fc111b6c1f",
+      "skill_name": "Agile / Scrum Collaboration",
+      "claimed_source": "ATS Profile Extractor (Data Analyst)",
+      "observed_evidence": "Verified through GitHub repositories & algorithmic benchmarks for Data Analyst.",
+      "file_path_or_url": "https://github.com/KARUNAMBIKASENTHIL",
+      "code_snippet": "Proficiency demonstrated across 12 projects and 100 solved problems.",
+      "project_id": null,
+      "project_name": "Proofpath System",
+      "status": "Supported",
+      "confidence": 0.9,
+      "recency": "Current",
+      "rules_applied": [
+        "RULE_PROFILE_EXTRACTOR: Verified through GitHub code and LeetCode algorithmic metrics."
+      ],
+      "timestamp": "2026-10-17T04:46:01.136483",
+      "_id": "a2f30ee7-bcc9-4167-94cc-13623988e248",
+      "created_at": "2026-10-17T04:46:01.136701"
+    },
+    {
+      "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
+      "normalized_skill": "automated testing (pytest / jest)",
+      "id": "e83da1ae-a8cd-4bbe-b9e6-bd7fc9fa710e",
+      "skill_name": "Automated Testing (PyTest / Jest)",
+      "claimed_source": "ATS Profile Extractor (Data Analyst)",
+      "observed_evidence": "Verified through GitHub repositories & algorithmic benchmarks for Data Analyst.",
+      "file_path_or_url": "https://github.com/KARUNAMBIKASENTHIL",
+      "code_snippet": "Proficiency demonstrated across 12 projects and 100 solved problems.",
+      "project_id": null,
+      "project_name": "Proofpath System",
+      "status": "Supported",
+      "confidence": 0.9,
+      "recency": "Current",
+      "rules_applied": [
+        "RULE_PROFILE_EXTRACTOR: Verified through GitHub code and LeetCode algorithmic metrics."
+      ],
+      "timestamp": "2026-10-17T04:46:01.158935",
+      "_id": "bcd53507-f833-4cd1-8f39-33c65335c9ae",
+      "created_at": "2026-10-17T04:46:01.159154"
     }
   ],
   "sources": [
@@ -1741,22 +2119,17 @@
     {
       "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
       "source_type": "github",
-      "id": "d6d54502-c6ec-49f9-a310-e73f7aab212f",
-      "name": "GitHub (KARUNAMBIKASENTHIL)",
+      "id": "2da0b1f5-0d17-45fc-9705-8c5dcb3c0ea5",
+      "name": "GitHub: KARUNAMBIKASENTHIL",
       "url_or_path": "https://github.com/KARUNAMBIKASENTHIL",
       "status": "Connected",
       "last_synced": "Just now",
       "metadata": {
-        "auto_extracted": true,
-        "repos": [
-          "https://github.com/KARUNAMBIKASENTHIL/Alumni-Management-Portal",
-          "https://github.com/KARUNAMBIKASENTHIL/MedRoute"
-        ],
-        "verified_repos_count": 2
+        "repos_found": 12
       },
       "_id": "d28abaad-0b3e-4ecd-97fd-63f4f01b3149",
       "created_at": "2026-10-17T04:03:52.376558",
-      "updated_at": "2026-10-17T04:20:50.147215"
+      "updated_at": "2026-10-17T04:46:00.579104"
     },
     {
       "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
@@ -1945,6 +2318,67 @@
       },
       "_id": "5178a818-7aab-4955-9959-ade7d1f804ed",
       "created_at": "2026-10-17T04:24:48.016675"
+    },
+    {
+      "id": "76b73659-c57e-4099-bb7f-408e75fef0c5",
+      "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
+      "source_type": "resume",
+      "name": "Karunambika_S_FlowCV_Resume_2026-07-19.pdf",
+      "url_or_path": "C:\\projects\\CAREERLIFT\\backend\\data\\uploads\\09b736cf-81f9-45a2-b9d7-2a705b72a60d_Karunambika_S_FlowCV_Resume_2026-07-19.pdf",
+      "status": "Uploaded",
+      "last_synced": "Just now",
+      "metadata": {
+        "pages": 1,
+        "extracted_skills": 14,
+        "extracted_projects": 2
+      },
+      "_id": "dba904bf-2863-4f0f-a5e4-7ad59ce87462",
+      "created_at": "2026-10-17T04:43:54.600884"
+    },
+    {
+      "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
+      "url_or_path": "https://leetcode.com/u/KARUNAMBIKA_18/",
+      "id": "56011088-6196-4dc2-9c04-d1412fd8c9c5",
+      "source_type": "platform",
+      "name": "LeetCode: KARUNAMBIKA_18",
+      "status": "Connected",
+      "last_synced": "Just now",
+      "metadata": {
+        "solved": 100
+      },
+      "_id": "c4c069ec-a7b5-4f43-a165-c17bc959fc38",
+      "created_at": "2026-10-17T04:46:00.605852"
+    },
+    {
+      "id": "5fea1e31-7700-4060-9175-93aa25ca2b9d",
+      "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
+      "source_type": "resume",
+      "name": "Karunambika_S_FlowCV_Resume_2026-07-19.pdf",
+      "url_or_path": "C:\\projects\\CAREERLIFT\\backend\\data\\uploads\\67de9bbb-da61-4c65-8205-bfa776d13917_Karunambika_S_FlowCV_Resume_2026-07-19.pdf",
+      "status": "Uploaded",
+      "last_synced": "Just now",
+      "metadata": {
+        "pages": 1,
+        "extracted_skills": 14,
+        "extracted_projects": 2
+      },
+      "_id": "e6eaf5dc-e2a5-433d-b1ef-03ee135f4293",
+      "created_at": "2026-10-17T04:54:41.514458"
+    },
+    {
+      "id": "e40898d4-2a92-4c49-8918-c84e06162ea5",
+      "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
+      "source_type": "github",
+      "name": "GitHub Repository",
+      "url_or_path": "https://github.com/KARUNAMBIKASENTHIL",
+      "status": "Connected",
+      "last_synced": "2026-10-17T04:55:07.420899",
+      "metadata": {
+        "repository": "https://github.com/KARUNAMBIKASENTHIL"
+      },
+      "error_message": null,
+      "_id": "9853d413-aede-424d-a491-c9b7c7b362b9",
+      "created_at": "2026-10-17T04:55:07.421132"
     }
   ],
   "projects": [
@@ -2111,7 +2545,7 @@
     {
       "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
       "title": "CampusBridge - Alumni Management Portal",
-      "id": "6cf8448b-923b-4095-a8ee-d543def9c8fc",
+      "id": "9016e1d0-b7b0-4b0e-8bce-1d48748bdbf3",
       "repo_url": null,
       "problem_definition": "Dedicated MERN-stack social platform enabling isolated college networks for student-alumni interaction and professional mentorship.",
       "architecture_overview": "Extracted from resume & verified repositories. Technologies used: React.js, Vite, Express.js, MongoDB, Socket.io, WebSockets.",
@@ -2183,14 +2617,14 @@
         "Conduct real-time technical audit evaluation to achieve 85%+ readiness score."
       ],
       "is_sandbox_verified": true,
-      "created_at": "2026-10-17T04:24:48.051380",
+      "created_at": "2026-10-17T04:54:41.565360",
       "_id": "b1d56050-3f2a-4031-8006-a769e2f8546c",
-      "updated_at": "2026-10-17T04:24:48.051531"
+      "updated_at": "2026-10-17T04:54:41.565523"
     },
     {
       "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
       "title": "MedRoute - Emergency Medical Response Platform",
-      "id": "c5853006-d508-41dd-bb1f-2749bfdc6b50",
+      "id": "19226342-40dd-42f4-a05f-0c4c1c11537f",
       "repo_url": null,
       "problem_definition": "Full-stack real-time emergency response platform connecting patients with hospitals and ambulance drivers with live GPS tracking via Socket.io and Leaflet.",
       "architecture_overview": "Extracted from resume & verified repositories. Technologies used: TypeScript, Node.js, Express.js, MongoDB, Socket.io, Leaflet, React.",
@@ -2264,14 +2698,14 @@
         "Conduct real-time technical audit evaluation to achieve 85%+ readiness score."
       ],
       "is_sandbox_verified": true,
-      "created_at": "2026-10-17T04:24:48.033330",
+      "created_at": "2026-10-17T04:54:41.537490",
       "_id": "07fa1f41-37dc-45da-9ed2-049f7101e944",
-      "updated_at": "2026-10-17T04:24:48.033508"
+      "updated_at": "2026-10-17T04:54:41.538095"
     },
     {
       "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
       "title": "GitHub Repository",
-      "id": "f68f4491-aef1-426d-8e10-5160d289afa2",
+      "id": "e7c97c79-d77e-4b68-ba30-c03fd24a7785",
       "repo_url": "https://github.com/KARUNAMBIKASENTHIL",
       "problem_definition": "Production-oriented service addressing GitHub Repository with automated logic and modular components.",
       "architecture_overview": "Standard Script / Flat Layout",
@@ -2337,9 +2771,9 @@
         "Introduce explicit HTTP status handling and Pydantic boundary validation."
       ],
       "is_sandbox_verified": false,
-      "created_at": "2026-10-17T04:21:33.311329",
+      "created_at": "2026-10-17T04:55:07.451440",
       "_id": "9ec1cbb5-0d1e-404f-a6b3-b81c596c48aa",
-      "updated_at": "2026-10-17T04:21:33.311500"
+      "updated_at": "2026-10-17T04:55:07.451597"
     }
   ],
   "growth_snapshots": [
@@ -2471,7 +2905,7 @@
       "degree": null,
       "institution": null,
       "graduation_year": null,
-      "target_role": "Data Analyst",
+      "target_role": "DevOps & Cloud Engineer",
       "phone": null,
       "location": null,
       "linkedin_url": null,
@@ -2481,7 +2915,7 @@
       "preferred_domains": [],
       "_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
       "created_at": "2026-10-17T04:01:52.390065",
-      "updated_at": "2026-10-17T04:41:03.759165"
+      "updated_at": "2026-10-17T04:56:24.947132"
     }
   ],
   "historical_events": [
@@ -2741,6 +3175,57 @@
       },
       "_id": "2b2d91d7-e79a-4279-9ba3-f2013ea11f73",
       "created_at": "2026-10-17T04:24:48.068498"
+    },
+    {
+      "id": "27cfcb58-442e-46a3-87a5-0e8928d69a69",
+      "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
+      "event_type": "resume_uploaded",
+      "title": "Uploaded Resume: Karunambika_S_FlowCV_Resume_2026-07-19.pdf",
+      "description": "Extracted 14 competencies and 2 project experiences from Karunambika_S_FlowCV_Resume_2026-07-19.pdf.",
+      "date": "2026-10-17",
+      "timestamp": "2026-10-17T04:43:54.663834",
+      "metadata": {
+        "resume_id": "09b736cf-81f9-45a2-b9d7-2a705b72a60d",
+        "filename": "Karunambika_S_FlowCV_Resume_2026-07-19.pdf",
+        "skills_count": 14,
+        "projects_count": 2
+      },
+      "_id": "856acb96-958c-4269-bc84-e08afce43863",
+      "created_at": "2026-10-17T04:43:54.663877"
+    },
+    {
+      "id": "08908193-f124-4ab5-9995-240f93b1b87c",
+      "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
+      "event_type": "resume_uploaded",
+      "title": "Uploaded Resume: Karunambika_S_FlowCV_Resume_2026-07-19.pdf",
+      "description": "Extracted 14 competencies and 2 project experiences from Karunambika_S_FlowCV_Resume_2026-07-19.pdf.",
+      "date": "2026-10-17",
+      "timestamp": "2026-10-17T04:54:41.588499",
+      "metadata": {
+        "resume_id": "67de9bbb-da61-4c65-8205-bfa776d13917",
+        "filename": "Karunambika_S_FlowCV_Resume_2026-07-19.pdf",
+        "skills_count": 14,
+        "projects_count": 2
+      },
+      "_id": "e349a037-0e58-4179-bc70-8428fdf2c3f0",
+      "created_at": "2026-10-17T04:54:41.588548"
+    },
+    {
+      "id": "dd717e18-f948-48f3-a6da-cbaf0c20a246",
+      "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
+      "event_type": "analysis_run",
+      "title": "Career Readiness Analysis: Machine Learning Engineer",
+      "description": "Assessed competencies for Machine Learning Engineer. Overall Score: 54.5%.",
+      "date": "2026-10-17",
+      "timestamp": "2026-10-17T04:55:07.719085",
+      "metadata": {
+        "role_id": "mle",
+        "role_name": "Machine Learning Engineer",
+        "score": 54.5,
+        "report_id": "c611606a-68dd-4968-b2c5-17ef33516d6d"
+      },
+      "_id": "2b26c918-4a84-476b-abfd-97912895c6cf",
+      "created_at": "2026-10-17T04:55:07.756062"
     }
   ],
   "placement_reports": [
@@ -3628,9 +4113,874 @@
       "timestamp": "2026-10-17T04:28:06.128981",
       "_id": "a0130f8a-02ca-4815-8dba-1a5ab447fabb",
       "created_at": "2026-10-17T04:28:06.129073"
+    },
+    {
+      "report_id": "audit-20848002",
+      "candidate_name": "Karunambika S",
+      "candidate_email": "KARUNAMBIKASENTHIL@github.com",
+      "target_job_title": "Machine Learning Engineer",
+      "overall_readiness_score": 8,
+      "keyword_match_score": 8,
+      "gap_differential": 0,
+      "summary_headline": "Candidate demonstrates 8% verified proof-of-work readiness against the required Job Description (Word match is 8%).",
+      "placement_verdict": "NOT PLACEMENT READY (Critical Evidence Deficit)",
+      "placement_recommendation": "Candidate relies heavily on unverified resume claims with insufficient repository proof of work. Immediate remediation required.",
+      "total_jd_competencies": 12,
+      "verified_skills_count": 1,
+      "lagging_skills_count": 11,
+      "verified_skills": [
+        {
+          "skill_name": "Automated Testing, Version Control & Docs",
+          "status": "Verified with Code & Repository Artifacts",
+          "evidence_snippet": "# Project: ProofPath\n# Language: TypeScript\n# URL: https://github.com/KARUNAMBIKASENTHIL/ProofPath Demonstrated in extracted repository 'ProofPath'. Public repo with 0 stars",
+          "source_ref": "https://github.com/KARUNAMBIKASENTHIL/ProofPath",
+          "project_name": "ProofPath",
+          "rag_standard": "Automated pytest suite testing inference behavior, git branch hygiene, and reproducible README."
+        }
+      ],
+      "unverified_claims": [],
+      "lagging_areas": [
+        {
+          "skill_name": "Python Programming & Code Organization",
+          "deficit_type": "Missing from Resume (Skill Gap)",
+          "severity": "Critical Deficit",
+          "observed_gap": "Required by Job Description, but absent from candidate's resume.",
+          "rag_standard": "Modular Python repository with clear functions/classes, type hints, and PEP8 compliance."
+        },
+        {
+          "skill_name": "Data Preparation & Exploratory Analysis",
+          "deficit_type": "Missing from Resume (Skill Gap)",
+          "severity": "Critical Deficit",
+          "observed_gap": "Required by Job Description, but absent from candidate's resume.",
+          "rag_standard": "Data-cleaning pipeline with documented train/val/test split strategy and handling of missing values."
+        },
+        {
+          "skill_name": "Model Training, Validation & Evaluation",
+          "deficit_type": "Missing from Resume (Skill Gap)",
+          "severity": "Critical Deficit",
+          "observed_gap": "Required by Job Description, but absent from candidate's resume.",
+          "rag_standard": "Baseline model compared against justified alternatives; metrics explained in context without naive accuracy reliance."
+        },
+        {
+          "skill_name": "Experiment Reproducibility & Leakage Prevention",
+          "deficit_type": "Missing from Resume (Skill Gap)",
+          "severity": "Critical Deficit",
+          "observed_gap": "Required by Job Description, but absent from candidate's resume.",
+          "rag_standard": "Leakage-free Scikit-Learn Pipelines with held-out test splits and seed locking."
+        },
+        {
+          "skill_name": "APIs & Model Serving",
+          "deficit_type": "Missing from Resume (Skill Gap)",
+          "severity": "Critical Deficit",
+          "observed_gap": "Required by Job Description, but absent from candidate's resume.",
+          "rag_standard": "Model exposed through REST API with input schema validation, status codes, and defensive error handling."
+        },
+        {
+          "skill_name": "Deployment & Basic Monitoring",
+          "deficit_type": "Missing from Resume (Skill Gap)",
+          "severity": "Critical Deficit",
+          "observed_gap": "Required by Job Description, but absent from candidate's resume.",
+          "rag_standard": "Multi-stage Docker containerization with reproducible runtime environment and health probes."
+        },
+        {
+          "skill_name": "Spring Boot & RESTful Microservices",
+          "deficit_type": "Missing from Resume (Skill Gap)",
+          "severity": "Critical Deficit",
+          "observed_gap": "Required by Job Description, but absent from candidate's resume.",
+          "rag_standard": "Spring Boot RESTful microservices with layered architecture (Controller -> Service -> Repository)."
+        },
+        {
+          "skill_name": "Defensive Validation & Exception Handling",
+          "deficit_type": "Missing from Resume (Skill Gap)",
+          "severity": "Critical Deficit",
+          "observed_gap": "Required by Job Description, but absent from candidate's resume.",
+          "rag_standard": "Defensive DTO input validation with global @ControllerAdvice error interceptors."
+        },
+        {
+          "skill_name": "Unit & Integration Testing (JUnit/Mockito)",
+          "deficit_type": "Missing from Resume (Skill Gap)",
+          "severity": "Critical Deficit",
+          "observed_gap": "Required by Job Description, but absent from candidate's resume.",
+          "rag_standard": "JUnit and Mockito test coverage validating edge inputs, repository queries, and service logic."
+        },
+        {
+          "skill_name": "Data Cleaning & Quality Validation",
+          "deficit_type": "Missing from Resume (Skill Gap)",
+          "severity": "Critical Deficit",
+          "observed_gap": "Required by Job Description, but absent from candidate's resume.",
+          "rag_standard": "Documented cleaning rules handling nulls/duplicates, validating data types and boundary constraints."
+        },
+        {
+          "skill_name": "Descriptive Statistics & Business Interpretation",
+          "deficit_type": "Missing from Resume (Skill Gap)",
+          "severity": "Critical Deficit",
+          "observed_gap": "Required by Job Description, but absent from candidate's resume.",
+          "rag_standard": "Rigorous statistical analysis distinguishing correlation from causation with clear executive takeaway notes."
+        }
+      ],
+      "prescribed_bootcamp_modules": [
+        "Automated Pytest & Mock Fixtures Intensive Workshop",
+        "Defensive REST APIs & Pydantic Validation Lab"
+      ],
+      "generated_at": "2026-10-17 04:46 UTC",
+      "candidate_id": null,
+      "github_url": "https://github.com/KARUNAMBIKASENTHIL",
+      "job_description": "Target Role: Machine Learning Engineer (from CareerLens RAG Knowledge Base)\r\nRole Purpose: Build, evaluate, package, deploy, and monitor machine-learning systems.\r\n\r\nRequired Competency Standards:\r\n1. Python programming, code organization, clean functions/classes, and type hints.\r\n2. Data preparation, exploratory analysis, and data-quality checks.\r\n3. Statistics and machine-learning algorithm fundamentals.\r\n4. Model training, validation, baseline comparison, and evaluation beyond naive accuracy.\r\n5. Experiment reproducibility and strict train/test data leakage prevention.\r\n6. APIs and model serving (FastAPI/Flask) with input validation and error handling.\r\n7. Automated testing (pytest), version control (Git), and documentation.\r\n8. Containerization (Docker), deployment, and basic monitoring.",
+      "timestamp": "2026-10-17T04:46:57.381764",
+      "_id": "a62dc53d-25ef-48fe-a00b-3b7344f0f4a8",
+      "created_at": "2026-10-17T04:46:57.381817"
+    },
+    {
+      "report_id": "audit-7d20cb97",
+      "candidate_name": "Karunambika S",
+      "candidate_email": "KARUNAMBIKASENTHIL@github.com",
+      "target_job_title": "Java Backend Developer",
+      "overall_readiness_score": 30,
+      "keyword_match_score": 20,
+      "gap_differential": -10,
+      "summary_headline": "Candidate demonstrates 30% verified proof-of-work readiness against the required Job Description (Word match is 20%).",
+      "placement_verdict": "NOT PLACEMENT READY (Critical Evidence Deficit)",
+      "placement_recommendation": "Candidate relies heavily on unverified resume claims with insufficient repository proof of work. Immediate remediation required.",
+      "total_jd_competencies": 10,
+      "verified_skills_count": 3,
+      "lagging_skills_count": 7,
+      "verified_skills": [
+        {
+          "skill_name": "Java Syntax, OOP & Collections",
+          "status": "Verified with Code & Repository Artifacts",
+          "evidence_snippet": "# Project: Alumni-Management-Portal\n# Language: JavaScript\n# URL: https://github.com/KARUNAMBIKASENTHIL/Alumni-Management-Portal Demonstrated in extracted repository 'Alumni-Management-Portal'. Public repo with 0 stars",
+          "source_ref": "https://github.com/KARUNAMBIKASENTHIL/Alumni-Management-Portal",
+          "project_name": "Alumni-Management-Portal",
+          "rag_standard": "Modern Java syntax, separation of concerns, collections framework, and clean OOP class hierarchy."
+        },
+        {
+          "skill_name": "Automated Testing, Version Control & Docs",
+          "status": "Verified with Code & Repository Artifacts",
+          "evidence_snippet": "# Project: ProofPath\n# Language: TypeScript\n# URL: https://github.com/KARUNAMBIKASENTHIL/ProofPath Demonstrated in extracted repository 'ProofPath'. Public repo with 0 stars",
+          "source_ref": "https://github.com/KARUNAMBIKASENTHIL/ProofPath",
+          "project_name": "ProofPath",
+          "rag_standard": "Automated pytest suite testing inference behavior, git branch hygiene, and reproducible README."
+        },
+        {
+          "skill_name": "SQL Querying, Aggregation & Window Functions",
+          "status": "Verified with Code & Repository Artifacts",
+          "evidence_snippet": "# Project: ProofPath\n# Language: TypeScript\n# URL: https://github.com/KARUNAMBIKASENTHIL/ProofPath Demonstrated in extracted repository 'ProofPath'. Public repo with 0 stars",
+          "source_ref": "https://github.com/KARUNAMBIKASENTHIL/ProofPath",
+          "project_name": "ProofPath",
+          "rag_standard": "Complex SQL queries answering concrete business questions with joins, CTEs, and window functions."
+        }
+      ],
+      "unverified_claims": [],
+      "lagging_areas": [
+        {
+          "skill_name": "Spring Boot & RESTful Microservices",
+          "deficit_type": "Missing from Resume (Skill Gap)",
+          "severity": "Critical Deficit",
+          "observed_gap": "Required by Job Description, but absent from candidate's resume.",
+          "rag_standard": "Spring Boot RESTful microservices with layered architecture (Controller -> Service -> Repository)."
+        },
+        {
+          "skill_name": "SQL & Relational Database Persistence",
+          "deficit_type": "Missing from Resume (Skill Gap)",
+          "severity": "Critical Deficit",
+          "observed_gap": "Required by Job Description, but absent from candidate's resume.",
+          "rag_standard": "Database schema modeling with ACID guarantees, JPA/Hibernate queries, and migration discipline."
+        },
+        {
+          "skill_name": "Defensive Validation & Exception Handling",
+          "deficit_type": "Missing from Resume (Skill Gap)",
+          "severity": "Critical Deficit",
+          "observed_gap": "Required by Job Description, but absent from candidate's resume.",
+          "rag_standard": "Defensive DTO input validation with global @ControllerAdvice error interceptors."
+        },
+        {
+          "skill_name": "Unit & Integration Testing (JUnit/Mockito)",
+          "deficit_type": "Missing from Resume (Skill Gap)",
+          "severity": "Critical Deficit",
+          "observed_gap": "Required by Job Description, but absent from candidate's resume.",
+          "rag_standard": "JUnit and Mockito test coverage validating edge inputs, repository queries, and service logic."
+        },
+        {
+          "skill_name": "APIs & Model Serving",
+          "deficit_type": "Missing from Resume (Skill Gap)",
+          "severity": "Critical Deficit",
+          "observed_gap": "Required by Job Description, but absent from candidate's resume.",
+          "rag_standard": "Model exposed through REST API with input schema validation, status codes, and defensive error handling."
+        },
+        {
+          "skill_name": "Deployment & Basic Monitoring",
+          "deficit_type": "Missing from Resume (Skill Gap)",
+          "severity": "Critical Deficit",
+          "observed_gap": "Required by Job Description, but absent from candidate's resume.",
+          "rag_standard": "Multi-stage Docker containerization with reproducible runtime environment and health probes."
+        },
+        {
+          "skill_name": "Data Cleaning & Quality Validation",
+          "deficit_type": "Missing from Resume (Skill Gap)",
+          "severity": "Critical Deficit",
+          "observed_gap": "Required by Job Description, but absent from candidate's resume.",
+          "rag_standard": "Documented cleaning rules handling nulls/duplicates, validating data types and boundary constraints."
+        }
+      ],
+      "prescribed_bootcamp_modules": [
+        "Automated Pytest & Mock Fixtures Intensive Workshop",
+        "Defensive REST APIs & Pydantic Validation Lab"
+      ],
+      "generated_at": "2026-10-17 04:47 UTC",
+      "candidate_id": null,
+      "github_url": "https://github.com/KARUNAMBIKASENTHIL",
+      "job_description": "Target Role: Java Backend Developer (from CareerLens RAG Knowledge Base)\r\nRole Purpose: Design and implement server-side applications, APIs, business logic, data access, and reliable integrations.\r\n\r\nRequired Competency Standards:\r\n1. Java syntax, collections, exception hierarchies, and object-oriented design.\r\n2. Data structures and algorithmic problem solving.\r\n3. SQL and relational database fundamentals (schema design, ACID transactions, queries).\r\n4. HTTP protocol, REST API design, status codes, and JSON serialization.\r\n5. Spring Boot framework fundamentals and layered architecture (Controller -> Service -> Repository).\r\n6. Defensive request validation, global error handling, and security basics.\r\n7. Unit and integration testing (JUnit, Mockito).\r\n8. Git version control, configuration management outside source code, logging, and deployment.",
+      "timestamp": "2026-10-17T04:47:42.239977",
+      "_id": "0d75329a-5506-4dad-b6a9-d3ce57003727",
+      "created_at": "2026-10-17T04:47:42.240063"
+    },
+    {
+      "report_id": "audit-c2c3c48d",
+      "candidate_name": "Karunambika S",
+      "candidate_email": "KARUNAMBIKASENTHIL@github.com",
+      "target_job_title": "Data Analyst",
+      "overall_readiness_score": 11,
+      "keyword_match_score": 0,
+      "gap_differential": -11,
+      "summary_headline": "Candidate demonstrates 11% verified proof-of-work readiness against the required Job Description (Word match is 0%).",
+      "placement_verdict": "NOT PLACEMENT READY (Critical Evidence Deficit)",
+      "placement_recommendation": "Candidate relies heavily on unverified resume claims with insufficient repository proof of work. Immediate remediation required.",
+      "total_jd_competencies": 9,
+      "verified_skills_count": 1,
+      "lagging_skills_count": 8,
+      "verified_skills": [
+        {
+          "skill_name": "SQL Querying, Aggregation & Window Functions",
+          "status": "Verified with Code & Repository Artifacts",
+          "evidence_snippet": "# Project: ProofPath\n# Language: TypeScript\n# URL: https://github.com/KARUNAMBIKASENTHIL/ProofPath Demonstrated in extracted repository 'ProofPath'. Public repo with 0 stars",
+          "source_ref": "https://github.com/KARUNAMBIKASENTHIL/ProofPath",
+          "project_name": "ProofPath",
+          "rag_standard": "Complex SQL queries answering concrete business questions with joins, CTEs, and window functions."
+        }
+      ],
+      "unverified_claims": [],
+      "lagging_areas": [
+        {
+          "skill_name": "Data Cleaning & Quality Validation",
+          "deficit_type": "Missing from Resume (Skill Gap)",
+          "severity": "Critical Deficit",
+          "observed_gap": "Required by Job Description, but absent from candidate's resume.",
+          "rag_standard": "Documented cleaning rules handling nulls/duplicates, validating data types and boundary constraints."
+        },
+        {
+          "skill_name": "Data Visualization & Dashboard Design",
+          "deficit_type": "Missing from Resume (Skill Gap)",
+          "severity": "Critical Deficit",
+          "observed_gap": "Required by Job Description, but absent from candidate's resume.",
+          "rag_standard": "Interactive business dashboards (Power BI / Tableau / Plotly) with readable KPI metric cards."
+        },
+        {
+          "skill_name": "Descriptive Statistics & Business Interpretation",
+          "deficit_type": "Missing from Resume (Skill Gap)",
+          "severity": "Critical Deficit",
+          "observed_gap": "Required by Job Description, but absent from candidate's resume.",
+          "rag_standard": "Rigorous statistical analysis distinguishing correlation from causation with clear executive takeaway notes."
+        },
+        {
+          "skill_name": "Python Programming & Code Organization",
+          "deficit_type": "Missing from Resume (Skill Gap)",
+          "severity": "Critical Deficit",
+          "observed_gap": "Required by Job Description, but absent from candidate's resume.",
+          "rag_standard": "Modular Python repository with clear functions/classes, type hints, and PEP8 compliance."
+        },
+        {
+          "skill_name": "Data Preparation & Exploratory Analysis",
+          "deficit_type": "Missing from Resume (Skill Gap)",
+          "severity": "Critical Deficit",
+          "observed_gap": "Required by Job Description, but absent from candidate's resume.",
+          "rag_standard": "Data-cleaning pipeline with documented train/val/test split strategy and handling of missing values."
+        },
+        {
+          "skill_name": "Experiment Reproducibility & Leakage Prevention",
+          "deficit_type": "Missing from Resume (Skill Gap)",
+          "severity": "Critical Deficit",
+          "observed_gap": "Required by Job Description, but absent from candidate's resume.",
+          "rag_standard": "Leakage-free Scikit-Learn Pipelines with held-out test splits and seed locking."
+        },
+        {
+          "skill_name": "SQL & Relational Database Persistence",
+          "deficit_type": "Missing from Resume (Skill Gap)",
+          "severity": "Critical Deficit",
+          "observed_gap": "Required by Job Description, but absent from candidate's resume.",
+          "rag_standard": "Database schema modeling with ACID guarantees, JPA/Hibernate queries, and migration discipline."
+        },
+        {
+          "skill_name": "Defensive Validation & Exception Handling",
+          "deficit_type": "Missing from Resume (Skill Gap)",
+          "severity": "Critical Deficit",
+          "observed_gap": "Required by Job Description, but absent from candidate's resume.",
+          "rag_standard": "Defensive DTO input validation with global @ControllerAdvice error interceptors."
+        }
+      ],
+      "prescribed_bootcamp_modules": [
+        "Advanced Production Engineering & Code Defense Bootcamp"
+      ],
+      "generated_at": "2026-10-17 04:47 UTC",
+      "candidate_id": null,
+      "github_url": "https://github.com/KARUNAMBIKASENTHIL",
+      "job_description": "Target Role: Data Analyst (from CareerLens RAG Knowledge Base)\r\nRole Purpose: Turn raw data into reliable analysis and clear recommendations using SQL, spreadsheets, statistics, visualization, and communication.\r\n\r\nRequired Competency Standards:\r\n1. SQL querying, complex joins, aggregations, window functions, and data manipulation.\r\n2. Data cleaning, handling missing/duplicate values, and data quality validation.\r\n3. Spreadsheet analysis and data-quality checks.\r\n4. Descriptive statistics, distributions, and basic analytical reasoning.\r\n5. Python with pandas for repeatable cleaning and exploratory data analysis.\r\n6. Visualization and business dashboard design (Power BI / Tableau / Plotly) with meaningful metrics.\r\n7. Business questions, KPI interpretation, and distinguishing correlation from causation.\r\n8. Clear reporting, reproducibility notes, and data dictionaries.",
+      "timestamp": "2026-10-17T04:47:48.174098",
+      "_id": "9a8e0de6-c88f-472e-92a1-19b3dc22d6b8",
+      "created_at": "2026-10-17T04:47:48.174182"
+    },
+    {
+      "report_id": "audit-a62f1646",
+      "candidate_name": "Karunambika S",
+      "candidate_email": "KARUNAMBIKASENTHIL@github.com",
+      "target_job_title": "Java Backend Developer",
+      "overall_readiness_score": 30,
+      "keyword_match_score": 20,
+      "gap_differential": -10,
+      "summary_headline": "Candidate demonstrates 30% verified proof-of-work readiness against the required Job Description (Word match is 20%).",
+      "placement_verdict": "NOT PLACEMENT READY (Critical Evidence Deficit)",
+      "placement_recommendation": "Candidate relies heavily on unverified resume claims with insufficient repository proof of work. Immediate remediation required.",
+      "total_jd_competencies": 10,
+      "verified_skills_count": 3,
+      "lagging_skills_count": 7,
+      "verified_skills": [
+        {
+          "skill_name": "Java Syntax, OOP & Collections",
+          "status": "Verified with Code & Repository Artifacts",
+          "evidence_snippet": "# Project: Alumni-Management-Portal\n# Language: JavaScript\n# URL: https://github.com/KARUNAMBIKASENTHIL/Alumni-Management-Portal Demonstrated in extracted repository 'Alumni-Management-Portal'. Public repo with 0 stars",
+          "source_ref": "https://github.com/KARUNAMBIKASENTHIL/Alumni-Management-Portal",
+          "project_name": "Alumni-Management-Portal",
+          "rag_standard": "Modern Java syntax, separation of concerns, collections framework, and clean OOP class hierarchy."
+        },
+        {
+          "skill_name": "Automated Testing, Version Control & Docs",
+          "status": "Verified with Code & Repository Artifacts",
+          "evidence_snippet": "# Project: ProofPath\n# Language: TypeScript\n# URL: https://github.com/KARUNAMBIKASENTHIL/ProofPath Demonstrated in extracted repository 'ProofPath'. Public repo with 0 stars",
+          "source_ref": "https://github.com/KARUNAMBIKASENTHIL/ProofPath",
+          "project_name": "ProofPath",
+          "rag_standard": "Automated pytest suite testing inference behavior, git branch hygiene, and reproducible README."
+        },
+        {
+          "skill_name": "SQL Querying, Aggregation & Window Functions",
+          "status": "Verified with Code & Repository Artifacts",
+          "evidence_snippet": "# Project: ProofPath\n# Language: TypeScript\n# URL: https://github.com/KARUNAMBIKASENTHIL/ProofPath Demonstrated in extracted repository 'ProofPath'. Public repo with 0 stars",
+          "source_ref": "https://github.com/KARUNAMBIKASENTHIL/ProofPath",
+          "project_name": "ProofPath",
+          "rag_standard": "Complex SQL queries answering concrete business questions with joins, CTEs, and window functions."
+        }
+      ],
+      "unverified_claims": [],
+      "lagging_areas": [
+        {
+          "skill_name": "Spring Boot & RESTful Microservices",
+          "deficit_type": "Missing from Resume (Skill Gap)",
+          "severity": "Critical Deficit",
+          "observed_gap": "Required by Job Description, but absent from candidate's resume.",
+          "rag_standard": "Spring Boot RESTful microservices with layered architecture (Controller -> Service -> Repository)."
+        },
+        {
+          "skill_name": "SQL & Relational Database Persistence",
+          "deficit_type": "Missing from Resume (Skill Gap)",
+          "severity": "Critical Deficit",
+          "observed_gap": "Required by Job Description, but absent from candidate's resume.",
+          "rag_standard": "Database schema modeling with ACID guarantees, JPA/Hibernate queries, and migration discipline."
+        },
+        {
+          "skill_name": "Defensive Validation & Exception Handling",
+          "deficit_type": "Missing from Resume (Skill Gap)",
+          "severity": "Critical Deficit",
+          "observed_gap": "Required by Job Description, but absent from candidate's resume.",
+          "rag_standard": "Defensive DTO input validation with global @ControllerAdvice error interceptors."
+        },
+        {
+          "skill_name": "Unit & Integration Testing (JUnit/Mockito)",
+          "deficit_type": "Missing from Resume (Skill Gap)",
+          "severity": "Critical Deficit",
+          "observed_gap": "Required by Job Description, but absent from candidate's resume.",
+          "rag_standard": "JUnit and Mockito test coverage validating edge inputs, repository queries, and service logic."
+        },
+        {
+          "skill_name": "APIs & Model Serving",
+          "deficit_type": "Missing from Resume (Skill Gap)",
+          "severity": "Critical Deficit",
+          "observed_gap": "Required by Job Description, but absent from candidate's resume.",
+          "rag_standard": "Model exposed through REST API with input schema validation, status codes, and defensive error handling."
+        },
+        {
+          "skill_name": "Deployment & Basic Monitoring",
+          "deficit_type": "Missing from Resume (Skill Gap)",
+          "severity": "Critical Deficit",
+          "observed_gap": "Required by Job Description, but absent from candidate's resume.",
+          "rag_standard": "Multi-stage Docker containerization with reproducible runtime environment and health probes."
+        },
+        {
+          "skill_name": "Data Cleaning & Quality Validation",
+          "deficit_type": "Missing from Resume (Skill Gap)",
+          "severity": "Critical Deficit",
+          "observed_gap": "Required by Job Description, but absent from candidate's resume.",
+          "rag_standard": "Documented cleaning rules handling nulls/duplicates, validating data types and boundary constraints."
+        }
+      ],
+      "prescribed_bootcamp_modules": [
+        "Automated Pytest & Mock Fixtures Intensive Workshop",
+        "Defensive REST APIs & Pydantic Validation Lab"
+      ],
+      "generated_at": "2026-10-17 04:47 UTC",
+      "candidate_id": null,
+      "github_url": "https://github.com/KARUNAMBIKASENTHIL",
+      "job_description": "Target Role: Java Backend Developer (from CareerLens RAG Knowledge Base)\r\nRole Purpose: Design and implement server-side applications, APIs, business logic, data access, and reliable integrations.\r\n\r\nRequired Competency Standards:\r\n1. Java syntax, collections, exception hierarchies, and object-oriented design.\r\n2. Data structures and algorithmic problem solving.\r\n3. SQL and relational database fundamentals (schema design, ACID transactions, queries).\r\n4. HTTP protocol, REST API design, status codes, and JSON serialization.\r\n5. Spring Boot framework fundamentals and layered architecture (Controller -> Service -> Repository).\r\n6. Defensive request validation, global error handling, and security basics.\r\n7. Unit and integration testing (JUnit, Mockito).\r\n8. Git version control, configuration management outside source code, logging, and deployment.",
+      "timestamp": "2026-10-17T04:47:59.947548",
+      "_id": "14849fa1-592f-47ed-aea3-354e68af9584",
+      "created_at": "2026-10-17T04:47:59.947592"
+    },
+    {
+      "report_id": "audit-cfb25381",
+      "candidate_name": "Karunambika S",
+      "candidate_email": "KARUNAMBIKASENTHIL@github.com",
+      "target_job_title": "Machine Learning Engineer",
+      "overall_readiness_score": 8,
+      "keyword_match_score": 8,
+      "gap_differential": 0,
+      "summary_headline": "Candidate demonstrates 8% verified proof-of-work readiness against the required Job Description (Word match is 8%).",
+      "placement_verdict": "NOT PLACEMENT READY (Critical Evidence Deficit)",
+      "placement_recommendation": "Candidate relies heavily on unverified resume claims with insufficient repository proof of work. Immediate remediation required.",
+      "total_jd_competencies": 12,
+      "verified_skills_count": 1,
+      "lagging_skills_count": 11,
+      "verified_skills": [
+        {
+          "skill_name": "Automated Testing, Version Control & Docs",
+          "status": "Verified with Code & Repository Artifacts",
+          "evidence_snippet": "# Project: ProofPath\n# Language: TypeScript\n# URL: https://github.com/KARUNAMBIKASENTHIL/ProofPath Demonstrated in extracted repository 'ProofPath'. Public repo with 0 stars",
+          "source_ref": "https://github.com/KARUNAMBIKASENTHIL/ProofPath",
+          "project_name": "ProofPath",
+          "rag_standard": "Automated pytest suite testing inference behavior, git branch hygiene, and reproducible README."
+        }
+      ],
+      "unverified_claims": [],
+      "lagging_areas": [
+        {
+          "skill_name": "Python Programming & Code Organization",
+          "deficit_type": "Missing from Resume (Skill Gap)",
+          "severity": "Critical Deficit",
+          "observed_gap": "Required by Job Description, but absent from candidate's resume.",
+          "rag_standard": "Modular Python repository with clear functions/classes, type hints, and PEP8 compliance."
+        },
+        {
+          "skill_name": "Data Preparation & Exploratory Analysis",
+          "deficit_type": "Missing from Resume (Skill Gap)",
+          "severity": "Critical Deficit",
+          "observed_gap": "Required by Job Description, but absent from candidate's resume.",
+          "rag_standard": "Data-cleaning pipeline with documented train/val/test split strategy and handling of missing values."
+        },
+        {
+          "skill_name": "Model Training, Validation & Evaluation",
+          "deficit_type": "Missing from Resume (Skill Gap)",
+          "severity": "Critical Deficit",
+          "observed_gap": "Required by Job Description, but absent from candidate's resume.",
+          "rag_standard": "Baseline model compared against justified alternatives; metrics explained in context without naive accuracy reliance."
+        },
+        {
+          "skill_name": "Experiment Reproducibility & Leakage Prevention",
+          "deficit_type": "Missing from Resume (Skill Gap)",
+          "severity": "Critical Deficit",
+          "observed_gap": "Required by Job Description, but absent from candidate's resume.",
+          "rag_standard": "Leakage-free Scikit-Learn Pipelines with held-out test splits and seed locking."
+        },
+        {
+          "skill_name": "APIs & Model Serving",
+          "deficit_type": "Missing from Resume (Skill Gap)",
+          "severity": "Critical Deficit",
+          "observed_gap": "Required by Job Description, but absent from candidate's resume.",
+          "rag_standard": "Model exposed through REST API with input schema validation, status codes, and defensive error handling."
+        },
+        {
+          "skill_name": "Deployment & Basic Monitoring",
+          "deficit_type": "Missing from Resume (Skill Gap)",
+          "severity": "Critical Deficit",
+          "observed_gap": "Required by Job Description, but absent from candidate's resume.",
+          "rag_standard": "Multi-stage Docker containerization with reproducible runtime environment and health probes."
+        },
+        {
+          "skill_name": "Spring Boot & RESTful Microservices",
+          "deficit_type": "Missing from Resume (Skill Gap)",
+          "severity": "Critical Deficit",
+          "observed_gap": "Required by Job Description, but absent from candidate's resume.",
+          "rag_standard": "Spring Boot RESTful microservices with layered architecture (Controller -> Service -> Repository)."
+        },
+        {
+          "skill_name": "Defensive Validation & Exception Handling",
+          "deficit_type": "Missing from Resume (Skill Gap)",
+          "severity": "Critical Deficit",
+          "observed_gap": "Required by Job Description, but absent from candidate's resume.",
+          "rag_standard": "Defensive DTO input validation with global @ControllerAdvice error interceptors."
+        },
+        {
+          "skill_name": "Unit & Integration Testing (JUnit/Mockito)",
+          "deficit_type": "Missing from Resume (Skill Gap)",
+          "severity": "Critical Deficit",
+          "observed_gap": "Required by Job Description, but absent from candidate's resume.",
+          "rag_standard": "JUnit and Mockito test coverage validating edge inputs, repository queries, and service logic."
+        },
+        {
+          "skill_name": "Data Cleaning & Quality Validation",
+          "deficit_type": "Missing from Resume (Skill Gap)",
+          "severity": "Critical Deficit",
+          "observed_gap": "Required by Job Description, but absent from candidate's resume.",
+          "rag_standard": "Documented cleaning rules handling nulls/duplicates, validating data types and boundary constraints."
+        },
+        {
+          "skill_name": "Descriptive Statistics & Business Interpretation",
+          "deficit_type": "Missing from Resume (Skill Gap)",
+          "severity": "Critical Deficit",
+          "observed_gap": "Required by Job Description, but absent from candidate's resume.",
+          "rag_standard": "Rigorous statistical analysis distinguishing correlation from causation with clear executive takeaway notes."
+        }
+      ],
+      "prescribed_bootcamp_modules": [
+        "Automated Pytest & Mock Fixtures Intensive Workshop",
+        "Defensive REST APIs & Pydantic Validation Lab"
+      ],
+      "generated_at": "2026-10-17 04:48 UTC",
+      "candidate_id": null,
+      "github_url": "https://github.com/KARUNAMBIKASENTHIL",
+      "job_description": "Target Role: Machine Learning Engineer (from CareerLens RAG Knowledge Base)\r\nRole Purpose: Build, evaluate, package, deploy, and monitor machine-learning systems.\r\n\r\nRequired Competency Standards:\r\n1. Python programming, code organization, clean functions/classes, and type hints.\r\n2. Data preparation, exploratory analysis, and data-quality checks.\r\n3. Statistics and machine-learning algorithm fundamentals.\r\n4. Model training, validation, baseline comparison, and evaluation beyond naive accuracy.\r\n5. Experiment reproducibility and strict train/test data leakage prevention.\r\n6. APIs and model serving (FastAPI/Flask) with input validation and error handling.\r\n7. Automated testing (pytest), version control (Git), and documentation.\r\n8. Containerization (Docker), deployment, and basic monitoring.",
+      "timestamp": "2026-10-17T04:48:32.967368",
+      "_id": "b74f1068-58ac-4f05-b8da-e320f55b2ba4",
+      "created_at": "2026-10-17T04:48:32.967418"
+    },
+    {
+      "report_id": "audit-b9f32d52",
+      "candidate_name": "Karunambika S FlowCV Resume 2026-07-19",
+      "candidate_email": "KARUNAMBIKASENTHIL@github.com",
+      "target_job_title": "Java Backend Developer",
+      "overall_readiness_score": 40,
+      "keyword_match_score": 40,
+      "gap_differential": 0,
+      "summary_headline": "Candidate demonstrates 40% verified proof-of-work readiness against the required Job Description (Word match is 40%).",
+      "placement_verdict": "CONDITIONAL (Pre-Placement Bootcamp Prescribed)",
+      "placement_recommendation": "Candidate has foundational programming knowledge, but lags behind in production engineering (SQL & Relational Database Persistence, Defensive Validation & Exception Handling). Mandate a 2-week intensive bootcamp before placement shortlisting.",
+      "total_jd_competencies": 10,
+      "verified_skills_count": 4,
+      "lagging_skills_count": 6,
+      "verified_skills": [
+        {
+          "skill_name": "Java Syntax, OOP & Collections",
+          "status": "Verified with Code & Repository Artifacts",
+          "evidence_snippet": "# Project: Alumni-Management-Portal\n# Language: JavaScript\n# URL: https://github.com/KARUNAMBIKASENTHIL/Alumni-Management-Portal Demonstrated in extracted repository 'Alumni-Management-Portal'. Public repo with 0 stars",
+          "source_ref": "https://github.com/KARUNAMBIKASENTHIL/Alumni-Management-Portal",
+          "project_name": "Alumni-Management-Portal",
+          "rag_standard": "Modern Java syntax, separation of concerns, collections framework, and clean OOP class hierarchy."
+        },
+        {
+          "skill_name": "Spring Boot & RESTful Microservices",
+          "status": "Verified from Candidate Resume",
+          "evidence_snippet": "student with a strong interest in Full Stack",
+          "source_ref": "Candidate Resume Submission",
+          "project_name": "Resume Experience & Projects",
+          "rag_standard": "Spring Boot RESTful microservices with layered architecture (Controller -> Service -> Repository)."
+        },
+        {
+          "skill_name": "Automated Testing, Version Control & Docs",
+          "status": "Verified with Code & Repository Artifacts",
+          "evidence_snippet": "# Project: ProofPath\n# Language: TypeScript\n# URL: https://github.com/KARUNAMBIKASENTHIL/ProofPath Demonstrated in extracted repository 'ProofPath'. Public repo with 0 stars",
+          "source_ref": "https://github.com/KARUNAMBIKASENTHIL/ProofPath",
+          "project_name": "ProofPath",
+          "rag_standard": "Automated pytest suite testing inference behavior, git branch hygiene, and reproducible README."
+        },
+        {
+          "skill_name": "SQL Querying, Aggregation & Window Functions",
+          "status": "Verified with Code & Repository Artifacts",
+          "evidence_snippet": "# Project: ProofPath\n# Language: TypeScript\n# URL: https://github.com/KARUNAMBIKASENTHIL/ProofPath Demonstrated in extracted repository 'ProofPath'. Public repo with 0 stars",
+          "source_ref": "https://github.com/KARUNAMBIKASENTHIL/ProofPath",
+          "project_name": "ProofPath",
+          "rag_standard": "Complex SQL queries answering concrete business questions with joins, CTEs, and window functions."
+        }
+      ],
+      "unverified_claims": [
+        {
+          "skill_name": "Spring Boot & RESTful Microservices",
+          "resume_claim": "Listed on candidate resume",
+          "proof_status": "PENDING CODE DEFENSE",
+          "explanation": "Candidate lists 'Spring Boot & RESTful Microservices' in resume text. Further code repository commits recommended for deep verification.",
+          "severity": "MODERATE"
+        }
+      ],
+      "lagging_areas": [
+        {
+          "skill_name": "SQL & Relational Database Persistence",
+          "deficit_type": "Missing from Resume (Skill Gap)",
+          "severity": "Critical Deficit",
+          "observed_gap": "Required by Job Description, but absent from candidate's resume.",
+          "rag_standard": "Database schema modeling with ACID guarantees, JPA/Hibernate queries, and migration discipline."
+        },
+        {
+          "skill_name": "Defensive Validation & Exception Handling",
+          "deficit_type": "Missing from Resume (Skill Gap)",
+          "severity": "Critical Deficit",
+          "observed_gap": "Required by Job Description, but absent from candidate's resume.",
+          "rag_standard": "Defensive DTO input validation with global @ControllerAdvice error interceptors."
+        },
+        {
+          "skill_name": "Unit & Integration Testing (JUnit/Mockito)",
+          "deficit_type": "Missing from Resume (Skill Gap)",
+          "severity": "Critical Deficit",
+          "observed_gap": "Required by Job Description, but absent from candidate's resume.",
+          "rag_standard": "JUnit and Mockito test coverage validating edge inputs, repository queries, and service logic."
+        },
+        {
+          "skill_name": "APIs & Model Serving",
+          "deficit_type": "Missing from Resume (Skill Gap)",
+          "severity": "Critical Deficit",
+          "observed_gap": "Required by Job Description, but absent from candidate's resume.",
+          "rag_standard": "Model exposed through REST API with input schema validation, status codes, and defensive error handling."
+        },
+        {
+          "skill_name": "Deployment & Basic Monitoring",
+          "deficit_type": "Missing from Resume (Skill Gap)",
+          "severity": "Critical Deficit",
+          "observed_gap": "Required by Job Description, but absent from candidate's resume.",
+          "rag_standard": "Multi-stage Docker containerization with reproducible runtime environment and health probes."
+        },
+        {
+          "skill_name": "Data Cleaning & Quality Validation",
+          "deficit_type": "Missing from Resume (Skill Gap)",
+          "severity": "Critical Deficit",
+          "observed_gap": "Required by Job Description, but absent from candidate's resume.",
+          "rag_standard": "Documented cleaning rules handling nulls/duplicates, validating data types and boundary constraints."
+        }
+      ],
+      "prescribed_bootcamp_modules": [
+        "Automated Pytest & Mock Fixtures Intensive Workshop",
+        "Defensive REST APIs & Pydantic Validation Lab"
+      ],
+      "generated_at": "2026-10-17 04:58 UTC",
+      "candidate_id": null,
+      "github_url": "https://github.com/KARUNAMBIKASENTHIL",
+      "job_description": "Target Role: Java Backend Developer (from CareerLens RAG Knowledge Base)\r\nRole Purpose: Design and implement server-side applications, APIs, business logic, data access, and reliable integrations.\r\n\r\nRequired Competency Standards:\r\n1. Java syntax, collections, exception hierarchies, and object-oriented design.\r\n2. Data structures and algorithmic problem solving.\r\n3. SQL and relational database fundamentals (schema design, ACID transactions, queries).\r\n4. HTTP protocol, REST API design, status codes, and JSON serialization.\r\n5. Spring Boot framework fundamentals and layered architecture (Controller -> Service -> Repository).\r\n6. Defensive request validation, global error handling, and security basics.\r\n7. Unit and integration testing (JUnit, Mockito).\r\n8. Git version control, configuration management outside source code, logging, and deployment.",
+      "timestamp": "2026-10-17T04:58:13.119135",
+      "_id": "6503ef21-b4ec-455f-8015-c0c036b941c5",
+      "created_at": "2026-10-17T04:58:13.119183"
     }
   ],
-  "ats_resumes": [],
+  "ats_resumes": [
+    {
+      "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
+      "id": "057ace10-4268-4f18-a4a5-379c8dc75a5a",
+      "target_role": "Data Analyst",
+      "created_at": "2026-10-17T04:46:00.544011",
+      "contact": {
+        "full_name": "harini",
+        "title": "Data Analyst",
+        "email": "karunambikakannan@gmail.com",
+        "phone": "+91 98765 43210",
+        "location": "Chennai / Coimbatore, India",
+        "github": "https://github.com/KARUNAMBIKASENTHIL",
+        "leetcode": "https://leetcode.com/u/KARUNAMBIKA_18",
+        "linkedin": "www.linkedin.com/in/karunambikas"
+      },
+      "summary": "Results-driven and innovative Data Analyst with strong engineering foundations demonstrated across 12+ open-source repositories and 100+ algorithmic problem-solving benchmarks. Proven ability to architect robust, scalable software architectures, engineer modern web & AI applications, and translate complex product requirements into high-performance, maintainable code. Committed to clean design patterns, rigorous automated testing, and continuous deployment excellence.",
+      "skills": {
+        "Languages": [
+          "JavaScript",
+          "CSS",
+          "Jupyter Notebook",
+          "TypeScript",
+          "Python",
+          "SQL"
+        ],
+        "Frameworks & Libraries": [
+          "PyTorch",
+          "TensorFlow / Keras",
+          "scikit-learn",
+          "FastAPI",
+          "Pandas & NumPy",
+          "OpenCV"
+        ],
+        "Databases & Cloud / DevOps": [
+          "PostgreSQL",
+          "MongoDB",
+          "Redis",
+          "Docker",
+          "AWS (EC2/S3)",
+          "Git / GitHub Actions"
+        ],
+        "Core Competencies & Tools": [
+          "Deep Learning & Computer Vision",
+          "Data Structures & Algorithms (DSA)",
+          "Object-Oriented Programming (OOP)",
+          "System Design & Scalability",
+          "RESTful API Architecture",
+          "Agile / Scrum Collaboration",
+          "Automated Testing (PyTest / Jest)"
+        ]
+      },
+      "problem_solving": {
+        "platform": "LeetCode",
+        "username": "KARUNAMBIKA_18",
+        "profile_url": "https://leetcode.com/u/KARUNAMBIKA_18",
+        "total_solved": 100,
+        "easy": 74,
+        "medium": 20,
+        "hard": 6,
+        "ranking": 1703246,
+        "acceptance_rate": "67.8%",
+        "bullets": [
+          "Successfully solved 100+ algorithmic challenges on LeetCode spanning Arrays, Two Pointers, Dynamic Programming, and Graph Theory.",
+          "Consistently engineered optimal O(N) time and O(1) space complexity algorithms adhering to industry standard Big-O constraints.",
+          "Active competitor in weekly algorithmic contests with rigorous mastery over data structure trade-offs."
+        ]
+      },
+      "projects": [
+        {
+          "name": "Proofpath System",
+          "repo_name": "ProofPath",
+          "repo_url": "https://github.com/KARUNAMBIKASENTHIL/ProofPath",
+          "technologies": [
+            "TypeScript",
+            "Git",
+            "REST APIs"
+          ],
+          "bullets": [
+            "Architected an end-to-end Proofpath implementation using TypeScript, establishing modular code organization and 99%+ execution stability.",
+            "Implemented structured data handling, automated validation, and clean interface boundaries to ensure high scalability.",
+            "Maintained comprehensive version control discipline on GitHub with clear documentation and test workflows."
+          ]
+        },
+        {
+          "name": "Queryypilot System",
+          "repo_name": "QueryyPilot",
+          "repo_url": "https://github.com/KARUNAMBIKASENTHIL/QueryyPilot",
+          "technologies": [
+            "Python / TypeScript",
+            "Git",
+            "REST APIs"
+          ],
+          "bullets": [
+            "Architected an end-to-end Queryypilot implementation using Python / TypeScript, establishing modular code organization and 99%+ execution stability.",
+            "Implemented structured data handling, automated validation, and clean interface boundaries to ensure high scalability.",
+            "Maintained comprehensive version control discipline on GitHub with clear documentation and test workflows."
+          ]
+        },
+        {
+          "name": "Real-Time Cryptocurrency Analytics & Market Intelligence Platform",
+          "repo_name": "CRYPTO",
+          "repo_url": "https://github.com/KARUNAMBIKASENTHIL/CRYPTO",
+          "technologies": [
+            "TypeScript",
+            "React",
+            "WebSocket",
+            "Chart.js",
+            "CoinGecko API"
+          ],
+          "bullets": [
+            "Constructed a high-throughput cryptocurrency market tracker streaming real-time candlestick charts and order book telemetry via WebSocket feeds.",
+            "Engineered portfolio valuation and risk-volatility analytics calculators with sub-second recalculation loops.",
+            "Integrated persistent local cache management for uninterrupted offline portfolio inspection."
+          ]
+        },
+        {
+          "name": "Edulink System",
+          "repo_name": "EduLink",
+          "repo_url": "https://github.com/KARUNAMBIKASENTHIL/EduLink",
+          "technologies": [
+            "Python / TypeScript",
+            "Git",
+            "REST APIs"
+          ],
+          "bullets": [
+            "Architected an end-to-end Edulink implementation using Python / TypeScript, establishing modular code organization and 99%+ execution stability.",
+            "Implemented structured data handling, automated validation, and clean interface boundaries to ensure high scalability.",
+            "Maintained comprehensive version control discipline on GitHub with clear documentation and test workflows."
+          ]
+        }
+      ],
+      "experience": [
+        {
+          "role": "Data Analyst Intern / Contributor",
+          "organization": "Open Source & Engineering Labs",
+          "duration": "2024 - Present",
+          "bullets": [
+            "Engineered modular features across 5+ collaborative repositories, conducting code reviews and maintaining continuous integration stability.",
+            "Collaborated on designing REST API specifications and relational database schemas to streamline client-server data flow.",
+            "Refactored legacy routines to optimize performance, cutting runtime execution overhead by 22%."
+          ]
+        }
+      ],
+      "education": [
+        {
+          "degree": "Bachelor of Engineering in Computer Science & Engineering",
+          "institution": "Anna University Affiliated Engineering College",
+          "year": "2022 - 2026",
+          "grade": "8.75 CGPA",
+          "coursework": "Data Structures, Database Management Systems, Operating Systems, Machine Learning, Computer Networks"
+        }
+      ],
+      "ats_score": {
+        "overall_score": 96,
+        "format_score": 100,
+        "keyword_match_score": 95,
+        "action_verb_score": 98,
+        "metrics_density_score": 92,
+        "strengths": [
+          "100% Single-column layout: Perfect compatibility with Taleo, Workday & Greenhouse ATS parsers.",
+          "STAR method bullet points: Every project entry begins with strong action verbs (Architected, Engineered, Implemented).",
+          "Triple-profile verification: Direct live links to GitHub (KARUNAMBIKASENTHIL), LeetCode (KARUNAMBIKA_18), and LinkedIn.",
+          "Target role keyword density: Highly aligned with industry expectations for Data Analyst.",
+          "Quantifiable metrics: Contains percentages, latency metrics, and user benchmarks across all project entries."
+        ],
+        "ats_checks": [
+          {
+            "name": "Standard Section Headings",
+            "status": "Passed",
+            "detail": "All headings match standard ATS parse dictionaries."
+          },
+          {
+            "name": "No Table / Column Traps",
+            "status": "Passed",
+            "detail": "Clean linear layout guarantees zero text collision in ATS OCR."
+          },
+          {
+            "name": "Keyword Alignment",
+            "status": "Passed",
+            "detail": "Matched 18+ high-intent keywords for Data Analyst."
+          },
+          {
+            "name": "Action Verb Density",
+            "status": "Passed",
+            "detail": "Over 90% of bullets start with impactful technical power verbs."
+          },
+          {
+            "name": "Contact Data Hygiene",
+            "status": "Passed",
+            "detail": "Standard email, phone, location, and valid URL formats."
+          }
+        ]
+      },
+      "extracted_profiles": {
+        "github": {
+          "url": "https://github.com/KARUNAMBIKASENTHIL",
+          "repos_found": 12,
+          "top_languages": [
+            "JavaScript",
+            "CSS",
+            "Jupyter Notebook",
+            "TypeScript"
+          ]
+        },
+        "leetcode": {
+          "url": "https://leetcode.com/u/KARUNAMBIKA_18",
+          "solved": 100,
+          "rank": 1703246
+        },
+        "linkedin": {
+          "url": "www.linkedin.com/in/karunambikas"
+        }
+      },
+      "plain_text_ats": "HARINI\nkarunambikakannan@gmail.com | +91 98765 43210 | Chennai / Coimbatore, India\nwww.linkedin.com/in/karunambikas | https://github.com/KARUNAMBIKASENTHIL | https://leetcode.com/u/KARUNAMBIKA_18\n\nPROFESSIONAL SUMMARY\n----------------------------------------\nResults-driven and innovative Data Analyst with strong engineering foundations demonstrated across 12+ open-source repositories and 100+ algorithmic problem-solving benchmarks. Proven ability to architect robust, scalable software architectures, engineer modern web & AI applications, and translate complex product requirements into high-performance, maintainable code. Committed to clean design patterns, rigorous automated testing, and continuous deployment excellence.\n\nTECHNICAL SKILLS\n----------------------------------------\nLanguages: JavaScript, CSS, Jupyter Notebook, TypeScript, Python, SQL\nFrameworks & Libraries: PyTorch, TensorFlow / Keras, scikit-learn, FastAPI, Pandas & NumPy, OpenCV\nDatabases & Cloud / DevOps: PostgreSQL, MongoDB, Redis, Docker, AWS (EC2/S3), Git / GitHub Actions\nCore Competencies & Tools: Deep Learning & Computer Vision, Data Structures & Algorithms (DSA), Object-Oriented Programming (OOP), System Design & Scalability, RESTful API Architecture, Agile / Scrum Collaboration, Automated Testing (PyTest / Jest)\n\nPROBLEM SOLVING & ALGORITHMIC PROFICIENCY\n----------------------------------------\nLeetCode: 100+ Problems Solved (74 Easy, 20 Medium, 6 Hard) | Global Rank: Top 1,703,246\n* Successfully solved 100+ algorithmic challenges on LeetCode spanning Arrays, Two Pointers, Dynamic Programming, and Graph Theory.\n* Consistently engineered optimal O(N) time and O(1) space complexity algorithms adhering to industry standard Big-O constraints.\n* Active competitor in weekly algorithmic contests with rigorous mastery over data structure trade-offs.\n\nTECHNICAL PROJECTS\n----------------------------------------\nProofpath System | Technologies: TypeScript, Git, REST APIs\nSource Code: https://github.com/KARUNAMBIKASENTHIL/ProofPath\n* Architected an end-to-end Proofpath implementation using TypeScript, establishing modular code organization and 99%+ execution stability.\n* Implemented structured data handling, automated validation, and clean interface boundaries to ensure high scalability.\n* Maintained comprehensive version control discipline on GitHub with clear documentation and test workflows.\n\nQueryypilot System | Technologies: Python / TypeScript, Git, REST APIs\nSource Code: https://github.com/KARUNAMBIKASENTHIL/QueryyPilot\n* Architected an end-to-end Queryypilot implementation using Python / TypeScript, establishing modular code organization and 99%+ execution stability.\n* Implemented structured data handling, automated validation, and clean interface boundaries to ensure high scalability.\n* Maintained comprehensive version control discipline on GitHub with clear documentation and test workflows.\n\nReal-Time Cryptocurrency Analytics & Market Intelligence Platform | Technologies: TypeScript, React, WebSocket, Chart.js, CoinGecko API\nSource Code: https://github.com/KARUNAMBIKASENTHIL/CRYPTO\n* Constructed a high-throughput cryptocurrency market tracker streaming real-time candlestick charts and order book telemetry via WebSocket feeds.\n* Engineered portfolio valuation and risk-volatility analytics calculators with sub-second recalculation loops.\n* Integrated persistent local cache management for uninterrupted offline portfolio inspection.\n\nEdulink System | Technologies: Python / TypeScript, Git, REST APIs\nSource Code: https://github.com/KARUNAMBIKASENTHIL/EduLink\n* Architected an end-to-end Edulink implementation using Python / TypeScript, establishing modular code organization and 99%+ execution stability.\n* Implemented structured data handling, automated validation, and clean interface boundaries to ensure high scalability.\n* Maintained comprehensive version control discipline on GitHub with clear documentation and test workflows.\n\nEXPERIENCE & LEADERSHIP\n----------------------------------------\nData Analyst Intern / Contributor - Open Source & Engineering Labs (2024 - Present)\n* Engineered modular features across 5+ collaborative repositories, conducting code reviews and maintaining continuous integration stability.\n* Collaborated on designing REST API specifications and relational database schemas to streamline client-server data flow.\n* Refactored legacy routines to optimize performance, cutting runtime execution overhead by 22%.\n\nEDUCATION\n----------------------------------------\nBachelor of Engineering in Computer Science & Engineering\nAnna University Affiliated Engineering College | 2022 - 2026 | GPA / Performance: 8.75 CGPA\n",
+      "_id": "5e87adaa-35bd-41a2-af9c-f46a9fa4b70c",
+      "updated_at": "2026-10-17T04:56:55.073200"
+    }
+  ],
   "resumes": [
     {
       "_id": "fc66df79-b01d-436e-b37b-0f91cea883ef",
@@ -4569,6 +5919,272 @@
       },
       "ambiguities": [],
       "created_at": "2026-10-17T04:24:47.758452"
+    },
+    {
+      "_id": "09b736cf-81f9-45a2-b9d7-2a705b72a60d",
+      "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
+      "original_filename": "Karunambika_S_FlowCV_Resume_2026-07-19.pdf",
+      "stored_path": "C:\\projects\\CAREERLIFT\\backend\\data\\uploads\\09b736cf-81f9-45a2-b9d7-2a705b72a60d_Karunambika_S_FlowCV_Resume_2026-07-19.pdf",
+      "status": "Processed",
+      "raw_text_length": 2396,
+      "pages_count": 1,
+      "extracted_skills": [
+        {
+          "raw_term": "python",
+          "normalized_name": "Python Programming",
+          "page_number": 1,
+          "text_snippet": "...Technical Skills Programming Languages Java, C, JavaScript, Python Backend NodeJs, ExpressJs Tool Git, Github, Vs Code Databas..."
+        },
+        {
+          "raw_term": "machine learning",
+          "normalized_name": "Machine Learning Algorithms & Training",
+          "page_number": 1,
+          "text_snippet": "...student with a strong interest in Full Stack  Development, Machine Learning, Deep Learning.  Skilled in Basic programming, web developm..."
+        },
+        {
+          "raw_term": "numpy",
+          "normalized_name": "Data Wrangling & Pipeline Engineering",
+          "page_number": 1,
+          "text_snippet": "...on using Streamlit. Tech Stack: Python, PyTorch, Streamlit, NumPy,  Torchvision Education Bachelor of Technology in Artificia..."
+        },
+        {
+          "raw_term": "git",
+          "normalized_name": "Git Version Control & Documentation",
+          "page_number": 1,
+          "text_snippet": "...Java, C, JavaScript, Python Backend NodeJs, ExpressJs Tool Git, Github, Vs Code Databases MongoDB Frontend HTML, CSS, Reac..."
+        },
+        {
+          "raw_term": "java",
+          "normalized_name": "Core Java & OOP",
+          "page_number": 1,
+          "text_snippet": "...onsive applications. Technical Skills Programming Languages Java, C, JavaScript, Python Backend NodeJs, ExpressJs Tool Git,..."
+        },
+        {
+          "raw_term": "react",
+          "normalized_name": "React Frontend Architecture",
+          "page_number": 1,
+          "text_snippet": "...Git, Github, Vs Code Databases MongoDB Frontend HTML, CSS, React.js Soft Skills \u2022Problem Solving \u2022Communication \u2022Team Work \u2022..."
+        },
+        {
+          "raw_term": "typescript",
+          "normalized_name": "TypeScript & Type Safety",
+          "page_number": 1,
+          "text_snippet": "...using Leaflet for  geospatial tracking. Tech stack: React, TypeScript, Node.js, Express.js,  MongoDB Pneumonia Detection AI \u2022Deve..."
+        },
+        {
+          "raw_term": "javascript",
+          "normalized_name": "JavaScript & Modern Web",
+          "page_number": 1,
+          "text_snippet": "...plications. Technical Skills Programming Languages Java, C, JavaScript, Python Backend NodeJs, ExpressJs Tool Git, Github, Vs Code..."
+        },
+        {
+          "raw_term": "node",
+          "normalized_name": "Node.js & Express Architecture",
+          "page_number": 1,
+          "text_snippet": "...et for  geospatial tracking. Tech stack: React, TypeScript, Node.js, Express.js,  MongoDB Pneumonia Detection AI \u2022Developed..."
+        },
+        {
+          "raw_term": "mongodb",
+          "normalized_name": "NoSQL Databases & MongoDB",
+          "page_number": 1,
+          "text_snippet": "...ckend NodeJs, ExpressJs Tool Git, Github, Vs Code Databases MongoDB Frontend HTML, CSS, React.js Soft Skills \u2022Problem Solving \u2022..."
+        },
+        {
+          "raw_term": "leaflet",
+          "normalized_name": "Geospatial & Interactive Mapping",
+          "page_number": 1,
+          "text_snippet": "...apid medical assistance. \u2022Integrated interactive maps using Leaflet for  geospatial tracking. Tech stack: React, TypeScript, No..."
+        },
+        {
+          "raw_term": "c",
+          "normalized_name": "Systems Programming in C",
+          "page_number": 1,
+          "text_snippet": "...applications. Technical Skills Programming Languages Java, C, JavaScript, Python Backend NodeJs, ExpressJs Tool Git, Git..."
+        },
+        {
+          "raw_term": "html",
+          "normalized_name": "HTML5 & Semantic Web",
+          "page_number": 1,
+          "text_snippet": "...ressJs Tool Git, Github, Vs Code Databases MongoDB Frontend HTML, CSS, React.js Soft Skills \u2022Problem Solving \u2022Communication..."
+        },
+        {
+          "raw_term": "css",
+          "normalized_name": "CSS3 & Responsive Design",
+          "page_number": 1,
+          "text_snippet": "...Tool Git, Github, Vs Code Databases MongoDB Frontend HTML, CSS, React.js Soft Skills \u2022Problem Solving \u2022Communication \u2022Team..."
+        }
+      ],
+      "extracted_projects": [
+        {
+          "title": "MedRoute - Emergency Medical Response Platform",
+          "repo_url": null,
+          "technologies": [
+            "TypeScript",
+            "Node.js",
+            "Express.js",
+            "MongoDB",
+            "Socket.io",
+            "Leaflet",
+            "React"
+          ],
+          "claimed_impact": "Full-stack real-time emergency response platform connecting patients with hospitals and ambulance drivers with live GPS tracking via Socket.io and Leaflet."
+        },
+        {
+          "title": "CampusBridge - Alumni Management Portal",
+          "repo_url": null,
+          "technologies": [
+            "React.js",
+            "Vite",
+            "Express.js",
+            "MongoDB",
+            "Socket.io",
+            "WebSockets"
+          ],
+          "claimed_impact": "Dedicated MERN-stack social platform enabling isolated college networks for student-alumni interaction and professional mentorship."
+        }
+      ],
+      "education": "B.Tech - AI & DS",
+      "detected_links": {
+        "github": null,
+        "github_repos": [],
+        "leetcode": null,
+        "linkedin": null
+      },
+      "ambiguities": [],
+      "created_at": "2026-10-17T04:43:54.298352"
+    },
+    {
+      "_id": "67de9bbb-da61-4c65-8205-bfa776d13917",
+      "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
+      "original_filename": "Karunambika_S_FlowCV_Resume_2026-07-19.pdf",
+      "stored_path": "C:\\projects\\CAREERLIFT\\backend\\data\\uploads\\67de9bbb-da61-4c65-8205-bfa776d13917_Karunambika_S_FlowCV_Resume_2026-07-19.pdf",
+      "status": "Processed",
+      "raw_text_length": 2396,
+      "pages_count": 1,
+      "extracted_skills": [
+        {
+          "raw_term": "python",
+          "normalized_name": "Python Programming",
+          "page_number": 1,
+          "text_snippet": "...Technical Skills Programming Languages Java, C, JavaScript, Python Backend NodeJs, ExpressJs Tool Git, Github, Vs Code Databas..."
+        },
+        {
+          "raw_term": "machine learning",
+          "normalized_name": "Machine Learning Algorithms & Training",
+          "page_number": 1,
+          "text_snippet": "...student with a strong interest in Full Stack  Development, Machine Learning, Deep Learning.  Skilled in Basic programming, web developm..."
+        },
+        {
+          "raw_term": "numpy",
+          "normalized_name": "Data Wrangling & Pipeline Engineering",
+          "page_number": 1,
+          "text_snippet": "...on using Streamlit. Tech Stack: Python, PyTorch, Streamlit, NumPy,  Torchvision Education Bachelor of Technology in Artificia..."
+        },
+        {
+          "raw_term": "git",
+          "normalized_name": "Git Version Control & Documentation",
+          "page_number": 1,
+          "text_snippet": "...Java, C, JavaScript, Python Backend NodeJs, ExpressJs Tool Git, Github, Vs Code Databases MongoDB Frontend HTML, CSS, Reac..."
+        },
+        {
+          "raw_term": "java",
+          "normalized_name": "Core Java & OOP",
+          "page_number": 1,
+          "text_snippet": "...onsive applications. Technical Skills Programming Languages Java, C, JavaScript, Python Backend NodeJs, ExpressJs Tool Git,..."
+        },
+        {
+          "raw_term": "react",
+          "normalized_name": "React Frontend Architecture",
+          "page_number": 1,
+          "text_snippet": "...Git, Github, Vs Code Databases MongoDB Frontend HTML, CSS, React.js Soft Skills \u2022Problem Solving \u2022Communication \u2022Team Work \u2022..."
+        },
+        {
+          "raw_term": "typescript",
+          "normalized_name": "TypeScript & Type Safety",
+          "page_number": 1,
+          "text_snippet": "...using Leaflet for  geospatial tracking. Tech stack: React, TypeScript, Node.js, Express.js,  MongoDB Pneumonia Detection AI \u2022Deve..."
+        },
+        {
+          "raw_term": "javascript",
+          "normalized_name": "JavaScript & Modern Web",
+          "page_number": 1,
+          "text_snippet": "...plications. Technical Skills Programming Languages Java, C, JavaScript, Python Backend NodeJs, ExpressJs Tool Git, Github, Vs Code..."
+        },
+        {
+          "raw_term": "node",
+          "normalized_name": "Node.js & Express Architecture",
+          "page_number": 1,
+          "text_snippet": "...et for  geospatial tracking. Tech stack: React, TypeScript, Node.js, Express.js,  MongoDB Pneumonia Detection AI \u2022Developed..."
+        },
+        {
+          "raw_term": "mongodb",
+          "normalized_name": "NoSQL Databases & MongoDB",
+          "page_number": 1,
+          "text_snippet": "...ckend NodeJs, ExpressJs Tool Git, Github, Vs Code Databases MongoDB Frontend HTML, CSS, React.js Soft Skills \u2022Problem Solving \u2022..."
+        },
+        {
+          "raw_term": "leaflet",
+          "normalized_name": "Geospatial & Interactive Mapping",
+          "page_number": 1,
+          "text_snippet": "...apid medical assistance. \u2022Integrated interactive maps using Leaflet for  geospatial tracking. Tech stack: React, TypeScript, No..."
+        },
+        {
+          "raw_term": "c",
+          "normalized_name": "Systems Programming in C",
+          "page_number": 1,
+          "text_snippet": "...applications. Technical Skills Programming Languages Java, C, JavaScript, Python Backend NodeJs, ExpressJs Tool Git, Git..."
+        },
+        {
+          "raw_term": "html",
+          "normalized_name": "HTML5 & Semantic Web",
+          "page_number": 1,
+          "text_snippet": "...ressJs Tool Git, Github, Vs Code Databases MongoDB Frontend HTML, CSS, React.js Soft Skills \u2022Problem Solving \u2022Communication..."
+        },
+        {
+          "raw_term": "css",
+          "normalized_name": "CSS3 & Responsive Design",
+          "page_number": 1,
+          "text_snippet": "...Tool Git, Github, Vs Code Databases MongoDB Frontend HTML, CSS, React.js Soft Skills \u2022Problem Solving \u2022Communication \u2022Team..."
+        }
+      ],
+      "extracted_projects": [
+        {
+          "title": "MedRoute - Emergency Medical Response Platform",
+          "repo_url": null,
+          "technologies": [
+            "TypeScript",
+            "Node.js",
+            "Express.js",
+            "MongoDB",
+            "Socket.io",
+            "Leaflet",
+            "React"
+          ],
+          "claimed_impact": "Full-stack real-time emergency response platform connecting patients with hospitals and ambulance drivers with live GPS tracking via Socket.io and Leaflet."
+        },
+        {
+          "title": "CampusBridge - Alumni Management Portal",
+          "repo_url": null,
+          "technologies": [
+            "React.js",
+            "Vite",
+            "Express.js",
+            "MongoDB",
+            "Socket.io",
+            "WebSockets"
+          ],
+          "claimed_impact": "Dedicated MERN-stack social platform enabling isolated college networks for student-alumni interaction and professional mentorship."
+        }
+      ],
+      "education": "B.Tech - AI & DS",
+      "detected_links": {
+        "github": null,
+        "github_repos": [],
+        "leetcode": null,
+        "linkedin": null
+      },
+      "ambiguities": [],
+      "created_at": "2026-10-17T04:54:41.135333"
     }
   ],
   "analysis_reports": [
@@ -4945,6 +6561,216 @@
       "methodology_version": "v1.2.0-deterministic",
       "_id": "690fd35b-a6bf-46a1-ba81-03094552596b",
       "created_at": "2026-10-17T04:21:33.475338"
+    },
+    {
+      "id": "c611606a-68dd-4968-b2c5-17ef33516d6d",
+      "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
+      "timestamp": "2026-10-17T04:55:07.719085",
+      "date": "2026-10-17",
+      "resume_version": "KARUNAMBIKA-RESUME.pdf",
+      "sources_available": [
+        "KARUNAMBIKA-RESUME.pdf",
+        "GitHub: KARUNAMBIKASENTHIL",
+        "LeetCode Profile",
+        "LinkedIn Profile",
+        "GitHub Repository",
+        "KARUNAMBIKA-RESUME.pdf",
+        "HARINI_RESUME.pdf",
+        "HARINI_RESUME.pdf",
+        "HARINI_RESUME.pdf",
+        "KARUNAMBIKA-RESUME.pdf",
+        "GitHub Repository",
+        "KARUNAMBIKAS.docx",
+        "Karunambika_S_FlowCV_Resume_2026-07-19.pdf",
+        "Karunambika_S_FlowCV_Resume_2026-07-19.pdf",
+        "Karunambika_S_FlowCV_Resume_2026-07-19.pdf",
+        "LeetCode: KARUNAMBIKA_18",
+        "Karunambika_S_FlowCV_Resume_2026-07-19.pdf",
+        "GitHub Repository"
+      ],
+      "target_role": "mle",
+      "target_role_name": "Machine Learning Engineer",
+      "overall_readiness_score": 54.5,
+      "previous_score": 52.8,
+      "score_delta": 1.7,
+      "category_breakdown": {
+        "Demonstrated Coverage": 0.55,
+        "Evidence Completeness": 62.5,
+        "Assessment Confidence": 73.5
+      },
+      "supported_skills_count": 5,
+      "partially_supported_count": 0,
+      "not_yet_verified_count": 3,
+      "conflicting_count": 0,
+      "skill_evaluations": [
+        {
+          "skill_id": "python",
+          "name": "Python Programming",
+          "category": "Core Programming",
+          "importance_weight": 0.95,
+          "status": "Supported",
+          "coverage_value": 0.85,
+          "confidence": 0.85,
+          "evidence_count": 1,
+          "artifacts": [
+            {
+              "source": "GitHub: GitHub Repository",
+              "observed": "Demonstrated in repository 'GitHub Repository'. Architecture: Standard Script / Flat Layout",
+              "file_path": "https://github.com/KARUNAMBIKASENTHIL",
+              "code_snippet": null
+            }
+          ],
+          "evaluation_reason": "Evaluated across 1 artifact(s). Status: Supported."
+        },
+        {
+          "skill_id": "ml_modeling",
+          "name": "Machine Learning Algorithms & Training",
+          "category": "Modeling",
+          "importance_weight": 0.9,
+          "status": "Supported",
+          "coverage_value": 0.85,
+          "confidence": 0.62,
+          "evidence_count": 2,
+          "artifacts": [
+            {
+              "source": "Resume (Karunambika_S_FlowCV_Resume_2026-07-19.pdf)",
+              "observed": "Extracted from page 1 of resume 'Karunambika_S_FlowCV_Resume_2026-07-19.pdf'. Context: ...applications. Technical Skills Programming Languages Java, C, JavaScript, Python Backend NodeJs, ExpressJs Tool Git, Git... Corroborated by project experience 'MedRoute - Emergency Medical Response Platform'.",
+              "file_path": "Resume: Page 1",
+              "code_snippet": "...applications. Technical Skills Programming Languages Java, C, JavaScript, Python Backend NodeJs, ExpressJs Tool Git, Git..."
+            },
+            {
+              "source": "Resume (Karunambika_S_FlowCV_Resume_2026-07-19.pdf)",
+              "observed": "Extracted from page 1 of resume 'Karunambika_S_FlowCV_Resume_2026-07-19.pdf'. Context: ...student with a strong interest in Full Stack  Development, Machine Learning, Deep Learning.  Skilled in Basic programming, web developm...",
+              "file_path": "Resume: Page 1",
+              "code_snippet": "...student with a strong interest in Full Stack  Development, Machine Learning, Deep Learning.  Skilled in Basic programming, web developm..."
+            }
+          ],
+          "evaluation_reason": "Evaluated across 2 artifact(s). Status: Supported."
+        },
+        {
+          "skill_id": "model_evaluation",
+          "name": "Model Evaluation & Leakage Prevention",
+          "category": "Validation",
+          "importance_weight": 0.85,
+          "status": "Not yet verified",
+          "coverage_value": 0.0,
+          "confidence": 0.0,
+          "evidence_count": 0,
+          "artifacts": [],
+          "evaluation_reason": "No observable evidence found in uploaded resumes or connected repositories for Model Evaluation & Leakage Prevention."
+        },
+        {
+          "skill_id": "api_development",
+          "name": "Model Serving & REST APIs",
+          "category": "Software Engineering",
+          "importance_weight": 0.85,
+          "status": "Not yet verified",
+          "coverage_value": 0.0,
+          "confidence": 0.0,
+          "evidence_count": 0,
+          "artifacts": [],
+          "evaluation_reason": "No observable evidence found in uploaded resumes or connected repositories for Model Serving & REST APIs."
+        },
+        {
+          "skill_id": "testing",
+          "name": "Automated Testing & Code Quality",
+          "category": "Software Engineering",
+          "importance_weight": 0.75,
+          "status": "Strongly supported",
+          "coverage_value": 1.0,
+          "confidence": 0.82,
+          "evidence_count": 2,
+          "artifacts": [
+            {
+              "source": "Resume (Karunambika_S_FlowCV_Resume_2026-07-19.pdf)",
+              "observed": "Extracted from page 1 of resume 'Karunambika_S_FlowCV_Resume_2026-07-19.pdf'. Context: ...applications. Technical Skills Programming Languages Java, C, JavaScript, Python Backend NodeJs, ExpressJs Tool Git, Git... Corroborated by project experience 'MedRoute - Emergency Medical Response Platform'.",
+              "file_path": "Resume: Page 1",
+              "code_snippet": "...applications. Technical Skills Programming Languages Java, C, JavaScript, Python Backend NodeJs, ExpressJs Tool Git, Git..."
+            },
+            {
+              "source": "ATS Profile Extractor (Data Analyst)",
+              "observed": "Verified through GitHub repositories & algorithmic benchmarks for Data Analyst.",
+              "file_path": "https://github.com/KARUNAMBIKASENTHIL",
+              "code_snippet": "Proficiency demonstrated across 12 projects and 100 solved problems."
+            }
+          ],
+          "evaluation_reason": "Evaluated across 2 artifact(s). Status: Strongly supported."
+        },
+        {
+          "skill_id": "deployment",
+          "name": "Containerization & Deployment",
+          "category": "DevOps & MLOps",
+          "importance_weight": 0.8,
+          "status": "Supported",
+          "coverage_value": 0.85,
+          "confidence": 0.75,
+          "evidence_count": 1,
+          "artifacts": [
+            {
+              "source": "Resume (Karunambika_S_FlowCV_Resume_2026-07-19.pdf)",
+              "observed": "Extracted from page 1 of resume 'Karunambika_S_FlowCV_Resume_2026-07-19.pdf'. Context: ...applications. Technical Skills Programming Languages Java, C, JavaScript, Python Backend NodeJs, ExpressJs Tool Git, Git... Corroborated by project experience 'MedRoute - Emergency Medical Response Platform'.",
+              "file_path": "Resume: Page 1",
+              "code_snippet": "...applications. Technical Skills Programming Languages Java, C, JavaScript, Python Backend NodeJs, ExpressJs Tool Git, Git..."
+            }
+          ],
+          "evaluation_reason": "Evaluated across 1 artifact(s). Status: Supported."
+        },
+        {
+          "skill_id": "data_processing",
+          "name": "Data Wrangling & Pipeline Engineering",
+          "category": "Data",
+          "importance_weight": 0.8,
+          "status": "Not yet verified",
+          "coverage_value": 0.0,
+          "confidence": 0.0,
+          "evidence_count": 0,
+          "artifacts": [],
+          "evaluation_reason": "No observable evidence found in uploaded resumes or connected repositories for Data Wrangling & Pipeline Engineering."
+        },
+        {
+          "skill_id": "version_control_docs",
+          "name": "Git Version Control & Documentation",
+          "category": "Engineering Standards",
+          "importance_weight": 0.7,
+          "status": "Supported",
+          "coverage_value": 0.85,
+          "confidence": 0.62,
+          "evidence_count": 2,
+          "artifacts": [
+            {
+              "source": "Resume (Karunambika_S_FlowCV_Resume_2026-07-19.pdf)",
+              "observed": "Extracted from page 1 of resume 'Karunambika_S_FlowCV_Resume_2026-07-19.pdf'. Context: ...Java, C, JavaScript, Python Backend NodeJs, ExpressJs Tool Git, Github, Vs Code Databases MongoDB Frontend HTML, CSS, Reac...",
+              "file_path": "Resume: Page 1",
+              "code_snippet": "...Java, C, JavaScript, Python Backend NodeJs, ExpressJs Tool Git, Github, Vs Code Databases MongoDB Frontend HTML, CSS, Reac..."
+            },
+            {
+              "source": "Resume (Karunambika_S_FlowCV_Resume_2026-07-19.pdf)",
+              "observed": "Extracted from page 1 of resume 'Karunambika_S_FlowCV_Resume_2026-07-19.pdf'. Context: ...applications. Technical Skills Programming Languages Java, C, JavaScript, Python Backend NodeJs, ExpressJs Tool Git, Git... Corroborated by project experience 'MedRoute - Emergency Medical Response Platform'.",
+              "file_path": "Resume: Page 1",
+              "code_snippet": "...applications. Technical Skills Programming Languages Java, C, JavaScript, Python Backend NodeJs, ExpressJs Tool Git, Git..."
+            }
+          ],
+          "evaluation_reason": "Evaluated across 2 artifact(s). Status: Supported."
+        }
+      ],
+      "projects_referenced": [
+        "Proofpath System",
+        "GitHub Repository",
+        "CampusBridge - Alumni Management Portal",
+        "MedRoute - Emergency Medical Response Platform",
+        "Resume Work History"
+      ],
+      "consistency_summary": "Active observation window",
+      "observation_window": "Current Profile",
+      "recommendations": [
+        "Model Evaluation & Leakage Prevention",
+        "Model Serving & REST APIs",
+        "Data Wrangling & Pipeline Engineering"
+      ],
+      "roadmap_version": "v1.0",
+      "methodology_version": "v1.2.0-deterministic",
+      "_id": "021f635d-e2f0-497a-bec3-e3163f23be10",
+      "created_at": "2026-10-17T04:55:07.719218"
     }
   ],
   "assessments": [
@@ -5279,6 +7105,184 @@
       "id": "5fcd61bb-417d-4852-b566-68d5ab8fc0c7",
       "_id": "a7e701e7-f3d2-4d1b-ac45-aeb81b947a85",
       "created_at": "2026-10-17T04:21:33.447806"
+    },
+    {
+      "overall_readiness_score": 54.5,
+      "demonstrated_coverage": 0.55,
+      "evidence_completeness": 62.5,
+      "assessment_confidence": 73.5,
+      "methodology_version": "v1.2.0-deterministic",
+      "role_id": "mle",
+      "role_name": "Machine Learning Engineer",
+      "skill_evaluations": [
+        {
+          "skill_id": "python",
+          "name": "Python Programming",
+          "category": "Core Programming",
+          "importance_weight": 0.95,
+          "status": "Supported",
+          "coverage_value": 0.85,
+          "confidence": 0.85,
+          "evidence_count": 1,
+          "artifacts": [
+            {
+              "source": "GitHub: GitHub Repository",
+              "observed": "Demonstrated in repository 'GitHub Repository'. Architecture: Standard Script / Flat Layout",
+              "file_path": "https://github.com/KARUNAMBIKASENTHIL",
+              "code_snippet": null
+            }
+          ],
+          "evaluation_reason": "Evaluated across 1 artifact(s). Status: Supported."
+        },
+        {
+          "skill_id": "ml_modeling",
+          "name": "Machine Learning Algorithms & Training",
+          "category": "Modeling",
+          "importance_weight": 0.9,
+          "status": "Supported",
+          "coverage_value": 0.85,
+          "confidence": 0.62,
+          "evidence_count": 2,
+          "artifacts": [
+            {
+              "source": "Resume (Karunambika_S_FlowCV_Resume_2026-07-19.pdf)",
+              "observed": "Extracted from page 1 of resume 'Karunambika_S_FlowCV_Resume_2026-07-19.pdf'. Context: ...applications. Technical Skills Programming Languages Java, C, JavaScript, Python Backend NodeJs, ExpressJs Tool Git, Git... Corroborated by project experience 'MedRoute - Emergency Medical Response Platform'.",
+              "file_path": "Resume: Page 1",
+              "code_snippet": "...applications. Technical Skills Programming Languages Java, C, JavaScript, Python Backend NodeJs, ExpressJs Tool Git, Git..."
+            },
+            {
+              "source": "Resume (Karunambika_S_FlowCV_Resume_2026-07-19.pdf)",
+              "observed": "Extracted from page 1 of resume 'Karunambika_S_FlowCV_Resume_2026-07-19.pdf'. Context: ...student with a strong interest in Full Stack  Development, Machine Learning, Deep Learning.  Skilled in Basic programming, web developm...",
+              "file_path": "Resume: Page 1",
+              "code_snippet": "...student with a strong interest in Full Stack  Development, Machine Learning, Deep Learning.  Skilled in Basic programming, web developm..."
+            }
+          ],
+          "evaluation_reason": "Evaluated across 2 artifact(s). Status: Supported."
+        },
+        {
+          "skill_id": "model_evaluation",
+          "name": "Model Evaluation & Leakage Prevention",
+          "category": "Validation",
+          "importance_weight": 0.85,
+          "status": "Not yet verified",
+          "coverage_value": 0.0,
+          "confidence": 0.0,
+          "evidence_count": 0,
+          "artifacts": [],
+          "evaluation_reason": "No observable evidence found in uploaded resumes or connected repositories for Model Evaluation & Leakage Prevention."
+        },
+        {
+          "skill_id": "api_development",
+          "name": "Model Serving & REST APIs",
+          "category": "Software Engineering",
+          "importance_weight": 0.85,
+          "status": "Not yet verified",
+          "coverage_value": 0.0,
+          "confidence": 0.0,
+          "evidence_count": 0,
+          "artifacts": [],
+          "evaluation_reason": "No observable evidence found in uploaded resumes or connected repositories for Model Serving & REST APIs."
+        },
+        {
+          "skill_id": "testing",
+          "name": "Automated Testing & Code Quality",
+          "category": "Software Engineering",
+          "importance_weight": 0.75,
+          "status": "Strongly supported",
+          "coverage_value": 1.0,
+          "confidence": 0.82,
+          "evidence_count": 2,
+          "artifacts": [
+            {
+              "source": "Resume (Karunambika_S_FlowCV_Resume_2026-07-19.pdf)",
+              "observed": "Extracted from page 1 of resume 'Karunambika_S_FlowCV_Resume_2026-07-19.pdf'. Context: ...applications. Technical Skills Programming Languages Java, C, JavaScript, Python Backend NodeJs, ExpressJs Tool Git, Git... Corroborated by project experience 'MedRoute - Emergency Medical Response Platform'.",
+              "file_path": "Resume: Page 1",
+              "code_snippet": "...applications. Technical Skills Programming Languages Java, C, JavaScript, Python Backend NodeJs, ExpressJs Tool Git, Git..."
+            },
+            {
+              "source": "ATS Profile Extractor (Data Analyst)",
+              "observed": "Verified through GitHub repositories & algorithmic benchmarks for Data Analyst.",
+              "file_path": "https://github.com/KARUNAMBIKASENTHIL",
+              "code_snippet": "Proficiency demonstrated across 12 projects and 100 solved problems."
+            }
+          ],
+          "evaluation_reason": "Evaluated across 2 artifact(s). Status: Strongly supported."
+        },
+        {
+          "skill_id": "deployment",
+          "name": "Containerization & Deployment",
+          "category": "DevOps & MLOps",
+          "importance_weight": 0.8,
+          "status": "Supported",
+          "coverage_value": 0.85,
+          "confidence": 0.75,
+          "evidence_count": 1,
+          "artifacts": [
+            {
+              "source": "Resume (Karunambika_S_FlowCV_Resume_2026-07-19.pdf)",
+              "observed": "Extracted from page 1 of resume 'Karunambika_S_FlowCV_Resume_2026-07-19.pdf'. Context: ...applications. Technical Skills Programming Languages Java, C, JavaScript, Python Backend NodeJs, ExpressJs Tool Git, Git... Corroborated by project experience 'MedRoute - Emergency Medical Response Platform'.",
+              "file_path": "Resume: Page 1",
+              "code_snippet": "...applications. Technical Skills Programming Languages Java, C, JavaScript, Python Backend NodeJs, ExpressJs Tool Git, Git..."
+            }
+          ],
+          "evaluation_reason": "Evaluated across 1 artifact(s). Status: Supported."
+        },
+        {
+          "skill_id": "data_processing",
+          "name": "Data Wrangling & Pipeline Engineering",
+          "category": "Data",
+          "importance_weight": 0.8,
+          "status": "Not yet verified",
+          "coverage_value": 0.0,
+          "confidence": 0.0,
+          "evidence_count": 0,
+          "artifacts": [],
+          "evaluation_reason": "No observable evidence found in uploaded resumes or connected repositories for Data Wrangling & Pipeline Engineering."
+        },
+        {
+          "skill_id": "version_control_docs",
+          "name": "Git Version Control & Documentation",
+          "category": "Engineering Standards",
+          "importance_weight": 0.7,
+          "status": "Supported",
+          "coverage_value": 0.85,
+          "confidence": 0.62,
+          "evidence_count": 2,
+          "artifacts": [
+            {
+              "source": "Resume (Karunambika_S_FlowCV_Resume_2026-07-19.pdf)",
+              "observed": "Extracted from page 1 of resume 'Karunambika_S_FlowCV_Resume_2026-07-19.pdf'. Context: ...Java, C, JavaScript, Python Backend NodeJs, ExpressJs Tool Git, Github, Vs Code Databases MongoDB Frontend HTML, CSS, Reac...",
+              "file_path": "Resume: Page 1",
+              "code_snippet": "...Java, C, JavaScript, Python Backend NodeJs, ExpressJs Tool Git, Github, Vs Code Databases MongoDB Frontend HTML, CSS, Reac..."
+            },
+            {
+              "source": "Resume (Karunambika_S_FlowCV_Resume_2026-07-19.pdf)",
+              "observed": "Extracted from page 1 of resume 'Karunambika_S_FlowCV_Resume_2026-07-19.pdf'. Context: ...applications. Technical Skills Programming Languages Java, C, JavaScript, Python Backend NodeJs, ExpressJs Tool Git, Git... Corroborated by project experience 'MedRoute - Emergency Medical Response Platform'.",
+              "file_path": "Resume: Page 1",
+              "code_snippet": "...applications. Technical Skills Programming Languages Java, C, JavaScript, Python Backend NodeJs, ExpressJs Tool Git, Git..."
+            }
+          ],
+          "evaluation_reason": "Evaluated across 2 artifact(s). Status: Supported."
+        }
+      ],
+      "positive_contributors": [
+        "Python Programming (Supported)",
+        "Machine Learning Algorithms & Training (Supported)",
+        "Automated Testing & Code Quality (Strongly supported)",
+        "Containerization & Deployment (Supported)",
+        "Git Version Control & Documentation (Supported)"
+      ],
+      "missing_evidence": [
+        "Model Evaluation & Leakage Prevention",
+        "Model Serving & REST APIs",
+        "Data Wrangling & Pipeline Engineering"
+      ],
+      "formula_explanation": "Deterministic Formula: Score = 100 \u00d7 (\u03a3 w_i \u00d7 c_i) / (\u03a3 w_i). Evaluated 8 competencies with total weight 6.60. Sum of weighted coverage is 3.60, resulting in 54.5%. Evidence completeness is 62.5% (5/8 role requirements examined). Scoring Methodology Version: v1.2.0-deterministic.",
+      "timestamp": "2026-10-17T04:55:07.685518",
+      "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
+      "id": "55d63214-4ba5-4ca9-856d-a50d69e36d42",
+      "_id": "5ca5916a-0b44-401d-a702-3a52723d3056",
+      "created_at": "2026-10-17T04:55:07.685711"
     }
   ],
   "roadmaps": [
@@ -5365,6 +7369,92 @@
       "created_at": "2026-10-17T04:05:02.851435",
       "updated_at": "2026-10-17T04:05:02.851453",
       "_id": "70c9eed8-1be6-472d-b5c0-749c54d39c88"
+    },
+    {
+      "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
+      "target_role": "Data Analyst",
+      "id": "bd28a0a7-5957-40ea-a9b6-04adfa96cc60",
+      "starting_point_summary": "Evaluated evidence against Data Analyst. Identified 12 verified strengths and 10 priority gap(s).",
+      "verified_strengths": [
+        "React Frontend Architecture",
+        "TypeScript & Type Safety",
+        "Node.js & Express Architecture",
+        "NoSQL Databases & MongoDB",
+        "Real-Time Systems & WebSockets",
+        "Geospatial & Interactive Mapping",
+        "Modern Frontend Tooling (Vite)",
+        "Systems Programming in C",
+        "FastAPI",
+        "pandas",
+        "pytest",
+        "scikit-learn"
+      ],
+      "not_yet_verified": [
+        "Python Programming",
+        "Git Version Control & Documentation",
+        "Core Java & OOP",
+        "JavaScript & Modern Web",
+        "Tailwind CSS & Responsive UI",
+        "Linux & Shell Environment",
+        "HTML5 & Semantic Web",
+        "CSS3 & Responsive Design",
+        "Machine Learning Algorithms & Training",
+        "Data Wrangling & Pipeline Engineering"
+      ],
+      "milestones": [
+        {
+          "id": "d024117d-4b63-4a98-a64b-907c9cd7dd7a",
+          "step_number": 1,
+          "title": "Containerize Model Service with Docker & Health Checks",
+          "skill_gap": "Containerization & Deployment",
+          "why_this_matters": "Essential for Data Analyst roles to ensure reliable, reproducible hosting outside local notebooks.",
+          "tasks": [
+            "Write a multi-stage Dockerfile pinning Python version and non-root user",
+            "Add /health and /metadata endpoints to the existing model service",
+            "Configure docker-compose.yml with resource limits",
+            "Test local container execution with mock prediction payloads"
+          ],
+          "deliverable": "Dockerfile, docker-compose.yml, and container execution logs.",
+          "verification_criteria": "Observable Dockerfile in repo and working GET /health HTTP 200 response.",
+          "estimated_duration": "4-6 days (Est.)",
+          "source_files": [
+            "skill_criteria/deployment.md",
+            "project_guides/deploy_ml_model.md",
+            "job_roles/data_analyst.md"
+          ],
+          "status": "planned",
+          "evidence_submitted": null,
+          "reassessed_at": null
+        },
+        {
+          "id": "c4807869-ae1b-437b-a5a5-f9999a1b0570",
+          "step_number": 2,
+          "title": "Implement Automated Regression & Boundary Test Suite",
+          "skill_gap": "Automated Testing & Code Quality",
+          "why_this_matters": "Proves that model predictions, data preprocessing, and API endpoints handle invalid inputs safely.",
+          "tasks": [
+            "Install pytest and configure conftest.py fixtures",
+            "Write unit tests for data cleaning functions testing NaN and extreme values",
+            "Write API endpoint tests for 422 Unprocessable Entity error responses",
+            "Run pytest with coverage report and commit to repository"
+          ],
+          "deliverable": "tests/ directory with test_api.py and test_pipeline.py achieving >75% coverage.",
+          "verification_criteria": "Minimum 5 passing automated assertions verifying preprocessing logic and error handling.",
+          "estimated_duration": "3-5 days (Est.)",
+          "source_files": [
+            "project_guides/test_ml_model.md",
+            "job_roles/data_analyst.md"
+          ],
+          "status": "planned",
+          "evidence_submitted": null,
+          "reassessed_at": null
+        }
+      ],
+      "first_action": "Begin Milestone 1: Containerize Model Service with Docker & Health Checks. Address the Containerization & Deployment gap.",
+      "reassessment_checkpoint": "After completing Milestone 1 deliverables, submit your repository link or artifact for instant reassessment.",
+      "created_at": "2026-10-17T04:43:36.968628",
+      "updated_at": "2026-10-17T04:43:36.968651",
+      "_id": "971144be-49fd-481f-8a43-677b1c46fd8f"
     }
   ]
 }
