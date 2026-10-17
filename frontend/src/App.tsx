@@ -45,19 +45,48 @@ export const App: React.FC = () => {
     return 'dashboard';
   };
 
+const ROLE_ID_TO_NAME: Record<string, string> = {
+  mle: 'Machine Learning Engineer',
+  java_backend: 'Java Backend Developer',
+  fullstack: 'Full-Stack Developer',
+  data_analyst: 'Data Analyst',
+  devops: 'DevOps & Cloud Engineer',
+  python_backend: 'Python Backend Developer',
+  cybersecurity: 'Cybersecurity Analyst',
+  cloud_engineer: 'Cloud & Systems Engineer',
+};
+
+const getRoleIdFromName = (name?: string | null): string => {
+  if (!name) return 'mle';
+  const lower = name.toLowerCase();
+  if (lower.includes('java')) return 'java_backend';
+  if (lower.includes('python')) return 'python_backend';
+  if (lower.includes('full') || lower.includes('react') || lower.includes('frontend')) return 'fullstack';
+  if (lower.includes('data') || lower.includes('analyst') || lower.includes('sql')) return 'data_analyst';
+  if (lower.includes('devops') || lower.includes('cloud')) return 'devops';
+  if (lower.includes('cyber') || lower.includes('security')) return 'cybersecurity';
+  return 'mle';
+};
+
   // Check login on startup
   useEffect(() => {
     const saved = api.getSavedUser();
     if (saved) {
       setCurrentUser(saved);
-      if (saved.target_role) setTargetRoleName(saved.target_role);
+      if (saved.target_role) {
+        setTargetRoleName(saved.target_role);
+        setTargetRoleId(getRoleIdFromName(saved.target_role));
+      }
       setCurrentTab(getLandingTabForUser(saved));
       api.trackLogin(saved.id);
     }
     api.getCurrentUser().then(user => {
       if (user) {
         setCurrentUser(user);
-        if (user.target_role) setTargetRoleName(user.target_role);
+        if (user.target_role) {
+          setTargetRoleName(user.target_role);
+          setTargetRoleId(getRoleIdFromName(user.target_role));
+        }
         setCurrentTab(getLandingTabForUser(user));
         api.trackLogin(user.id);
       }
@@ -90,10 +119,13 @@ export const App: React.FC = () => {
     }
   }, [currentUser, targetRoleId]);
 
-  const handleRoleChange = (roleId: string) => {
+  const handleRoleChange = async (roleId: string) => {
     setTargetRoleId(roleId);
+    const mappedName = ROLE_ID_TO_NAME[roleId] || roleId;
+    setTargetRoleName(mappedName);
     if (currentUser) {
       loadUserData(currentUser.id, roleId);
+      api.updateUserProfile(currentUser.id, { target_role: mappedName }).catch(console.error);
     }
   };
 

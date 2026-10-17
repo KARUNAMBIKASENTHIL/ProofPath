@@ -84,6 +84,33 @@ export const ResumeUploadPage: React.FC<ResumeUploadPageProps> = ({
   const [customRoleInput, setCustomRoleInput] = useState<string>('');
   const [isScoring, setIsScoring] = useState(false);
 
+  useEffect(() => {
+    if (targetRoleId) {
+      setSelectedRole(targetRoleId);
+    }
+  }, [targetRoleId]);
+
+  const handleRoleSelect = (roleId: string) => {
+    setSelectedRole(roleId);
+    setCustomRoleInput('');
+    onRoleChange(roleId);
+  };
+
+  const handleApplyCustomRole = () => {
+    const trimmed = customRoleInput.trim().toLowerCase();
+    if (!trimmed) return;
+    let matchedId = 'mle';
+    if (trimmed.includes('java')) matchedId = 'java_backend';
+    else if (trimmed.includes('python')) matchedId = 'python_backend';
+    else if (trimmed.includes('data') || trimmed.includes('analyst') || trimmed.includes('sql') || trimmed.includes('bi')) matchedId = 'data_analyst';
+    else if (trimmed.includes('full') || trimmed.includes('react') || trimmed.includes('web') || trimmed.includes('frontend')) matchedId = 'fullstack';
+    else if (trimmed.includes('devops') || trimmed.includes('cloud') || trimmed.includes('kubernetes') || trimmed.includes('docker') || trimmed.includes('infra')) matchedId = 'devops';
+    else if (trimmed.includes('cyber') || trimmed.includes('security')) matchedId = 'cybersecurity';
+    else if (trimmed.includes('machine') || trimmed.includes('ml') || trimmed.includes('ai') || trimmed.includes('vision') || trimmed.includes('nlp')) matchedId = 'mle';
+    setSelectedRole(matchedId);
+    onRoleChange(matchedId);
+  };
+
   // Roles Definition
   const standardRoles = [
     { id: 'mle', name: 'Machine Learning Engineer', domain: 'Statistical Learning & Production Systems' },
@@ -459,8 +486,11 @@ export const ResumeUploadPage: React.FC<ResumeUploadPageProps> = ({
           </div>
 
           <div className="my-2">
-            <div className="text-xl sm:text-2xl font-extrabold tracking-tight text-[#111827] truncate">
-              {targetRoleName?.split(' ')[0] || 'ML'} Eng
+            <div 
+              className="text-base sm:text-lg font-extrabold tracking-tight text-[#111827] leading-tight line-clamp-2"
+              title={targetRoleName || 'Machine Learning Engineer'}
+            >
+              {targetRoleName || 'Machine Learning Engineer'}
             </div>
           </div>
 
@@ -676,13 +706,10 @@ export const ResumeUploadPage: React.FC<ResumeUploadPageProps> = ({
                   <button
                     key={role.id}
                     type="button"
-                    onClick={() => {
-                      setSelectedRole(role.id);
-                      setCustomRoleInput('');
-                    }}
+                    onClick={() => handleRoleSelect(role.id)}
                     className={`w-full p-3 rounded-xl border text-left transition-all flex items-center justify-between ${
                       isSelected
-                        ? 'bg-[#F8FAF9] border-[#1A5336] shadow-xs'
+                        ? 'bg-[#F8FAF9] border-[#1A5336] shadow-xs ring-1 ring-[#1A5336]'
                         : 'bg-white border-[#EBECEF] hover:bg-slate-50'
                     }`}
                   >
@@ -691,7 +718,7 @@ export const ResumeUploadPage: React.FC<ResumeUploadPageProps> = ({
                       <div className="text-[10px] text-slate-400 mt-0.5">{role.domain}</div>
                     </div>
                     {isSelected && (
-                      <div className="w-5 h-5 rounded-full bg-[#1A5336] text-white flex items-center justify-center shrink-0">
+                      <div className="w-5 h-5 rounded-full bg-[#1A5336] text-white flex items-center justify-center shrink-0 shadow-xs">
                         <Check className="w-3 h-3" />
                       </div>
                     )}
@@ -703,13 +730,30 @@ export const ResumeUploadPage: React.FC<ResumeUploadPageProps> = ({
             {/* Custom Role Input */}
             <div className="space-y-1.5 pt-2">
               <label className="text-[11px] font-semibold text-slate-500">Or Enter Custom Job Role</label>
-              <input
-                type="text"
-                value={customRoleInput}
-                onChange={(e) => setCustomRoleInput(e.target.value)}
-                placeholder="e.g. Distributed Systems Engineer"
-                className="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 border border-slate-200 text-xs text-slate-900 focus:outline-none focus:border-[#1A5336] focus:bg-white"
-              />
+              <div className="flex gap-2">
+                <input
+                  type="text"
+                  value={customRoleInput}
+                  onChange={(e) => setCustomRoleInput(e.target.value)}
+                  onKeyDown={(e) => {
+                    if (e.key === 'Enter') {
+                      e.preventDefault();
+                      handleApplyCustomRole();
+                    }
+                  }}
+                  placeholder="e.g. Distributed Systems Engineer"
+                  className="flex-1 px-3.5 py-2.5 rounded-xl bg-slate-50 border border-slate-200 text-xs text-slate-900 focus:outline-none focus:border-[#1A5336] focus:bg-white"
+                />
+                {customRoleInput.trim() && (
+                  <button
+                    type="button"
+                    onClick={handleApplyCustomRole}
+                    className="px-3.5 py-2 bg-[#1A5336] text-white text-xs font-semibold rounded-xl hover:bg-[#14422b] transition-colors shrink-0 shadow-xs"
+                  >
+                    Set
+                  </button>
+                )}
+              </div>
             </div>
           </div>
 

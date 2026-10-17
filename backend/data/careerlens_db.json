@@ -1179,34 +1179,34 @@
     {
       "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
       "normalized_skill": "python",
-      "id": "8118754e-6815-4135-a8f4-48bc5631827b",
-      "skill_name": "Python",
-      "claimed_source": "GitHub: GitHub Repository",
-      "observed_evidence": "Demonstrated in repository 'GitHub Repository'. Architecture: Standard Script / Flat Layout",
-      "file_path_or_url": "https://github.com/KARUNAMBIKASENTHIL",
-      "code_snippet": null,
-      "project_id": "0e27f7b0-b8b3-49ea-b4dd-988070e8f420",
-      "project_name": "GitHub Repository",
-      "status": "Supported",
-      "confidence": 0.85,
+      "id": "8a713b14-3c14-4a94-8f6c-e27595326b20",
+      "skill_name": "Python Programming",
+      "claimed_source": "Resume (Karunambika_S_FlowCV_Resume_2026-07-19.pdf)",
+      "observed_evidence": "Extracted from page 1 of resume 'Karunambika_S_FlowCV_Resume_2026-07-19.pdf'. Context: ...Technical Skills Programming Languages Java, C, JavaScript, Python Backend NodeJs, ExpressJs Tool Git, Github, Vs Code Databas...",
+      "file_path_or_url": "Resume: Page 1",
+      "code_snippet": "...Technical Skills Programming Languages Java, C, JavaScript, Python Backend NodeJs, ExpressJs Tool Git, Github, Vs Code Databas...",
+      "project_id": null,
+      "project_name": "Resume Work History",
+      "status": "Partially supported",
+      "confidence": 0.5,
       "recency": "Current",
       "rules_applied": [
-        "RULE_REPO_CONNECTED: Verified code implementation in connected repository."
+        "RULE_RESUME_EXTRACTION: Identified on page 1 with verifiable text snippet."
       ],
-      "timestamp": "2026-10-17T04:05:02.622797",
+      "timestamp": "2026-10-17T04:24:47.775687",
       "_id": "a9128f29-38b0-4c1c-8170-80a87faf2489",
       "created_at": "2026-10-17T04:03:52.176370",
-      "updated_at": "2026-10-17T04:05:02.623621"
+      "updated_at": "2026-10-17T04:24:47.775875"
     },
     {
       "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
       "normalized_skill": "git",
-      "id": "2e9b249d-267b-4d33-bba8-51576f6d09c4",
+      "id": "9dd0c516-4635-4bc1-b3e6-bee94db8d354",
       "skill_name": "Git Version Control & Documentation",
-      "claimed_source": "Resume (KARUNAMBIKA-RESUME.pdf)",
-      "observed_evidence": "Extracted from page 1 of resume 'KARUNAMBIKA-RESUME.pdf'. Context: ...,  Tenkasi 2024 HTML CSS Javascript Tools Technical  Skills Git Github Soft  Skills Communication Problem-solving Served  a...",
+      "claimed_source": "Resume (Karunambika_S_FlowCV_Resume_2026-07-19.pdf)",
+      "observed_evidence": "Extracted from page 1 of resume 'Karunambika_S_FlowCV_Resume_2026-07-19.pdf'. Context: ...Java, C, JavaScript, Python Backend NodeJs, ExpressJs Tool Git, Github, Vs Code Databases MongoDB Frontend HTML, CSS, Reac...",
       "file_path_or_url": "Resume: Page 1",
-      "code_snippet": "...,  Tenkasi 2024 HTML CSS Javascript Tools Technical  Skills Git Github Soft  Skills Communication Problem-solving Served  a...",
+      "code_snippet": "...Java, C, JavaScript, Python Backend NodeJs, ExpressJs Tool Git, Github, Vs Code Databases MongoDB Frontend HTML, CSS, Reac...",
       "project_id": null,
       "project_name": "Resume Work History",
       "status": "Partially supported",
@@ -1215,19 +1215,20 @@
       "rules_applied": [
         "RULE_RESUME_EXTRACTION: Identified on page 1 with verifiable text snippet."
       ],
-      "timestamp": "2026-10-17T04:03:52.186239",
+      "timestamp": "2026-10-17T04:24:47.828518",
       "_id": "58ccea8b-c3d4-4acc-b3cc-00b76afdc5fd",
-      "created_at": "2026-10-17T04:03:52.186585"
+      "created_at": "2026-10-17T04:03:52.186585",
+      "updated_at": "2026-10-17T04:24:47.828744"
     },
     {
       "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
       "normalized_skill": "java",
-      "id": "ea487d93-e983-4437-b7ad-6b7aa9731d52",
+      "id": "c30d3741-a11e-4f18-81ec-1e8537d7cf9a",
       "skill_name": "Core Java & OOP",
-      "claimed_source": "Resume (KARUNAMBIKA-RESUME.pdf)",
-      "observed_evidence": "Extracted from page 1 of resume 'KARUNAMBIKA-RESUME.pdf'. Context: ...-AI & DS PROJECTS LANGUAGES CERTIFICATIONS AmbulanceMed C   Java   Python Video  and  Poster  editing Kongu  Engineering  Co...",
+      "claimed_source": "Resume (Karunambika_S_FlowCV_Resume_2026-07-19.pdf)",
+      "observed_evidence": "Extracted from page 1 of resume 'Karunambika_S_FlowCV_Resume_2026-07-19.pdf'. Context: ...onsive applications. Technical Skills Programming Languages Java, C, JavaScript, Python Backend NodeJs, ExpressJs Tool Git,...",
       "file_path_or_url": "Resume: Page 1",
-      "code_snippet": "...-AI & DS PROJECTS LANGUAGES CERTIFICATIONS AmbulanceMed C   Java   Python Video  and  Poster  editing Kongu  Engineering  Co...",
+      "code_snippet": "...onsive applications. Technical Skills Programming Languages Java, C, JavaScript, Python Backend NodeJs, ExpressJs Tool Git,...",
       "project_id": null,
       "project_name": "Resume Work History",
       "status": "Partially supported",
@@ -1236,41 +1237,20 @@
       "rules_applied": [
         "RULE_RESUME_EXTRACTION: Identified on page 1 with verifiable text snippet."
       ],
-      "timestamp": "2026-10-17T04:03:52.199096",
+      "timestamp": "2026-10-17T04:24:47.846870",
       "_id": "23cd96f7-49ff-4f1c-8f77-af4ca1cadb6f",
-      "created_at": "2026-10-17T04:03:52.199317"
+      "created_at": "2026-10-17T04:03:52.199317",
+      "updated_at": "2026-10-17T04:24:47.847072"
     },
     {
       "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
       "normalized_skill": "react",
-      "id": "82e8dd0e-5388-4472-bb8b-cb6c9219193f",
+      "id": "24ab3545-1681-4f1e-985f-df29c8709f96",
       "skill_name": "React Frontend Architecture",
-      "claimed_source": "Resume (KARUNAMBIKA-RESUME.pdf)",
-      "observed_evidence": "Extracted from page 1 of resume 'KARUNAMBIKA-RESUME.pdf'. Context: ...uest  statuses.Integrated  interactive  maps  using Leaflet/React-Leaflet  for  geospatial  tracking Advanced  C  Programming... Corroborated by project experience 'CampusBridge - Alumni Management Portal'.",
+      "claimed_source": "Resume (Karunambika_S_FlowCV_Resume_2026-07-19.pdf)",
+      "observed_evidence": "Extracted from page 1 of resume 'Karunambika_S_FlowCV_Resume_2026-07-19.pdf'. Context: ...Git, Github, Vs Code Databases MongoDB Frontend HTML, CSS, React.js Soft Skills \u2022Problem Solving \u2022Communication \u2022Team Work \u2022... Corroborated by project experience 'MedRoute - Emergency Medical Response Platform'.",
       "file_path_or_url": "Resume: Page 1",
-      "code_snippet": "...uest  statuses.Integrated  interactive  maps  using Leaflet/React-Leaflet  for  geospatial  tracking Advanced  C  Programming...",
-      "project_id": null,
-      "project_name": "CampusBridge - Alumni Management Portal",
-      "status": "Supported",
-      "confidence": 0.75,
-      "recency": "Current",
-      "rules_applied": [
-        "RULE_RESUME_EXTRACTION: Identified on page 1 with verifiable text snippet.",
-        "RULE_CORROBORATED: Corroborated by resume project claim 'CampusBridge - Alumni Management Portal'."
-      ],
-      "timestamp": "2026-10-17T04:03:52.211664",
-      "_id": "b826a3cd-e184-40dc-adc2-ed69f9d7cdc2",
-      "created_at": "2026-10-17T04:03:52.211800"
-    },
-    {
-      "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
-      "normalized_skill": "typescript",
-      "id": "52ee0fbc-320d-4ce5-9893-7170853076ef",
-      "skill_name": "TypeScript & Type Safety",
-      "claimed_source": "Resume (KARUNAMBIKA-RESUME.pdf)",
-      "observed_evidence": "Extracted from page 1 of resume 'KARUNAMBIKA-RESUME.pdf'. Context: ....io  for  chat  and  notifications CampusBridge Tech  Stack:TypeScript ,  Tailwind  CSS , Node.js , Express.js ,  MongoDB MedRoute... Corroborated by project experience 'MedRoute - Emergency Medical Response Platform'.",
-      "file_path_or_url": "Resume: Page 1",
-      "code_snippet": "....io  for  chat  and  notifications CampusBridge Tech  Stack:TypeScript ,  Tailwind  CSS , Node.js , Express.js ,  MongoDB MedRoute...",
+      "code_snippet": "...Git, Github, Vs Code Databases MongoDB Frontend HTML, CSS, React.js Soft Skills \u2022Problem Solving \u2022Communication \u2022Team Work \u2022...",
       "project_id": null,
       "project_name": "MedRoute - Emergency Medical Response Platform",
       "status": "Supported",
@@ -1280,19 +1260,43 @@
         "RULE_RESUME_EXTRACTION: Identified on page 1 with verifiable text snippet.",
         "RULE_CORROBORATED: Corroborated by resume project claim 'MedRoute - Emergency Medical Response Platform'."
       ],
-      "timestamp": "2026-10-17T04:03:52.219224",
+      "timestamp": "2026-10-17T04:24:47.862755",
+      "_id": "b826a3cd-e184-40dc-adc2-ed69f9d7cdc2",
+      "created_at": "2026-10-17T04:03:52.211800",
+      "updated_at": "2026-10-17T04:24:47.862908"
+    },
+    {
+      "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
+      "normalized_skill": "typescript",
+      "id": "064cf638-0633-4d22-9ee6-025d88d310bb",
+      "skill_name": "TypeScript & Type Safety",
+      "claimed_source": "Resume (Karunambika_S_FlowCV_Resume_2026-07-19.pdf)",
+      "observed_evidence": "Extracted from page 1 of resume 'Karunambika_S_FlowCV_Resume_2026-07-19.pdf'. Context: ...using Leaflet for  geospatial tracking. Tech stack: React, TypeScript, Node.js, Express.js,  MongoDB Pneumonia Detection AI \u2022Deve... Corroborated by project experience 'MedRoute - Emergency Medical Response Platform'.",
+      "file_path_or_url": "Resume: Page 1",
+      "code_snippet": "...using Leaflet for  geospatial tracking. Tech stack: React, TypeScript, Node.js, Express.js,  MongoDB Pneumonia Detection AI \u2022Deve...",
+      "project_id": null,
+      "project_name": "MedRoute - Emergency Medical Response Platform",
+      "status": "Supported",
+      "confidence": 0.75,
+      "recency": "Current",
+      "rules_applied": [
+        "RULE_RESUME_EXTRACTION: Identified on page 1 with verifiable text snippet.",
+        "RULE_CORROBORATED: Corroborated by resume project claim 'MedRoute - Emergency Medical Response Platform'."
+      ],
+      "timestamp": "2026-10-17T04:24:47.881023",
       "_id": "d8ae2db4-51b0-406a-aadf-9b0912de73b7",
-      "created_at": "2026-10-17T04:03:52.219448"
+      "created_at": "2026-10-17T04:03:52.219448",
+      "updated_at": "2026-10-17T04:24:47.881434"
     },
     {
       "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
       "normalized_skill": "javascript",
-      "id": "df8e7191-d396-4cef-a2f8-9dbad6f6cd1f",
+      "id": "3a0999ff-2831-48df-b9c0-700901842b8a",
       "skill_name": "JavaScript & Modern Web",
-      "claimed_source": "Resume (KARUNAMBIKA-RESUME.pdf)",
-      "observed_evidence": "Extracted from page 1 of resume 'KARUNAMBIKA-RESUME.pdf'. Context: ...asic )  \u2013  Certified Full  stack  foundation  with  Java ,  Javascript and  Database-Certified CampusBridge Built  a  dedicated  M...",
+      "claimed_source": "Resume (Karunambika_S_FlowCV_Resume_2026-07-19.pdf)",
+      "observed_evidence": "Extracted from page 1 of resume 'Karunambika_S_FlowCV_Resume_2026-07-19.pdf'. Context: ...plications. Technical Skills Programming Languages Java, C, JavaScript, Python Backend NodeJs, ExpressJs Tool Git, Github, Vs Code...",
       "file_path_or_url": "Resume: Page 1",
-      "code_snippet": "...asic )  \u2013  Certified Full  stack  foundation  with  Java ,  Javascript and  Database-Certified CampusBridge Built  a  dedicated  M...",
+      "code_snippet": "...plications. Technical Skills Programming Languages Java, C, JavaScript, Python Backend NodeJs, ExpressJs Tool Git, Github, Vs Code...",
       "project_id": null,
       "project_name": "Resume Work History",
       "status": "Partially supported",
@@ -1301,19 +1305,20 @@
       "rules_applied": [
         "RULE_RESUME_EXTRACTION: Identified on page 1 with verifiable text snippet."
       ],
-      "timestamp": "2026-10-17T04:03:52.228249",
+      "timestamp": "2026-10-17T04:24:47.898369",
       "_id": "61ad3960-f2bd-4355-b512-2a5c4d33eb1a",
-      "created_at": "2026-10-17T04:03:52.228465"
+      "created_at": "2026-10-17T04:03:52.228465",
+      "updated_at": "2026-10-17T04:24:47.898541"
     },
     {
       "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
       "normalized_skill": "node",
-      "id": "04c4e4d1-12e6-44fc-8373-59ce966fa99c",
+      "id": "69d1b579-e9cd-46d6-8340-5b5c23b836d4",
       "skill_name": "Node.js & Express Architecture",
-      "claimed_source": "Resume (KARUNAMBIKA-RESUME.pdf)",
-      "observed_evidence": "Extracted from page 1 of resume 'KARUNAMBIKA-RESUME.pdf'. Context: ...ions CampusBridge Tech  Stack:TypeScript ,  Tailwind  CSS , Node.js , Express.js ,  MongoDB MedRoute OpenAI Linux  ( Basic )... Corroborated by project experience 'MedRoute - Emergency Medical Response Platform'.",
+      "claimed_source": "Resume (Karunambika_S_FlowCV_Resume_2026-07-19.pdf)",
+      "observed_evidence": "Extracted from page 1 of resume 'Karunambika_S_FlowCV_Resume_2026-07-19.pdf'. Context: ...et for  geospatial tracking. Tech stack: React, TypeScript, Node.js, Express.js,  MongoDB Pneumonia Detection AI \u2022Developed... Corroborated by project experience 'MedRoute - Emergency Medical Response Platform'.",
       "file_path_or_url": "Resume: Page 1",
-      "code_snippet": "...ions CampusBridge Tech  Stack:TypeScript ,  Tailwind  CSS , Node.js , Express.js ,  MongoDB MedRoute OpenAI Linux  ( Basic )...",
+      "code_snippet": "...et for  geospatial tracking. Tech stack: React, TypeScript, Node.js, Express.js,  MongoDB Pneumonia Detection AI \u2022Developed...",
       "project_id": null,
       "project_name": "MedRoute - Emergency Medical Response Platform",
       "status": "Supported",
@@ -1323,36 +1328,38 @@
         "RULE_RESUME_EXTRACTION: Identified on page 1 with verifiable text snippet.",
         "RULE_CORROBORATED: Corroborated by resume project claim 'MedRoute - Emergency Medical Response Platform'."
       ],
-      "timestamp": "2026-10-17T04:03:52.239188",
+      "timestamp": "2026-10-17T04:24:47.914229",
       "_id": "bd3b1ad1-ae89-4f0a-92e2-98e06c80e22f",
-      "created_at": "2026-10-17T04:03:52.239314"
+      "created_at": "2026-10-17T04:03:52.239314",
+      "updated_at": "2026-10-17T04:24:47.914389"
     },
     {
       "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
       "normalized_skill": "mongodb",
-      "id": "dc6a3fb1-0a24-4602-a1f0-fc97c5e811ed",
+      "id": "dc485cba-4d66-4abf-8658-4c528c8938e8",
       "skill_name": "NoSQL Databases & MongoDB",
-      "claimed_source": "Resume (KARUNAMBIKA-RESUME.pdf)",
-      "observed_evidence": "Extracted from page 1 of resume 'KARUNAMBIKA-RESUME.pdf'. Context: ...Association   Tech  Stack:React.js ,  Vite ,  Express.js ,  MongoDB , Socket.io  for  chat  and  notifications CampusBridge Tec... Corroborated by project experience 'CampusBridge - Alumni Management Portal'.",
+      "claimed_source": "Resume (Karunambika_S_FlowCV_Resume_2026-07-19.pdf)",
+      "observed_evidence": "Extracted from page 1 of resume 'Karunambika_S_FlowCV_Resume_2026-07-19.pdf'. Context: ...ckend NodeJs, ExpressJs Tool Git, Github, Vs Code Databases MongoDB Frontend HTML, CSS, React.js Soft Skills \u2022Problem Solving \u2022... Corroborated by project experience 'MedRoute - Emergency Medical Response Platform'.",
       "file_path_or_url": "Resume: Page 1",
-      "code_snippet": "...Association   Tech  Stack:React.js ,  Vite ,  Express.js ,  MongoDB , Socket.io  for  chat  and  notifications CampusBridge Tec...",
+      "code_snippet": "...ckend NodeJs, ExpressJs Tool Git, Github, Vs Code Databases MongoDB Frontend HTML, CSS, React.js Soft Skills \u2022Problem Solving \u2022...",
       "project_id": null,
-      "project_name": "CampusBridge - Alumni Management Portal",
+      "project_name": "MedRoute - Emergency Medical Response Platform",
       "status": "Supported",
       "confidence": 0.75,
       "recency": "Current",
       "rules_applied": [
         "RULE_RESUME_EXTRACTION: Identified on page 1 with verifiable text snippet.",
-        "RULE_CORROBORATED: Corroborated by resume project claim 'CampusBridge - Alumni Management Portal'."
+        "RULE_CORROBORATED: Corroborated by resume project claim 'MedRoute - Emergency Medical Response Platform'."
       ],
-      "timestamp": "2026-10-17T04:03:52.252866",
+      "timestamp": "2026-10-17T04:24:47.930658",
       "_id": "50faf732-8085-4ccc-b85c-e25ab18eac81",
-      "created_at": "2026-10-17T04:03:52.253116"
+      "created_at": "2026-10-17T04:03:52.253116",
+      "updated_at": "2026-10-17T04:24:47.930865"
     },
     {
       "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
       "normalized_skill": "socket.io",
-      "id": "ad7aa2c9-4d80-45e0-bf7a-f142352721ee",
+      "id": "0503fb63-ca0f-44d5-95da-060cdca953cb",
       "skill_name": "Real-Time Systems & WebSockets",
       "claimed_source": "Resume (KARUNAMBIKA-RESUME.pdf)",
       "observed_evidence": "Extracted from page 1 of resume 'KARUNAMBIKA-RESUME.pdf'. Context: ...d  a  real-time  tracking  and notification  system  using  Socket.io  to  provide live  updates  on  ambulance  locations  and e... Corroborated by project experience 'CampusBridge - Alumni Management Portal'.",
@@ -1367,19 +1374,20 @@
         "RULE_RESUME_EXTRACTION: Identified on page 1 with verifiable text snippet.",
         "RULE_CORROBORATED: Corroborated by resume project claim 'CampusBridge - Alumni Management Portal'."
       ],
-      "timestamp": "2026-10-17T04:03:52.267322",
+      "timestamp": "2026-10-17T04:20:49.961820",
       "_id": "b7d9e1e1-62c3-4ca9-8cc0-6cc22bf51df4",
-      "created_at": "2026-10-17T04:03:52.267561"
+      "created_at": "2026-10-17T04:03:52.267561",
+      "updated_at": "2026-10-17T04:20:49.962017"
     },
     {
       "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
       "normalized_skill": "leaflet",
-      "id": "cc6b6988-53be-40b4-99c3-c66ccf8019c5",
+      "id": "d8b6d30e-af34-4d28-a711-9c9d78a505fe",
       "skill_name": "Geospatial & Interactive Mapping",
-      "claimed_source": "Resume (KARUNAMBIKA-RESUME.pdf)",
-      "observed_evidence": "Extracted from page 1 of resume 'KARUNAMBIKA-RESUME.pdf'. Context: ...ncy  request  statuses.Integrated  interactive  maps  using Leaflet/React-Leaflet  for  geospatial  tracking Advanced  C  Progr... Corroborated by project experience 'MedRoute - Emergency Medical Response Platform'.",
+      "claimed_source": "Resume (Karunambika_S_FlowCV_Resume_2026-07-19.pdf)",
+      "observed_evidence": "Extracted from page 1 of resume 'Karunambika_S_FlowCV_Resume_2026-07-19.pdf'. Context: ...apid medical assistance. \u2022Integrated interactive maps using Leaflet for  geospatial tracking. Tech stack: React, TypeScript, No... Corroborated by project experience 'MedRoute - Emergency Medical Response Platform'.",
       "file_path_or_url": "Resume: Page 1",
-      "code_snippet": "...ncy  request  statuses.Integrated  interactive  maps  using Leaflet/React-Leaflet  for  geospatial  tracking Advanced  C  Progr...",
+      "code_snippet": "...apid medical assistance. \u2022Integrated interactive maps using Leaflet for  geospatial tracking. Tech stack: React, TypeScript, No...",
       "project_id": null,
       "project_name": "MedRoute - Emergency Medical Response Platform",
       "status": "Supported",
@@ -1389,14 +1397,15 @@
         "RULE_RESUME_EXTRACTION: Identified on page 1 with verifiable text snippet.",
         "RULE_CORROBORATED: Corroborated by resume project claim 'MedRoute - Emergency Medical Response Platform'."
       ],
-      "timestamp": "2026-10-17T04:03:52.280090",
+      "timestamp": "2026-10-17T04:24:47.947465",
       "_id": "f5a4464d-65b0-42b5-ba6d-678438a37d61",
-      "created_at": "2026-10-17T04:03:52.280265"
+      "created_at": "2026-10-17T04:03:52.280265",
+      "updated_at": "2026-10-17T04:24:47.947680"
     },
     {
       "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
       "normalized_skill": "vite",
-      "id": "972aefb7-d945-43f5-b6a8-e94010c2795d",
+      "id": "7f6ef68a-6892-400c-9b6b-fe68f2b71f81",
       "skill_name": "Modern Frontend Tooling (Vite)",
       "claimed_source": "Resume (KARUNAMBIKA-RESUME.pdf)",
       "observed_evidence": "Extracted from page 1 of resume 'KARUNAMBIKA-RESUME.pdf'. Context: ...tive  Member  of  AI  Association   Tech  Stack:React.js ,  Vite ,  Express.js ,  MongoDB , Socket.io  for  chat  and  notif... Corroborated by project experience 'CampusBridge - Alumni Management Portal'.",
@@ -1411,14 +1420,15 @@
         "RULE_RESUME_EXTRACTION: Identified on page 1 with verifiable text snippet.",
         "RULE_CORROBORATED: Corroborated by resume project claim 'CampusBridge - Alumni Management Portal'."
       ],
-      "timestamp": "2026-10-17T04:03:52.296169",
+      "timestamp": "2026-10-17T04:20:49.997448",
       "_id": "b893a6eb-1c2c-42a3-a507-6059902246e1",
-      "created_at": "2026-10-17T04:03:52.296436"
+      "created_at": "2026-10-17T04:03:52.296436",
+      "updated_at": "2026-10-17T04:20:49.997641"
     },
     {
       "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
       "normalized_skill": "tailwind",
-      "id": "4f381fff-e6a4-4660-9190-d29dc371bed0",
+      "id": "d04cf48b-af57-4928-8c8f-43eabaf9f77c",
       "skill_name": "Tailwind CSS & Responsive UI",
       "claimed_source": "Resume (KARUNAMBIKA-RESUME.pdf)",
       "observed_evidence": "Extracted from page 1 of resume 'KARUNAMBIKA-RESUME.pdf'. Context: ...and  notifications CampusBridge Tech  Stack:TypeScript ,  Tailwind  CSS , Node.js , Express.js ,  MongoDB MedRoute OpenAI Linu...",
@@ -1432,36 +1442,38 @@
       "rules_applied": [
         "RULE_RESUME_EXTRACTION: Identified on page 1 with verifiable text snippet."
       ],
-      "timestamp": "2026-10-17T04:03:52.312041",
+      "timestamp": "2026-10-17T04:20:50.032389",
       "_id": "08e479f7-227d-4266-8a56-0f4311b37bcd",
-      "created_at": "2026-10-17T04:03:52.312326"
+      "created_at": "2026-10-17T04:03:52.312326",
+      "updated_at": "2026-10-17T04:20:50.032603"
     },
     {
       "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
       "normalized_skill": "c",
-      "id": "039909af-5813-4672-ba19-e45c175f4f1a",
+      "id": "f693c7c7-5df6-45be-9a10-df5fa81eed2d",
       "skill_name": "Systems Programming in C",
-      "claimed_source": "Resume (KARUNAMBIKA-RESUME.pdf)",
-      "observed_evidence": "Extracted from page 1 of resume 'KARUNAMBIKA-RESUME.pdf'. Context: ...k a r u n a m b i k a s e n t h i l k u m a r @ g m a i l . c o m T e n k a s i  w w w . l i n k e d i n . c o m / i n /... Corroborated by project experience 'CampusBridge - Alumni Management Portal'.",
+      "claimed_source": "Resume (Karunambika_S_FlowCV_Resume_2026-07-19.pdf)",
+      "observed_evidence": "Extracted from page 1 of resume 'Karunambika_S_FlowCV_Resume_2026-07-19.pdf'. Context: ...applications. Technical Skills Programming Languages Java, C, JavaScript, Python Backend NodeJs, ExpressJs Tool Git, Git... Corroborated by project experience 'MedRoute - Emergency Medical Response Platform'.",
       "file_path_or_url": "Resume: Page 1",
-      "code_snippet": "...k a r u n a m b i k a s e n t h i l k u m a r @ g m a i l . c o m T e n k a s i  w w w . l i n k e d i n . c o m / i n /...",
+      "code_snippet": "...applications. Technical Skills Programming Languages Java, C, JavaScript, Python Backend NodeJs, ExpressJs Tool Git, Git...",
       "project_id": null,
-      "project_name": "CampusBridge - Alumni Management Portal",
+      "project_name": "MedRoute - Emergency Medical Response Platform",
       "status": "Supported",
       "confidence": 0.75,
       "recency": "Current",
       "rules_applied": [
         "RULE_RESUME_EXTRACTION: Identified on page 1 with verifiable text snippet.",
-        "RULE_CORROBORATED: Corroborated by resume project claim 'CampusBridge - Alumni Management Portal'."
+        "RULE_CORROBORATED: Corroborated by resume project claim 'MedRoute - Emergency Medical Response Platform'."
       ],
-      "timestamp": "2026-10-17T04:03:52.329492",
+      "timestamp": "2026-10-17T04:24:47.964295",
       "_id": "04f21975-f7e6-43a6-a3b0-9abcb030c89e",
-      "created_at": "2026-10-17T04:03:52.329771"
+      "created_at": "2026-10-17T04:03:52.329771",
+      "updated_at": "2026-10-17T04:24:47.964730"
     },
     {
       "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
       "normalized_skill": "linux",
-      "id": "23175f47-b8e2-4eee-b436-8887b09c9697",
+      "id": "1b3811e8-e160-4367-9100-235f33325450",
       "skill_name": "Linux & Shell Environment",
       "claimed_source": "Resume (KARUNAMBIKA-RESUME.pdf)",
       "observed_evidence": "Extracted from page 1 of resume 'KARUNAMBIKA-RESUME.pdf'. Context: ...wind  CSS , Node.js , Express.js ,  MongoDB MedRoute OpenAI Linux  ( Basic )---EmbeddedDocumentLinks---http://www.linkedin.co...",
@@ -1475,19 +1487,20 @@
       "rules_applied": [
         "RULE_RESUME_EXTRACTION: Identified on page 1 with verifiable text snippet."
       ],
-      "timestamp": "2026-10-17T04:03:52.340290",
+      "timestamp": "2026-10-17T04:20:50.072452",
       "_id": "9110c63b-0ff2-49aa-a05f-90fa85dc53cf",
-      "created_at": "2026-10-17T04:03:52.340472"
+      "created_at": "2026-10-17T04:03:52.340472",
+      "updated_at": "2026-10-17T04:20:50.072787"
     },
     {
       "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
       "normalized_skill": "html",
-      "id": "8242dad7-699b-4f87-b0ef-d968be165ee9",
+      "id": "40aedf8b-ab9b-4296-acd4-a4e945a8e8c8",
       "skill_name": "HTML5 & Semantic Web",
-      "claimed_source": "Resume (KARUNAMBIKA-RESUME.pdf)",
-      "observed_evidence": "Extracted from page 1 of resume 'KARUNAMBIKA-RESUME.pdf'. Context: ...% SSLC St.Michaels  Girls ,  Hr.Sec.School ,  Tenkasi 2024 HTML CSS Javascript Tools Technical  Skills Git Github Soft  Ski...",
+      "claimed_source": "Resume (Karunambika_S_FlowCV_Resume_2026-07-19.pdf)",
+      "observed_evidence": "Extracted from page 1 of resume 'Karunambika_S_FlowCV_Resume_2026-07-19.pdf'. Context: ...ressJs Tool Git, Github, Vs Code Databases MongoDB Frontend HTML, CSS, React.js Soft Skills \u2022Problem Solving \u2022Communication...",
       "file_path_or_url": "Resume: Page 1",
-      "code_snippet": "...% SSLC St.Michaels  Girls ,  Hr.Sec.School ,  Tenkasi 2024 HTML CSS Javascript Tools Technical  Skills Git Github Soft  Ski...",
+      "code_snippet": "...ressJs Tool Git, Github, Vs Code Databases MongoDB Frontend HTML, CSS, React.js Soft Skills \u2022Problem Solving \u2022Communication...",
       "project_id": null,
       "project_name": "Resume Work History",
       "status": "Partially supported",
@@ -1496,19 +1509,20 @@
       "rules_applied": [
         "RULE_RESUME_EXTRACTION: Identified on page 1 with verifiable text snippet."
       ],
-      "timestamp": "2026-10-17T04:03:52.349048",
+      "timestamp": "2026-10-17T04:24:47.980929",
       "_id": "eef5fe80-56ad-4d3e-a5e1-c822e0980b2b",
-      "created_at": "2026-10-17T04:03:52.349216"
+      "created_at": "2026-10-17T04:03:52.349216",
+      "updated_at": "2026-10-17T04:24:47.981369"
     },
     {
       "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
       "normalized_skill": "css",
-      "id": "b6c19a56-537f-41f3-b37a-d4759ff6d255",
+      "id": "cd2446cc-167b-48f4-b2de-6803785b0e83",
       "skill_name": "CSS3 & Responsive Design",
-      "claimed_source": "Resume (KARUNAMBIKA-RESUME.pdf)",
-      "observed_evidence": "Extracted from page 1 of resume 'KARUNAMBIKA-RESUME.pdf'. Context: ...LC St.Michaels  Girls ,  Hr.Sec.School ,  Tenkasi 2024 HTML CSS Javascript Tools Technical  Skills Git Github Soft  Skills...",
+      "claimed_source": "Resume (Karunambika_S_FlowCV_Resume_2026-07-19.pdf)",
+      "observed_evidence": "Extracted from page 1 of resume 'Karunambika_S_FlowCV_Resume_2026-07-19.pdf'. Context: ...Tool Git, Github, Vs Code Databases MongoDB Frontend HTML, CSS, React.js Soft Skills \u2022Problem Solving \u2022Communication \u2022Team...",
       "file_path_or_url": "Resume: Page 1",
-      "code_snippet": "...LC St.Michaels  Girls ,  Hr.Sec.School ,  Tenkasi 2024 HTML CSS Javascript Tools Technical  Skills Git Github Soft  Skills...",
+      "code_snippet": "...Tool Git, Github, Vs Code Databases MongoDB Frontend HTML, CSS, React.js Soft Skills \u2022Problem Solving \u2022Communication \u2022Team...",
       "project_id": null,
       "project_name": "Resume Work History",
       "status": "Partially supported",
@@ -1517,20 +1531,21 @@
       "rules_applied": [
         "RULE_RESUME_EXTRACTION: Identified on page 1 with verifiable text snippet."
       ],
-      "timestamp": "2026-10-17T04:03:52.356345",
+      "timestamp": "2026-10-17T04:24:47.999582",
       "_id": "3e664540-bc40-4f8a-8fc0-11ada83135a4",
-      "created_at": "2026-10-17T04:03:52.356498"
+      "created_at": "2026-10-17T04:03:52.356498",
+      "updated_at": "2026-10-17T04:24:47.999879"
     },
     {
       "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
       "normalized_skill": "fastapi",
-      "id": "4eb40b0b-69af-4dcd-b685-e48d65e62efd",
+      "id": "2013ec83-bb78-4104-b711-34debbb3282e",
       "skill_name": "FastAPI",
       "claimed_source": "GitHub: GitHub Repository",
       "observed_evidence": "Demonstrated in repository 'GitHub Repository'. Architecture: Standard Script / Flat Layout",
       "file_path_or_url": "https://github.com/KARUNAMBIKASENTHIL",
       "code_snippet": null,
-      "project_id": "0e27f7b0-b8b3-49ea-b4dd-988070e8f420",
+      "project_id": "f68f4491-aef1-426d-8e10-5160d289afa2",
       "project_name": "GitHub Repository",
       "status": "Supported",
       "confidence": 0.85,
@@ -1538,20 +1553,21 @@
       "rules_applied": [
         "RULE_REPO_CONNECTED: Verified code implementation in connected repository."
       ],
-      "timestamp": "2026-10-17T04:05:02.605143",
+      "timestamp": "2026-10-17T04:21:33.331828",
       "_id": "32b9554f-4f3a-422f-b8bc-96ac44e5e714",
-      "created_at": "2026-10-17T04:05:02.605417"
+      "created_at": "2026-10-17T04:05:02.605417",
+      "updated_at": "2026-10-17T04:21:33.332094"
     },
     {
       "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
       "normalized_skill": "pandas",
-      "id": "a86e08a5-2d9a-45fb-89ea-782cf06bbc91",
+      "id": "993c5fb5-9dde-4c4b-8508-27090af8c676",
       "skill_name": "pandas",
       "claimed_source": "GitHub: GitHub Repository",
       "observed_evidence": "Demonstrated in repository 'GitHub Repository'. Architecture: Standard Script / Flat Layout",
       "file_path_or_url": "https://github.com/KARUNAMBIKASENTHIL",
       "code_snippet": null,
-      "project_id": "0e27f7b0-b8b3-49ea-b4dd-988070e8f420",
+      "project_id": "f68f4491-aef1-426d-8e10-5160d289afa2",
       "project_name": "GitHub Repository",
       "status": "Supported",
       "confidence": 0.85,
@@ -1559,20 +1575,21 @@
       "rules_applied": [
         "RULE_REPO_CONNECTED: Verified code implementation in connected repository."
       ],
-      "timestamp": "2026-10-17T04:05:02.643828",
+      "timestamp": "2026-10-17T04:21:33.372296",
       "_id": "47653219-fd5c-4486-a2a1-b41e511483f7",
-      "created_at": "2026-10-17T04:05:02.644189"
+      "created_at": "2026-10-17T04:05:02.644189",
+      "updated_at": "2026-10-17T04:21:33.372535"
     },
     {
       "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
       "normalized_skill": "pytest",
-      "id": "84d39748-b19a-462e-b274-c63c5803b22f",
+      "id": "ec0335a1-b067-4631-bbb6-7fac7d835c75",
       "skill_name": "pytest",
       "claimed_source": "GitHub: GitHub Repository",
       "observed_evidence": "Demonstrated in repository 'GitHub Repository'. Architecture: Standard Script / Flat Layout",
       "file_path_or_url": "https://github.com/KARUNAMBIKASENTHIL",
       "code_snippet": null,
-      "project_id": "0e27f7b0-b8b3-49ea-b4dd-988070e8f420",
+      "project_id": "f68f4491-aef1-426d-8e10-5160d289afa2",
       "project_name": "GitHub Repository",
       "status": "Supported",
       "confidence": 0.85,
@@ -1580,20 +1597,21 @@
       "rules_applied": [
         "RULE_REPO_CONNECTED: Verified code implementation in connected repository."
       ],
-      "timestamp": "2026-10-17T04:05:02.663216",
+      "timestamp": "2026-10-17T04:21:33.393416",
       "_id": "bc97a599-00fe-4cea-bcb8-c829c6a71148",
-      "created_at": "2026-10-17T04:05:02.663515"
+      "created_at": "2026-10-17T04:05:02.663515",
+      "updated_at": "2026-10-17T04:21:33.393622"
     },
     {
       "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
       "normalized_skill": "scikit-learn",
-      "id": "9829dc0d-bf74-479c-8134-cf1128da1314",
+      "id": "0acce672-7b11-40f9-90db-5dbf117daf3b",
       "skill_name": "scikit-learn",
       "claimed_source": "GitHub: GitHub Repository",
       "observed_evidence": "Demonstrated in repository 'GitHub Repository'. Architecture: Standard Script / Flat Layout",
       "file_path_or_url": "https://github.com/KARUNAMBIKASENTHIL",
       "code_snippet": null,
-      "project_id": "0e27f7b0-b8b3-49ea-b4dd-988070e8f420",
+      "project_id": "f68f4491-aef1-426d-8e10-5160d289afa2",
       "project_name": "GitHub Repository",
       "status": "Supported",
       "confidence": 0.85,
@@ -1601,9 +1619,54 @@
       "rules_applied": [
         "RULE_REPO_CONNECTED: Verified code implementation in connected repository."
       ],
-      "timestamp": "2026-10-17T04:05:02.682606",
+      "timestamp": "2026-10-17T04:21:33.410734",
       "_id": "f0ed18fe-7092-406d-80dc-c0846ab37ad3",
-      "created_at": "2026-10-17T04:05:02.682786"
+      "created_at": "2026-10-17T04:05:02.682786",
+      "updated_at": "2026-10-17T04:21:33.410933"
+    },
+    {
+      "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
+      "normalized_skill": "machine learning",
+      "id": "1dc4ae64-a130-4cdd-b93a-6e5a7cb58ec4",
+      "skill_name": "Machine Learning Algorithms & Training",
+      "claimed_source": "Resume (Karunambika_S_FlowCV_Resume_2026-07-19.pdf)",
+      "observed_evidence": "Extracted from page 1 of resume 'Karunambika_S_FlowCV_Resume_2026-07-19.pdf'. Context: ...student with a strong interest in Full Stack  Development, Machine Learning, Deep Learning.  Skilled in Basic programming, web developm...",
+      "file_path_or_url": "Resume: Page 1",
+      "code_snippet": "...student with a strong interest in Full Stack  Development, Machine Learning, Deep Learning.  Skilled in Basic programming, web developm...",
+      "project_id": null,
+      "project_name": "Resume Work History",
+      "status": "Partially supported",
+      "confidence": 0.5,
+      "recency": "Current",
+      "rules_applied": [
+        "RULE_RESUME_EXTRACTION: Identified on page 1 with verifiable text snippet."
+      ],
+      "timestamp": "2026-10-17T04:24:47.792877",
+      "_id": "d841b8ff-812b-430e-b05b-5601e2e1b764",
+      "created_at": "2026-10-17T04:24:39.861131",
+      "updated_at": "2026-10-17T04:24:47.793056"
+    },
+    {
+      "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
+      "normalized_skill": "numpy",
+      "id": "b66389c0-e229-443a-a5f1-c504716a9fdb",
+      "skill_name": "Data Wrangling & Pipeline Engineering",
+      "claimed_source": "Resume (Karunambika_S_FlowCV_Resume_2026-07-19.pdf)",
+      "observed_evidence": "Extracted from page 1 of resume 'Karunambika_S_FlowCV_Resume_2026-07-19.pdf'. Context: ...on using Streamlit. Tech Stack: Python, PyTorch, Streamlit, NumPy,  Torchvision Education Bachelor of Technology in Artificia...",
+      "file_path_or_url": "Resume: Page 1",
+      "code_snippet": "...on using Streamlit. Tech Stack: Python, PyTorch, Streamlit, NumPy,  Torchvision Education Bachelor of Technology in Artificia...",
+      "project_id": null,
+      "project_name": "Resume Work History",
+      "status": "Partially supported",
+      "confidence": 0.5,
+      "recency": "Current",
+      "rules_applied": [
+        "RULE_RESUME_EXTRACTION: Identified on page 1 with verifiable text snippet."
+      ],
+      "timestamp": "2026-10-17T04:24:47.810698",
+      "_id": "e6dea7c7-12ad-4025-bf24-86da79a903e6",
+      "created_at": "2026-10-17T04:24:39.878418",
+      "updated_at": "2026-10-17T04:24:47.810881"
     }
   ],
   "sources": [
@@ -1678,7 +1741,7 @@
     {
       "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
       "source_type": "github",
-      "id": "470610f2-1e7c-4e28-b953-3f93ef0422b7",
+      "id": "d6d54502-c6ec-49f9-a310-e73f7aab212f",
       "name": "GitHub (KARUNAMBIKASENTHIL)",
       "url_or_path": "https://github.com/KARUNAMBIKASENTHIL",
       "status": "Connected",
@@ -1692,26 +1755,28 @@
         "verified_repos_count": 2
       },
       "_id": "d28abaad-0b3e-4ecd-97fd-63f4f01b3149",
-      "created_at": "2026-10-17T04:03:52.376558"
+      "created_at": "2026-10-17T04:03:52.376558",
+      "updated_at": "2026-10-17T04:20:50.147215"
     },
     {
       "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
       "source_type": "leetcode",
-      "id": "15e03486-b382-4bc3-9770-ca1f1d49ccad",
+      "id": "c821ef70-fc0d-48c6-a75c-0ddc9f16d43b",
       "name": "LeetCode Profile",
-      "url_or_path": "https://leetcode.com/u/KarunambikaSenthil",
+      "url_or_path": "https://leetcode.com/u/KARUNAMBIKA_18",
       "status": "Connected",
       "last_synced": "Just now",
       "metadata": {
         "auto_extracted": true
       },
       "_id": "328c86de-4501-4ade-ae57-3c75fc020b50",
-      "created_at": "2026-10-17T04:03:52.390790"
+      "created_at": "2026-10-17T04:03:52.390790",
+      "updated_at": "2026-10-17T04:23:08.090880"
     },
     {
       "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
       "source_type": "linkedin",
-      "id": "cebfd592-4412-47bf-845e-68eb36e1c54c",
+      "id": "e9858498-5acb-43ba-a779-647a31e37bbb",
       "name": "LinkedIn Profile",
       "url_or_path": "https://www.linkedin.com/in/karunambikas",
       "status": "Connected",
@@ -1720,7 +1785,8 @@
         "auto_extracted": true
       },
       "_id": "edc3933d-3312-425d-9e85-23826d1b5fc3",
-      "created_at": "2026-10-17T04:03:52.404662"
+      "created_at": "2026-10-17T04:03:52.404662",
+      "updated_at": "2026-10-17T04:23:08.113639"
     },
     {
       "id": "93c6e076-0673-4a77-a3bd-df95d0a0ed39",
@@ -1736,6 +1802,149 @@
       "error_message": null,
       "_id": "6b4955d7-1977-4f8d-8aec-3c7e49107dd4",
       "created_at": "2026-10-17T04:05:02.567218"
+    },
+    {
+      "id": "2a3d07d1-33b0-49c3-9a33-173fd2ab2634",
+      "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
+      "source_type": "resume",
+      "name": "KARUNAMBIKA-RESUME.pdf",
+      "url_or_path": "C:\\projects\\CAREERLIFT\\backend\\data\\uploads\\ae276b34-81be-4136-b15f-341af662f85f_KARUNAMBIKA-RESUME.pdf",
+      "status": "Uploaded",
+      "last_synced": "Just now",
+      "metadata": {
+        "pages": 1,
+        "extracted_skills": 16,
+        "extracted_projects": 2
+      },
+      "_id": "47482ace-1540-4308-86e0-166b00157c82",
+      "created_at": "2026-10-17T04:18:58.626075"
+    },
+    {
+      "id": "666b917e-8da2-41f2-8653-76fcbd066ad0",
+      "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
+      "source_type": "resume",
+      "name": "HARINI_RESUME.pdf",
+      "url_or_path": "C:\\projects\\CAREERLIFT\\backend\\data\\uploads\\85bc6924-c568-4fdb-b32b-db88e82d69f5_HARINI_RESUME.pdf",
+      "status": "Uploaded",
+      "last_synced": "Just now",
+      "metadata": {
+        "pages": 1,
+        "extracted_skills": 6,
+        "extracted_projects": 0
+      },
+      "_id": "e2dd56e8-8ffa-4c2a-95ca-b4be9e0746e1",
+      "created_at": "2026-10-17T04:20:14.088632"
+    },
+    {
+      "id": "613292e2-e17c-42f2-a2cd-957181627dc9",
+      "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
+      "source_type": "resume",
+      "name": "HARINI_RESUME.pdf",
+      "url_or_path": "C:\\projects\\CAREERLIFT\\backend\\data\\uploads\\1c4d416a-7771-4b38-9ec1-bf7fd36b43c2_HARINI_RESUME.pdf",
+      "status": "Uploaded",
+      "last_synced": "Just now",
+      "metadata": {
+        "pages": 1,
+        "extracted_skills": 6,
+        "extracted_projects": 0
+      },
+      "_id": "a1939a41-f182-41ec-8628-317f4b57362e",
+      "created_at": "2026-10-17T04:20:20.634733"
+    },
+    {
+      "id": "527a2ec2-1444-4868-ba44-e0b01bd59bdd",
+      "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
+      "source_type": "resume",
+      "name": "HARINI_RESUME.pdf",
+      "url_or_path": "C:\\projects\\CAREERLIFT\\backend\\data\\uploads\\b17d818a-f704-4563-b188-d385a87a6a2a_HARINI_RESUME.pdf",
+      "status": "Uploaded",
+      "last_synced": "Just now",
+      "metadata": {
+        "pages": 1,
+        "extracted_skills": 6,
+        "extracted_projects": 0
+      },
+      "_id": "b962c6da-6406-4ed2-a2de-4b7efb2c7c81",
+      "created_at": "2026-10-17T04:20:24.484125"
+    },
+    {
+      "id": "34f81179-6e53-4ec9-b193-5d25560a0819",
+      "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
+      "source_type": "resume",
+      "name": "KARUNAMBIKA-RESUME.pdf",
+      "url_or_path": "C:\\projects\\CAREERLIFT\\backend\\data\\uploads\\94150fd5-2167-483c-a6cc-cb551cbe0be4_KARUNAMBIKA-RESUME.pdf",
+      "status": "Uploaded",
+      "last_synced": "Just now",
+      "metadata": {
+        "pages": 1,
+        "extracted_skills": 16,
+        "extracted_projects": 2
+      },
+      "_id": "558af494-4f3b-4c14-83ba-f460a69f6ee1",
+      "created_at": "2026-10-17T04:20:50.129003"
+    },
+    {
+      "id": "dd803150-0d9a-4891-94f7-c42f87a6dbcf",
+      "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
+      "source_type": "github",
+      "name": "GitHub Repository",
+      "url_or_path": "https://github.com/KARUNAMBIKASENTHIL",
+      "status": "Connected",
+      "last_synced": "2026-10-17T04:21:33.289071",
+      "metadata": {
+        "repository": "https://github.com/KARUNAMBIKASENTHIL"
+      },
+      "error_message": null,
+      "_id": "9401a7b9-d41e-466a-825a-e28c0efad30e",
+      "created_at": "2026-10-17T04:21:33.289287"
+    },
+    {
+      "id": "6e29f6c3-84a0-44c3-9b72-526f54554890",
+      "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
+      "source_type": "resume",
+      "name": "KARUNAMBIKAS.docx",
+      "url_or_path": "C:\\projects\\CAREERLIFT\\backend\\data\\uploads\\fc622eaf-c5cf-401f-a665-6bb931dd3594_KARUNAMBIKAS.docx",
+      "status": "Uploaded",
+      "last_synced": "Just now",
+      "metadata": {
+        "pages": 1,
+        "extracted_skills": 6,
+        "extracted_projects": 0
+      },
+      "_id": "59b8157f-5bd6-466c-bc39-3ea2e68e819e",
+      "created_at": "2026-10-17T04:23:08.066404"
+    },
+    {
+      "id": "f1d48df9-9bca-48ff-bf87-a3bafea9ad2c",
+      "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
+      "source_type": "resume",
+      "name": "Karunambika_S_FlowCV_Resume_2026-07-19.pdf",
+      "url_or_path": "C:\\projects\\CAREERLIFT\\backend\\data\\uploads\\62d56291-3dc5-4dd4-a8f3-f1e06bb1bb13_Karunambika_S_FlowCV_Resume_2026-07-19.pdf",
+      "status": "Uploaded",
+      "last_synced": "Just now",
+      "metadata": {
+        "pages": 1,
+        "extracted_skills": 14,
+        "extracted_projects": 2
+      },
+      "_id": "fd9bc9c7-a886-4672-8f60-4f719b3ea930",
+      "created_at": "2026-10-17T04:24:40.087280"
+    },
+    {
+      "id": "e962ba34-817f-472c-9ae9-2ec3285e3041",
+      "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
+      "source_type": "resume",
+      "name": "Karunambika_S_FlowCV_Resume_2026-07-19.pdf",
+      "url_or_path": "C:\\projects\\CAREERLIFT\\backend\\data\\uploads\\671063be-da12-4644-9cff-c14b686ce1fe_Karunambika_S_FlowCV_Resume_2026-07-19.pdf",
+      "status": "Uploaded",
+      "last_synced": "Just now",
+      "metadata": {
+        "pages": 1,
+        "extracted_skills": 14,
+        "extracted_projects": 2
+      },
+      "_id": "5178a818-7aab-4955-9959-ade7d1f804ed",
+      "created_at": "2026-10-17T04:24:48.016675"
     }
   ],
   "projects": [
@@ -1902,9 +2111,9 @@
     {
       "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
       "title": "CampusBridge - Alumni Management Portal",
-      "id": "656e9d94-ac8e-4b43-a2a8-9030ed29182d",
-      "repo_url": "https://github.com/KARUNAMBIKASENTHIL/Alumni-Management-Portal",
-      "problem_definition": "MERN-stack social platform enabling isolated college networks for student-alumni interaction featuring live messaging, notifications, and mentorship matching.",
+      "id": "6cf8448b-923b-4095-a8ee-d543def9c8fc",
+      "repo_url": null,
+      "problem_definition": "Dedicated MERN-stack social platform enabling isolated college networks for student-alumni interaction and professional mentorship.",
       "architecture_overview": "Extracted from resume & verified repositories. Technologies used: React.js, Vite, Express.js, MongoDB, Socket.io, WebSockets.",
       "technologies_used": [
         "React.js",
@@ -1974,15 +2183,16 @@
         "Conduct real-time technical audit evaluation to achieve 85%+ readiness score."
       ],
       "is_sandbox_verified": true,
-      "created_at": "2026-10-17T04:03:52.420802",
-      "_id": "b1d56050-3f2a-4031-8006-a769e2f8546c"
+      "created_at": "2026-10-17T04:24:48.051380",
+      "_id": "b1d56050-3f2a-4031-8006-a769e2f8546c",
+      "updated_at": "2026-10-17T04:24:48.051531"
     },
     {
       "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
       "title": "MedRoute - Emergency Medical Response Platform",
-      "id": "4987e8f1-b7c7-4c40-ab22-922a822806ca",
-      "repo_url": "https://github.com/KARUNAMBIKASENTHIL/MedRoute",
-      "problem_definition": "Full-stack real-time emergency response platform connecting patients with hospitals and ambulance drivers with live GPS tracking via Socket.io and interactive maps with Leaflet.",
+      "id": "c5853006-d508-41dd-bb1f-2749bfdc6b50",
+      "repo_url": null,
+      "problem_definition": "Full-stack real-time emergency response platform connecting patients with hospitals and ambulance drivers with live GPS tracking via Socket.io and Leaflet.",
       "architecture_overview": "Extracted from resume & verified repositories. Technologies used: TypeScript, Node.js, Express.js, MongoDB, Socket.io, Leaflet, React.",
       "technologies_used": [
         "TypeScript",
@@ -2054,13 +2264,14 @@
         "Conduct real-time technical audit evaluation to achieve 85%+ readiness score."
       ],
       "is_sandbox_verified": true,
-      "created_at": "2026-10-17T04:03:52.436559",
-      "_id": "07fa1f41-37dc-45da-9ed2-049f7101e944"
+      "created_at": "2026-10-17T04:24:48.033330",
+      "_id": "07fa1f41-37dc-45da-9ed2-049f7101e944",
+      "updated_at": "2026-10-17T04:24:48.033508"
     },
     {
       "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
       "title": "GitHub Repository",
-      "id": "0e27f7b0-b8b3-49ea-b4dd-988070e8f420",
+      "id": "f68f4491-aef1-426d-8e10-5160d289afa2",
       "repo_url": "https://github.com/KARUNAMBIKASENTHIL",
       "problem_definition": "Production-oriented service addressing GitHub Repository with automated logic and modular components.",
       "architecture_overview": "Standard Script / Flat Layout",
@@ -2126,8 +2337,9 @@
         "Introduce explicit HTTP status handling and Pydantic boundary validation."
       ],
       "is_sandbox_verified": false,
-      "created_at": "2026-10-17T04:05:02.585075",
-      "_id": "9ec1cbb5-0d1e-404f-a6b3-b81c596c48aa"
+      "created_at": "2026-10-17T04:21:33.311329",
+      "_id": "9ec1cbb5-0d1e-404f-a6b3-b81c596c48aa",
+      "updated_at": "2026-10-17T04:21:33.311500"
     }
   ],
   "growth_snapshots": [
@@ -2259,7 +2471,7 @@
       "degree": null,
       "institution": null,
       "graduation_year": null,
-      "target_role": "Machine Learning Engineer",
+      "target_role": "Data Analyst",
       "phone": null,
       "location": null,
       "linkedin_url": null,
@@ -2269,7 +2481,7 @@
       "preferred_domains": [],
       "_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
       "created_at": "2026-10-17T04:01:52.390065",
-      "updated_at": "2026-10-17T04:05:02.783191"
+      "updated_at": "2026-10-17T04:41:03.759165"
     }
   ],
   "historical_events": [
@@ -2376,6 +2588,159 @@
       },
       "_id": "25027839-66b2-4969-bef9-ce9417e8e4af",
       "created_at": "2026-10-17T04:05:02.771537"
+    },
+    {
+      "id": "be13ccf9-c6c0-41f6-89f7-3670fd2ac083",
+      "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
+      "event_type": "resume_uploaded",
+      "title": "Uploaded Resume: KARUNAMBIKA-RESUME.pdf",
+      "description": "Extracted 16 competencies and 2 project experiences from KARUNAMBIKA-RESUME.pdf.",
+      "date": "2026-10-17",
+      "timestamp": "2026-10-17T04:18:58.721595",
+      "metadata": {
+        "resume_id": "ae276b34-81be-4136-b15f-341af662f85f",
+        "filename": "KARUNAMBIKA-RESUME.pdf",
+        "skills_count": 16,
+        "projects_count": 2
+      },
+      "_id": "44bee3d1-3da8-466b-94bb-94ddbed72aa1",
+      "created_at": "2026-10-17T04:18:58.721642"
+    },
+    {
+      "id": "3ec41687-17bf-425f-aa3c-18977ea84e8b",
+      "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
+      "event_type": "resume_uploaded",
+      "title": "Uploaded Resume: HARINI_RESUME.pdf",
+      "description": "Extracted 6 competencies and 0 project experiences from HARINI_RESUME.pdf.",
+      "date": "2026-10-17",
+      "timestamp": "2026-10-17T04:20:14.137697",
+      "metadata": {
+        "resume_id": "85bc6924-c568-4fdb-b32b-db88e82d69f5",
+        "filename": "HARINI_RESUME.pdf",
+        "skills_count": 6,
+        "projects_count": 0
+      },
+      "_id": "cda8b72c-f8f9-4d3b-9317-c5266b868406",
+      "created_at": "2026-10-17T04:20:14.137752"
+    },
+    {
+      "id": "cac07926-1e62-4f6e-90fe-698d81aeb4d2",
+      "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
+      "event_type": "resume_uploaded",
+      "title": "Uploaded Resume: HARINI_RESUME.pdf",
+      "description": "Extracted 6 competencies and 0 project experiences from HARINI_RESUME.pdf.",
+      "date": "2026-10-17",
+      "timestamp": "2026-10-17T04:20:20.709954",
+      "metadata": {
+        "resume_id": "1c4d416a-7771-4b38-9ec1-bf7fd36b43c2",
+        "filename": "HARINI_RESUME.pdf",
+        "skills_count": 6,
+        "projects_count": 0
+      },
+      "_id": "f76104fa-1030-498e-9269-0b90e3209704",
+      "created_at": "2026-10-17T04:20:20.710005"
+    },
+    {
+      "id": "65d6f1d4-8b55-4544-b6c1-13e2b13e19f8",
+      "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
+      "event_type": "resume_uploaded",
+      "title": "Uploaded Resume: HARINI_RESUME.pdf",
+      "description": "Extracted 6 competencies and 0 project experiences from HARINI_RESUME.pdf.",
+      "date": "2026-10-17",
+      "timestamp": "2026-10-17T04:20:24.541488",
+      "metadata": {
+        "resume_id": "b17d818a-f704-4563-b188-d385a87a6a2a",
+        "filename": "HARINI_RESUME.pdf",
+        "skills_count": 6,
+        "projects_count": 0
+      },
+      "_id": "b02b3cb8-c639-4113-8a0f-300124249217",
+      "created_at": "2026-10-17T04:20:24.541538"
+    },
+    {
+      "id": "6eb6128d-9256-4077-a430-87905c5458dc",
+      "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
+      "event_type": "resume_uploaded",
+      "title": "Uploaded Resume: KARUNAMBIKA-RESUME.pdf",
+      "description": "Extracted 16 competencies and 2 project experiences from KARUNAMBIKA-RESUME.pdf.",
+      "date": "2026-10-17",
+      "timestamp": "2026-10-17T04:20:50.238636",
+      "metadata": {
+        "resume_id": "94150fd5-2167-483c-a6cc-cb551cbe0be4",
+        "filename": "KARUNAMBIKA-RESUME.pdf",
+        "skills_count": 16,
+        "projects_count": 2
+      },
+      "_id": "4c6deb13-d07d-4b20-81c0-a15705869f4f",
+      "created_at": "2026-10-17T04:20:50.238692"
+    },
+    {
+      "id": "f9594857-0ec9-4672-83ce-6aa9372fd18c",
+      "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
+      "event_type": "analysis_run",
+      "title": "Career Readiness Analysis: Machine Learning Engineer",
+      "description": "Assessed competencies for Machine Learning Engineer. Overall Score: 52.8%.",
+      "date": "2026-10-17",
+      "timestamp": "2026-10-17T04:21:33.475230",
+      "metadata": {
+        "role_id": "mle",
+        "role_name": "Machine Learning Engineer",
+        "score": 52.8,
+        "report_id": "d6a16526-7761-4c4c-9ea6-68e423f14d7f"
+      },
+      "_id": "51711452-d7bb-4f8c-a878-39350dea2316",
+      "created_at": "2026-10-17T04:21:33.500146"
+    },
+    {
+      "id": "16b8dd0d-83d1-41c0-ad72-845cf156c2a8",
+      "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
+      "event_type": "resume_uploaded",
+      "title": "Uploaded Resume: KARUNAMBIKAS.docx",
+      "description": "Extracted 6 competencies and 0 project experiences from KARUNAMBIKAS.docx.",
+      "date": "2026-10-17",
+      "timestamp": "2026-10-17T04:23:08.138985",
+      "metadata": {
+        "resume_id": "fc622eaf-c5cf-401f-a665-6bb931dd3594",
+        "filename": "KARUNAMBIKAS.docx",
+        "skills_count": 6,
+        "projects_count": 0
+      },
+      "_id": "f2eb562f-5db5-4471-b891-7228b8d7cd9e",
+      "created_at": "2026-10-17T04:23:08.139034"
+    },
+    {
+      "id": "980d36f0-2161-468e-bb68-c169d36fb6ae",
+      "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
+      "event_type": "resume_uploaded",
+      "title": "Uploaded Resume: Karunambika_S_FlowCV_Resume_2026-07-19.pdf",
+      "description": "Extracted 14 competencies and 2 project experiences from Karunambika_S_FlowCV_Resume_2026-07-19.pdf.",
+      "date": "2026-10-17",
+      "timestamp": "2026-10-17T04:24:40.144319",
+      "metadata": {
+        "resume_id": "62d56291-3dc5-4dd4-a8f3-f1e06bb1bb13",
+        "filename": "Karunambika_S_FlowCV_Resume_2026-07-19.pdf",
+        "skills_count": 14,
+        "projects_count": 2
+      },
+      "_id": "8c08df96-9854-4906-9222-663777e76091",
+      "created_at": "2026-10-17T04:24:40.144348"
+    },
+    {
+      "id": "1bf898ca-c95f-4b07-9bad-3fa6d958849f",
+      "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
+      "event_type": "resume_uploaded",
+      "title": "Uploaded Resume: Karunambika_S_FlowCV_Resume_2026-07-19.pdf",
+      "description": "Extracted 14 competencies and 2 project experiences from Karunambika_S_FlowCV_Resume_2026-07-19.pdf.",
+      "date": "2026-10-17",
+      "timestamp": "2026-10-17T04:24:48.068454",
+      "metadata": {
+        "resume_id": "671063be-da12-4644-9cff-c14b686ce1fe",
+        "filename": "Karunambika_S_FlowCV_Resume_2026-07-19.pdf",
+        "skills_count": 14,
+        "projects_count": 2
+      },
+      "_id": "2b2d91d7-e79a-4279-9ba3-f2013ea11f73",
+      "created_at": "2026-10-17T04:24:48.068498"
     }
   ],
   "placement_reports": [
@@ -3122,6 +3487,147 @@
       "timestamp": "2026-10-17T04:12:41.006563",
       "_id": "4dd6e1d1-09e6-40c1-8295-866cf8bb09f3",
       "created_at": "2026-10-17T04:12:41.006617"
+    },
+    {
+      "report_id": "audit-4115c5a7",
+      "candidate_name": "Karunambika S FlowCV Resume 2026-07-19",
+      "candidate_email": "KARUNAMBIKASENTHIL@github.com",
+      "target_job_title": "Machine Learning Engineer",
+      "overall_readiness_score": 33,
+      "keyword_match_score": 33,
+      "gap_differential": 0,
+      "summary_headline": "Candidate demonstrates 33% verified proof-of-work readiness against the required Job Description (Word match is 33%).",
+      "placement_verdict": "NOT PLACEMENT READY (Critical Evidence Deficit)",
+      "placement_recommendation": "Candidate relies heavily on unverified resume claims with insufficient repository proof of work. Immediate remediation required.",
+      "total_jd_competencies": 12,
+      "verified_skills_count": 4,
+      "lagging_skills_count": 8,
+      "verified_skills": [
+        {
+          "skill_name": "Python Programming & Code Organization",
+          "status": "Verified from Candidate Resume",
+          "evidence_snippet": "Java, C, JavaScript, Python",
+          "source_ref": "Candidate Resume Submission",
+          "project_name": "Resume Experience & Projects",
+          "rag_standard": "Modular Python repository with clear functions/classes, type hints, and PEP8 compliance."
+        },
+        {
+          "skill_name": "Data Preparation & Exploratory Analysis",
+          "status": "Verified from Candidate Resume",
+          "evidence_snippet": "Tech Stack: Python, PyTorch, Streamlit, NumPy,",
+          "source_ref": "Candidate Resume Submission",
+          "project_name": "Resume Experience & Projects",
+          "rag_standard": "Data-cleaning pipeline with documented train/val/test split strategy and handling of missing values."
+        },
+        {
+          "skill_name": "Automated Testing, Version Control & Docs",
+          "status": "Verified with Code & Repository Artifacts",
+          "evidence_snippet": "# Project: ProofPath\n# Language: TypeScript\n# URL: https://github.com/KARUNAMBIKASENTHIL/ProofPath Demonstrated in extracted repository 'ProofPath'. Public repo with 0 stars",
+          "source_ref": "https://github.com/KARUNAMBIKASENTHIL/ProofPath",
+          "project_name": "ProofPath",
+          "rag_standard": "Automated pytest suite testing inference behavior, git branch hygiene, and reproducible README."
+        },
+        {
+          "skill_name": "Spring Boot & RESTful Microservices",
+          "status": "Verified from Candidate Resume",
+          "evidence_snippet": "student with a strong interest in Full Stack",
+          "source_ref": "Candidate Resume Submission",
+          "project_name": "Resume Experience & Projects",
+          "rag_standard": "Spring Boot RESTful microservices with layered architecture (Controller -> Service -> Repository)."
+        }
+      ],
+      "unverified_claims": [
+        {
+          "skill_name": "Python Programming & Code Organization",
+          "resume_claim": "Listed on candidate resume",
+          "proof_status": "PENDING CODE DEFENSE",
+          "explanation": "Candidate lists 'Python Programming & Code Organization' in resume text. Further code repository commits recommended for deep verification.",
+          "severity": "MODERATE"
+        },
+        {
+          "skill_name": "Data Preparation & Exploratory Analysis",
+          "resume_claim": "Listed on candidate resume",
+          "proof_status": "PENDING CODE DEFENSE",
+          "explanation": "Candidate lists 'Data Preparation & Exploratory Analysis' in resume text. Further code repository commits recommended for deep verification.",
+          "severity": "MODERATE"
+        },
+        {
+          "skill_name": "Spring Boot & RESTful Microservices",
+          "resume_claim": "Listed on candidate resume",
+          "proof_status": "PENDING CODE DEFENSE",
+          "explanation": "Candidate lists 'Spring Boot & RESTful Microservices' in resume text. Further code repository commits recommended for deep verification.",
+          "severity": "MODERATE"
+        }
+      ],
+      "lagging_areas": [
+        {
+          "skill_name": "Model Training, Validation & Evaluation",
+          "deficit_type": "Missing from Resume (Skill Gap)",
+          "severity": "Critical Deficit",
+          "observed_gap": "Required by Job Description, but absent from candidate's resume.",
+          "rag_standard": "Baseline model compared against justified alternatives; metrics explained in context without naive accuracy reliance."
+        },
+        {
+          "skill_name": "Experiment Reproducibility & Leakage Prevention",
+          "deficit_type": "Missing from Resume (Skill Gap)",
+          "severity": "Critical Deficit",
+          "observed_gap": "Required by Job Description, but absent from candidate's resume.",
+          "rag_standard": "Leakage-free Scikit-Learn Pipelines with held-out test splits and seed locking."
+        },
+        {
+          "skill_name": "APIs & Model Serving",
+          "deficit_type": "Missing from Resume (Skill Gap)",
+          "severity": "Critical Deficit",
+          "observed_gap": "Required by Job Description, but absent from candidate's resume.",
+          "rag_standard": "Model exposed through REST API with input schema validation, status codes, and defensive error handling."
+        },
+        {
+          "skill_name": "Deployment & Basic Monitoring",
+          "deficit_type": "Missing from Resume (Skill Gap)",
+          "severity": "Critical Deficit",
+          "observed_gap": "Required by Job Description, but absent from candidate's resume.",
+          "rag_standard": "Multi-stage Docker containerization with reproducible runtime environment and health probes."
+        },
+        {
+          "skill_name": "Defensive Validation & Exception Handling",
+          "deficit_type": "Missing from Resume (Skill Gap)",
+          "severity": "Critical Deficit",
+          "observed_gap": "Required by Job Description, but absent from candidate's resume.",
+          "rag_standard": "Defensive DTO input validation with global @ControllerAdvice error interceptors."
+        },
+        {
+          "skill_name": "Unit & Integration Testing (JUnit/Mockito)",
+          "deficit_type": "Missing from Resume (Skill Gap)",
+          "severity": "Critical Deficit",
+          "observed_gap": "Required by Job Description, but absent from candidate's resume.",
+          "rag_standard": "JUnit and Mockito test coverage validating edge inputs, repository queries, and service logic."
+        },
+        {
+          "skill_name": "Data Cleaning & Quality Validation",
+          "deficit_type": "Missing from Resume (Skill Gap)",
+          "severity": "Critical Deficit",
+          "observed_gap": "Required by Job Description, but absent from candidate's resume.",
+          "rag_standard": "Documented cleaning rules handling nulls/duplicates, validating data types and boundary constraints."
+        },
+        {
+          "skill_name": "Descriptive Statistics & Business Interpretation",
+          "deficit_type": "Missing from Resume (Skill Gap)",
+          "severity": "Critical Deficit",
+          "observed_gap": "Required by Job Description, but absent from candidate's resume.",
+          "rag_standard": "Rigorous statistical analysis distinguishing correlation from causation with clear executive takeaway notes."
+        }
+      ],
+      "prescribed_bootcamp_modules": [
+        "Automated Pytest & Mock Fixtures Intensive Workshop",
+        "Defensive REST APIs & Pydantic Validation Lab"
+      ],
+      "generated_at": "2026-10-17 04:28 UTC",
+      "candidate_id": null,
+      "github_url": "https://github.com/KARUNAMBIKASENTHIL",
+      "job_description": "Target Role: Machine Learning Engineer (from CareerLens RAG Knowledge Base)\r\nRole Purpose: Build, evaluate, package, deploy, and monitor machine-learning systems.\r\n\r\nRequired Competency Standards:\r\n1. Python programming, code organization, clean functions/classes, and type hints.\r\n2. Data preparation, exploratory analysis, and data-quality checks.\r\n3. Statistics and machine-learning algorithm fundamentals.\r\n4. Model training, validation, baseline comparison, and evaluation beyond naive accuracy.\r\n5. Experiment reproducibility and strict train/test data leakage prevention.\r\n6. APIs and model serving (FastAPI/Flask) with input validation and error handling.\r\n7. Automated testing (pytest), version control (Git), and documentation.\r\n8. Containerization (Docker), deployment, and basic monitoring.",
+      "timestamp": "2026-10-17T04:28:06.128981",
+      "_id": "a0130f8a-02ca-4815-8dba-1a5ab447fabb",
+      "created_at": "2026-10-17T04:28:06.129073"
     }
   ],
   "ats_resumes": [],
@@ -3273,6 +3779,796 @@
       },
       "ambiguities": [],
       "created_at": "2026-10-17T04:03:52.166428"
+    },
+    {
+      "_id": "ae276b34-81be-4136-b15f-341af662f85f",
+      "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
+      "original_filename": "KARUNAMBIKA-RESUME.pdf",
+      "stored_path": "C:\\projects\\CAREERLIFT\\backend\\data\\uploads\\ae276b34-81be-4136-b15f-341af662f85f_KARUNAMBIKA-RESUME.pdf",
+      "status": "Processed",
+      "raw_text_length": 3468,
+      "pages_count": 1,
+      "extracted_skills": [
+        {
+          "raw_term": "python",
+          "normalized_name": "Python Programming",
+          "page_number": 1,
+          "text_snippet": "...S PROJECTS LANGUAGES CERTIFICATIONS AmbulanceMed C   Java   Python Video  and  Poster  editing Kongu  Engineering  College , p..."
+        },
+        {
+          "raw_term": "git",
+          "normalized_name": "Git Version Control & Documentation",
+          "page_number": 1,
+          "text_snippet": "...,  Tenkasi 2024 HTML CSS Javascript Tools Technical  Skills Git Github Soft  Skills Communication Problem-solving Served  a..."
+        },
+        {
+          "raw_term": "java",
+          "normalized_name": "Core Java & OOP",
+          "page_number": 1,
+          "text_snippet": "...-AI & DS PROJECTS LANGUAGES CERTIFICATIONS AmbulanceMed C   Java   Python Video  and  Poster  editing Kongu  Engineering  Co..."
+        },
+        {
+          "raw_term": "react",
+          "normalized_name": "React Frontend Architecture",
+          "page_number": 1,
+          "text_snippet": "...uest  statuses.Integrated  interactive  maps  using Leaflet/React-Leaflet  for  geospatial  tracking Advanced  C  Programming..."
+        },
+        {
+          "raw_term": "typescript",
+          "normalized_name": "TypeScript & Type Safety",
+          "page_number": 1,
+          "text_snippet": "....io  for  chat  and  notifications CampusBridge Tech  Stack:TypeScript ,  Tailwind  CSS , Node.js , Express.js ,  MongoDB MedRoute..."
+        },
+        {
+          "raw_term": "javascript",
+          "normalized_name": "JavaScript & Modern Web",
+          "page_number": 1,
+          "text_snippet": "...asic )  \u2013  Certified Full  stack  foundation  with  Java ,  Javascript and  Database-Certified CampusBridge Built  a  dedicated  M..."
+        },
+        {
+          "raw_term": "node",
+          "normalized_name": "Node.js & Express Architecture",
+          "page_number": 1,
+          "text_snippet": "...ions CampusBridge Tech  Stack:TypeScript ,  Tailwind  CSS , Node.js , Express.js ,  MongoDB MedRoute OpenAI Linux  ( Basic )..."
+        },
+        {
+          "raw_term": "mongodb",
+          "normalized_name": "NoSQL Databases & MongoDB",
+          "page_number": 1,
+          "text_snippet": "...Association   Tech  Stack:React.js ,  Vite ,  Express.js ,  MongoDB , Socket.io  for  chat  and  notifications CampusBridge Tec..."
+        },
+        {
+          "raw_term": "socket.io",
+          "normalized_name": "Real-Time Systems & WebSockets",
+          "page_number": 1,
+          "text_snippet": "...d  a  real-time  tracking  and notification  system  using  Socket.io  to  provide live  updates  on  ambulance  locations  and e..."
+        },
+        {
+          "raw_term": "leaflet",
+          "normalized_name": "Geospatial & Interactive Mapping",
+          "page_number": 1,
+          "text_snippet": "...ncy  request  statuses.Integrated  interactive  maps  using Leaflet/React-Leaflet  for  geospatial  tracking Advanced  C  Progr..."
+        },
+        {
+          "raw_term": "vite",
+          "normalized_name": "Modern Frontend Tooling (Vite)",
+          "page_number": 1,
+          "text_snippet": "...tive  Member  of  AI  Association   Tech  Stack:React.js ,  Vite ,  Express.js ,  MongoDB , Socket.io  for  chat  and  notif..."
+        },
+        {
+          "raw_term": "tailwind",
+          "normalized_name": "Tailwind CSS & Responsive UI",
+          "page_number": 1,
+          "text_snippet": "...and  notifications CampusBridge Tech  Stack:TypeScript ,  Tailwind  CSS , Node.js , Express.js ,  MongoDB MedRoute OpenAI Linu..."
+        },
+        {
+          "raw_term": "c",
+          "normalized_name": "Systems Programming in C",
+          "page_number": 1,
+          "text_snippet": "...k a r u n a m b i k a s e n t h i l k u m a r @ g m a i l . c o m T e n k a s i  w w w . l i n k e d i n . c o m / i n /..."
+        },
+        {
+          "raw_term": "linux",
+          "normalized_name": "Linux & Shell Environment",
+          "page_number": 1,
+          "text_snippet": "...wind  CSS , Node.js , Express.js ,  MongoDB MedRoute OpenAI Linux  ( Basic )---EmbeddedDocumentLinks---http://www.linkedin.co..."
+        },
+        {
+          "raw_term": "html",
+          "normalized_name": "HTML5 & Semantic Web",
+          "page_number": 1,
+          "text_snippet": "...% SSLC St.Michaels  Girls ,  Hr.Sec.School ,  Tenkasi 2024 HTML CSS Javascript Tools Technical  Skills Git Github Soft  Ski..."
+        },
+        {
+          "raw_term": "css",
+          "normalized_name": "CSS3 & Responsive Design",
+          "page_number": 1,
+          "text_snippet": "...LC St.Michaels  Girls ,  Hr.Sec.School ,  Tenkasi 2024 HTML CSS Javascript Tools Technical  Skills Git Github Soft  Skills..."
+        }
+      ],
+      "extracted_projects": [
+        {
+          "title": "CampusBridge - Alumni Management Portal",
+          "repo_url": "https://github.com/KARUNAMBIKASENTHIL/Alumni-Management-Portal",
+          "technologies": [
+            "React.js",
+            "Vite",
+            "Express.js",
+            "MongoDB",
+            "Socket.io",
+            "WebSockets"
+          ],
+          "claimed_impact": "MERN-stack social platform enabling isolated college networks for student-alumni interaction featuring live messaging, notifications, and mentorship matching."
+        },
+        {
+          "title": "MedRoute - Emergency Medical Response Platform",
+          "repo_url": "https://github.com/KARUNAMBIKASENTHIL/MedRoute",
+          "technologies": [
+            "TypeScript",
+            "Node.js",
+            "Express.js",
+            "MongoDB",
+            "Socket.io",
+            "Leaflet",
+            "React"
+          ],
+          "claimed_impact": "Full-stack real-time emergency response platform connecting patients with hospitals and ambulance drivers with live GPS tracking via Socket.io and interactive maps with Leaflet."
+        }
+      ],
+      "education": "B.Tech - AI & DS",
+      "detected_links": {
+        "github": "https://github.com/KARUNAMBIKASENTHIL",
+        "github_repos": [
+          "https://github.com/KARUNAMBIKASENTHIL/Alumni-Management-Portal",
+          "https://github.com/KARUNAMBIKASENTHIL/MedRoute"
+        ],
+        "leetcode": "https://leetcode.com/u/KarunambikaSenthil",
+        "linkedin": "https://www.linkedin.com/in/karunambikas"
+      },
+      "ambiguities": [],
+      "created_at": "2026-10-17T04:18:58.341985"
+    },
+    {
+      "_id": "85bc6924-c568-4fdb-b32b-db88e82d69f5",
+      "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
+      "original_filename": "HARINI_RESUME.pdf",
+      "stored_path": "C:\\projects\\CAREERLIFT\\backend\\data\\uploads\\85bc6924-c568-4fdb-b32b-db88e82d69f5_HARINI_RESUME.pdf",
+      "status": "Processed",
+      "raw_text_length": 2805,
+      "pages_count": 1,
+      "extracted_skills": [
+        {
+          "raw_term": "python",
+          "normalized_name": "Python Programming",
+          "page_number": 1,
+          "text_snippet": "...enkasi.Percentage:86.5 % Programming  Language C C + + Java Python Web  Development HTML   CSS Java  Script Served  as  Class..."
+        },
+        {
+          "raw_term": "java",
+          "normalized_name": "Core Java & OOP",
+          "page_number": 1,
+          "text_snippet": "...,  Tenkasi.Percentage:86.5 % Programming  Language C C + + Java Python Web  Development HTML   CSS Java  Script Served  as..."
+        },
+        {
+          "raw_term": "javascript",
+          "normalized_name": "JavaScript & Modern Web",
+          "page_number": 1,
+          "text_snippet": "...Created  user-friendly  web  pages  using HTML ,  CSS  and  Javascript Developed  a  menu-driven  phone  call  log management  sys..."
+        },
+        {
+          "raw_term": "c",
+          "normalized_name": "Systems Programming in C",
+          "page_number": 1,
+          "text_snippet": "...6 6 7 6 5 3 1 k a r u n a m b i k a k a n n a @ g m a i l . c o m T e n k a s i w w w . l i n k e d i n . c o m / i n / k..."
+        },
+        {
+          "raw_term": "html",
+          "normalized_name": "HTML5 & Semantic Web",
+          "page_number": 1,
+          "text_snippet": "...Programming  Language C C + + Java Python Web  Development HTML   CSS Java  Script Served  as  Class  Representative ,   co..."
+        },
+        {
+          "raw_term": "css",
+          "normalized_name": "CSS3 & Responsive Design",
+          "page_number": 1,
+          "text_snippet": "...mming  Language C C + + Java Python Web  Development HTML   CSS Java  Script Served  as  Class  Representative ,   coordina..."
+        }
+      ],
+      "extracted_projects": [],
+      "education": "Bachelor  of  Technology  Artificial",
+      "detected_links": {
+        "github": null,
+        "github_repos": [],
+        "leetcode": "https://leetcode.com/u/KARUNAMBIKA_18",
+        "linkedin": "https://www.linkedin.com/in/karunambikas"
+      },
+      "ambiguities": [],
+      "created_at": "2026-10-17T04:20:13.967815"
+    },
+    {
+      "_id": "1c4d416a-7771-4b38-9ec1-bf7fd36b43c2",
+      "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
+      "original_filename": "HARINI_RESUME.pdf",
+      "stored_path": "C:\\projects\\CAREERLIFT\\backend\\data\\uploads\\1c4d416a-7771-4b38-9ec1-bf7fd36b43c2_HARINI_RESUME.pdf",
+      "status": "Processed",
+      "raw_text_length": 2805,
+      "pages_count": 1,
+      "extracted_skills": [
+        {
+          "raw_term": "python",
+          "normalized_name": "Python Programming",
+          "page_number": 1,
+          "text_snippet": "...enkasi.Percentage:86.5 % Programming  Language C C + + Java Python Web  Development HTML   CSS Java  Script Served  as  Class..."
+        },
+        {
+          "raw_term": "java",
+          "normalized_name": "Core Java & OOP",
+          "page_number": 1,
+          "text_snippet": "...,  Tenkasi.Percentage:86.5 % Programming  Language C C + + Java Python Web  Development HTML   CSS Java  Script Served  as..."
+        },
+        {
+          "raw_term": "javascript",
+          "normalized_name": "JavaScript & Modern Web",
+          "page_number": 1,
+          "text_snippet": "...Created  user-friendly  web  pages  using HTML ,  CSS  and  Javascript Developed  a  menu-driven  phone  call  log management  sys..."
+        },
+        {
+          "raw_term": "c",
+          "normalized_name": "Systems Programming in C",
+          "page_number": 1,
+          "text_snippet": "...6 6 7 6 5 3 1 k a r u n a m b i k a k a n n a @ g m a i l . c o m T e n k a s i w w w . l i n k e d i n . c o m / i n / k..."
+        },
+        {
+          "raw_term": "html",
+          "normalized_name": "HTML5 & Semantic Web",
+          "page_number": 1,
+          "text_snippet": "...Programming  Language C C + + Java Python Web  Development HTML   CSS Java  Script Served  as  Class  Representative ,   co..."
+        },
+        {
+          "raw_term": "css",
+          "normalized_name": "CSS3 & Responsive Design",
+          "page_number": 1,
+          "text_snippet": "...mming  Language C C + + Java Python Web  Development HTML   CSS Java  Script Served  as  Class  Representative ,   coordina..."
+        }
+      ],
+      "extracted_projects": [],
+      "education": "Bachelor  of  Technology  Artificial",
+      "detected_links": {
+        "github": null,
+        "github_repos": [],
+        "leetcode": "https://leetcode.com/u/KARUNAMBIKA_18",
+        "linkedin": "https://www.linkedin.com/in/karunambikas"
+      },
+      "ambiguities": [],
+      "created_at": "2026-10-17T04:20:20.510414"
+    },
+    {
+      "_id": "b17d818a-f704-4563-b188-d385a87a6a2a",
+      "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
+      "original_filename": "HARINI_RESUME.pdf",
+      "stored_path": "C:\\projects\\CAREERLIFT\\backend\\data\\uploads\\b17d818a-f704-4563-b188-d385a87a6a2a_HARINI_RESUME.pdf",
+      "status": "Processed",
+      "raw_text_length": 2805,
+      "pages_count": 1,
+      "extracted_skills": [
+        {
+          "raw_term": "python",
+          "normalized_name": "Python Programming",
+          "page_number": 1,
+          "text_snippet": "...enkasi.Percentage:86.5 % Programming  Language C C + + Java Python Web  Development HTML   CSS Java  Script Served  as  Class..."
+        },
+        {
+          "raw_term": "java",
+          "normalized_name": "Core Java & OOP",
+          "page_number": 1,
+          "text_snippet": "...,  Tenkasi.Percentage:86.5 % Programming  Language C C + + Java Python Web  Development HTML   CSS Java  Script Served  as..."
+        },
+        {
+          "raw_term": "javascript",
+          "normalized_name": "JavaScript & Modern Web",
+          "page_number": 1,
+          "text_snippet": "...Created  user-friendly  web  pages  using HTML ,  CSS  and  Javascript Developed  a  menu-driven  phone  call  log management  sys..."
+        },
+        {
+          "raw_term": "c",
+          "normalized_name": "Systems Programming in C",
+          "page_number": 1,
+          "text_snippet": "...6 6 7 6 5 3 1 k a r u n a m b i k a k a n n a @ g m a i l . c o m T e n k a s i w w w . l i n k e d i n . c o m / i n / k..."
+        },
+        {
+          "raw_term": "html",
+          "normalized_name": "HTML5 & Semantic Web",
+          "page_number": 1,
+          "text_snippet": "...Programming  Language C C + + Java Python Web  Development HTML   CSS Java  Script Served  as  Class  Representative ,   co..."
+        },
+        {
+          "raw_term": "css",
+          "normalized_name": "CSS3 & Responsive Design",
+          "page_number": 1,
+          "text_snippet": "...mming  Language C C + + Java Python Web  Development HTML   CSS Java  Script Served  as  Class  Representative ,   coordina..."
+        }
+      ],
+      "extracted_projects": [],
+      "education": "Bachelor  of  Technology  Artificial",
+      "detected_links": {
+        "github": null,
+        "github_repos": [],
+        "leetcode": "https://leetcode.com/u/KARUNAMBIKA_18",
+        "linkedin": "https://www.linkedin.com/in/karunambikas"
+      },
+      "ambiguities": [],
+      "created_at": "2026-10-17T04:20:24.355158"
+    },
+    {
+      "_id": "94150fd5-2167-483c-a6cc-cb551cbe0be4",
+      "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
+      "original_filename": "KARUNAMBIKA-RESUME.pdf",
+      "stored_path": "C:\\projects\\CAREERLIFT\\backend\\data\\uploads\\94150fd5-2167-483c-a6cc-cb551cbe0be4_KARUNAMBIKA-RESUME.pdf",
+      "status": "Processed",
+      "raw_text_length": 3468,
+      "pages_count": 1,
+      "extracted_skills": [
+        {
+          "raw_term": "python",
+          "normalized_name": "Python Programming",
+          "page_number": 1,
+          "text_snippet": "...S PROJECTS LANGUAGES CERTIFICATIONS AmbulanceMed C   Java   Python Video  and  Poster  editing Kongu  Engineering  College , p..."
+        },
+        {
+          "raw_term": "git",
+          "normalized_name": "Git Version Control & Documentation",
+          "page_number": 1,
+          "text_snippet": "...,  Tenkasi 2024 HTML CSS Javascript Tools Technical  Skills Git Github Soft  Skills Communication Problem-solving Served  a..."
+        },
+        {
+          "raw_term": "java",
+          "normalized_name": "Core Java & OOP",
+          "page_number": 1,
+          "text_snippet": "...-AI & DS PROJECTS LANGUAGES CERTIFICATIONS AmbulanceMed C   Java   Python Video  and  Poster  editing Kongu  Engineering  Co..."
+        },
+        {
+          "raw_term": "react",
+          "normalized_name": "React Frontend Architecture",
+          "page_number": 1,
+          "text_snippet": "...uest  statuses.Integrated  interactive  maps  using Leaflet/React-Leaflet  for  geospatial  tracking Advanced  C  Programming..."
+        },
+        {
+          "raw_term": "typescript",
+          "normalized_name": "TypeScript & Type Safety",
+          "page_number": 1,
+          "text_snippet": "....io  for  chat  and  notifications CampusBridge Tech  Stack:TypeScript ,  Tailwind  CSS , Node.js , Express.js ,  MongoDB MedRoute..."
+        },
+        {
+          "raw_term": "javascript",
+          "normalized_name": "JavaScript & Modern Web",
+          "page_number": 1,
+          "text_snippet": "...asic )  \u2013  Certified Full  stack  foundation  with  Java ,  Javascript and  Database-Certified CampusBridge Built  a  dedicated  M..."
+        },
+        {
+          "raw_term": "node",
+          "normalized_name": "Node.js & Express Architecture",
+          "page_number": 1,
+          "text_snippet": "...ions CampusBridge Tech  Stack:TypeScript ,  Tailwind  CSS , Node.js , Express.js ,  MongoDB MedRoute OpenAI Linux  ( Basic )..."
+        },
+        {
+          "raw_term": "mongodb",
+          "normalized_name": "NoSQL Databases & MongoDB",
+          "page_number": 1,
+          "text_snippet": "...Association   Tech  Stack:React.js ,  Vite ,  Express.js ,  MongoDB , Socket.io  for  chat  and  notifications CampusBridge Tec..."
+        },
+        {
+          "raw_term": "socket.io",
+          "normalized_name": "Real-Time Systems & WebSockets",
+          "page_number": 1,
+          "text_snippet": "...d  a  real-time  tracking  and notification  system  using  Socket.io  to  provide live  updates  on  ambulance  locations  and e..."
+        },
+        {
+          "raw_term": "leaflet",
+          "normalized_name": "Geospatial & Interactive Mapping",
+          "page_number": 1,
+          "text_snippet": "...ncy  request  statuses.Integrated  interactive  maps  using Leaflet/React-Leaflet  for  geospatial  tracking Advanced  C  Progr..."
+        },
+        {
+          "raw_term": "vite",
+          "normalized_name": "Modern Frontend Tooling (Vite)",
+          "page_number": 1,
+          "text_snippet": "...tive  Member  of  AI  Association   Tech  Stack:React.js ,  Vite ,  Express.js ,  MongoDB , Socket.io  for  chat  and  notif..."
+        },
+        {
+          "raw_term": "tailwind",
+          "normalized_name": "Tailwind CSS & Responsive UI",
+          "page_number": 1,
+          "text_snippet": "...and  notifications CampusBridge Tech  Stack:TypeScript ,  Tailwind  CSS , Node.js , Express.js ,  MongoDB MedRoute OpenAI Linu..."
+        },
+        {
+          "raw_term": "c",
+          "normalized_name": "Systems Programming in C",
+          "page_number": 1,
+          "text_snippet": "...k a r u n a m b i k a s e n t h i l k u m a r @ g m a i l . c o m T e n k a s i  w w w . l i n k e d i n . c o m / i n /..."
+        },
+        {
+          "raw_term": "linux",
+          "normalized_name": "Linux & Shell Environment",
+          "page_number": 1,
+          "text_snippet": "...wind  CSS , Node.js , Express.js ,  MongoDB MedRoute OpenAI Linux  ( Basic )---EmbeddedDocumentLinks---http://www.linkedin.co..."
+        },
+        {
+          "raw_term": "html",
+          "normalized_name": "HTML5 & Semantic Web",
+          "page_number": 1,
+          "text_snippet": "...% SSLC St.Michaels  Girls ,  Hr.Sec.School ,  Tenkasi 2024 HTML CSS Javascript Tools Technical  Skills Git Github Soft  Ski..."
+        },
+        {
+          "raw_term": "css",
+          "normalized_name": "CSS3 & Responsive Design",
+          "page_number": 1,
+          "text_snippet": "...LC St.Michaels  Girls ,  Hr.Sec.School ,  Tenkasi 2024 HTML CSS Javascript Tools Technical  Skills Git Github Soft  Skills..."
+        }
+      ],
+      "extracted_projects": [
+        {
+          "title": "CampusBridge - Alumni Management Portal",
+          "repo_url": "https://github.com/KARUNAMBIKASENTHIL/Alumni-Management-Portal",
+          "technologies": [
+            "React.js",
+            "Vite",
+            "Express.js",
+            "MongoDB",
+            "Socket.io",
+            "WebSockets"
+          ],
+          "claimed_impact": "MERN-stack social platform enabling isolated college networks for student-alumni interaction featuring live messaging, notifications, and mentorship matching."
+        },
+        {
+          "title": "MedRoute - Emergency Medical Response Platform",
+          "repo_url": "https://github.com/KARUNAMBIKASENTHIL/MedRoute",
+          "technologies": [
+            "TypeScript",
+            "Node.js",
+            "Express.js",
+            "MongoDB",
+            "Socket.io",
+            "Leaflet",
+            "React"
+          ],
+          "claimed_impact": "Full-stack real-time emergency response platform connecting patients with hospitals and ambulance drivers with live GPS tracking via Socket.io and interactive maps with Leaflet."
+        }
+      ],
+      "education": "B.Tech - AI & DS",
+      "detected_links": {
+        "github": "https://github.com/KARUNAMBIKASENTHIL",
+        "github_repos": [
+          "https://github.com/KARUNAMBIKASENTHIL/Alumni-Management-Portal",
+          "https://github.com/KARUNAMBIKASENTHIL/MedRoute"
+        ],
+        "leetcode": "https://leetcode.com/u/KarunambikaSenthil",
+        "linkedin": "https://www.linkedin.com/in/karunambikas"
+      },
+      "ambiguities": [],
+      "created_at": "2026-10-17T04:20:49.802448"
+    },
+    {
+      "_id": "fc622eaf-c5cf-401f-a665-6bb931dd3594",
+      "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
+      "original_filename": "KARUNAMBIKAS.docx",
+      "stored_path": "C:\\projects\\CAREERLIFT\\backend\\data\\uploads\\fc622eaf-c5cf-401f-a665-6bb931dd3594_KARUNAMBIKAS.docx",
+      "status": "Processed",
+      "raw_text_length": 1531,
+      "pages_count": 1,
+      "extracted_skills": [
+        {
+          "raw_term": "python",
+          "normalized_name": "Python Programming",
+          "page_number": 1,
+          "text_snippet": "...E C H N I C A L\tS K I L L S Programming Language C C++ Java Python Web Development N O N - T E C H N I C A L S K I L L S Leade..."
+        },
+        {
+          "raw_term": "java",
+          "normalized_name": "Core Java & OOP",
+          "page_number": 1,
+          "text_snippet": "...y. T E C H N I C A L\tS K I L L S Programming Language C C++ Java Python Web Development N O N - T E C H N I C A L S K I L L..."
+        },
+        {
+          "raw_term": "javascript",
+          "normalized_name": "JavaScript & Modern Web",
+          "page_number": 1,
+          "text_snippet": "...display Created user-friendly web pages using HTML, CSS and Javascript Phone Call Log Manager Console-Based Project (C Programming..."
+        },
+        {
+          "raw_term": "c",
+          "normalized_name": "Systems Programming in C",
+          "page_number": 1,
+          "text_snippet": "...n/karunambikas https://leetcode.com/u/KARUNAMBIKA_18/ E D U C A T I O N\tP R O J E C T S Bachelor of Technology Artificial..."
+        },
+        {
+          "raw_term": "html",
+          "normalized_name": "HTML5 & Semantic Web",
+          "page_number": 1,
+          "text_snippet": "...d information display Created user-friendly web pages using HTML, CSS and Javascript Phone Call Log Manager Console-Based Pr..."
+        },
+        {
+          "raw_term": "css",
+          "normalized_name": "CSS3 & Responsive Design",
+          "page_number": 1,
+          "text_snippet": "...rmation display Created user-friendly web pages using HTML, CSS and Javascript Phone Call Log Manager Console-Based Project..."
+        }
+      ],
+      "extracted_projects": [],
+      "education": "B.Tech - AI & DS",
+      "detected_links": {
+        "github": null,
+        "github_repos": [],
+        "leetcode": "https://leetcode.com/u/KARUNAMBIKA_18",
+        "linkedin": "https://www.linkedin.com/in/karunambikas"
+      },
+      "ambiguities": [],
+      "created_at": "2026-10-17T04:23:07.894042"
+    },
+    {
+      "_id": "62d56291-3dc5-4dd4-a8f3-f1e06bb1bb13",
+      "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
+      "original_filename": "Karunambika_S_FlowCV_Resume_2026-07-19.pdf",
+      "stored_path": "C:\\projects\\CAREERLIFT\\backend\\data\\uploads\\62d56291-3dc5-4dd4-a8f3-f1e06bb1bb13_Karunambika_S_FlowCV_Resume_2026-07-19.pdf",
+      "status": "Processed",
+      "raw_text_length": 2396,
+      "pages_count": 1,
+      "extracted_skills": [
+        {
+          "raw_term": "python",
+          "normalized_name": "Python Programming",
+          "page_number": 1,
+          "text_snippet": "...Technical Skills Programming Languages Java, C, JavaScript, Python Backend NodeJs, ExpressJs Tool Git, Github, Vs Code Databas..."
+        },
+        {
+          "raw_term": "machine learning",
+          "normalized_name": "Machine Learning Algorithms & Training",
+          "page_number": 1,
+          "text_snippet": "...student with a strong interest in Full Stack  Development, Machine Learning, Deep Learning.  Skilled in Basic programming, web developm..."
+        },
+        {
+          "raw_term": "numpy",
+          "normalized_name": "Data Wrangling & Pipeline Engineering",
+          "page_number": 1,
+          "text_snippet": "...on using Streamlit. Tech Stack: Python, PyTorch, Streamlit, NumPy,  Torchvision Education Bachelor of Technology in Artificia..."
+        },
+        {
+          "raw_term": "git",
+          "normalized_name": "Git Version Control & Documentation",
+          "page_number": 1,
+          "text_snippet": "...Java, C, JavaScript, Python Backend NodeJs, ExpressJs Tool Git, Github, Vs Code Databases MongoDB Frontend HTML, CSS, Reac..."
+        },
+        {
+          "raw_term": "java",
+          "normalized_name": "Core Java & OOP",
+          "page_number": 1,
+          "text_snippet": "...onsive applications. Technical Skills Programming Languages Java, C, JavaScript, Python Backend NodeJs, ExpressJs Tool Git,..."
+        },
+        {
+          "raw_term": "react",
+          "normalized_name": "React Frontend Architecture",
+          "page_number": 1,
+          "text_snippet": "...Git, Github, Vs Code Databases MongoDB Frontend HTML, CSS, React.js Soft Skills \u2022Problem Solving \u2022Communication \u2022Team Work \u2022..."
+        },
+        {
+          "raw_term": "typescript",
+          "normalized_name": "TypeScript & Type Safety",
+          "page_number": 1,
+          "text_snippet": "...using Leaflet for  geospatial tracking. Tech stack: React, TypeScript, Node.js, Express.js,  MongoDB Pneumonia Detection AI \u2022Deve..."
+        },
+        {
+          "raw_term": "javascript",
+          "normalized_name": "JavaScript & Modern Web",
+          "page_number": 1,
+          "text_snippet": "...plications. Technical Skills Programming Languages Java, C, JavaScript, Python Backend NodeJs, ExpressJs Tool Git, Github, Vs Code..."
+        },
+        {
+          "raw_term": "node",
+          "normalized_name": "Node.js & Express Architecture",
+          "page_number": 1,
+          "text_snippet": "...et for  geospatial tracking. Tech stack: React, TypeScript, Node.js, Express.js,  MongoDB Pneumonia Detection AI \u2022Developed..."
+        },
+        {
+          "raw_term": "mongodb",
+          "normalized_name": "NoSQL Databases & MongoDB",
+          "page_number": 1,
+          "text_snippet": "...ckend NodeJs, ExpressJs Tool Git, Github, Vs Code Databases MongoDB Frontend HTML, CSS, React.js Soft Skills \u2022Problem Solving \u2022..."
+        },
+        {
+          "raw_term": "leaflet",
+          "normalized_name": "Geospatial & Interactive Mapping",
+          "page_number": 1,
+          "text_snippet": "...apid medical assistance. \u2022Integrated interactive maps using Leaflet for  geospatial tracking. Tech stack: React, TypeScript, No..."
+        },
+        {
+          "raw_term": "c",
+          "normalized_name": "Systems Programming in C",
+          "page_number": 1,
+          "text_snippet": "...applications. Technical Skills Programming Languages Java, C, JavaScript, Python Backend NodeJs, ExpressJs Tool Git, Git..."
+        },
+        {
+          "raw_term": "html",
+          "normalized_name": "HTML5 & Semantic Web",
+          "page_number": 1,
+          "text_snippet": "...ressJs Tool Git, Github, Vs Code Databases MongoDB Frontend HTML, CSS, React.js Soft Skills \u2022Problem Solving \u2022Communication..."
+        },
+        {
+          "raw_term": "css",
+          "normalized_name": "CSS3 & Responsive Design",
+          "page_number": 1,
+          "text_snippet": "...Tool Git, Github, Vs Code Databases MongoDB Frontend HTML, CSS, React.js Soft Skills \u2022Problem Solving \u2022Communication \u2022Team..."
+        }
+      ],
+      "extracted_projects": [
+        {
+          "title": "MedRoute - Emergency Medical Response Platform",
+          "repo_url": null,
+          "technologies": [
+            "TypeScript",
+            "Node.js",
+            "Express.js",
+            "MongoDB",
+            "Socket.io",
+            "Leaflet",
+            "React"
+          ],
+          "claimed_impact": "Full-stack real-time emergency response platform connecting patients with hospitals and ambulance drivers with live GPS tracking via Socket.io and Leaflet."
+        },
+        {
+          "title": "CampusBridge - Alumni Management Portal",
+          "repo_url": null,
+          "technologies": [
+            "React.js",
+            "Vite",
+            "Express.js",
+            "MongoDB",
+            "Socket.io",
+            "WebSockets"
+          ],
+          "claimed_impact": "Dedicated MERN-stack social platform enabling isolated college networks for student-alumni interaction and professional mentorship."
+        }
+      ],
+      "education": "B.Tech - AI & DS",
+      "detected_links": {
+        "github": null,
+        "github_repos": [],
+        "leetcode": null,
+        "linkedin": null
+      },
+      "ambiguities": [],
+      "created_at": "2026-10-17T04:24:39.826084"
+    },
+    {
+      "_id": "671063be-da12-4644-9cff-c14b686ce1fe",
+      "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
+      "original_filename": "Karunambika_S_FlowCV_Resume_2026-07-19.pdf",
+      "stored_path": "C:\\projects\\CAREERLIFT\\backend\\data\\uploads\\671063be-da12-4644-9cff-c14b686ce1fe_Karunambika_S_FlowCV_Resume_2026-07-19.pdf",
+      "status": "Processed",
+      "raw_text_length": 2396,
+      "pages_count": 1,
+      "extracted_skills": [
+        {
+          "raw_term": "python",
+          "normalized_name": "Python Programming",
+          "page_number": 1,
+          "text_snippet": "...Technical Skills Programming Languages Java, C, JavaScript, Python Backend NodeJs, ExpressJs Tool Git, Github, Vs Code Databas..."
+        },
+        {
+          "raw_term": "machine learning",
+          "normalized_name": "Machine Learning Algorithms & Training",
+          "page_number": 1,
+          "text_snippet": "...student with a strong interest in Full Stack  Development, Machine Learning, Deep Learning.  Skilled in Basic programming, web developm..."
+        },
+        {
+          "raw_term": "numpy",
+          "normalized_name": "Data Wrangling & Pipeline Engineering",
+          "page_number": 1,
+          "text_snippet": "...on using Streamlit. Tech Stack: Python, PyTorch, Streamlit, NumPy,  Torchvision Education Bachelor of Technology in Artificia..."
+        },
+        {
+          "raw_term": "git",
+          "normalized_name": "Git Version Control & Documentation",
+          "page_number": 1,
+          "text_snippet": "...Java, C, JavaScript, Python Backend NodeJs, ExpressJs Tool Git, Github, Vs Code Databases MongoDB Frontend HTML, CSS, Reac..."
+        },
+        {
+          "raw_term": "java",
+          "normalized_name": "Core Java & OOP",
+          "page_number": 1,
+          "text_snippet": "...onsive applications. Technical Skills Programming Languages Java, C, JavaScript, Python Backend NodeJs, ExpressJs Tool Git,..."
+        },
+        {
+          "raw_term": "react",
+          "normalized_name": "React Frontend Architecture",
+          "page_number": 1,
+          "text_snippet": "...Git, Github, Vs Code Databases MongoDB Frontend HTML, CSS, React.js Soft Skills \u2022Problem Solving \u2022Communication \u2022Team Work \u2022..."
+        },
+        {
+          "raw_term": "typescript",
+          "normalized_name": "TypeScript & Type Safety",
+          "page_number": 1,
+          "text_snippet": "...using Leaflet for  geospatial tracking. Tech stack: React, TypeScript, Node.js, Express.js,  MongoDB Pneumonia Detection AI \u2022Deve..."
+        },
+        {
+          "raw_term": "javascript",
+          "normalized_name": "JavaScript & Modern Web",
+          "page_number": 1,
+          "text_snippet": "...plications. Technical Skills Programming Languages Java, C, JavaScript, Python Backend NodeJs, ExpressJs Tool Git, Github, Vs Code..."
+        },
+        {
+          "raw_term": "node",
+          "normalized_name": "Node.js & Express Architecture",
+          "page_number": 1,
+          "text_snippet": "...et for  geospatial tracking. Tech stack: React, TypeScript, Node.js, Express.js,  MongoDB Pneumonia Detection AI \u2022Developed..."
+        },
+        {
+          "raw_term": "mongodb",
+          "normalized_name": "NoSQL Databases & MongoDB",
+          "page_number": 1,
+          "text_snippet": "...ckend NodeJs, ExpressJs Tool Git, Github, Vs Code Databases MongoDB Frontend HTML, CSS, React.js Soft Skills \u2022Problem Solving \u2022..."
+        },
+        {
+          "raw_term": "leaflet",
+          "normalized_name": "Geospatial & Interactive Mapping",
+          "page_number": 1,
+          "text_snippet": "...apid medical assistance. \u2022Integrated interactive maps using Leaflet for  geospatial tracking. Tech stack: React, TypeScript, No..."
+        },
+        {
+          "raw_term": "c",
+          "normalized_name": "Systems Programming in C",
+          "page_number": 1,
+          "text_snippet": "...applications. Technical Skills Programming Languages Java, C, JavaScript, Python Backend NodeJs, ExpressJs Tool Git, Git..."
+        },
+        {
+          "raw_term": "html",
+          "normalized_name": "HTML5 & Semantic Web",
+          "page_number": 1,
+          "text_snippet": "...ressJs Tool Git, Github, Vs Code Databases MongoDB Frontend HTML, CSS, React.js Soft Skills \u2022Problem Solving \u2022Communication..."
+        },
+        {
+          "raw_term": "css",
+          "normalized_name": "CSS3 & Responsive Design",
+          "page_number": 1,
+          "text_snippet": "...Tool Git, Github, Vs Code Databases MongoDB Frontend HTML, CSS, React.js Soft Skills \u2022Problem Solving \u2022Communication \u2022Team..."
+        }
+      ],
+      "extracted_projects": [
+        {
+          "title": "MedRoute - Emergency Medical Response Platform",
+          "repo_url": null,
+          "technologies": [
+            "TypeScript",
+            "Node.js",
+            "Express.js",
+            "MongoDB",
+            "Socket.io",
+            "Leaflet",
+            "React"
+          ],
+          "claimed_impact": "Full-stack real-time emergency response platform connecting patients with hospitals and ambulance drivers with live GPS tracking via Socket.io and Leaflet."
+        },
+        {
+          "title": "CampusBridge - Alumni Management Portal",
+          "repo_url": null,
+          "technologies": [
+            "React.js",
+            "Vite",
+            "Express.js",
+            "MongoDB",
+            "Socket.io",
+            "WebSockets"
+          ],
+          "claimed_impact": "Dedicated MERN-stack social platform enabling isolated college networks for student-alumni interaction and professional mentorship."
+        }
+      ],
+      "education": "B.Tech - AI & DS",
+      "detected_links": {
+        "github": null,
+        "github_repos": [],
+        "leetcode": null,
+        "linkedin": null
+      },
+      "ambiguities": [],
+      "created_at": "2026-10-17T04:24:47.758452"
     }
   ],
   "analysis_reports": [
@@ -3459,6 +4755,196 @@
       "methodology_version": "v1.2.0-deterministic",
       "_id": "2bbe15ac-7221-45aa-89db-20fc9594ac93",
       "created_at": "2026-10-17T04:05:02.760431"
+    },
+    {
+      "id": "d6a16526-7761-4c4c-9ea6-68e423f14d7f",
+      "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
+      "timestamp": "2026-10-17T04:21:33.475230",
+      "date": "2026-10-17",
+      "resume_version": "KARUNAMBIKA-RESUME.pdf",
+      "sources_available": [
+        "KARUNAMBIKA-RESUME.pdf",
+        "GitHub (KARUNAMBIKASENTHIL)",
+        "LeetCode Profile",
+        "LinkedIn Profile",
+        "GitHub Repository",
+        "KARUNAMBIKA-RESUME.pdf",
+        "HARINI_RESUME.pdf",
+        "HARINI_RESUME.pdf",
+        "HARINI_RESUME.pdf",
+        "KARUNAMBIKA-RESUME.pdf",
+        "GitHub Repository"
+      ],
+      "target_role": "mle",
+      "target_role_name": "Machine Learning Engineer",
+      "overall_readiness_score": 52.8,
+      "previous_score": 52.8,
+      "score_delta": 0.0,
+      "category_breakdown": {
+        "Demonstrated Coverage": 0.53,
+        "Evidence Completeness": 62.5,
+        "Assessment Confidence": 74.5
+      },
+      "supported_skills_count": 5,
+      "partially_supported_count": 0,
+      "not_yet_verified_count": 3,
+      "conflicting_count": 0,
+      "skill_evaluations": [
+        {
+          "skill_id": "python",
+          "name": "Python Programming",
+          "category": "Core Programming",
+          "importance_weight": 0.95,
+          "status": "Supported",
+          "coverage_value": 0.85,
+          "confidence": 0.85,
+          "evidence_count": 1,
+          "artifacts": [
+            {
+              "source": "GitHub: GitHub Repository",
+              "observed": "Demonstrated in repository 'GitHub Repository'. Architecture: Standard Script / Flat Layout",
+              "file_path": "https://github.com/KARUNAMBIKASENTHIL",
+              "code_snippet": null
+            }
+          ],
+          "evaluation_reason": "Evaluated across 1 artifact(s). Status: Supported."
+        },
+        {
+          "skill_id": "ml_modeling",
+          "name": "Machine Learning Algorithms & Training",
+          "category": "Modeling",
+          "importance_weight": 0.9,
+          "status": "Supported",
+          "coverage_value": 0.85,
+          "confidence": 0.75,
+          "evidence_count": 1,
+          "artifacts": [
+            {
+              "source": "Resume (KARUNAMBIKA-RESUME.pdf)",
+              "observed": "Extracted from page 1 of resume 'KARUNAMBIKA-RESUME.pdf'. Context: ...k a r u n a m b i k a s e n t h i l k u m a r @ g m a i l . c o m T e n k a s i  w w w . l i n k e d i n . c o m / i n /... Corroborated by project experience 'CampusBridge - Alumni Management Portal'.",
+              "file_path": "Resume: Page 1",
+              "code_snippet": "...k a r u n a m b i k a s e n t h i l k u m a r @ g m a i l . c o m T e n k a s i  w w w . l i n k e d i n . c o m / i n /..."
+            }
+          ],
+          "evaluation_reason": "Evaluated across 1 artifact(s). Status: Supported."
+        },
+        {
+          "skill_id": "model_evaluation",
+          "name": "Model Evaluation & Leakage Prevention",
+          "category": "Validation",
+          "importance_weight": 0.85,
+          "status": "Not yet verified",
+          "coverage_value": 0.0,
+          "confidence": 0.0,
+          "evidence_count": 0,
+          "artifacts": [],
+          "evaluation_reason": "No observable evidence found in uploaded resumes or connected repositories for Model Evaluation & Leakage Prevention."
+        },
+        {
+          "skill_id": "api_development",
+          "name": "Model Serving & REST APIs",
+          "category": "Software Engineering",
+          "importance_weight": 0.85,
+          "status": "Not yet verified",
+          "coverage_value": 0.0,
+          "confidence": 0.0,
+          "evidence_count": 0,
+          "artifacts": [],
+          "evaluation_reason": "No observable evidence found in uploaded resumes or connected repositories for Model Serving & REST APIs."
+        },
+        {
+          "skill_id": "testing",
+          "name": "Automated Testing & Code Quality",
+          "category": "Software Engineering",
+          "importance_weight": 0.75,
+          "status": "Supported",
+          "coverage_value": 0.85,
+          "confidence": 0.75,
+          "evidence_count": 1,
+          "artifacts": [
+            {
+              "source": "Resume (KARUNAMBIKA-RESUME.pdf)",
+              "observed": "Extracted from page 1 of resume 'KARUNAMBIKA-RESUME.pdf'. Context: ...k a r u n a m b i k a s e n t h i l k u m a r @ g m a i l . c o m T e n k a s i  w w w . l i n k e d i n . c o m / i n /... Corroborated by project experience 'CampusBridge - Alumni Management Portal'.",
+              "file_path": "Resume: Page 1",
+              "code_snippet": "...k a r u n a m b i k a s e n t h i l k u m a r @ g m a i l . c o m T e n k a s i  w w w . l i n k e d i n . c o m / i n /..."
+            }
+          ],
+          "evaluation_reason": "Evaluated across 1 artifact(s). Status: Supported."
+        },
+        {
+          "skill_id": "deployment",
+          "name": "Containerization & Deployment",
+          "category": "DevOps & MLOps",
+          "importance_weight": 0.8,
+          "status": "Supported",
+          "coverage_value": 0.85,
+          "confidence": 0.75,
+          "evidence_count": 1,
+          "artifacts": [
+            {
+              "source": "Resume (KARUNAMBIKA-RESUME.pdf)",
+              "observed": "Extracted from page 1 of resume 'KARUNAMBIKA-RESUME.pdf'. Context: ...k a r u n a m b i k a s e n t h i l k u m a r @ g m a i l . c o m T e n k a s i  w w w . l i n k e d i n . c o m / i n /... Corroborated by project experience 'CampusBridge - Alumni Management Portal'.",
+              "file_path": "Resume: Page 1",
+              "code_snippet": "...k a r u n a m b i k a s e n t h i l k u m a r @ g m a i l . c o m T e n k a s i  w w w . l i n k e d i n . c o m / i n /..."
+            }
+          ],
+          "evaluation_reason": "Evaluated across 1 artifact(s). Status: Supported."
+        },
+        {
+          "skill_id": "data_processing",
+          "name": "Data Wrangling & Pipeline Engineering",
+          "category": "Data",
+          "importance_weight": 0.8,
+          "status": "Not yet verified",
+          "coverage_value": 0.0,
+          "confidence": 0.0,
+          "evidence_count": 0,
+          "artifacts": [],
+          "evaluation_reason": "No observable evidence found in uploaded resumes or connected repositories for Data Wrangling & Pipeline Engineering."
+        },
+        {
+          "skill_id": "version_control_docs",
+          "name": "Git Version Control & Documentation",
+          "category": "Engineering Standards",
+          "importance_weight": 0.7,
+          "status": "Supported",
+          "coverage_value": 0.85,
+          "confidence": 0.62,
+          "evidence_count": 2,
+          "artifacts": [
+            {
+              "source": "Resume (KARUNAMBIKA-RESUME.pdf)",
+              "observed": "Extracted from page 1 of resume 'KARUNAMBIKA-RESUME.pdf'. Context: ...,  Tenkasi 2024 HTML CSS Javascript Tools Technical  Skills Git Github Soft  Skills Communication Problem-solving Served  a...",
+              "file_path": "Resume: Page 1",
+              "code_snippet": "...,  Tenkasi 2024 HTML CSS Javascript Tools Technical  Skills Git Github Soft  Skills Communication Problem-solving Served  a..."
+            },
+            {
+              "source": "Resume (KARUNAMBIKA-RESUME.pdf)",
+              "observed": "Extracted from page 1 of resume 'KARUNAMBIKA-RESUME.pdf'. Context: ...k a r u n a m b i k a s e n t h i l k u m a r @ g m a i l . c o m T e n k a s i  w w w . l i n k e d i n . c o m / i n /... Corroborated by project experience 'CampusBridge - Alumni Management Portal'.",
+              "file_path": "Resume: Page 1",
+              "code_snippet": "...k a r u n a m b i k a s e n t h i l k u m a r @ g m a i l . c o m T e n k a s i  w w w . l i n k e d i n . c o m / i n /..."
+            }
+          ],
+          "evaluation_reason": "Evaluated across 2 artifact(s). Status: Supported."
+        }
+      ],
+      "projects_referenced": [
+        "Resume Work History",
+        "GitHub Repository",
+        "MedRoute - Emergency Medical Response Platform",
+        "CampusBridge - Alumni Management Portal"
+      ],
+      "consistency_summary": "Active observation window",
+      "observation_window": "Current Profile",
+      "recommendations": [
+        "Model Evaluation & Leakage Prevention",
+        "Model Serving & REST APIs",
+        "Data Wrangling & Pipeline Engineering"
+      ],
+      "roadmap_version": "v1.0",
+      "methodology_version": "v1.2.0-deterministic",
+      "_id": "690fd35b-a6bf-46a1-ba81-03094552596b",
+      "created_at": "2026-10-17T04:21:33.475338"
     }
   ],
   "assessments": [
@@ -3627,6 +5113,172 @@
       "id": "51c784c1-962e-45d1-b0fb-eb678bcfd840",
       "_id": "c9544085-99f0-4c23-a270-2fb6a6b21082",
       "created_at": "2026-10-17T04:05:02.748102"
+    },
+    {
+      "overall_readiness_score": 52.8,
+      "demonstrated_coverage": 0.53,
+      "evidence_completeness": 62.5,
+      "assessment_confidence": 74.5,
+      "methodology_version": "v1.2.0-deterministic",
+      "role_id": "mle",
+      "role_name": "Machine Learning Engineer",
+      "skill_evaluations": [
+        {
+          "skill_id": "python",
+          "name": "Python Programming",
+          "category": "Core Programming",
+          "importance_weight": 0.95,
+          "status": "Supported",
+          "coverage_value": 0.85,
+          "confidence": 0.85,
+          "evidence_count": 1,
+          "artifacts": [
+            {
+              "source": "GitHub: GitHub Repository",
+              "observed": "Demonstrated in repository 'GitHub Repository'. Architecture: Standard Script / Flat Layout",
+              "file_path": "https://github.com/KARUNAMBIKASENTHIL",
+              "code_snippet": null
+            }
+          ],
+          "evaluation_reason": "Evaluated across 1 artifact(s). Status: Supported."
+        },
+        {
+          "skill_id": "ml_modeling",
+          "name": "Machine Learning Algorithms & Training",
+          "category": "Modeling",
+          "importance_weight": 0.9,
+          "status": "Supported",
+          "coverage_value": 0.85,
+          "confidence": 0.75,
+          "evidence_count": 1,
+          "artifacts": [
+            {
+              "source": "Resume (KARUNAMBIKA-RESUME.pdf)",
+              "observed": "Extracted from page 1 of resume 'KARUNAMBIKA-RESUME.pdf'. Context: ...k a r u n a m b i k a s e n t h i l k u m a r @ g m a i l . c o m T e n k a s i  w w w . l i n k e d i n . c o m / i n /... Corroborated by project experience 'CampusBridge - Alumni Management Portal'.",
+              "file_path": "Resume: Page 1",
+              "code_snippet": "...k a r u n a m b i k a s e n t h i l k u m a r @ g m a i l . c o m T e n k a s i  w w w . l i n k e d i n . c o m / i n /..."
+            }
+          ],
+          "evaluation_reason": "Evaluated across 1 artifact(s). Status: Supported."
+        },
+        {
+          "skill_id": "model_evaluation",
+          "name": "Model Evaluation & Leakage Prevention",
+          "category": "Validation",
+          "importance_weight": 0.85,
+          "status": "Not yet verified",
+          "coverage_value": 0.0,
+          "confidence": 0.0,
+          "evidence_count": 0,
+          "artifacts": [],
+          "evaluation_reason": "No observable evidence found in uploaded resumes or connected repositories for Model Evaluation & Leakage Prevention."
+        },
+        {
+          "skill_id": "api_development",
+          "name": "Model Serving & REST APIs",
+          "category": "Software Engineering",
+          "importance_weight": 0.85,
+          "status": "Not yet verified",
+          "coverage_value": 0.0,
+          "confidence": 0.0,
+          "evidence_count": 0,
+          "artifacts": [],
+          "evaluation_reason": "No observable evidence found in uploaded resumes or connected repositories for Model Serving & REST APIs."
+        },
+        {
+          "skill_id": "testing",
+          "name": "Automated Testing & Code Quality",
+          "category": "Software Engineering",
+          "importance_weight": 0.75,
+          "status": "Supported",
+          "coverage_value": 0.85,
+          "confidence": 0.75,
+          "evidence_count": 1,
+          "artifacts": [
+            {
+              "source": "Resume (KARUNAMBIKA-RESUME.pdf)",
+              "observed": "Extracted from page 1 of resume 'KARUNAMBIKA-RESUME.pdf'. Context: ...k a r u n a m b i k a s e n t h i l k u m a r @ g m a i l . c o m T e n k a s i  w w w . l i n k e d i n . c o m / i n /... Corroborated by project experience 'CampusBridge - Alumni Management Portal'.",
+              "file_path": "Resume: Page 1",
+              "code_snippet": "...k a r u n a m b i k a s e n t h i l k u m a r @ g m a i l . c o m T e n k a s i  w w w . l i n k e d i n . c o m / i n /..."
+            }
+          ],
+          "evaluation_reason": "Evaluated across 1 artifact(s). Status: Supported."
+        },
+        {
+          "skill_id": "deployment",
+          "name": "Containerization & Deployment",
+          "category": "DevOps & MLOps",
+          "importance_weight": 0.8,
+          "status": "Supported",
+          "coverage_value": 0.85,
+          "confidence": 0.75,
+          "evidence_count": 1,
+          "artifacts": [
+            {
+              "source": "Resume (KARUNAMBIKA-RESUME.pdf)",
+              "observed": "Extracted from page 1 of resume 'KARUNAMBIKA-RESUME.pdf'. Context: ...k a r u n a m b i k a s e n t h i l k u m a r @ g m a i l . c o m T e n k a s i  w w w . l i n k e d i n . c o m / i n /... Corroborated by project experience 'CampusBridge - Alumni Management Portal'.",
+              "file_path": "Resume: Page 1",
+              "code_snippet": "...k a r u n a m b i k a s e n t h i l k u m a r @ g m a i l . c o m T e n k a s i  w w w . l i n k e d i n . c o m / i n /..."
+            }
+          ],
+          "evaluation_reason": "Evaluated across 1 artifact(s). Status: Supported."
+        },
+        {
+          "skill_id": "data_processing",
+          "name": "Data Wrangling & Pipeline Engineering",
+          "category": "Data",
+          "importance_weight": 0.8,
+          "status": "Not yet verified",
+          "coverage_value": 0.0,
+          "confidence": 0.0,
+          "evidence_count": 0,
+          "artifacts": [],
+          "evaluation_reason": "No observable evidence found in uploaded resumes or connected repositories for Data Wrangling & Pipeline Engineering."
+        },
+        {
+          "skill_id": "version_control_docs",
+          "name": "Git Version Control & Documentation",
+          "category": "Engineering Standards",
+          "importance_weight": 0.7,
+          "status": "Supported",
+          "coverage_value": 0.85,
+          "confidence": 0.62,
+          "evidence_count": 2,
+          "artifacts": [
+            {
+              "source": "Resume (KARUNAMBIKA-RESUME.pdf)",
+              "observed": "Extracted from page 1 of resume 'KARUNAMBIKA-RESUME.pdf'. Context: ...,  Tenkasi 2024 HTML CSS Javascript Tools Technical  Skills Git Github Soft  Skills Communication Problem-solving Served  a...",
+              "file_path": "Resume: Page 1",
+              "code_snippet": "...,  Tenkasi 2024 HTML CSS Javascript Tools Technical  Skills Git Github Soft  Skills Communication Problem-solving Served  a..."
+            },
+            {
+              "source": "Resume (KARUNAMBIKA-RESUME.pdf)",
+              "observed": "Extracted from page 1 of resume 'KARUNAMBIKA-RESUME.pdf'. Context: ...k a r u n a m b i k a s e n t h i l k u m a r @ g m a i l . c o m T e n k a s i  w w w . l i n k e d i n . c o m / i n /... Corroborated by project experience 'CampusBridge - Alumni Management Portal'.",
+              "file_path": "Resume: Page 1",
+              "code_snippet": "...k a r u n a m b i k a s e n t h i l k u m a r @ g m a i l . c o m T e n k a s i  w w w . l i n k e d i n . c o m / i n /..."
+            }
+          ],
+          "evaluation_reason": "Evaluated across 2 artifact(s). Status: Supported."
+        }
+      ],
+      "positive_contributors": [
+        "Python Programming (Supported)",
+        "Machine Learning Algorithms & Training (Supported)",
+        "Automated Testing & Code Quality (Supported)",
+        "Containerization & Deployment (Supported)",
+        "Git Version Control & Documentation (Supported)"
+      ],
+      "missing_evidence": [
+        "Model Evaluation & Leakage Prevention",
+        "Model Serving & REST APIs",
+        "Data Wrangling & Pipeline Engineering"
+      ],
+      "formula_explanation": "Deterministic Formula: Score = 100 \u00d7 (\u03a3 w_i \u00d7 c_i) / (\u03a3 w_i). Evaluated 8 competencies with total weight 6.60. Sum of weighted coverage is 3.49, resulting in 52.8%. Evidence completeness is 62.5% (5/8 role requirements examined). Scoring Methodology Version: v1.2.0-deterministic.",
+      "timestamp": "2026-10-17T04:21:33.447576",
+      "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
+      "id": "5fcd61bb-417d-4852-b566-68d5ab8fc0c7",
+      "_id": "a7e701e7-f3d2-4d1b-ac45-aeb81b947a85",
+      "created_at": "2026-10-17T04:21:33.447806"
     }
   ],
   "roadmaps": [
