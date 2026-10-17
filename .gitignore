@@ -1,0 +1,57 @@
+# Dependencies & Build artifacts
+node_modules/
+frontend/node_modules/
+frontend/dist/
+dist/
+dist-ssr/
+*.local
+
+# Python & Virtual Environments
+__pycache__/
+*/__pycache__/
+*/*/__pycache__/
+*.py[cod]
+*$py.class
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+.pytest_cache/
+backend/.pytest_cache/
+env/
+venv/
+.venv/
+ENV/
+backend/env/
+backend/venv/
+backend/.venv/
+
+# Local data & Temporary Uploads
+backend/data/uploads/*
+!backend/data/uploads/.gitkeep
+
+# Environment variables & secrets
+.env
+backend/.env
+frontend/.env
+*.env.local
+
+# Editor & OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.log
+logs/

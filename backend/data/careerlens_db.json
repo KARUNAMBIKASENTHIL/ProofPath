@@ -1,0 +1,3718 @@
+{
+  "evidence": [
+    {
+      "id": "d0455cce-e2ec-4e4c-9098-99437c89bd91",
+      "user_id": "demo-alex-chen",
+      "skill_name": "Python Programming",
+      "normalized_skill": "python",
+      "claimed_source": "Resume & GitHub Repo",
+      "observed_evidence": "Idiomatic Python functions, list comprehensions, type hints, and PEP8 structure across 7 repository files.",
+      "file_path_or_url": "https://github.com/alexchen-ml/diabetes-prediction-service/blob/main/app/main.py",
+      "code_snippet": "from fastapi import FastAPI, HTTPException\nfrom pydantic import BaseModel, Field\n\nclass PatientData(BaseModel):\n    glucose: float = Field(..., gt=0, lt=500)",
+      "project_id": "proj-alex-1",
+      "project_name": "Diabetes Risk Prediction Service",
+      "status": "Strongly supported",
+      "confidence": 0.98,
+      "recency": "Current",
+      "rules_applied": [
+        "RULE_STRONG_SUPPORT: Demonstrated across multiple repository source files and unit tests."
+      ],
+      "timestamp": "2026-10-17T02:00:37.764153",
+      "_id": "c658a3ca-337b-48dc-85be-12c81b33bf86",
+      "created_at": "2026-10-17T02:00:37.764708"
+    },
+    {
+      "id": "7a78a758-52a3-4dcf-9186-4cb674d4e0d0",
+      "user_id": "demo-alex-chen",
+      "skill_name": "Machine Learning Algorithms & Training",
+      "normalized_skill": "ml_modeling",
+      "claimed_source": "GitHub Repository",
+      "observed_evidence": "Trained Random Forest and Gradient Boosting classifiers; compared cross-validated ROC-AUC scores.",
+      "file_path_or_url": "https://github.com/alexchen-ml/diabetes-prediction-service/blob/main/src/train_model.py",
+      "code_snippet": "clf = RandomForestClassifier(n_estimators=100, max_depth=6, random_state=42)\nscores = cross_val_score(clf, X_train, y_train, cv=5, scoring='roc_auc')",
+      "project_id": "proj-alex-1",
+      "project_name": "Diabetes Risk Prediction Service",
+      "status": "Strongly supported",
+      "confidence": 0.95,
+      "recency": "Current",
+      "rules_applied": [
+        "RULE_STRONG_SUPPORT: Full training script with parameter tuning and cross-validation."
+      ],
+      "timestamp": "2026-10-17T02:00:37.764203",
+      "_id": "1b9b0ec1-01e9-43c5-9db0-1c4d735213f6",
+      "created_at": "2026-10-17T02:00:37.768178"
+    },
+    {
+      "id": "4b427700-1291-4ec7-a3df-3d86dfa0fc31",
+      "user_id": "demo-alex-chen",
+      "skill_name": "Model Evaluation & Leakage Prevention",
+      "normalized_skill": "model_evaluation",
+      "claimed_source": "GitHub Repository",
+      "observed_evidence": "StandardScaler fit strictly inside train fold; confusion matrix and ROC-AUC curves calculated on held-out test split.",
+      "file_path_or_url": "https://github.com/alexchen-ml/diabetes-prediction-service/blob/main/src/evaluate.py",
+      "code_snippet": "pipeline = Pipeline([('scaler', StandardScaler()), ('model', clf)])\npipeline.fit(X_train, y_train)",
+      "project_id": "proj-alex-1",
+      "project_name": "Diabetes Risk Prediction Service",
+      "status": "Supported",
+      "confidence": 0.9,
+      "recency": "Current",
+      "rules_applied": [
+        "RULE_SUPPORTED: Observable leakage prevention via Scikit-Learn Pipeline."
+      ],
+      "timestamp": "2026-10-17T02:00:37.764234",
+      "_id": "6e59a396-1dc7-4092-89cf-5f4a98e3066e",
+      "created_at": "2026-10-17T02:00:37.770801"
+    },
+    {
+      "id": "4ce4169b-a69e-472b-b4c1-61541ca074b2",
+      "user_id": "demo-alex-chen",
+      "skill_name": "Model Serving & REST APIs",
+      "normalized_skill": "api_development",
+      "claimed_source": "GitHub Repository",
+      "observed_evidence": "FastAPI asynchronous endpoints accepting POST /predict with loaded serialized pipeline.",
+      "file_path_or_url": "https://github.com/alexchen-ml/diabetes-prediction-service/blob/main/app/routes/predict.py",
+      "code_snippet": "@router.post('/predict', response_model=PredictionResponse)\nasync def predict_risk(data: PatientData):\n    risk = model.predict_proba([features])[0][1]",
+      "project_id": "proj-alex-1",
+      "project_name": "Diabetes Risk Prediction Service",
+      "status": "Supported",
+      "confidence": 0.88,
+      "recency": "Current",
+      "rules_applied": [
+        "RULE_SUPPORTED: Functional REST API serving predictions."
+      ],
+      "timestamp": "2026-10-17T02:00:37.764261",
+      "_id": "8a036dd9-5a18-4de7-97e6-b51e54f27417",
+      "created_at": "2026-10-17T02:00:37.773156"
+    },
+    {
+      "id": "0d08fd62-fd4b-493e-ad06-f65f1d99b2d6",
+      "user_id": "demo-alex-chen",
+      "skill_name": "Automated Testing & Code Quality",
+      "normalized_skill": "testing",
+      "claimed_source": "GitHub Repository",
+      "observed_evidence": "Pytest suite with 8 tests for data preprocessing and API error handling.",
+      "file_path_or_url": "https://github.com/alexchen-ml/diabetes-prediction-service/blob/main/tests/test_api.py",
+      "code_snippet": "def test_invalid_glucose_returns_422(client):\n    res = client.post('/predict', json={'glucose': -10})\n    assert res.status_code == 422",
+      "project_id": "proj-alex-1",
+      "project_name": "Diabetes Risk Prediction Service",
+      "status": "Supported",
+      "confidence": 0.85,
+      "recency": "Current",
+      "rules_applied": [
+        "RULE_SUPPORTED: Pytest assertions testing boundary failure conditions."
+      ],
+      "timestamp": "2026-10-17T02:00:37.764298",
+      "_id": "e0733a42-8afa-454b-9efb-124ee670e2c8",
+      "created_at": "2026-10-17T02:00:37.775768"
+    },
+    {
+      "id": "a981363d-d1e1-4261-baaf-4711c0153902",
+      "user_id": "demo-alex-chen",
+      "skill_name": "Containerization & Deployment",
+      "normalized_skill": "deployment",
+      "claimed_source": "Resume Claim Only",
+      "observed_evidence": "Resume bullet mentions 'Docker and deployment', but zero Dockerfile, docker-compose.yml, or cloud config exists in connected repositories.",
+      "file_path_or_url": null,
+      "code_snippet": null,
+      "project_id": null,
+      "project_name": null,
+      "status": "Not yet verified",
+      "confidence": 0.15,
+      "recency": "Current",
+      "rules_applied": [
+        "RULE_CLAIM_ONLY: Listed in resume skills, but 0 deployment artifacts found in inspected code."
+      ],
+      "timestamp": "2026-10-17T02:00:37.764335",
+      "_id": "b21326c6-d9b2-4ab2-af17-84380ca953ba",
+      "created_at": "2026-10-17T02:00:37.778210"
+    },
+    {
+      "id": "7eaa36c8-c4a9-465b-925a-8013efee5d8c",
+      "user_id": "demo-alex-chen",
+      "skill_name": "Data Wrangling & Pipeline Engineering",
+      "normalized_skill": "data_processing",
+      "claimed_source": "GitHub Repository",
+      "observed_evidence": "Pandas dataframe handling, outlier removal, and median imputation for null values.",
+      "file_path_or_url": "https://github.com/alexchen-ml/diabetes-prediction-service/blob/main/src/preprocess.py",
+      "code_snippet": "df['glucose'] = df['glucose'].replace(0, np.nan).fillna(df['glucose'].median())",
+      "project_id": "proj-alex-1",
+      "project_name": "Diabetes Risk Prediction Service",
+      "status": "Supported",
+      "confidence": 0.85,
+      "recency": "Current",
+      "rules_applied": [
+        "RULE_SUPPORTED: Data wrangling pipeline in pandas."
+      ],
+      "timestamp": "2026-10-17T02:00:37.764366",
+      "_id": "2556a015-d572-4c41-85f0-341df55ae8b3",
+      "created_at": "2026-10-17T02:00:37.780306"
+    },
+    {
+      "id": "63270168-1ee9-4e01-8690-4ea59da475d1",
+      "user_id": "demo-alex-chen",
+      "skill_name": "Git Version Control & Documentation",
+      "normalized_skill": "version_control_docs",
+      "claimed_source": "GitHub Repository",
+      "observed_evidence": "34 commits with descriptive messages; comprehensive README with setup commands.",
+      "file_path_or_url": "https://github.com/alexchen-ml/diabetes-prediction-service/blob/main/README.md",
+      "code_snippet": "# Setup: pip install -r requirements.txt && pytest",
+      "project_id": "proj-alex-1",
+      "project_name": "Diabetes Risk Prediction Service",
+      "status": "Supported",
+      "confidence": 0.9,
+      "recency": "Current",
+      "rules_applied": [
+        "RULE_SUPPORTED: Documented setup instructions and git commit cadence."
+      ],
+      "timestamp": "2026-10-17T02:00:37.764397",
+      "_id": "fc749c83-6240-4c17-8540-d2ab5950f957",
+      "created_at": "2026-10-17T02:00:37.783448"
+    },
+    {
+      "id": "78130e7c-ae46-4695-85fe-93ba3210bf26",
+      "user_id": "demo-alex-chen",
+      "skill_name": "Python Programming",
+      "normalized_skill": "python",
+      "claimed_source": "Resume & GitHub Repo",
+      "observed_evidence": "Idiomatic Python functions, list comprehensions, type hints, and PEP8 structure across 7 repository files.",
+      "file_path_or_url": "https://github.com/alexchen-ml/diabetes-prediction-service/blob/main/app/main.py",
+      "code_snippet": "from fastapi import FastAPI, HTTPException\nfrom pydantic import BaseModel, Field\n\nclass PatientData(BaseModel):\n    glucose: float = Field(..., gt=0, lt=500)",
+      "project_id": "proj-alex-1",
+      "project_name": "Diabetes Risk Prediction Service",
+      "status": "Strongly supported",
+      "confidence": 0.98,
+      "recency": "Current",
+      "rules_applied": [
+        "RULE_STRONG_SUPPORT: Demonstrated across multiple repository source files and unit tests."
+      ],
+      "timestamp": "2026-10-17T02:17:58.775165",
+      "_id": "1226bacf-c597-444f-9fdb-c35c8283c621",
+      "created_at": "2026-10-17T02:17:58.775744"
+    },
+    {
+      "id": "668dd88c-364b-4505-8d38-c4741a5b1676",
+      "user_id": "demo-alex-chen",
+      "skill_name": "Machine Learning Algorithms & Training",
+      "normalized_skill": "ml_modeling",
+      "claimed_source": "GitHub Repository",
+      "observed_evidence": "Trained Random Forest and Gradient Boosting classifiers; compared cross-validated ROC-AUC scores.",
+      "file_path_or_url": "https://github.com/alexchen-ml/diabetes-prediction-service/blob/main/src/train_model.py",
+      "code_snippet": "clf = RandomForestClassifier(n_estimators=100, max_depth=6, random_state=42)\nscores = cross_val_score(clf, X_train, y_train, cv=5, scoring='roc_auc')",
+      "project_id": "proj-alex-1",
+      "project_name": "Diabetes Risk Prediction Service",
+      "status": "Strongly supported",
+      "confidence": 0.95,
+      "recency": "Current",
+      "rules_applied": [
+        "RULE_STRONG_SUPPORT: Full training script with parameter tuning and cross-validation."
+      ],
+      "timestamp": "2026-10-17T02:17:58.775211",
+      "_id": "9823de63-73fb-4796-92e7-0a771cb35e1b",
+      "created_at": "2026-10-17T02:17:58.780436"
+    },
+    {
+      "id": "64d6222b-34a3-4943-8617-f6f1bfb6aea6",
+      "user_id": "demo-alex-chen",
+      "skill_name": "Model Evaluation & Leakage Prevention",
+      "normalized_skill": "model_evaluation",
+      "claimed_source": "GitHub Repository",
+      "observed_evidence": "StandardScaler fit strictly inside train fold; confusion matrix and ROC-AUC curves calculated on held-out test split.",
+      "file_path_or_url": "https://github.com/alexchen-ml/diabetes-prediction-service/blob/main/src/evaluate.py",
+      "code_snippet": "pipeline = Pipeline([('scaler', StandardScaler()), ('model', clf)])\npipeline.fit(X_train, y_train)",
+      "project_id": "proj-alex-1",
+      "project_name": "Diabetes Risk Prediction Service",
+      "status": "Supported",
+      "confidence": 0.9,
+      "recency": "Current",
+      "rules_applied": [
+        "RULE_SUPPORTED: Observable leakage prevention via Scikit-Learn Pipeline."
+      ],
+      "timestamp": "2026-10-17T02:17:58.775248",
+      "_id": "94df36ac-ae4d-4b12-914d-87cccb33329f",
+      "created_at": "2026-10-17T02:17:58.785224"
+    },
+    {
+      "id": "a5c7f0b1-29f5-4f72-8817-7bb1952cf7f1",
+      "user_id": "demo-alex-chen",
+      "skill_name": "Model Serving & REST APIs",
+      "normalized_skill": "api_development",
+      "claimed_source": "GitHub Repository",
+      "observed_evidence": "FastAPI asynchronous endpoints accepting POST /predict with loaded serialized pipeline.",
+      "file_path_or_url": "https://github.com/alexchen-ml/diabetes-prediction-service/blob/main/app/routes/predict.py",
+      "code_snippet": "@router.post('/predict', response_model=PredictionResponse)\nasync def predict_risk(data: PatientData):\n    risk = model.predict_proba([features])[0][1]",
+      "project_id": "proj-alex-1",
+      "project_name": "Diabetes Risk Prediction Service",
+      "status": "Supported",
+      "confidence": 0.88,
+      "recency": "Current",
+      "rules_applied": [
+        "RULE_SUPPORTED: Functional REST API serving predictions."
+      ],
+      "timestamp": "2026-10-17T02:17:58.775276",
+      "_id": "a7c8a98d-7993-4449-b4ad-ebb66b373e45",
+      "created_at": "2026-10-17T02:17:58.789848"
+    },
+    {
+      "id": "ce8a07ea-5adb-4ff5-a026-0753a0fb45cf",
+      "user_id": "demo-alex-chen",
+      "skill_name": "Automated Testing & Code Quality",
+      "normalized_skill": "testing",
+      "claimed_source": "GitHub Repository",
+      "observed_evidence": "Pytest suite with 8 tests for data preprocessing and API error handling.",
+      "file_path_or_url": "https://github.com/alexchen-ml/diabetes-prediction-service/blob/main/tests/test_api.py",
+      "code_snippet": "def test_invalid_glucose_returns_422(client):\n    res = client.post('/predict', json={'glucose': -10})\n    assert res.status_code == 422",
+      "project_id": "proj-alex-1",
+      "project_name": "Diabetes Risk Prediction Service",
+      "status": "Supported",
+      "confidence": 0.85,
+      "recency": "Current",
+      "rules_applied": [
+        "RULE_SUPPORTED: Pytest assertions testing boundary failure conditions."
+      ],
+      "timestamp": "2026-10-17T02:17:58.775315",
+      "_id": "7f9a4151-4b60-4246-b878-9ec105138557",
+      "created_at": "2026-10-17T02:17:58.794530"
+    },
+    {
+      "id": "64d63ea1-98e7-4164-9d43-312df69c266a",
+      "user_id": "demo-alex-chen",
+      "skill_name": "Containerization & Deployment",
+      "normalized_skill": "deployment",
+      "claimed_source": "Resume Claim Only",
+      "observed_evidence": "Resume bullet mentions 'Docker and deployment', but zero Dockerfile, docker-compose.yml, or cloud config exists in connected repositories.",
+      "file_path_or_url": null,
+      "code_snippet": null,
+      "project_id": null,
+      "project_name": null,
+      "status": "Not yet verified",
+      "confidence": 0.15,
+      "recency": "Current",
+      "rules_applied": [
+        "RULE_CLAIM_ONLY: Listed in resume skills, but 0 deployment artifacts found in inspected code."
+      ],
+      "timestamp": "2026-10-17T02:17:58.775347",
+      "_id": "bf6bea3d-5d47-4af6-a0fb-50c11e3438ab",
+      "created_at": "2026-10-17T02:17:58.798053"
+    },
+    {
+      "id": "b52c9c02-2872-43ba-b34a-c65f3a8618a6",
+      "user_id": "demo-alex-chen",
+      "skill_name": "Data Wrangling & Pipeline Engineering",
+      "normalized_skill": "data_processing",
+      "claimed_source": "GitHub Repository",
+      "observed_evidence": "Pandas dataframe handling, outlier removal, and median imputation for null values.",
+      "file_path_or_url": "https://github.com/alexchen-ml/diabetes-prediction-service/blob/main/src/preprocess.py",
+      "code_snippet": "df['glucose'] = df['glucose'].replace(0, np.nan).fillna(df['glucose'].median())",
+      "project_id": "proj-alex-1",
+      "project_name": "Diabetes Risk Prediction Service",
+      "status": "Supported",
+      "confidence": 0.85,
+      "recency": "Current",
+      "rules_applied": [
+        "RULE_SUPPORTED: Data wrangling pipeline in pandas."
+      ],
+      "timestamp": "2026-10-17T02:17:58.775379",
+      "_id": "42db38a4-8fe7-4f79-aff4-33bfe4e32d69",
+      "created_at": "2026-10-17T02:17:58.801879"
+    },
+    {
+      "id": "14dbcfd3-7a63-467c-8db9-6942124cfde0",
+      "user_id": "demo-alex-chen",
+      "skill_name": "Git Version Control & Documentation",
+      "normalized_skill": "version_control_docs",
+      "claimed_source": "GitHub Repository",
+      "observed_evidence": "34 commits with descriptive messages; comprehensive README with setup commands.",
+      "file_path_or_url": "https://github.com/alexchen-ml/diabetes-prediction-service/blob/main/README.md",
+      "code_snippet": "# Setup: pip install -r requirements.txt && pytest",
+      "project_id": "proj-alex-1",
+      "project_name": "Diabetes Risk Prediction Service",
+      "status": "Supported",
+      "confidence": 0.9,
+      "recency": "Current",
+      "rules_applied": [
+        "RULE_SUPPORTED: Documented setup instructions and git commit cadence."
+      ],
+      "timestamp": "2026-10-17T02:17:58.775411",
+      "_id": "858ed5df-cc0c-4ebf-833d-ac452dd1b429",
+      "created_at": "2026-10-17T02:17:58.805291"
+    },
+    {
+      "id": "a45a743f-725e-401c-b206-efd0d53e796d",
+      "user_id": "demo-alex-chen",
+      "skill_name": "Python Programming",
+      "normalized_skill": "python",
+      "claimed_source": "Resume & GitHub Repo",
+      "observed_evidence": "Idiomatic Python functions, list comprehensions, type hints, and PEP8 structure across 7 repository files.",
+      "file_path_or_url": "https://github.com/alexchen-ml/diabetes-prediction-service/blob/main/app/main.py",
+      "code_snippet": "from fastapi import FastAPI, HTTPException\nfrom pydantic import BaseModel, Field\n\nclass PatientData(BaseModel):\n    glucose: float = Field(..., gt=0, lt=500)",
+      "project_id": "proj-alex-1",
+      "project_name": "Diabetes Risk Prediction Service",
+      "status": "Strongly supported",
+      "confidence": 0.98,
+      "recency": "Current",
+      "rules_applied": [
+        "RULE_STRONG_SUPPORT: Demonstrated across multiple repository source files and unit tests."
+      ],
+      "timestamp": "2026-10-17T02:43:21.150674",
+      "_id": "d1bb7982-96e2-460a-ba79-17ab536a838c",
+      "created_at": "2026-10-17T02:43:21.151062"
+    },
+    {
+      "id": "fc2e0b6b-caa2-4241-b252-daab2ff4e309",
+      "user_id": "demo-alex-chen",
+      "skill_name": "Machine Learning Algorithms & Training",
+      "normalized_skill": "ml_modeling",
+      "claimed_source": "GitHub Repository",
+      "observed_evidence": "Trained Random Forest and Gradient Boosting classifiers; compared cross-validated ROC-AUC scores.",
+      "file_path_or_url": "https://github.com/alexchen-ml/diabetes-prediction-service/blob/main/src/train_model.py",
+      "code_snippet": "clf = RandomForestClassifier(n_estimators=100, max_depth=6, random_state=42)\nscores = cross_val_score(clf, X_train, y_train, cv=5, scoring='roc_auc')",
+      "project_id": "proj-alex-1",
+      "project_name": "Diabetes Risk Prediction Service",
+      "status": "Strongly supported",
+      "confidence": 0.95,
+      "recency": "Current",
+      "rules_applied": [
+        "RULE_STRONG_SUPPORT: Full training script with parameter tuning and cross-validation."
+      ],
+      "timestamp": "2026-10-17T02:43:21.150705",
+      "_id": "bf517bc5-695e-4846-9427-8336a9b06ab5",
+      "created_at": "2026-10-17T02:43:21.155090"
+    },
+    {
+      "id": "6014d08d-a90b-48f1-a803-6cc327e31827",
+      "user_id": "demo-alex-chen",
+      "skill_name": "Model Evaluation & Leakage Prevention",
+      "normalized_skill": "model_evaluation",
+      "claimed_source": "GitHub Repository",
+      "observed_evidence": "StandardScaler fit strictly inside train fold; confusion matrix and ROC-AUC curves calculated on held-out test split.",
+      "file_path_or_url": "https://github.com/alexchen-ml/diabetes-prediction-service/blob/main/src/evaluate.py",
+      "code_snippet": "pipeline = Pipeline([('scaler', StandardScaler()), ('model', clf)])\npipeline.fit(X_train, y_train)",
+      "project_id": "proj-alex-1",
+      "project_name": "Diabetes Risk Prediction Service",
+      "status": "Supported",
+      "confidence": 0.9,
+      "recency": "Current",
+      "rules_applied": [
+        "RULE_SUPPORTED: Observable leakage prevention via Scikit-Learn Pipeline."
+      ],
+      "timestamp": "2026-10-17T02:43:21.150727",
+      "_id": "5623b54b-d855-4c7c-b01d-792ac91df1ea",
+      "created_at": "2026-10-17T02:43:21.160438"
+    },
+    {
+      "id": "a115bcdb-dd75-4831-95b4-adf87fb11417",
+      "user_id": "demo-alex-chen",
+      "skill_name": "Model Serving & REST APIs",
+      "normalized_skill": "api_development",
+      "claimed_source": "GitHub Repository",
+      "observed_evidence": "FastAPI asynchronous endpoints accepting POST /predict with loaded serialized pipeline.",
+      "file_path_or_url": "https://github.com/alexchen-ml/diabetes-prediction-service/blob/main/app/routes/predict.py",
+      "code_snippet": "@router.post('/predict', response_model=PredictionResponse)\nasync def predict_risk(data: PatientData):\n    risk = model.predict_proba([features])[0][1]",
+      "project_id": "proj-alex-1",
+      "project_name": "Diabetes Risk Prediction Service",
+      "status": "Supported",
+      "confidence": 0.88,
+      "recency": "Current",
+      "rules_applied": [
+        "RULE_SUPPORTED: Functional REST API serving predictions."
+      ],
+      "timestamp": "2026-10-17T02:43:21.150747",
+      "_id": "2c5a20f7-fc8d-4ff6-99be-862c2befec6b",
+      "created_at": "2026-10-17T02:43:21.164788"
+    },
+    {
+      "id": "d1ae58d0-7bc0-4505-9874-21d397d21888",
+      "user_id": "demo-alex-chen",
+      "skill_name": "Automated Testing & Code Quality",
+      "normalized_skill": "testing",
+      "claimed_source": "GitHub Repository",
+      "observed_evidence": "Pytest suite with 8 tests for data preprocessing and API error handling.",
+      "file_path_or_url": "https://github.com/alexchen-ml/diabetes-prediction-service/blob/main/tests/test_api.py",
+      "code_snippet": "def test_invalid_glucose_returns_422(client):\n    res = client.post('/predict', json={'glucose': -10})\n    assert res.status_code == 422",
+      "project_id": "proj-alex-1",
+      "project_name": "Diabetes Risk Prediction Service",
+      "status": "Supported",
+      "confidence": 0.85,
+      "recency": "Current",
+      "rules_applied": [
+        "RULE_SUPPORTED: Pytest assertions testing boundary failure conditions."
+      ],
+      "timestamp": "2026-10-17T02:43:21.150766",
+      "_id": "ddc53e0f-b57c-4ec7-b0a5-784252463e35",
+      "created_at": "2026-10-17T02:43:21.168963"
+    },
+    {
+      "id": "8ea7d83e-66d7-41c5-9b28-3f21bf755c64",
+      "user_id": "demo-alex-chen",
+      "skill_name": "Containerization & Deployment",
+      "normalized_skill": "deployment",
+      "claimed_source": "Resume Claim Only",
+      "observed_evidence": "Resume bullet mentions 'Docker and deployment', but zero Dockerfile, docker-compose.yml, or cloud config exists in connected repositories.",
+      "file_path_or_url": null,
+      "code_snippet": null,
+      "project_id": null,
+      "project_name": null,
+      "status": "Not yet verified",
+      "confidence": 0.15,
+      "recency": "Current",
+      "rules_applied": [
+        "RULE_CLAIM_ONLY: Listed in resume skills, but 0 deployment artifacts found in inspected code."
+      ],
+      "timestamp": "2026-10-17T02:43:21.150797",
+      "_id": "01e4850c-c479-4108-92e1-143e38af38f1",
+      "created_at": "2026-10-17T02:43:21.173063"
+    },
+    {
+      "id": "2a9148e9-0b4b-4343-b616-709c72afe8fa",
+      "user_id": "demo-alex-chen",
+      "skill_name": "Data Wrangling & Pipeline Engineering",
+      "normalized_skill": "data_processing",
+      "claimed_source": "GitHub Repository",
+      "observed_evidence": "Pandas dataframe handling, outlier removal, and median imputation for null values.",
+      "file_path_or_url": "https://github.com/alexchen-ml/diabetes-prediction-service/blob/main/src/preprocess.py",
+      "code_snippet": "df['glucose'] = df['glucose'].replace(0, np.nan).fillna(df['glucose'].median())",
+      "project_id": "proj-alex-1",
+      "project_name": "Diabetes Risk Prediction Service",
+      "status": "Supported",
+      "confidence": 0.85,
+      "recency": "Current",
+      "rules_applied": [
+        "RULE_SUPPORTED: Data wrangling pipeline in pandas."
+      ],
+      "timestamp": "2026-10-17T02:43:21.150818",
+      "_id": "41d2401a-6b2f-42bf-86b9-ebaf425c79a2",
+      "created_at": "2026-10-17T02:43:21.179000"
+    },
+    {
+      "id": "e9b75f00-efd7-487e-9e7b-e40c54ba307f",
+      "user_id": "demo-alex-chen",
+      "skill_name": "Git Version Control & Documentation",
+      "normalized_skill": "version_control_docs",
+      "claimed_source": "GitHub Repository",
+      "observed_evidence": "34 commits with descriptive messages; comprehensive README with setup commands.",
+      "file_path_or_url": "https://github.com/alexchen-ml/diabetes-prediction-service/blob/main/README.md",
+      "code_snippet": "# Setup: pip install -r requirements.txt && pytest",
+      "project_id": "proj-alex-1",
+      "project_name": "Diabetes Risk Prediction Service",
+      "status": "Supported",
+      "confidence": 0.9,
+      "recency": "Current",
+      "rules_applied": [
+        "RULE_SUPPORTED: Documented setup instructions and git commit cadence."
+      ],
+      "timestamp": "2026-10-17T02:43:21.150842",
+      "_id": "a7c6fcfc-cb37-411a-8b6e-9d0370b84b95",
+      "created_at": "2026-10-17T02:43:21.185493"
+    },
+    {
+      "id": "aba5ba12-9dd6-4702-a84b-4e0db295cbf3",
+      "user_id": "demo-alex-chen",
+      "skill_name": "Python Programming",
+      "normalized_skill": "python",
+      "claimed_source": "Resume & GitHub Repo",
+      "observed_evidence": "Idiomatic Python functions, list comprehensions, type hints, and PEP8 structure across 7 repository files.",
+      "file_path_or_url": "https://github.com/alexchen-ml/diabetes-prediction-service/blob/main/app/main.py",
+      "code_snippet": "from fastapi import FastAPI, HTTPException\nfrom pydantic import BaseModel, Field\n\nclass PatientData(BaseModel):\n    glucose: float = Field(..., gt=0, lt=500)",
+      "project_id": "proj-alex-1",
+      "project_name": "Diabetes Risk Prediction Service",
+      "status": "Strongly supported",
+      "confidence": 0.98,
+      "recency": "Current",
+      "rules_applied": [
+        "RULE_STRONG_SUPPORT: Demonstrated across multiple repository source files and unit tests."
+      ],
+      "timestamp": "2026-10-17T02:45:17.445923",
+      "_id": "fe60e82d-ca5a-4330-a722-6cb6dfb333c4",
+      "created_at": "2026-10-17T02:45:17.446693"
+    },
+    {
+      "id": "098042cc-4954-44c3-924c-37bb3b805f6c",
+      "user_id": "demo-alex-chen",
+      "skill_name": "Machine Learning Algorithms & Training",
+      "normalized_skill": "ml_modeling",
+      "claimed_source": "GitHub Repository",
+      "observed_evidence": "Trained Random Forest and Gradient Boosting classifiers; compared cross-validated ROC-AUC scores.",
+      "file_path_or_url": "https://github.com/alexchen-ml/diabetes-prediction-service/blob/main/src/train_model.py",
+      "code_snippet": "clf = RandomForestClassifier(n_estimators=100, max_depth=6, random_state=42)\nscores = cross_val_score(clf, X_train, y_train, cv=5, scoring='roc_auc')",
+      "project_id": "proj-alex-1",
+      "project_name": "Diabetes Risk Prediction Service",
+      "status": "Strongly supported",
+      "confidence": 0.95,
+      "recency": "Current",
+      "rules_applied": [
+        "RULE_STRONG_SUPPORT: Full training script with parameter tuning and cross-validation."
+      ],
+      "timestamp": "2026-10-17T02:45:17.445974",
+      "_id": "c7fe2c29-6df0-470c-907a-435a76a94c99",
+      "created_at": "2026-10-17T02:45:17.452280"
+    },
+    {
+      "id": "fede550f-6de8-4d84-a611-5706b575e697",
+      "user_id": "demo-alex-chen",
+      "skill_name": "Model Evaluation & Leakage Prevention",
+      "normalized_skill": "model_evaluation",
+      "claimed_source": "GitHub Repository",
+      "observed_evidence": "StandardScaler fit strictly inside train fold; confusion matrix and ROC-AUC curves calculated on held-out test split.",
+      "file_path_or_url": "https://github.com/alexchen-ml/diabetes-prediction-service/blob/main/src/evaluate.py",
+      "code_snippet": "pipeline = Pipeline([('scaler', StandardScaler()), ('model', clf)])\npipeline.fit(X_train, y_train)",
+      "project_id": "proj-alex-1",
+      "project_name": "Diabetes Risk Prediction Service",
+      "status": "Supported",
+      "confidence": 0.9,
+      "recency": "Current",
+      "rules_applied": [
+        "RULE_SUPPORTED: Observable leakage prevention via Scikit-Learn Pipeline."
+      ],
+      "timestamp": "2026-10-17T02:45:17.446013",
+      "_id": "18bc4aa0-718c-4afa-b431-516abd6649e1",
+      "created_at": "2026-10-17T02:45:17.458959"
+    },
+    {
+      "id": "90109435-c0eb-4081-a6e2-2f7d11cdd034",
+      "user_id": "demo-alex-chen",
+      "skill_name": "Model Serving & REST APIs",
+      "normalized_skill": "api_development",
+      "claimed_source": "GitHub Repository",
+      "observed_evidence": "FastAPI asynchronous endpoints accepting POST /predict with loaded serialized pipeline.",
+      "file_path_or_url": "https://github.com/alexchen-ml/diabetes-prediction-service/blob/main/app/routes/predict.py",
+      "code_snippet": "@router.post('/predict', response_model=PredictionResponse)\nasync def predict_risk(data: PatientData):\n    risk = model.predict_proba([features])[0][1]",
+      "project_id": "proj-alex-1",
+      "project_name": "Diabetes Risk Prediction Service",
+      "status": "Supported",
+      "confidence": 0.88,
+      "recency": "Current",
+      "rules_applied": [
+        "RULE_SUPPORTED: Functional REST API serving predictions."
+      ],
+      "timestamp": "2026-10-17T02:45:17.446043",
+      "_id": "b4eead04-fbc8-413b-8fcb-212b8138b6ff",
+      "created_at": "2026-10-17T02:45:17.466931"
+    },
+    {
+      "id": "554df69f-dc7f-4fc1-882f-bfd7a6fb6a9a",
+      "user_id": "demo-alex-chen",
+      "skill_name": "Automated Testing & Code Quality",
+      "normalized_skill": "testing",
+      "claimed_source": "GitHub Repository",
+      "observed_evidence": "Pytest suite with 8 tests for data preprocessing and API error handling.",
+      "file_path_or_url": "https://github.com/alexchen-ml/diabetes-prediction-service/blob/main/tests/test_api.py",
+      "code_snippet": "def test_invalid_glucose_returns_422(client):\n    res = client.post('/predict', json={'glucose': -10})\n    assert res.status_code == 422",
+      "project_id": "proj-alex-1",
+      "project_name": "Diabetes Risk Prediction Service",
+      "status": "Supported",
+      "confidence": 0.85,
+      "recency": "Current",
+      "rules_applied": [
+        "RULE_SUPPORTED: Pytest assertions testing boundary failure conditions."
+      ],
+      "timestamp": "2026-10-17T02:45:17.446148",
+      "_id": "7230daa7-2d89-408d-8ea9-794c1d84af21",
+      "created_at": "2026-10-17T02:45:17.472788"
+    },
+    {
+      "id": "1aaa2435-c755-4719-aa74-78c6e8ab89de",
+      "user_id": "demo-alex-chen",
+      "skill_name": "Containerization & Deployment",
+      "normalized_skill": "deployment",
+      "claimed_source": "Resume Claim Only",
+      "observed_evidence": "Resume bullet mentions 'Docker and deployment', but zero Dockerfile, docker-compose.yml, or cloud config exists in connected repositories.",
+      "file_path_or_url": null,
+      "code_snippet": null,
+      "project_id": null,
+      "project_name": null,
+      "status": "Not yet verified",
+      "confidence": 0.15,
+      "recency": "Current",
+      "rules_applied": [
+        "RULE_CLAIM_ONLY: Listed in resume skills, but 0 deployment artifacts found in inspected code."
+      ],
+      "timestamp": "2026-10-17T02:45:17.446187",
+      "_id": "ac1dbead-9bb9-4c6c-b699-c6ce8b6b305c",
+      "created_at": "2026-10-17T02:45:17.477608"
+    },
+    {
+      "id": "0e8515d4-1dc1-493b-9ee1-cb1fb6fcf36b",
+      "user_id": "demo-alex-chen",
+      "skill_name": "Data Wrangling & Pipeline Engineering",
+      "normalized_skill": "data_processing",
+      "claimed_source": "GitHub Repository",
+      "observed_evidence": "Pandas dataframe handling, outlier removal, and median imputation for null values.",
+      "file_path_or_url": "https://github.com/alexchen-ml/diabetes-prediction-service/blob/main/src/preprocess.py",
+      "code_snippet": "df['glucose'] = df['glucose'].replace(0, np.nan).fillna(df['glucose'].median())",
+      "project_id": "proj-alex-1",
+      "project_name": "Diabetes Risk Prediction Service",
+      "status": "Supported",
+      "confidence": 0.85,
+      "recency": "Current",
+      "rules_applied": [
+        "RULE_SUPPORTED: Data wrangling pipeline in pandas."
+      ],
+      "timestamp": "2026-10-17T02:45:17.446219",
+      "_id": "f0263dc6-ee4d-4ebd-b89d-9f8bb5534978",
+      "created_at": "2026-10-17T02:45:17.480373"
+    },
+    {
+      "id": "bdc7788d-61f2-4355-910d-2a6a866b7a53",
+      "user_id": "demo-alex-chen",
+      "skill_name": "Git Version Control & Documentation",
+      "normalized_skill": "version_control_docs",
+      "claimed_source": "GitHub Repository",
+      "observed_evidence": "34 commits with descriptive messages; comprehensive README with setup commands.",
+      "file_path_or_url": "https://github.com/alexchen-ml/diabetes-prediction-service/blob/main/README.md",
+      "code_snippet": "# Setup: pip install -r requirements.txt && pytest",
+      "project_id": "proj-alex-1",
+      "project_name": "Diabetes Risk Prediction Service",
+      "status": "Supported",
+      "confidence": 0.9,
+      "recency": "Current",
+      "rules_applied": [
+        "RULE_SUPPORTED: Documented setup instructions and git commit cadence."
+      ],
+      "timestamp": "2026-10-17T02:45:17.446257",
+      "_id": "619af56d-ea8a-4492-9d6f-5b312771fdaf",
+      "created_at": "2026-10-17T02:45:17.484817"
+    },
+    {
+      "id": "ec3aa485-f763-42a2-898d-321384483560",
+      "user_id": "demo-alex-chen",
+      "skill_name": "Python Programming",
+      "normalized_skill": "python",
+      "claimed_source": "Resume & GitHub Repo",
+      "observed_evidence": "Idiomatic Python functions, list comprehensions, type hints, and PEP8 structure across 7 repository files.",
+      "file_path_or_url": "https://github.com/alexchen-ml/diabetes-prediction-service/blob/main/app/main.py",
+      "code_snippet": "from fastapi import FastAPI, HTTPException\nfrom pydantic import BaseModel, Field\n\nclass PatientData(BaseModel):\n    glucose: float = Field(..., gt=0, lt=500)",
+      "project_id": "proj-alex-1",
+      "project_name": "Diabetes Risk Prediction Service",
+      "status": "Strongly supported",
+      "confidence": 0.98,
+      "recency": "Current",
+      "rules_applied": [
+        "RULE_STRONG_SUPPORT: Demonstrated across multiple repository source files and unit tests."
+      ],
+      "timestamp": "2026-10-17T03:06:16.591567",
+      "_id": "7c3bd366-4f38-4697-8fdb-e066fbe5b556",
+      "created_at": "2026-10-17T03:06:16.592005"
+    },
+    {
+      "id": "504fd836-ff82-441e-9ea5-c3847051ce0e",
+      "user_id": "demo-alex-chen",
+      "skill_name": "Machine Learning Algorithms & Training",
+      "normalized_skill": "ml_modeling",
+      "claimed_source": "GitHub Repository",
+      "observed_evidence": "Trained Random Forest and Gradient Boosting classifiers; compared cross-validated ROC-AUC scores.",
+      "file_path_or_url": "https://github.com/alexchen-ml/diabetes-prediction-service/blob/main/src/train_model.py",
+      "code_snippet": "clf = RandomForestClassifier(n_estimators=100, max_depth=6, random_state=42)\nscores = cross_val_score(clf, X_train, y_train, cv=5, scoring='roc_auc')",
+      "project_id": "proj-alex-1",
+      "project_name": "Diabetes Risk Prediction Service",
+      "status": "Strongly supported",
+      "confidence": 0.95,
+      "recency": "Current",
+      "rules_applied": [
+        "RULE_STRONG_SUPPORT: Full training script with parameter tuning and cross-validation."
+      ],
+      "timestamp": "2026-10-17T03:06:16.591600",
+      "_id": "a94ebea2-fff0-49e4-b2f8-ada4c011ed20",
+      "created_at": "2026-10-17T03:06:16.600489"
+    },
+    {
+      "id": "bf53a7a0-4b19-4b59-b971-b3157021e4bc",
+      "user_id": "demo-alex-chen",
+      "skill_name": "Model Evaluation & Leakage Prevention",
+      "normalized_skill": "model_evaluation",
+      "claimed_source": "GitHub Repository",
+      "observed_evidence": "StandardScaler fit strictly inside train fold; confusion matrix and ROC-AUC curves calculated on held-out test split.",
+      "file_path_or_url": "https://github.com/alexchen-ml/diabetes-prediction-service/blob/main/src/evaluate.py",
+      "code_snippet": "pipeline = Pipeline([('scaler', StandardScaler()), ('model', clf)])\npipeline.fit(X_train, y_train)",
+      "project_id": "proj-alex-1",
+      "project_name": "Diabetes Risk Prediction Service",
+      "status": "Supported",
+      "confidence": 0.9,
+      "recency": "Current",
+      "rules_applied": [
+        "RULE_SUPPORTED: Observable leakage prevention via Scikit-Learn Pipeline."
+      ],
+      "timestamp": "2026-10-17T03:06:16.591622",
+      "_id": "2728cae6-2bc6-4a53-92b7-771e47c59298",
+      "created_at": "2026-10-17T03:06:16.608741"
+    },
+    {
+      "id": "b977496a-a85a-4f3b-b1d6-7d714adc778f",
+      "user_id": "demo-alex-chen",
+      "skill_name": "Model Serving & REST APIs",
+      "normalized_skill": "api_development",
+      "claimed_source": "GitHub Repository",
+      "observed_evidence": "FastAPI asynchronous endpoints accepting POST /predict with loaded serialized pipeline.",
+      "file_path_or_url": "https://github.com/alexchen-ml/diabetes-prediction-service/blob/main/app/routes/predict.py",
+      "code_snippet": "@router.post('/predict', response_model=PredictionResponse)\nasync def predict_risk(data: PatientData):\n    risk = model.predict_proba([features])[0][1]",
+      "project_id": "proj-alex-1",
+      "project_name": "Diabetes Risk Prediction Service",
+      "status": "Supported",
+      "confidence": 0.88,
+      "recency": "Current",
+      "rules_applied": [
+        "RULE_SUPPORTED: Functional REST API serving predictions."
+      ],
+      "timestamp": "2026-10-17T03:06:16.591641",
+      "_id": "62f1a307-55a5-43b4-8d47-31018a78d88d",
+      "created_at": "2026-10-17T03:06:16.616260"
+    },
+    {
+      "id": "fb8c6af4-8d80-4a88-a22f-d701c8dbbce4",
+      "user_id": "demo-alex-chen",
+      "skill_name": "Automated Testing & Code Quality",
+      "normalized_skill": "testing",
+      "claimed_source": "GitHub Repository",
+      "observed_evidence": "Pytest suite with 8 tests for data preprocessing and API error handling.",
+      "file_path_or_url": "https://github.com/alexchen-ml/diabetes-prediction-service/blob/main/tests/test_api.py",
+      "code_snippet": "def test_invalid_glucose_returns_422(client):\n    res = client.post('/predict', json={'glucose': -10})\n    assert res.status_code == 422",
+      "project_id": "proj-alex-1",
+      "project_name": "Diabetes Risk Prediction Service",
+      "status": "Supported",
+      "confidence": 0.85,
+      "recency": "Current",
+      "rules_applied": [
+        "RULE_SUPPORTED: Pytest assertions testing boundary failure conditions."
+      ],
+      "timestamp": "2026-10-17T03:06:16.591660",
+      "_id": "4bdc1589-cd14-4ba1-85b2-cd1e42161d5f",
+      "created_at": "2026-10-17T03:06:16.622515"
+    },
+    {
+      "id": "a607fd07-92c2-458a-a93c-b5a46bae6ab0",
+      "user_id": "demo-alex-chen",
+      "skill_name": "Containerization & Deployment",
+      "normalized_skill": "deployment",
+      "claimed_source": "Resume Claim Only",
+      "observed_evidence": "Resume bullet mentions 'Docker and deployment', but zero Dockerfile, docker-compose.yml, or cloud config exists in connected repositories.",
+      "file_path_or_url": null,
+      "code_snippet": null,
+      "project_id": null,
+      "project_name": null,
+      "status": "Not yet verified",
+      "confidence": 0.15,
+      "recency": "Current",
+      "rules_applied": [
+        "RULE_CLAIM_ONLY: Listed in resume skills, but 0 deployment artifacts found in inspected code."
+      ],
+      "timestamp": "2026-10-17T03:06:16.591681",
+      "_id": "68bab906-6ac9-43e1-b753-00b3b6471add",
+      "created_at": "2026-10-17T03:06:16.628281"
+    },
+    {
+      "id": "15e1c448-a530-4d32-8de2-ecf796d2cb14",
+      "user_id": "demo-alex-chen",
+      "skill_name": "Data Wrangling & Pipeline Engineering",
+      "normalized_skill": "data_processing",
+      "claimed_source": "GitHub Repository",
+      "observed_evidence": "Pandas dataframe handling, outlier removal, and median imputation for null values.",
+      "file_path_or_url": "https://github.com/alexchen-ml/diabetes-prediction-service/blob/main/src/preprocess.py",
+      "code_snippet": "df['glucose'] = df['glucose'].replace(0, np.nan).fillna(df['glucose'].median())",
+      "project_id": "proj-alex-1",
+      "project_name": "Diabetes Risk Prediction Service",
+      "status": "Supported",
+      "confidence": 0.85,
+      "recency": "Current",
+      "rules_applied": [
+        "RULE_SUPPORTED: Data wrangling pipeline in pandas."
+      ],
+      "timestamp": "2026-10-17T03:06:16.591702",
+      "_id": "e9994e31-788a-4880-8de6-0e1d798b49b9",
+      "created_at": "2026-10-17T03:06:16.637423"
+    },
+    {
+      "id": "c7916a64-c1e2-4e34-9868-92bb0068eda5",
+      "user_id": "demo-alex-chen",
+      "skill_name": "Git Version Control & Documentation",
+      "normalized_skill": "version_control_docs",
+      "claimed_source": "GitHub Repository",
+      "observed_evidence": "34 commits with descriptive messages; comprehensive README with setup commands.",
+      "file_path_or_url": "https://github.com/alexchen-ml/diabetes-prediction-service/blob/main/README.md",
+      "code_snippet": "# Setup: pip install -r requirements.txt && pytest",
+      "project_id": "proj-alex-1",
+      "project_name": "Diabetes Risk Prediction Service",
+      "status": "Supported",
+      "confidence": 0.9,
+      "recency": "Current",
+      "rules_applied": [
+        "RULE_SUPPORTED: Documented setup instructions and git commit cadence."
+      ],
+      "timestamp": "2026-10-17T03:06:16.591726",
+      "_id": "f543295f-4326-4817-ac78-b026c0225325",
+      "created_at": "2026-10-17T03:06:16.641341"
+    },
+    {
+      "id": "1aa69c83-7115-4cab-8a2e-d23efa166965",
+      "user_id": "demo-alex-chen",
+      "skill_name": "Python Programming",
+      "normalized_skill": "python",
+      "claimed_source": "Resume & GitHub Repo",
+      "observed_evidence": "Idiomatic Python functions, list comprehensions, type hints, and PEP8 structure across 7 repository files.",
+      "file_path_or_url": "https://github.com/alexchen-ml/diabetes-prediction-service/blob/main/app/main.py",
+      "code_snippet": "from fastapi import FastAPI, HTTPException\nfrom pydantic import BaseModel, Field\n\nclass PatientData(BaseModel):\n    glucose: float = Field(..., gt=0, lt=500)",
+      "project_id": "proj-alex-1",
+      "project_name": "Diabetes Risk Prediction Service",
+      "status": "Strongly supported",
+      "confidence": 0.98,
+      "recency": "Current",
+      "rules_applied": [
+        "RULE_STRONG_SUPPORT: Demonstrated across multiple repository source files and unit tests."
+      ],
+      "timestamp": "2026-10-17T03:47:13.036626",
+      "_id": "35fb0ffd-ea84-4793-a2df-8c070c02a666",
+      "created_at": "2026-10-17T03:47:13.036841"
+    },
+    {
+      "id": "3689461c-b3db-4b1a-b147-bb74cd5629e4",
+      "user_id": "demo-alex-chen",
+      "skill_name": "Machine Learning Algorithms & Training",
+      "normalized_skill": "ml_modeling",
+      "claimed_source": "GitHub Repository",
+      "observed_evidence": "Trained Random Forest and Gradient Boosting classifiers; compared cross-validated ROC-AUC scores.",
+      "file_path_or_url": "https://github.com/alexchen-ml/diabetes-prediction-service/blob/main/src/train_model.py",
+      "code_snippet": "clf = RandomForestClassifier(n_estimators=100, max_depth=6, random_state=42)\nscores = cross_val_score(clf, X_train, y_train, cv=5, scoring='roc_auc')",
+      "project_id": "proj-alex-1",
+      "project_name": "Diabetes Risk Prediction Service",
+      "status": "Strongly supported",
+      "confidence": 0.95,
+      "recency": "Current",
+      "rules_applied": [
+        "RULE_STRONG_SUPPORT: Full training script with parameter tuning and cross-validation."
+      ],
+      "timestamp": "2026-10-17T03:47:13.036642",
+      "_id": "a9eda3f3-b071-4182-aa41-7257e246803f",
+      "created_at": "2026-10-17T03:47:13.040610"
+    },
+    {
+      "id": "2eded103-c3cc-448c-9037-b74c78baf39b",
+      "user_id": "demo-alex-chen",
+      "skill_name": "Model Evaluation & Leakage Prevention",
+      "normalized_skill": "model_evaluation",
+      "claimed_source": "GitHub Repository",
+      "observed_evidence": "StandardScaler fit strictly inside train fold; confusion matrix and ROC-AUC curves calculated on held-out test split.",
+      "file_path_or_url": "https://github.com/alexchen-ml/diabetes-prediction-service/blob/main/src/evaluate.py",
+      "code_snippet": "pipeline = Pipeline([('scaler', StandardScaler()), ('model', clf)])\npipeline.fit(X_train, y_train)",
+      "project_id": "proj-alex-1",
+      "project_name": "Diabetes Risk Prediction Service",
+      "status": "Supported",
+      "confidence": 0.9,
+      "recency": "Current",
+      "rules_applied": [
+        "RULE_SUPPORTED: Observable leakage prevention via Scikit-Learn Pipeline."
+      ],
+      "timestamp": "2026-10-17T03:47:13.036653",
+      "_id": "57536e54-51d1-458a-9791-a367854b5807",
+      "created_at": "2026-10-17T03:47:13.044596"
+    },
+    {
+      "id": "28087e86-e4b8-45e1-93ba-9180f61de15f",
+      "user_id": "demo-alex-chen",
+      "skill_name": "Model Serving & REST APIs",
+      "normalized_skill": "api_development",
+      "claimed_source": "GitHub Repository",
+      "observed_evidence": "FastAPI asynchronous endpoints accepting POST /predict with loaded serialized pipeline.",
+      "file_path_or_url": "https://github.com/alexchen-ml/diabetes-prediction-service/blob/main/app/routes/predict.py",
+      "code_snippet": "@router.post('/predict', response_model=PredictionResponse)\nasync def predict_risk(data: PatientData):\n    risk = model.predict_proba([features])[0][1]",
+      "project_id": "proj-alex-1",
+      "project_name": "Diabetes Risk Prediction Service",
+      "status": "Supported",
+      "confidence": 0.88,
+      "recency": "Current",
+      "rules_applied": [
+        "RULE_SUPPORTED: Functional REST API serving predictions."
+      ],
+      "timestamp": "2026-10-17T03:47:13.036662",
+      "_id": "0b2fda17-8286-4805-9359-dc27825da632",
+      "created_at": "2026-10-17T03:47:13.050973"
+    },
+    {
+      "id": "1df73c4f-85b9-49d3-a13a-e85ed32b8d64",
+      "user_id": "demo-alex-chen",
+      "skill_name": "Automated Testing & Code Quality",
+      "normalized_skill": "testing",
+      "claimed_source": "GitHub Repository",
+      "observed_evidence": "Pytest suite with 8 tests for data preprocessing and API error handling.",
+      "file_path_or_url": "https://github.com/alexchen-ml/diabetes-prediction-service/blob/main/tests/test_api.py",
+      "code_snippet": "def test_invalid_glucose_returns_422(client):\n    res = client.post('/predict', json={'glucose': -10})\n    assert res.status_code == 422",
+      "project_id": "proj-alex-1",
+      "project_name": "Diabetes Risk Prediction Service",
+      "status": "Supported",
+      "confidence": 0.85,
+      "recency": "Current",
+      "rules_applied": [
+        "RULE_SUPPORTED: Pytest assertions testing boundary failure conditions."
+      ],
+      "timestamp": "2026-10-17T03:47:13.036671",
+      "_id": "7a492533-6c6f-4cec-b16e-f7b4b51eb112",
+      "created_at": "2026-10-17T03:47:13.057006"
+    },
+    {
+      "id": "f323d4cf-c9fa-44bb-bfd3-5d27eb0f9b90",
+      "user_id": "demo-alex-chen",
+      "skill_name": "Containerization & Deployment",
+      "normalized_skill": "deployment",
+      "claimed_source": "Resume Claim Only",
+      "observed_evidence": "Resume bullet mentions 'Docker and deployment', but zero Dockerfile, docker-compose.yml, or cloud config exists in connected repositories.",
+      "file_path_or_url": null,
+      "code_snippet": null,
+      "project_id": null,
+      "project_name": null,
+      "status": "Not yet verified",
+      "confidence": 0.15,
+      "recency": "Current",
+      "rules_applied": [
+        "RULE_CLAIM_ONLY: Listed in resume skills, but 0 deployment artifacts found in inspected code."
+      ],
+      "timestamp": "2026-10-17T03:47:13.036681",
+      "_id": "92abee3d-6b20-413b-8e48-68d357915365",
+      "created_at": "2026-10-17T03:47:13.062325"
+    },
+    {
+      "id": "0cf08212-b093-4f28-9c52-66ec8733cc9e",
+      "user_id": "demo-alex-chen",
+      "skill_name": "Data Wrangling & Pipeline Engineering",
+      "normalized_skill": "data_processing",
+      "claimed_source": "GitHub Repository",
+      "observed_evidence": "Pandas dataframe handling, outlier removal, and median imputation for null values.",
+      "file_path_or_url": "https://github.com/alexchen-ml/diabetes-prediction-service/blob/main/src/preprocess.py",
+      "code_snippet": "df['glucose'] = df['glucose'].replace(0, np.nan).fillna(df['glucose'].median())",
+      "project_id": "proj-alex-1",
+      "project_name": "Diabetes Risk Prediction Service",
+      "status": "Supported",
+      "confidence": 0.85,
+      "recency": "Current",
+      "rules_applied": [
+        "RULE_SUPPORTED: Data wrangling pipeline in pandas."
+      ],
+      "timestamp": "2026-10-17T03:47:13.036704",
+      "_id": "cf81f76a-3bb8-40e0-9d5e-a082ba08f3f6",
+      "created_at": "2026-10-17T03:47:13.069112"
+    },
+    {
+      "id": "cd4d1091-4052-4efb-ba76-488840910575",
+      "user_id": "demo-alex-chen",
+      "skill_name": "Git Version Control & Documentation",
+      "normalized_skill": "version_control_docs",
+      "claimed_source": "GitHub Repository",
+      "observed_evidence": "34 commits with descriptive messages; comprehensive README with setup commands.",
+      "file_path_or_url": "https://github.com/alexchen-ml/diabetes-prediction-service/blob/main/README.md",
+      "code_snippet": "# Setup: pip install -r requirements.txt && pytest",
+      "project_id": "proj-alex-1",
+      "project_name": "Diabetes Risk Prediction Service",
+      "status": "Supported",
+      "confidence": 0.9,
+      "recency": "Current",
+      "rules_applied": [
+        "RULE_SUPPORTED: Documented setup instructions and git commit cadence."
+      ],
+      "timestamp": "2026-10-17T03:47:13.036714",
+      "_id": "5e738d6d-562c-4c51-a518-243311e103d0",
+      "created_at": "2026-10-17T03:47:13.073501"
+    },
+    {
+      "id": "3bd498cc-27c4-465d-aa22-3aa1bdbf7e90",
+      "user_id": "demo-alex-chen",
+      "skill_name": "Python Programming",
+      "normalized_skill": "python",
+      "claimed_source": "Resume & GitHub Repo",
+      "observed_evidence": "Idiomatic Python functions, list comprehensions, type hints, and PEP8 structure across 7 repository files.",
+      "file_path_or_url": "https://github.com/alexchen-ml/diabetes-prediction-service/blob/main/app/main.py",
+      "code_snippet": "from fastapi import FastAPI, HTTPException\nfrom pydantic import BaseModel, Field\n\nclass PatientData(BaseModel):\n    glucose: float = Field(..., gt=0, lt=500)",
+      "project_id": "proj-alex-1",
+      "project_name": "Diabetes Risk Prediction Service",
+      "status": "Strongly supported",
+      "confidence": 0.98,
+      "recency": "Current",
+      "rules_applied": [
+        "RULE_STRONG_SUPPORT: Demonstrated across multiple repository source files and unit tests."
+      ],
+      "timestamp": "2026-10-17T03:51:34.102471",
+      "_id": "4dfaae62-f369-4d2a-8cfb-bc9d1393b119",
+      "created_at": "2026-10-17T03:51:34.102895"
+    },
+    {
+      "id": "b249247b-c710-482c-b57a-562612d47b3a",
+      "user_id": "demo-alex-chen",
+      "skill_name": "Machine Learning Algorithms & Training",
+      "normalized_skill": "ml_modeling",
+      "claimed_source": "GitHub Repository",
+      "observed_evidence": "Trained Random Forest and Gradient Boosting classifiers; compared cross-validated ROC-AUC scores.",
+      "file_path_or_url": "https://github.com/alexchen-ml/diabetes-prediction-service/blob/main/src/train_model.py",
+      "code_snippet": "clf = RandomForestClassifier(n_estimators=100, max_depth=6, random_state=42)\nscores = cross_val_score(clf, X_train, y_train, cv=5, scoring='roc_auc')",
+      "project_id": "proj-alex-1",
+      "project_name": "Diabetes Risk Prediction Service",
+      "status": "Strongly supported",
+      "confidence": 0.95,
+      "recency": "Current",
+      "rules_applied": [
+        "RULE_STRONG_SUPPORT: Full training script with parameter tuning and cross-validation."
+      ],
+      "timestamp": "2026-10-17T03:51:34.102505",
+      "_id": "97883364-9bd8-404a-9a0f-9af0ddf6b86e",
+      "created_at": "2026-10-17T03:51:34.112258"
+    },
+    {
+      "id": "5a1171e4-052f-40af-90e5-960c8f143a95",
+      "user_id": "demo-alex-chen",
+      "skill_name": "Model Evaluation & Leakage Prevention",
+      "normalized_skill": "model_evaluation",
+      "claimed_source": "GitHub Repository",
+      "observed_evidence": "StandardScaler fit strictly inside train fold; confusion matrix and ROC-AUC curves calculated on held-out test split.",
+      "file_path_or_url": "https://github.com/alexchen-ml/diabetes-prediction-service/blob/main/src/evaluate.py",
+      "code_snippet": "pipeline = Pipeline([('scaler', StandardScaler()), ('model', clf)])\npipeline.fit(X_train, y_train)",
+      "project_id": "proj-alex-1",
+      "project_name": "Diabetes Risk Prediction Service",
+      "status": "Supported",
+      "confidence": 0.9,
+      "recency": "Current",
+      "rules_applied": [
+        "RULE_SUPPORTED: Observable leakage prevention via Scikit-Learn Pipeline."
+      ],
+      "timestamp": "2026-10-17T03:51:34.102527",
+      "_id": "0482981e-e0bd-45e0-a2b0-d4f2329e5b4e",
+      "created_at": "2026-10-17T03:51:34.119535"
+    },
+    {
+      "id": "c360c90b-8b7f-45de-ad8e-9c24013466c6",
+      "user_id": "demo-alex-chen",
+      "skill_name": "Model Serving & REST APIs",
+      "normalized_skill": "api_development",
+      "claimed_source": "GitHub Repository",
+      "observed_evidence": "FastAPI asynchronous endpoints accepting POST /predict with loaded serialized pipeline.",
+      "file_path_or_url": "https://github.com/alexchen-ml/diabetes-prediction-service/blob/main/app/routes/predict.py",
+      "code_snippet": "@router.post('/predict', response_model=PredictionResponse)\nasync def predict_risk(data: PatientData):\n    risk = model.predict_proba([features])[0][1]",
+      "project_id": "proj-alex-1",
+      "project_name": "Diabetes Risk Prediction Service",
+      "status": "Supported",
+      "confidence": 0.88,
+      "recency": "Current",
+      "rules_applied": [
+        "RULE_SUPPORTED: Functional REST API serving predictions."
+      ],
+      "timestamp": "2026-10-17T03:51:34.102556",
+      "_id": "1fd3c2fa-0e97-4132-b202-1bcce5f8eecf",
+      "created_at": "2026-10-17T03:51:34.129267"
+    },
+    {
+      "id": "31a710ec-86d7-48f0-93f2-f856873ae710",
+      "user_id": "demo-alex-chen",
+      "skill_name": "Automated Testing & Code Quality",
+      "normalized_skill": "testing",
+      "claimed_source": "GitHub Repository",
+      "observed_evidence": "Pytest suite with 8 tests for data preprocessing and API error handling.",
+      "file_path_or_url": "https://github.com/alexchen-ml/diabetes-prediction-service/blob/main/tests/test_api.py",
+      "code_snippet": "def test_invalid_glucose_returns_422(client):\n    res = client.post('/predict', json={'glucose': -10})\n    assert res.status_code == 422",
+      "project_id": "proj-alex-1",
+      "project_name": "Diabetes Risk Prediction Service",
+      "status": "Supported",
+      "confidence": 0.85,
+      "recency": "Current",
+      "rules_applied": [
+        "RULE_SUPPORTED: Pytest assertions testing boundary failure conditions."
+      ],
+      "timestamp": "2026-10-17T03:51:34.102574",
+      "_id": "98ccebc1-2d3c-422a-a7d0-13f1d14fa1bd",
+      "created_at": "2026-10-17T03:51:34.135146"
+    },
+    {
+      "id": "e6fb1abe-4ae8-4809-8ce8-37196476b772",
+      "user_id": "demo-alex-chen",
+      "skill_name": "Containerization & Deployment",
+      "normalized_skill": "deployment",
+      "claimed_source": "Resume Claim Only",
+      "observed_evidence": "Resume bullet mentions 'Docker and deployment', but zero Dockerfile, docker-compose.yml, or cloud config exists in connected repositories.",
+      "file_path_or_url": null,
+      "code_snippet": null,
+      "project_id": null,
+      "project_name": null,
+      "status": "Not yet verified",
+      "confidence": 0.15,
+      "recency": "Current",
+      "rules_applied": [
+        "RULE_CLAIM_ONLY: Listed in resume skills, but 0 deployment artifacts found in inspected code."
+      ],
+      "timestamp": "2026-10-17T03:51:34.102595",
+      "_id": "c3acf116-d100-43b9-8a90-d5ab62a61731",
+      "created_at": "2026-10-17T03:51:34.141430"
+    },
+    {
+      "id": "1cf98782-ea58-4bc5-b9d5-e824f81d0974",
+      "user_id": "demo-alex-chen",
+      "skill_name": "Data Wrangling & Pipeline Engineering",
+      "normalized_skill": "data_processing",
+      "claimed_source": "GitHub Repository",
+      "observed_evidence": "Pandas dataframe handling, outlier removal, and median imputation for null values.",
+      "file_path_or_url": "https://github.com/alexchen-ml/diabetes-prediction-service/blob/main/src/preprocess.py",
+      "code_snippet": "df['glucose'] = df['glucose'].replace(0, np.nan).fillna(df['glucose'].median())",
+      "project_id": "proj-alex-1",
+      "project_name": "Diabetes Risk Prediction Service",
+      "status": "Supported",
+      "confidence": 0.85,
+      "recency": "Current",
+      "rules_applied": [
+        "RULE_SUPPORTED: Data wrangling pipeline in pandas."
+      ],
+      "timestamp": "2026-10-17T03:51:34.102617",
+      "_id": "4606d200-d04c-4506-a88c-4c62c22d1cba",
+      "created_at": "2026-10-17T03:51:34.146962"
+    },
+    {
+      "id": "1ad8de0e-7f25-426b-9b4c-6f763c5d9b5f",
+      "user_id": "demo-alex-chen",
+      "skill_name": "Git Version Control & Documentation",
+      "normalized_skill": "version_control_docs",
+      "claimed_source": "GitHub Repository",
+      "observed_evidence": "34 commits with descriptive messages; comprehensive README with setup commands.",
+      "file_path_or_url": "https://github.com/alexchen-ml/diabetes-prediction-service/blob/main/README.md",
+      "code_snippet": "# Setup: pip install -r requirements.txt && pytest",
+      "project_id": "proj-alex-1",
+      "project_name": "Diabetes Risk Prediction Service",
+      "status": "Supported",
+      "confidence": 0.9,
+      "recency": "Current",
+      "rules_applied": [
+        "RULE_SUPPORTED: Documented setup instructions and git commit cadence."
+      ],
+      "timestamp": "2026-10-17T03:51:34.102639",
+      "_id": "1782f4dd-84ab-4ed7-b770-0e9694728ff7",
+      "created_at": "2026-10-17T03:51:34.150011"
+    },
+    {
+      "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
+      "normalized_skill": "python",
+      "id": "8118754e-6815-4135-a8f4-48bc5631827b",
+      "skill_name": "Python",
+      "claimed_source": "GitHub: GitHub Repository",
+      "observed_evidence": "Demonstrated in repository 'GitHub Repository'. Architecture: Standard Script / Flat Layout",
+      "file_path_or_url": "https://github.com/KARUNAMBIKASENTHIL",
+      "code_snippet": null,
+      "project_id": "0e27f7b0-b8b3-49ea-b4dd-988070e8f420",
+      "project_name": "GitHub Repository",
+      "status": "Supported",
+      "confidence": 0.85,
+      "recency": "Current",
+      "rules_applied": [
+        "RULE_REPO_CONNECTED: Verified code implementation in connected repository."
+      ],
+      "timestamp": "2026-10-17T04:05:02.622797",
+      "_id": "a9128f29-38b0-4c1c-8170-80a87faf2489",
+      "created_at": "2026-10-17T04:03:52.176370",
+      "updated_at": "2026-10-17T04:05:02.623621"
+    },
+    {
+      "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
+      "normalized_skill": "git",
+      "id": "2e9b249d-267b-4d33-bba8-51576f6d09c4",
+      "skill_name": "Git Version Control & Documentation",
+      "claimed_source": "Resume (KARUNAMBIKA-RESUME.pdf)",
+      "observed_evidence": "Extracted from page 1 of resume 'KARUNAMBIKA-RESUME.pdf'. Context: ...,  Tenkasi 2024 HTML CSS Javascript Tools Technical  Skills Git Github Soft  Skills Communication Problem-solving Served  a...",
+      "file_path_or_url": "Resume: Page 1",
+      "code_snippet": "...,  Tenkasi 2024 HTML CSS Javascript Tools Technical  Skills Git Github Soft  Skills Communication Problem-solving Served  a...",
+      "project_id": null,
+      "project_name": "Resume Work History",
+      "status": "Partially supported",
+      "confidence": 0.5,
+      "recency": "Current",
+      "rules_applied": [
+        "RULE_RESUME_EXTRACTION: Identified on page 1 with verifiable text snippet."
+      ],
+      "timestamp": "2026-10-17T04:03:52.186239",
+      "_id": "58ccea8b-c3d4-4acc-b3cc-00b76afdc5fd",
+      "created_at": "2026-10-17T04:03:52.186585"
+    },
+    {
+      "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
+      "normalized_skill": "java",
+      "id": "ea487d93-e983-4437-b7ad-6b7aa9731d52",
+      "skill_name": "Core Java & OOP",
+      "claimed_source": "Resume (KARUNAMBIKA-RESUME.pdf)",
+      "observed_evidence": "Extracted from page 1 of resume 'KARUNAMBIKA-RESUME.pdf'. Context: ...-AI & DS PROJECTS LANGUAGES CERTIFICATIONS AmbulanceMed C   Java   Python Video  and  Poster  editing Kongu  Engineering  Co...",
+      "file_path_or_url": "Resume: Page 1",
+      "code_snippet": "...-AI & DS PROJECTS LANGUAGES CERTIFICATIONS AmbulanceMed C   Java   Python Video  and  Poster  editing Kongu  Engineering  Co...",
+      "project_id": null,
+      "project_name": "Resume Work History",
+      "status": "Partially supported",
+      "confidence": 0.5,
+      "recency": "Current",
+      "rules_applied": [
+        "RULE_RESUME_EXTRACTION: Identified on page 1 with verifiable text snippet."
+      ],
+      "timestamp": "2026-10-17T04:03:52.199096",
+      "_id": "23cd96f7-49ff-4f1c-8f77-af4ca1cadb6f",
+      "created_at": "2026-10-17T04:03:52.199317"
+    },
+    {
+      "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
+      "normalized_skill": "react",
+      "id": "82e8dd0e-5388-4472-bb8b-cb6c9219193f",
+      "skill_name": "React Frontend Architecture",
+      "claimed_source": "Resume (KARUNAMBIKA-RESUME.pdf)",
+      "observed_evidence": "Extracted from page 1 of resume 'KARUNAMBIKA-RESUME.pdf'. Context: ...uest  statuses.Integrated  interactive  maps  using Leaflet/React-Leaflet  for  geospatial  tracking Advanced  C  Programming... Corroborated by project experience 'CampusBridge - Alumni Management Portal'.",
+      "file_path_or_url": "Resume: Page 1",
+      "code_snippet": "...uest  statuses.Integrated  interactive  maps  using Leaflet/React-Leaflet  for  geospatial  tracking Advanced  C  Programming...",
+      "project_id": null,
+      "project_name": "CampusBridge - Alumni Management Portal",
+      "status": "Supported",
+      "confidence": 0.75,
+      "recency": "Current",
+      "rules_applied": [
+        "RULE_RESUME_EXTRACTION: Identified on page 1 with verifiable text snippet.",
+        "RULE_CORROBORATED: Corroborated by resume project claim 'CampusBridge - Alumni Management Portal'."
+      ],
+      "timestamp": "2026-10-17T04:03:52.211664",
+      "_id": "b826a3cd-e184-40dc-adc2-ed69f9d7cdc2",
+      "created_at": "2026-10-17T04:03:52.211800"
+    },
+    {
+      "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
+      "normalized_skill": "typescript",
+      "id": "52ee0fbc-320d-4ce5-9893-7170853076ef",
+      "skill_name": "TypeScript & Type Safety",
+      "claimed_source": "Resume (KARUNAMBIKA-RESUME.pdf)",
+      "observed_evidence": "Extracted from page 1 of resume 'KARUNAMBIKA-RESUME.pdf'. Context: ....io  for  chat  and  notifications CampusBridge Tech  Stack:TypeScript ,  Tailwind  CSS , Node.js , Express.js ,  MongoDB MedRoute... Corroborated by project experience 'MedRoute - Emergency Medical Response Platform'.",
+      "file_path_or_url": "Resume: Page 1",
+      "code_snippet": "....io  for  chat  and  notifications CampusBridge Tech  Stack:TypeScript ,  Tailwind  CSS , Node.js , Express.js ,  MongoDB MedRoute...",
+      "project_id": null,
+      "project_name": "MedRoute - Emergency Medical Response Platform",
+      "status": "Supported",
+      "confidence": 0.75,
+      "recency": "Current",
+      "rules_applied": [
+        "RULE_RESUME_EXTRACTION: Identified on page 1 with verifiable text snippet.",
+        "RULE_CORROBORATED: Corroborated by resume project claim 'MedRoute - Emergency Medical Response Platform'."
+      ],
+      "timestamp": "2026-10-17T04:03:52.219224",
+      "_id": "d8ae2db4-51b0-406a-aadf-9b0912de73b7",
+      "created_at": "2026-10-17T04:03:52.219448"
+    },
+    {
+      "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
+      "normalized_skill": "javascript",
+      "id": "df8e7191-d396-4cef-a2f8-9dbad6f6cd1f",
+      "skill_name": "JavaScript & Modern Web",
+      "claimed_source": "Resume (KARUNAMBIKA-RESUME.pdf)",
+      "observed_evidence": "Extracted from page 1 of resume 'KARUNAMBIKA-RESUME.pdf'. Context: ...asic )  \u2013  Certified Full  stack  foundation  with  Java ,  Javascript and  Database-Certified CampusBridge Built  a  dedicated  M...",
+      "file_path_or_url": "Resume: Page 1",
+      "code_snippet": "...asic )  \u2013  Certified Full  stack  foundation  with  Java ,  Javascript and  Database-Certified CampusBridge Built  a  dedicated  M...",
+      "project_id": null,
+      "project_name": "Resume Work History",
+      "status": "Partially supported",
+      "confidence": 0.5,
+      "recency": "Current",
+      "rules_applied": [
+        "RULE_RESUME_EXTRACTION: Identified on page 1 with verifiable text snippet."
+      ],
+      "timestamp": "2026-10-17T04:03:52.228249",
+      "_id": "61ad3960-f2bd-4355-b512-2a5c4d33eb1a",
+      "created_at": "2026-10-17T04:03:52.228465"
+    },
+    {
+      "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
+      "normalized_skill": "node",
+      "id": "04c4e4d1-12e6-44fc-8373-59ce966fa99c",
+      "skill_name": "Node.js & Express Architecture",
+      "claimed_source": "Resume (KARUNAMBIKA-RESUME.pdf)",
+      "observed_evidence": "Extracted from page 1 of resume 'KARUNAMBIKA-RESUME.pdf'. Context: ...ions CampusBridge Tech  Stack:TypeScript ,  Tailwind  CSS , Node.js , Express.js ,  MongoDB MedRoute OpenAI Linux  ( Basic )... Corroborated by project experience 'MedRoute - Emergency Medical Response Platform'.",
+      "file_path_or_url": "Resume: Page 1",
+      "code_snippet": "...ions CampusBridge Tech  Stack:TypeScript ,  Tailwind  CSS , Node.js , Express.js ,  MongoDB MedRoute OpenAI Linux  ( Basic )...",
+      "project_id": null,
+      "project_name": "MedRoute - Emergency Medical Response Platform",
+      "status": "Supported",
+      "confidence": 0.75,
+      "recency": "Current",
+      "rules_applied": [
+        "RULE_RESUME_EXTRACTION: Identified on page 1 with verifiable text snippet.",
+        "RULE_CORROBORATED: Corroborated by resume project claim 'MedRoute - Emergency Medical Response Platform'."
+      ],
+      "timestamp": "2026-10-17T04:03:52.239188",
+      "_id": "bd3b1ad1-ae89-4f0a-92e2-98e06c80e22f",
+      "created_at": "2026-10-17T04:03:52.239314"
+    },
+    {
+      "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
+      "normalized_skill": "mongodb",
+      "id": "dc6a3fb1-0a24-4602-a1f0-fc97c5e811ed",
+      "skill_name": "NoSQL Databases & MongoDB",
+      "claimed_source": "Resume (KARUNAMBIKA-RESUME.pdf)",
+      "observed_evidence": "Extracted from page 1 of resume 'KARUNAMBIKA-RESUME.pdf'. Context: ...Association   Tech  Stack:React.js ,  Vite ,  Express.js ,  MongoDB , Socket.io  for  chat  and  notifications CampusBridge Tec... Corroborated by project experience 'CampusBridge - Alumni Management Portal'.",
+      "file_path_or_url": "Resume: Page 1",
+      "code_snippet": "...Association   Tech  Stack:React.js ,  Vite ,  Express.js ,  MongoDB , Socket.io  for  chat  and  notifications CampusBridge Tec...",
+      "project_id": null,
+      "project_name": "CampusBridge - Alumni Management Portal",
+      "status": "Supported",
+      "confidence": 0.75,
+      "recency": "Current",
+      "rules_applied": [
+        "RULE_RESUME_EXTRACTION: Identified on page 1 with verifiable text snippet.",
+        "RULE_CORROBORATED: Corroborated by resume project claim 'CampusBridge - Alumni Management Portal'."
+      ],
+      "timestamp": "2026-10-17T04:03:52.252866",
+      "_id": "50faf732-8085-4ccc-b85c-e25ab18eac81",
+      "created_at": "2026-10-17T04:03:52.253116"
+    },
+    {
+      "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
+      "normalized_skill": "socket.io",
+      "id": "ad7aa2c9-4d80-45e0-bf7a-f142352721ee",
+      "skill_name": "Real-Time Systems & WebSockets",
+      "claimed_source": "Resume (KARUNAMBIKA-RESUME.pdf)",
+      "observed_evidence": "Extracted from page 1 of resume 'KARUNAMBIKA-RESUME.pdf'. Context: ...d  a  real-time  tracking  and notification  system  using  Socket.io  to  provide live  updates  on  ambulance  locations  and e... Corroborated by project experience 'CampusBridge - Alumni Management Portal'.",
+      "file_path_or_url": "Resume: Page 1",
+      "code_snippet": "...d  a  real-time  tracking  and notification  system  using  Socket.io  to  provide live  updates  on  ambulance  locations  and e...",
+      "project_id": null,
+      "project_name": "CampusBridge - Alumni Management Portal",
+      "status": "Supported",
+      "confidence": 0.75,
+      "recency": "Current",
+      "rules_applied": [
+        "RULE_RESUME_EXTRACTION: Identified on page 1 with verifiable text snippet.",
+        "RULE_CORROBORATED: Corroborated by resume project claim 'CampusBridge - Alumni Management Portal'."
+      ],
+      "timestamp": "2026-10-17T04:03:52.267322",
+      "_id": "b7d9e1e1-62c3-4ca9-8cc0-6cc22bf51df4",
+      "created_at": "2026-10-17T04:03:52.267561"
+    },
+    {
+      "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
+      "normalized_skill": "leaflet",
+      "id": "cc6b6988-53be-40b4-99c3-c66ccf8019c5",
+      "skill_name": "Geospatial & Interactive Mapping",
+      "claimed_source": "Resume (KARUNAMBIKA-RESUME.pdf)",
+      "observed_evidence": "Extracted from page 1 of resume 'KARUNAMBIKA-RESUME.pdf'. Context: ...ncy  request  statuses.Integrated  interactive  maps  using Leaflet/React-Leaflet  for  geospatial  tracking Advanced  C  Progr... Corroborated by project experience 'MedRoute - Emergency Medical Response Platform'.",
+      "file_path_or_url": "Resume: Page 1",
+      "code_snippet": "...ncy  request  statuses.Integrated  interactive  maps  using Leaflet/React-Leaflet  for  geospatial  tracking Advanced  C  Progr...",
+      "project_id": null,
+      "project_name": "MedRoute - Emergency Medical Response Platform",
+      "status": "Supported",
+      "confidence": 0.75,
+      "recency": "Current",
+      "rules_applied": [
+        "RULE_RESUME_EXTRACTION: Identified on page 1 with verifiable text snippet.",
+        "RULE_CORROBORATED: Corroborated by resume project claim 'MedRoute - Emergency Medical Response Platform'."
+      ],
+      "timestamp": "2026-10-17T04:03:52.280090",
+      "_id": "f5a4464d-65b0-42b5-ba6d-678438a37d61",
+      "created_at": "2026-10-17T04:03:52.280265"
+    },
+    {
+      "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
+      "normalized_skill": "vite",
+      "id": "972aefb7-d945-43f5-b6a8-e94010c2795d",
+      "skill_name": "Modern Frontend Tooling (Vite)",
+      "claimed_source": "Resume (KARUNAMBIKA-RESUME.pdf)",
+      "observed_evidence": "Extracted from page 1 of resume 'KARUNAMBIKA-RESUME.pdf'. Context: ...tive  Member  of  AI  Association   Tech  Stack:React.js ,  Vite ,  Express.js ,  MongoDB , Socket.io  for  chat  and  notif... Corroborated by project experience 'CampusBridge - Alumni Management Portal'.",
+      "file_path_or_url": "Resume: Page 1",
+      "code_snippet": "...tive  Member  of  AI  Association   Tech  Stack:React.js ,  Vite ,  Express.js ,  MongoDB , Socket.io  for  chat  and  notif...",
+      "project_id": null,
+      "project_name": "CampusBridge - Alumni Management Portal",
+      "status": "Supported",
+      "confidence": 0.75,
+      "recency": "Current",
+      "rules_applied": [
+        "RULE_RESUME_EXTRACTION: Identified on page 1 with verifiable text snippet.",
+        "RULE_CORROBORATED: Corroborated by resume project claim 'CampusBridge - Alumni Management Portal'."
+      ],
+      "timestamp": "2026-10-17T04:03:52.296169",
+      "_id": "b893a6eb-1c2c-42a3-a507-6059902246e1",
+      "created_at": "2026-10-17T04:03:52.296436"
+    },
+    {
+      "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
+      "normalized_skill": "tailwind",
+      "id": "4f381fff-e6a4-4660-9190-d29dc371bed0",
+      "skill_name": "Tailwind CSS & Responsive UI",
+      "claimed_source": "Resume (KARUNAMBIKA-RESUME.pdf)",
+      "observed_evidence": "Extracted from page 1 of resume 'KARUNAMBIKA-RESUME.pdf'. Context: ...and  notifications CampusBridge Tech  Stack:TypeScript ,  Tailwind  CSS , Node.js , Express.js ,  MongoDB MedRoute OpenAI Linu...",
+      "file_path_or_url": "Resume: Page 1",
+      "code_snippet": "...and  notifications CampusBridge Tech  Stack:TypeScript ,  Tailwind  CSS , Node.js , Express.js ,  MongoDB MedRoute OpenAI Linu...",
+      "project_id": null,
+      "project_name": "Resume Work History",
+      "status": "Partially supported",
+      "confidence": 0.5,
+      "recency": "Current",
+      "rules_applied": [
+        "RULE_RESUME_EXTRACTION: Identified on page 1 with verifiable text snippet."
+      ],
+      "timestamp": "2026-10-17T04:03:52.312041",
+      "_id": "08e479f7-227d-4266-8a56-0f4311b37bcd",
+      "created_at": "2026-10-17T04:03:52.312326"
+    },
+    {
+      "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
+      "normalized_skill": "c",
+      "id": "039909af-5813-4672-ba19-e45c175f4f1a",
+      "skill_name": "Systems Programming in C",
+      "claimed_source": "Resume (KARUNAMBIKA-RESUME.pdf)",
+      "observed_evidence": "Extracted from page 1 of resume 'KARUNAMBIKA-RESUME.pdf'. Context: ...k a r u n a m b i k a s e n t h i l k u m a r @ g m a i l . c o m T e n k a s i  w w w . l i n k e d i n . c o m / i n /... Corroborated by project experience 'CampusBridge - Alumni Management Portal'.",
+      "file_path_or_url": "Resume: Page 1",
+      "code_snippet": "...k a r u n a m b i k a s e n t h i l k u m a r @ g m a i l . c o m T e n k a s i  w w w . l i n k e d i n . c o m / i n /...",
+      "project_id": null,
+      "project_name": "CampusBridge - Alumni Management Portal",
+      "status": "Supported",
+      "confidence": 0.75,
+      "recency": "Current",
+      "rules_applied": [
+        "RULE_RESUME_EXTRACTION: Identified on page 1 with verifiable text snippet.",
+        "RULE_CORROBORATED: Corroborated by resume project claim 'CampusBridge - Alumni Management Portal'."
+      ],
+      "timestamp": "2026-10-17T04:03:52.329492",
+      "_id": "04f21975-f7e6-43a6-a3b0-9abcb030c89e",
+      "created_at": "2026-10-17T04:03:52.329771"
+    },
+    {
+      "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
+      "normalized_skill": "linux",
+      "id": "23175f47-b8e2-4eee-b436-8887b09c9697",
+      "skill_name": "Linux & Shell Environment",
+      "claimed_source": "Resume (KARUNAMBIKA-RESUME.pdf)",
+      "observed_evidence": "Extracted from page 1 of resume 'KARUNAMBIKA-RESUME.pdf'. Context: ...wind  CSS , Node.js , Express.js ,  MongoDB MedRoute OpenAI Linux  ( Basic )---EmbeddedDocumentLinks---http://www.linkedin.co...",
+      "file_path_or_url": "Resume: Page 1",
+      "code_snippet": "...wind  CSS , Node.js , Express.js ,  MongoDB MedRoute OpenAI Linux  ( Basic )---EmbeddedDocumentLinks---http://www.linkedin.co...",
+      "project_id": null,
+      "project_name": "Resume Work History",
+      "status": "Partially supported",
+      "confidence": 0.5,
+      "recency": "Current",
+      "rules_applied": [
+        "RULE_RESUME_EXTRACTION: Identified on page 1 with verifiable text snippet."
+      ],
+      "timestamp": "2026-10-17T04:03:52.340290",
+      "_id": "9110c63b-0ff2-49aa-a05f-90fa85dc53cf",
+      "created_at": "2026-10-17T04:03:52.340472"
+    },
+    {
+      "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
+      "normalized_skill": "html",
+      "id": "8242dad7-699b-4f87-b0ef-d968be165ee9",
+      "skill_name": "HTML5 & Semantic Web",
+      "claimed_source": "Resume (KARUNAMBIKA-RESUME.pdf)",
+      "observed_evidence": "Extracted from page 1 of resume 'KARUNAMBIKA-RESUME.pdf'. Context: ...% SSLC St.Michaels  Girls ,  Hr.Sec.School ,  Tenkasi 2024 HTML CSS Javascript Tools Technical  Skills Git Github Soft  Ski...",
+      "file_path_or_url": "Resume: Page 1",
+      "code_snippet": "...% SSLC St.Michaels  Girls ,  Hr.Sec.School ,  Tenkasi 2024 HTML CSS Javascript Tools Technical  Skills Git Github Soft  Ski...",
+      "project_id": null,
+      "project_name": "Resume Work History",
+      "status": "Partially supported",
+      "confidence": 0.5,
+      "recency": "Current",
+      "rules_applied": [
+        "RULE_RESUME_EXTRACTION: Identified on page 1 with verifiable text snippet."
+      ],
+      "timestamp": "2026-10-17T04:03:52.349048",
+      "_id": "eef5fe80-56ad-4d3e-a5e1-c822e0980b2b",
+      "created_at": "2026-10-17T04:03:52.349216"
+    },
+    {
+      "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
+      "normalized_skill": "css",
+      "id": "b6c19a56-537f-41f3-b37a-d4759ff6d255",
+      "skill_name": "CSS3 & Responsive Design",
+      "claimed_source": "Resume (KARUNAMBIKA-RESUME.pdf)",
+      "observed_evidence": "Extracted from page 1 of resume 'KARUNAMBIKA-RESUME.pdf'. Context: ...LC St.Michaels  Girls ,  Hr.Sec.School ,  Tenkasi 2024 HTML CSS Javascript Tools Technical  Skills Git Github Soft  Skills...",
+      "file_path_or_url": "Resume: Page 1",
+      "code_snippet": "...LC St.Michaels  Girls ,  Hr.Sec.School ,  Tenkasi 2024 HTML CSS Javascript Tools Technical  Skills Git Github Soft  Skills...",
+      "project_id": null,
+      "project_name": "Resume Work History",
+      "status": "Partially supported",
+      "confidence": 0.5,
+      "recency": "Current",
+      "rules_applied": [
+        "RULE_RESUME_EXTRACTION: Identified on page 1 with verifiable text snippet."
+      ],
+      "timestamp": "2026-10-17T04:03:52.356345",
+      "_id": "3e664540-bc40-4f8a-8fc0-11ada83135a4",
+      "created_at": "2026-10-17T04:03:52.356498"
+    },
+    {
+      "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
+      "normalized_skill": "fastapi",
+      "id": "4eb40b0b-69af-4dcd-b685-e48d65e62efd",
+      "skill_name": "FastAPI",
+      "claimed_source": "GitHub: GitHub Repository",
+      "observed_evidence": "Demonstrated in repository 'GitHub Repository'. Architecture: Standard Script / Flat Layout",
+      "file_path_or_url": "https://github.com/KARUNAMBIKASENTHIL",
+      "code_snippet": null,
+      "project_id": "0e27f7b0-b8b3-49ea-b4dd-988070e8f420",
+      "project_name": "GitHub Repository",
+      "status": "Supported",
+      "confidence": 0.85,
+      "recency": "Current",
+      "rules_applied": [
+        "RULE_REPO_CONNECTED: Verified code implementation in connected repository."
+      ],
+      "timestamp": "2026-10-17T04:05:02.605143",
+      "_id": "32b9554f-4f3a-422f-b8bc-96ac44e5e714",
+      "created_at": "2026-10-17T04:05:02.605417"
+    },
+    {
+      "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
+      "normalized_skill": "pandas",
+      "id": "a86e08a5-2d9a-45fb-89ea-782cf06bbc91",
+      "skill_name": "pandas",
+      "claimed_source": "GitHub: GitHub Repository",
+      "observed_evidence": "Demonstrated in repository 'GitHub Repository'. Architecture: Standard Script / Flat Layout",
+      "file_path_or_url": "https://github.com/KARUNAMBIKASENTHIL",
+      "code_snippet": null,
+      "project_id": "0e27f7b0-b8b3-49ea-b4dd-988070e8f420",
+      "project_name": "GitHub Repository",
+      "status": "Supported",
+      "confidence": 0.85,
+      "recency": "Current",
+      "rules_applied": [
+        "RULE_REPO_CONNECTED: Verified code implementation in connected repository."
+      ],
+      "timestamp": "2026-10-17T04:05:02.643828",
+      "_id": "47653219-fd5c-4486-a2a1-b41e511483f7",
+      "created_at": "2026-10-17T04:05:02.644189"
+    },
+    {
+      "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
+      "normalized_skill": "pytest",
+      "id": "84d39748-b19a-462e-b274-c63c5803b22f",
+      "skill_name": "pytest",
+      "claimed_source": "GitHub: GitHub Repository",
+      "observed_evidence": "Demonstrated in repository 'GitHub Repository'. Architecture: Standard Script / Flat Layout",
+      "file_path_or_url": "https://github.com/KARUNAMBIKASENTHIL",
+      "code_snippet": null,
+      "project_id": "0e27f7b0-b8b3-49ea-b4dd-988070e8f420",
+      "project_name": "GitHub Repository",
+      "status": "Supported",
+      "confidence": 0.85,
+      "recency": "Current",
+      "rules_applied": [
+        "RULE_REPO_CONNECTED: Verified code implementation in connected repository."
+      ],
+      "timestamp": "2026-10-17T04:05:02.663216",
+      "_id": "bc97a599-00fe-4cea-bcb8-c829c6a71148",
+      "created_at": "2026-10-17T04:05:02.663515"
+    },
+    {
+      "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
+      "normalized_skill": "scikit-learn",
+      "id": "9829dc0d-bf74-479c-8134-cf1128da1314",
+      "skill_name": "scikit-learn",
+      "claimed_source": "GitHub: GitHub Repository",
+      "observed_evidence": "Demonstrated in repository 'GitHub Repository'. Architecture: Standard Script / Flat Layout",
+      "file_path_or_url": "https://github.com/KARUNAMBIKASENTHIL",
+      "code_snippet": null,
+      "project_id": "0e27f7b0-b8b3-49ea-b4dd-988070e8f420",
+      "project_name": "GitHub Repository",
+      "status": "Supported",
+      "confidence": 0.85,
+      "recency": "Current",
+      "rules_applied": [
+        "RULE_REPO_CONNECTED: Verified code implementation in connected repository."
+      ],
+      "timestamp": "2026-10-17T04:05:02.682606",
+      "_id": "f0ed18fe-7092-406d-80dc-c0846ab37ad3",
+      "created_at": "2026-10-17T04:05:02.682786"
+    }
+  ],
+  "sources": [
+    {
+      "id": "src-1",
+      "user_id": "demo-alex-chen",
+      "source_type": "resume",
+      "name": "Alex_Chen_ML_Resume_2026.pdf",
+      "url_or_path": "uploads/Alex_Chen_ML_Resume_2026.pdf",
+      "status": "Uploaded",
+      "last_synced": "2026-05-10T10:00:00Z",
+      "metadata": {
+        "pages": 2,
+        "extracted_skills_count": 8
+      },
+      "error_message": null,
+      "_id": "46aae117-d95e-40a1-8585-773e19669838",
+      "created_at": "2026-10-17T02:00:37.787166",
+      "updated_at": "2026-10-17T03:51:34.153739"
+    },
+    {
+      "id": "src-2",
+      "user_id": "demo-alex-chen",
+      "source_type": "github",
+      "name": "github.com/alexchen-ml (Authorized)",
+      "url_or_path": "https://github.com/alexchen-ml",
+      "status": "Connected",
+      "last_synced": "2026-05-10T10:05:00Z",
+      "metadata": {
+        "repos_inspected": 2,
+        "total_commits": 42
+      },
+      "error_message": null,
+      "_id": "227e5545-b14b-468e-90fc-6a4a011cd2ff",
+      "created_at": "2026-10-17T02:00:37.789258",
+      "updated_at": "2026-10-17T03:51:34.158172"
+    },
+    {
+      "id": "src-3",
+      "user_id": "demo-alex-chen",
+      "source_type": "leetcode",
+      "name": "leetcode.com/alexchen_dev",
+      "url_or_path": "https://leetcode.com/alexchen_dev",
+      "status": "Connected",
+      "last_synced": "2026-05-09T18:00:00Z",
+      "metadata": {
+        "problems_solved": 142,
+        "medium": 88,
+        "hard": 14
+      },
+      "error_message": null,
+      "_id": "0f79cac4-de33-4b73-8648-be0165380cf8",
+      "created_at": "2026-10-17T02:00:37.791316",
+      "updated_at": "2026-10-17T03:51:34.162710"
+    },
+    {
+      "id": "90a6ba5d-2762-46c5-9956-b7a0782830b9",
+      "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
+      "source_type": "resume",
+      "name": "KARUNAMBIKA-RESUME.pdf",
+      "url_or_path": "C:\\projects\\CAREERLIFT\\backend\\data\\uploads\\fc66df79-b01d-436e-b37b-0f91cea883ef_KARUNAMBIKA-RESUME.pdf",
+      "status": "Uploaded",
+      "last_synced": "Just now",
+      "metadata": {
+        "pages": 1,
+        "extracted_skills": 16,
+        "extracted_projects": 2
+      },
+      "_id": "a5c58f01-e142-484a-837f-9d21a54436ee",
+      "created_at": "2026-10-17T04:03:52.366432"
+    },
+    {
+      "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
+      "source_type": "github",
+      "id": "470610f2-1e7c-4e28-b953-3f93ef0422b7",
+      "name": "GitHub (KARUNAMBIKASENTHIL)",
+      "url_or_path": "https://github.com/KARUNAMBIKASENTHIL",
+      "status": "Connected",
+      "last_synced": "Just now",
+      "metadata": {
+        "auto_extracted": true,
+        "repos": [
+          "https://github.com/KARUNAMBIKASENTHIL/Alumni-Management-Portal",
+          "https://github.com/KARUNAMBIKASENTHIL/MedRoute"
+        ],
+        "verified_repos_count": 2
+      },
+      "_id": "d28abaad-0b3e-4ecd-97fd-63f4f01b3149",
+      "created_at": "2026-10-17T04:03:52.376558"
+    },
+    {
+      "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
+      "source_type": "leetcode",
+      "id": "15e03486-b382-4bc3-9770-ca1f1d49ccad",
+      "name": "LeetCode Profile",
+      "url_or_path": "https://leetcode.com/u/KarunambikaSenthil",
+      "status": "Connected",
+      "last_synced": "Just now",
+      "metadata": {
+        "auto_extracted": true
+      },
+      "_id": "328c86de-4501-4ade-ae57-3c75fc020b50",
+      "created_at": "2026-10-17T04:03:52.390790"
+    },
+    {
+      "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
+      "source_type": "linkedin",
+      "id": "cebfd592-4412-47bf-845e-68eb36e1c54c",
+      "name": "LinkedIn Profile",
+      "url_or_path": "https://www.linkedin.com/in/karunambikas",
+      "status": "Connected",
+      "last_synced": "Just now",
+      "metadata": {
+        "auto_extracted": true
+      },
+      "_id": "edc3933d-3312-425d-9e85-23826d1b5fc3",
+      "created_at": "2026-10-17T04:03:52.404662"
+    },
+    {
+      "id": "93c6e076-0673-4a77-a3bd-df95d0a0ed39",
+      "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
+      "source_type": "github",
+      "name": "GitHub Repository",
+      "url_or_path": "https://github.com/KARUNAMBIKASENTHIL",
+      "status": "Connected",
+      "last_synced": "2026-10-17T04:05:02.567039",
+      "metadata": {
+        "repository": "https://github.com/KARUNAMBIKASENTHIL"
+      },
+      "error_message": null,
+      "_id": "6b4955d7-1977-4f8d-8aec-3c7e49107dd4",
+      "created_at": "2026-10-17T04:05:02.567218"
+    }
+  ],
+  "projects": [
+    {
+      "id": "proj-alex-1",
+      "user_id": "demo-alex-chen",
+      "title": "Diabetes Risk Prediction Service",
+      "repo_url": "https://github.com/alexchen-ml/diabetes-prediction-service",
+      "problem_definition": "Predictive healthcare classifier identifying high-risk type-2 diabetes markers from diagnostic tabular data.",
+      "architecture_overview": "Modular Service Layout: data preprocessing pipeline, scikit-learn model artifacts, FastAPI async REST router.",
+      "technologies_used": [
+        "Python",
+        "scikit-learn",
+        "FastAPI",
+        "pandas",
+        "pytest"
+      ],
+      "implementation_depth_score": 68.5,
+      "test_evidence": {
+        "has_tests": true,
+        "test_file_count": 2,
+        "test_files": [
+          "tests/test_api.py",
+          "tests/test_pipeline.py"
+        ],
+        "assertions_detected": 8,
+        "test_framework": "pytest",
+        "evaluation_note": "Verified 8 passing unit assertions covering null imputations and HTTP 422 boundary codes."
+      },
+      "error_handling_evidence": {
+        "try_catch_blocks": 4,
+        "explicit_http_exceptions": 3,
+        "schema_validations": 2,
+        "has_robust_handling": true,
+        "summary": "Pydantic validation for glucose/BMI boundaries; returns structured error details."
+      },
+      "documentation_quality": {
+        "has_readme": true,
+        "readme_characters": 1840,
+        "has_setup_instructions": true,
+        "has_architecture_notes": true,
+        "rating": "Comprehensive"
+      },
+      "deployment_evidence": {
+        "has_deployment": false,
+        "has_dockerfile": false,
+        "has_docker_compose": false,
+        "has_ci_cd_workflow": false,
+        "cloud_configs": [],
+        "readiness_summary": "NO DEPLOYMENT ARTIFACTS: Missing Dockerfile, container configs, and production CI/CD."
+      },
+      "commit_insights": {
+        "commit_count": 34,
+        "branch_discipline": "main + feature/api-routes",
+        "frequency": "Consistent weekly contributions over 2 months"
+      },
+      "demonstrated_competencies": [
+        "Python",
+        "Machine Learning Algorithms & Training",
+        "Model Evaluation & Leakage Prevention",
+        "Model Serving & REST APIs",
+        "Automated Testing & Code Quality"
+      ],
+      "positive_highlights": [
+        "Scikit-learn model trained with rigorous 5-fold cross-validation and hyperparameter search.",
+        "FastAPI async endpoint with typed Pydantic request/response contracts.",
+        "Pytest test suite verifying preprocessing logic and status code responses."
+      ],
+      "identified_gaps": [
+        "CRITICAL GAP: No Dockerfile or containerization configuration present.",
+        "No cloud deployment URL or live hosted demo verified.",
+        "No automated CI/CD pipeline (e.g. GitHub Actions) to run tests automatically."
+      ],
+      "recommended_improvements": [
+        "Create a multi-stage Dockerfile packaging the FastAPI application and serialized pickle model.",
+        "Add GitHub Actions workflow to run pytest automatically on every push.",
+        "Expose a /health and /metrics endpoint to demonstrate production observability."
+      ],
+      "is_sandbox_verified": true,
+      "created_at": "2026-10-17T03:51:34.102347",
+      "_id": "cb769d01-6805-40c8-a4fa-2f117e6ca66f",
+      "updated_at": "2026-10-17T03:51:34.165699"
+    },
+    {
+      "id": "proj-alex-2",
+      "user_id": "demo-alex-chen",
+      "title": "Medical Imaging CNN Diagnostic Pipeline",
+      "repo_url": "https://github.com/alexchen-ml/medical-imaging-cnn",
+      "problem_definition": "Deep learning vision pipeline classifying chest X-ray and CT scans for pulmonary abnormalities with Grad-CAM explainability.",
+      "architecture_overview": "PyTorch Convolutional Architecture: ResNet-50 backbone, custom classification head, Grad-CAM visualization hook, FastAPI batch inference service with ONNX runtime.",
+      "technologies_used": [
+        "Python",
+        "PyTorch",
+        "TorchVision",
+        "OpenCV",
+        "FastAPI",
+        "Docker",
+        "pytest"
+      ],
+      "implementation_depth_score": 78.0,
+      "test_evidence": {
+        "has_tests": true,
+        "test_file_count": 3,
+        "test_files": [
+          "tests/test_model.py",
+          "tests/test_preprocessing.py",
+          "tests/test_api.py"
+        ],
+        "assertions_detected": 14,
+        "test_framework": "pytest",
+        "evaluation_note": "Verified 14 assertions testing tensor dimension contracts, image normalization, and zero-division guardrails."
+      },
+      "error_handling_evidence": {
+        "try_catch_blocks": 5,
+        "explicit_http_exceptions": 4,
+        "schema_validations": 3,
+        "has_robust_handling": true,
+        "summary": "Handles corrupted DICOM/JPEG files, GPU CUDA out-of-memory fallback to CPU, and invalid aspect ratios."
+      },
+      "documentation_quality": {
+        "has_readme": true,
+        "readme_characters": 2450,
+        "has_setup_instructions": true,
+        "has_architecture_notes": true,
+        "rating": "Production-Grade"
+      },
+      "deployment_evidence": {
+        "has_deployment": true,
+        "has_dockerfile": true,
+        "has_docker_compose": true,
+        "has_ci_cd_workflow": true,
+        "cloud_configs": [
+          "Dockerfile",
+          "docker-compose.yml"
+        ],
+        "readiness_summary": "Dockerized container with multi-stage build; GitHub Actions workflow for automated test execution."
+      },
+      "commit_insights": {
+        "commit_count": 52,
+        "branch_discipline": "main + release/v1.0",
+        "frequency": "Active weekly development"
+      },
+      "demonstrated_competencies": [
+        "Python",
+        "Deep Learning & Computer Vision",
+        "PyTorch",
+        "Containerization & Deployment",
+        "Model Serving & REST APIs"
+      ],
+      "positive_highlights": [
+        "Full PyTorch vision model with transfer learning and Grad-CAM visual heatmaps.",
+        "Containerized with Docker multi-stage build and automated test runner.",
+        "Pytest coverage of tensor shapes and input image sanitation."
+      ],
+      "identified_gaps": [],
+      "recommended_improvements": [
+        "Integrate model quantization (INT8) for edge deployment latency optimization."
+      ],
+      "is_sandbox_verified": true,
+      "created_at": "2026-10-17T03:51:34.102406",
+      "_id": "ce308cd3-84c4-4e90-9f69-de968bd84314",
+      "updated_at": "2026-10-17T03:51:34.169014"
+    },
+    {
+      "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
+      "title": "CampusBridge - Alumni Management Portal",
+      "id": "656e9d94-ac8e-4b43-a2a8-9030ed29182d",
+      "repo_url": "https://github.com/KARUNAMBIKASENTHIL/Alumni-Management-Portal",
+      "problem_definition": "MERN-stack social platform enabling isolated college networks for student-alumni interaction featuring live messaging, notifications, and mentorship matching.",
+      "architecture_overview": "Extracted from resume & verified repositories. Technologies used: React.js, Vite, Express.js, MongoDB, Socket.io, WebSockets.",
+      "technologies_used": [
+        "React.js",
+        "Vite",
+        "Express.js",
+        "MongoDB",
+        "Socket.io",
+        "WebSockets"
+      ],
+      "implementation_depth_score": 68.0,
+      "test_evidence": {
+        "has_tests": true,
+        "test_file_count": 2,
+        "test_files": [
+          "tests/api.test.ts",
+          "tests/socket.test.ts"
+        ],
+        "assertions_detected": 8,
+        "test_framework": "Jest / Supertest",
+        "evaluation_note": "Verified project architecture from repository."
+      },
+      "error_handling_evidence": {
+        "try_catch_blocks": 12,
+        "explicit_http_exceptions": 6,
+        "schema_validations": 4,
+        "has_robust_handling": true,
+        "summary": "Express error boundaries and boundary validation."
+      },
+      "documentation_quality": {
+        "has_readme": true,
+        "readme_characters": 1420,
+        "has_setup_instructions": true,
+        "has_architecture_notes": true,
+        "rating": "Detailed Project Specification"
+      },
+      "deployment_evidence": {
+        "has_deployment": true,
+        "has_dockerfile": true,
+        "has_docker_compose": true,
+        "has_ci_cd_workflow": true,
+        "cloud_configs": [
+          "Dockerfile",
+          "docker-compose.yml"
+        ],
+        "readiness_summary": "Docker containerized service."
+      },
+      "commit_insights": {
+        "commit_count": 24,
+        "branch_discipline": "Feature Branches",
+        "frequency": "Active Development"
+      },
+      "demonstrated_competencies": [
+        "React.js",
+        "Vite",
+        "Express.js",
+        "MongoDB",
+        "Socket.io",
+        "WebSockets"
+      ],
+      "positive_highlights": [
+        "Demonstrated production experience with React.js, Vite, Express.js, MongoDB, Socket.io, WebSockets."
+      ],
+      "identified_gaps": [
+        "Complete 10 Questions technical audit to solidify senior implementation mastery."
+      ],
+      "recommended_improvements": [
+        "Conduct real-time technical audit evaluation to achieve 85%+ readiness score."
+      ],
+      "is_sandbox_verified": true,
+      "created_at": "2026-10-17T04:03:52.420802",
+      "_id": "b1d56050-3f2a-4031-8006-a769e2f8546c"
+    },
+    {
+      "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
+      "title": "MedRoute - Emergency Medical Response Platform",
+      "id": "4987e8f1-b7c7-4c40-ab22-922a822806ca",
+      "repo_url": "https://github.com/KARUNAMBIKASENTHIL/MedRoute",
+      "problem_definition": "Full-stack real-time emergency response platform connecting patients with hospitals and ambulance drivers with live GPS tracking via Socket.io and interactive maps with Leaflet.",
+      "architecture_overview": "Extracted from resume & verified repositories. Technologies used: TypeScript, Node.js, Express.js, MongoDB, Socket.io, Leaflet, React.",
+      "technologies_used": [
+        "TypeScript",
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "Socket.io",
+        "Leaflet",
+        "React"
+      ],
+      "implementation_depth_score": 68.0,
+      "test_evidence": {
+        "has_tests": true,
+        "test_file_count": 2,
+        "test_files": [
+          "tests/api.test.ts",
+          "tests/socket.test.ts"
+        ],
+        "assertions_detected": 8,
+        "test_framework": "Jest / Supertest",
+        "evaluation_note": "Verified project architecture from repository."
+      },
+      "error_handling_evidence": {
+        "try_catch_blocks": 12,
+        "explicit_http_exceptions": 6,
+        "schema_validations": 4,
+        "has_robust_handling": true,
+        "summary": "Express error boundaries and boundary validation."
+      },
+      "documentation_quality": {
+        "has_readme": true,
+        "readme_characters": 1420,
+        "has_setup_instructions": true,
+        "has_architecture_notes": true,
+        "rating": "Detailed Project Specification"
+      },
+      "deployment_evidence": {
+        "has_deployment": true,
+        "has_dockerfile": true,
+        "has_docker_compose": true,
+        "has_ci_cd_workflow": true,
+        "cloud_configs": [
+          "Dockerfile",
+          "docker-compose.yml"
+        ],
+        "readiness_summary": "Docker containerized service."
+      },
+      "commit_insights": {
+        "commit_count": 24,
+        "branch_discipline": "Feature Branches",
+        "frequency": "Active Development"
+      },
+      "demonstrated_competencies": [
+        "TypeScript",
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "Socket.io",
+        "Leaflet",
+        "React"
+      ],
+      "positive_highlights": [
+        "Demonstrated production experience with TypeScript, Node.js, Express.js, MongoDB, Socket.io, Leaflet, React."
+      ],
+      "identified_gaps": [
+        "Complete 10 Questions technical audit to solidify senior implementation mastery."
+      ],
+      "recommended_improvements": [
+        "Conduct real-time technical audit evaluation to achieve 85%+ readiness score."
+      ],
+      "is_sandbox_verified": true,
+      "created_at": "2026-10-17T04:03:52.436559",
+      "_id": "07fa1f41-37dc-45da-9ed2-049f7101e944"
+    },
+    {
+      "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
+      "title": "GitHub Repository",
+      "id": "0e27f7b0-b8b3-49ea-b4dd-988070e8f420",
+      "repo_url": "https://github.com/KARUNAMBIKASENTHIL",
+      "problem_definition": "Production-oriented service addressing GitHub Repository with automated logic and modular components.",
+      "architecture_overview": "Standard Script / Flat Layout",
+      "technologies_used": [
+        "FastAPI",
+        "Python",
+        "pandas",
+        "pytest",
+        "scikit-learn"
+      ],
+      "implementation_depth_score": 40.0,
+      "test_evidence": {
+        "has_tests": false,
+        "test_file_count": 0,
+        "test_files": [],
+        "assertions_detected": 0,
+        "test_framework": "pytest",
+        "evaluation_note": "No automated unit or integration tests detected."
+      },
+      "error_handling_evidence": {
+        "try_catch_blocks": 0,
+        "explicit_http_exceptions": 0,
+        "schema_validations": 0,
+        "has_robust_handling": false,
+        "summary": "Detected 0 try-catch blocks and 0 structured input validation schemas."
+      },
+      "documentation_quality": {
+        "has_readme": true,
+        "readme_characters": 363,
+        "has_setup_instructions": true,
+        "has_architecture_notes": false,
+        "rating": "Basic"
+      },
+      "deployment_evidence": {
+        "has_deployment": false,
+        "has_dockerfile": false,
+        "has_docker_compose": false,
+        "has_ci_cd_workflow": false,
+        "cloud_configs": [],
+        "readiness_summary": "No containerization or cloud deployment artifacts found."
+      },
+      "commit_insights": {
+        "commit_count": 28,
+        "branch_discipline": "feature-branches",
+        "frequency": "Active regular commits"
+      },
+      "demonstrated_competencies": [
+        "FastAPI",
+        "Python",
+        "pandas",
+        "pytest",
+        "scikit-learn"
+      ],
+      "positive_highlights": [],
+      "identified_gaps": [
+        "Missing automated unit and integration tests.",
+        "No Docker containerization or CI/CD workflow configuration found.",
+        "Limited input validation and exception handling."
+      ],
+      "recommended_improvements": [
+        "Implement a test suite with pytest covering input boundary cases.",
+        "Add a multi-stage Dockerfile and GitHub Actions workflow to build and test the service.",
+        "Introduce explicit HTTP status handling and Pydantic boundary validation."
+      ],
+      "is_sandbox_verified": false,
+      "created_at": "2026-10-17T04:05:02.585075",
+      "_id": "9ec1cbb5-0d1e-404f-a6b3-b81c596c48aa"
+    }
+  ],
+  "growth_snapshots": [
+    {
+      "id": "snap-1",
+      "user_id": "demo-alex-chen",
+      "date": "2026-03-15",
+      "readiness_score": 48.0,
+      "evidence_completeness": 50.0,
+      "verified_skills_count": 4,
+      "projects_analyzed": 1,
+      "new_competencies": [
+        "Python Programming",
+        "Machine Learning Algorithms & Training"
+      ],
+      "notes": "Initial assessment after basic model training script upload.",
+      "_id": "2077d29a-ae24-4e67-ab0e-efc7fd3754e4",
+      "created_at": "2026-10-17T02:00:37.796817",
+      "updated_at": "2026-10-17T03:51:34.172010"
+    },
+    {
+      "id": "snap-2",
+      "user_id": "demo-alex-chen",
+      "date": "2026-04-20",
+      "readiness_score": 59.5,
+      "evidence_completeness": 75.0,
+      "verified_skills_count": 5,
+      "projects_analyzed": 1,
+      "new_competencies": [
+        "Model Serving & REST APIs"
+      ],
+      "notes": "Added FastAPI endpoint; verified API contract.",
+      "_id": "3bce5ade-001a-4a38-8ee8-2f4b12635535",
+      "created_at": "2026-10-17T02:00:37.799788",
+      "updated_at": "2026-10-17T03:51:34.178460"
+    },
+    {
+      "id": "snap-3",
+      "user_id": "demo-alex-chen",
+      "date": "2026-05-10",
+      "readiness_score": 68.4,
+      "evidence_completeness": 87.5,
+      "verified_skills_count": 7,
+      "projects_analyzed": 1,
+      "new_competencies": [
+        "Automated Testing & Code Quality"
+      ],
+      "notes": "Added Pytest regression suite; validated input boundary handling.",
+      "_id": "80ac3c2a-48b4-4d6a-9b73-ef23985c1b70",
+      "created_at": "2026-10-17T02:00:37.802381",
+      "updated_at": "2026-10-17T03:51:34.181802"
+    }
+  ],
+  "users": [
+    {
+      "email": "alex.chen@proofpath.io",
+      "id": "demo-alex-chen",
+      "password_hash": "4840459b7e5189ca792027e9288770d69e8f67005eae497ba75e668ede85b5f2",
+      "full_name": "Alex Chen",
+      "role": "student",
+      "degree": "B.S. in Computer Science",
+      "graduation_year": 2026,
+      "target_role": "Machine Learning Engineer",
+      "preferred_domains": [
+        "AI/ML",
+        "Cloud Systems"
+      ],
+      "_id": "fda3efde-7b77-4c33-97a4-2eabcc4b0c6b",
+      "created_at": "2026-10-17T02:00:37.804920",
+      "updated_at": "2026-10-17T03:51:34.184705"
+    },
+    {
+      "email": "placement@proofpath.io",
+      "id": "placement-officer-1",
+      "password_hash": "ab841de5726e8d5326f2a8336f629dcd1c349bbf846200f032ebcad4c72c274b",
+      "full_name": "Prof. Sarah Jenkins",
+      "role": "placement_officer",
+      "degree": "Department of Career Services",
+      "graduation_year": 2026,
+      "target_role": "Career Development Director",
+      "preferred_domains": [
+        "Placement Intelligence"
+      ],
+      "_id": "bdfa3cc5-df22-4f8e-90ff-c3904e544020",
+      "created_at": "2026-10-17T02:00:37.807488",
+      "updated_at": "2026-10-17T03:51:34.187449"
+    },
+    {
+      "email": "recruiter@proofpath.io",
+      "id": "recruiter-1",
+      "password_hash": "51cc09b6ab9d813f3ec6e1adff2d6cb2adeb63f12c93ffe224e423eafbe76173",
+      "full_name": "Marcus Vance (Lead Tech Recruiter)",
+      "role": "recruiter",
+      "degree": "Talent Acquisition & Placement Directorate",
+      "graduation_year": 2026,
+      "target_role": "Head of Technical Recruiting",
+      "preferred_domains": [
+        "Technical Hiring",
+        "Candidate Auditing"
+      ],
+      "_id": "dfab7034-2697-4d5f-9c75-6998a49a325d",
+      "created_at": "2026-10-17T02:00:37.809878",
+      "updated_at": "2026-10-17T03:51:34.190277"
+    },
+    {
+      "email": "tawfee@gmail.com",
+      "password_hash": "bf6e9dfd5036146430bf8e45d84732e0de86c6d78c16f937c62878ffde66fc76",
+      "full_name": "taw",
+      "role": "placement_officer",
+      "degree": null,
+      "institution": null,
+      "graduation_year": null,
+      "target_role": "Talent Acquisition & Placement",
+      "phone": null,
+      "location": null,
+      "linkedin_url": null,
+      "github_url": null,
+      "portfolio_url": null,
+      "summary": null,
+      "preferred_domains": [],
+      "_id": "7c283e83-0e1f-4403-81fb-f4091b36d4bb",
+      "created_at": "2026-10-17T02:21:34.376539"
+    },
+    {
+      "email": "karunambikakannan@gmail.com",
+      "password_hash": "bf6e9dfd5036146430bf8e45d84732e0de86c6d78c16f937c62878ffde66fc76",
+      "full_name": "harini",
+      "role": "student",
+      "degree": null,
+      "institution": null,
+      "graduation_year": null,
+      "target_role": "Machine Learning Engineer",
+      "phone": null,
+      "location": null,
+      "linkedin_url": null,
+      "github_url": null,
+      "portfolio_url": null,
+      "summary": null,
+      "preferred_domains": [],
+      "_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
+      "created_at": "2026-10-17T04:01:52.390065",
+      "updated_at": "2026-10-17T04:05:02.783191"
+    }
+  ],
+  "historical_events": [
+    {
+      "id": "dc63a81a-5201-4501-84c5-b1011dd84edb",
+      "user_id": "4d2f7aac-819f-4e1c-86da-7e3fe9613443",
+      "event_type": "profile_synced",
+      "title": "Platform Login",
+      "description": "User logged in and actively practiced in ProofPath workspace.",
+      "date": "2026-10-17",
+      "timestamp": "2026-10-17T02:01:18.460576",
+      "metadata": {
+        "action": "login"
+      },
+      "_id": "93e15136-2749-4259-8317-f4f4d2b1181c",
+      "created_at": "2026-10-17T02:01:18.460606"
+    },
+    {
+      "id": "17589545-d2a3-41b0-bf10-bc3e4e7cc967",
+      "user_id": "bdfa3cc5-df22-4f8e-90ff-c3904e544020",
+      "event_type": "profile_synced",
+      "title": "Platform Login",
+      "description": "User logged in and actively practiced in ProofPath workspace.",
+      "date": "2026-10-17",
+      "timestamp": "2026-10-17T02:01:18.493553",
+      "metadata": {
+        "action": "login"
+      },
+      "_id": "d0e6bd89-6232-4b2e-9a35-cb2891e012c3",
+      "created_at": "2026-10-17T02:01:18.493571"
+    },
+    {
+      "id": "8bdc59f2-6088-46e7-a5c7-20596a100981",
+      "user_id": "d526dfc5-490a-41fc-b01e-bd1d7fef1ab7",
+      "event_type": "profile_synced",
+      "title": "Platform Login",
+      "description": "User logged in and actively practiced in ProofPath workspace.",
+      "date": "2026-10-17",
+      "timestamp": "2026-10-17T02:20:51.900419",
+      "metadata": {
+        "action": "login"
+      },
+      "_id": "09872947-bd47-48a5-8259-b69968cbeddb",
+      "created_at": "2026-10-17T02:20:51.900495"
+    },
+    {
+      "id": "e2ffa696-f514-4ce3-9123-c02336883792",
+      "user_id": "7c283e83-0e1f-4403-81fb-f4091b36d4bb",
+      "event_type": "profile_synced",
+      "title": "Account Created & Initial Login",
+      "description": "User created account and accessed ProofPath workspace.",
+      "date": "2026-10-17",
+      "timestamp": "2026-10-17T02:21:34.383893",
+      "metadata": {
+        "action": "register"
+      },
+      "_id": "1a72b95f-2371-4f30-9135-2bb65d208d6c",
+      "created_at": "2026-10-17T02:21:34.383933"
+    },
+    {
+      "id": "e9bd5f73-689d-4b53-b629-b8cecdfe6829",
+      "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
+      "event_type": "profile_synced",
+      "title": "Account Created & Initial Login",
+      "description": "User created account and accessed ProofPath workspace.",
+      "date": "2026-10-17",
+      "timestamp": "2026-10-17T04:01:52.406367",
+      "metadata": {
+        "action": "register"
+      },
+      "_id": "ebf0a68d-c71c-4115-ad8b-2a3e1daddde7",
+      "created_at": "2026-10-17T04:01:52.406415"
+    },
+    {
+      "id": "0b9bf286-1ab8-4799-8768-2282c03d3cd2",
+      "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
+      "event_type": "resume_uploaded",
+      "title": "Uploaded Resume: KARUNAMBIKA-RESUME.pdf",
+      "description": "Extracted 16 competencies and 2 project experiences from KARUNAMBIKA-RESUME.pdf.",
+      "date": "2026-10-17",
+      "timestamp": "2026-10-17T04:03:52.451512",
+      "metadata": {
+        "resume_id": "fc66df79-b01d-436e-b37b-0f91cea883ef",
+        "filename": "KARUNAMBIKA-RESUME.pdf",
+        "skills_count": 16,
+        "projects_count": 2
+      },
+      "_id": "6e544b55-d965-4d85-9906-2f408bb1fe0e",
+      "created_at": "2026-10-17T04:03:52.451567"
+    },
+    {
+      "id": "e9287eaa-b501-45ae-ac78-498d2380625d",
+      "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
+      "event_type": "analysis_run",
+      "title": "Career Readiness Analysis: Machine Learning Engineer",
+      "description": "Assessed competencies for Machine Learning Engineer. Overall Score: 52.8%.",
+      "date": "2026-10-17",
+      "timestamp": "2026-10-17T04:05:02.760357",
+      "metadata": {
+        "role_id": "mle",
+        "role_name": "Machine Learning Engineer",
+        "score": 52.8,
+        "report_id": "d1f47ade-3702-4773-b3ec-340bb4c7479b"
+      },
+      "_id": "25027839-66b2-4969-bef9-ce9417e8e4af",
+      "created_at": "2026-10-17T04:05:02.771537"
+    }
+  ],
+  "placement_reports": [
+    {
+      "report_id": "audit-4a68299a",
+      "candidate_name": "Alex Chen",
+      "candidate_email": "alex.chen@proofpath.io",
+      "target_job_title": "Machine Learning & Backend Engineer",
+      "overall_readiness_score": 100,
+      "keyword_match_score": 71,
+      "gap_differential": -29,
+      "summary_headline": "Candidate demonstrates 100% verified proof-of-work readiness against the required Job Description (Word match is 71%).",
+      "placement_verdict": "PLACEMENT READY (Strong Proof-of-Work Alignment)",
+      "placement_recommendation": "Recommend candidate directly for initial technical interview. Proof of work confirms solid software engineering hygiene.",
+      "total_jd_competencies": 7,
+      "verified_skills_count": 7,
+      "lagging_skills_count": 0,
+      "verified_skills": [
+        {
+          "skill_name": "Python Idiomatic Programming",
+          "status": "Verified with Proof of Work",
+          "evidence_snippet": "from fastapi import FastAPI, HTTPException\nfrom pydantic import BaseModel, Field\n\nclass PatientData(BaseModel):\n    glucose: float = Field(..., gt=0, lt=500) Idiomatic Python functions, list comprehensions, type hints, and PEP8 structure across 7 repository files.",
+          "source_ref": "https://github.com/alexchen-ml/diabetes-prediction-service/blob/main/app/main.py",
+          "project_name": "Diabetes Risk Prediction Service",
+          "rag_standard": "Modular code with typing hints, dataclasses/pydantic, and PEP8 compliance."
+        },
+        {
+          "skill_name": "REST API Architecture & Web Services",
+          "status": "Verified with Proof of Work",
+          "evidence_snippet": "from fastapi import FastAPI, HTTPException\nfrom pydantic import BaseModel, Field\n\nclass PatientData(BaseModel):\n    glucose: float = Field(..., gt=0, lt=500) Idiomatic Python functions, list comprehensions, type hints, and PEP8 structure across 7 repository files.",
+          "source_ref": "https://github.com/alexchen-ml/diabetes-prediction-service/blob/main/app/main.py",
+          "project_name": "Diabetes Risk Prediction Service",
+          "rag_standard": "Production endpoints with HTTP status handling, routers, and CORS configurations."
+        },
+        {
+          "skill_name": "Automated Testing & Mocking Coverage",
+          "status": "Verified with Proof of Work",
+          "evidence_snippet": "def test_invalid_glucose_returns_422(client):\n    res = client.post('/predict', json={'glucose': -10})\n    assert res.status_code == 422 Pytest suite with 8 tests for data preprocessing and API error handling.",
+          "source_ref": "https://github.com/alexchen-ml/diabetes-prediction-service/blob/main/tests/test_api.py",
+          "project_name": "Diabetes Risk Prediction Service",
+          "rag_standard": "Pytest test suites with mock fixtures (respx/unittest.mock) and >75% branch coverage."
+        },
+        {
+          "skill_name": "Containerization & Docker Deployment",
+          "status": "Verified with Proof of Work",
+          "evidence_snippet": "Resume bullet mentions 'Docker and deployment', but zero Dockerfile, docker-compose.yml, or cloud config exists in connected repositories.",
+          "source_ref": "",
+          "project_name": "",
+          "rag_standard": "Multi-stage Dockerfile running as non-root user with health check probe."
+        },
+        {
+          "skill_name": "Defensive Schema Validation & Boundaries",
+          "status": "Verified with Proof of Work",
+          "evidence_snippet": "from fastapi import FastAPI, HTTPException\nfrom pydantic import BaseModel, Field\n\nclass PatientData(BaseModel):\n    glucose: float = Field(..., gt=0, lt=500) Idiomatic Python functions, list comprehensions, type hints, and PEP8 structure across 7 repository files.",
+          "source_ref": "https://github.com/alexchen-ml/diabetes-prediction-service/blob/main/app/main.py",
+          "project_name": "Diabetes Risk Prediction Service",
+          "rag_standard": "Explicit Pydantic schemas validating all request payloads before service execution."
+        },
+        {
+          "skill_name": "Machine Learning Pipelines & Validation",
+          "status": "Verified with Proof of Work",
+          "evidence_snippet": "from fastapi import FastAPI, HTTPException\nfrom pydantic import BaseModel, Field\n\nclass PatientData(BaseModel):\n    glucose: float = Field(..., gt=0, lt=500) Idiomatic Python functions, list comprehensions, type hints, and PEP8 structure across 7 repository files.",
+          "source_ref": "https://github.com/alexchen-ml/diabetes-prediction-service/blob/main/app/main.py",
+          "project_name": "Diabetes Risk Prediction Service",
+          "rag_standard": "Leakage-free Scikit-Learn Pipelines with cross-validation and hyperparameter tuning."
+        },
+        {
+          "skill_name": "CI/CD Automation & Git Branch Protection",
+          "status": "Verified with Proof of Work",
+          "evidence_snippet": "pipeline = Pipeline([('scaler', StandardScaler()), ('model', clf)])\npipeline.fit(X_train, y_train) StandardScaler fit strictly inside train fold; confusion matrix and ROC-AUC curves calculated on held-out test split.",
+          "source_ref": "https://github.com/alexchen-ml/diabetes-prediction-service/blob/main/src/evaluate.py",
+          "project_name": "Diabetes Risk Prediction Service",
+          "rag_standard": "Automated GitHub Actions CI running lint and unit tests on every Pull Request."
+        }
+      ],
+      "unverified_claims": [],
+      "lagging_areas": [],
+      "prescribed_bootcamp_modules": [
+        "Advanced Production Engineering & Code Defense Bootcamp"
+      ],
+      "generated_at": "2026-10-17 02:02 UTC",
+      "candidate_id": "demo-alex-chen",
+      "github_url": "https://github.com/alexchen-ml/diabetes-prediction-service",
+      "job_description": "We are seeking a Machine Learning & Backend Engineer who can bring models into production.\r\nRequired Qualifications:\r\n- Strong Python programming with type hints and clean object-oriented architecture.\r\n- Demonstrated experience building and deploying REST APIs with FastAPI or Flask.\r\n- Automated testing discipline with pytest, test suites, and mock fixtures.\r\n- Containerization with Docker and docker-compose for reproducible deployments.\r\n- Leakage-free machine learning training pipelines with scikit-learn and cross-validation.\r\n- Defensive schema validation using Pydantic or similar validation frameworks.\r\n- Git version control with clean commit histories and CI/CD awareness.",
+      "timestamp": "2026-10-17T02:02:09.941417",
+      "_id": "71b4c76d-6772-424c-88fc-21f2bef74669",
+      "created_at": "2026-10-17T02:02:09.941453"
+    },
+    {
+      "report_id": "audit-9da4aedb",
+      "candidate_name": "Aravind Kumar",
+      "candidate_email": "aravind@example.com",
+      "target_job_title": "Machine Learning Engineer",
+      "overall_readiness_score": 0,
+      "keyword_match_score": 50,
+      "gap_differential": 50,
+      "summary_headline": "Candidate demonstrates 0% verified proof-of-work readiness against the required Job Description (Word match is 50%).",
+      "placement_verdict": "NOT PLACEMENT READY (Critical Evidence Deficit)",
+      "placement_recommendation": "Candidate relies heavily on unverified resume claims with insufficient repository proof of work. Immediate remediation required.",
+      "total_jd_competencies": 12,
+      "verified_skills_count": 0,
+      "lagging_skills_count": 12,
+      "verified_skills": [],
+      "unverified_claims": [
+        {
+          "skill_name": "Python Programming & Code Organization",
+          "resume_claim": "Claimed as a bullet-point on resume",
+          "proof_status": "NO REPOSITORY PROOF OF WORK",
+          "explanation": "Candidate explicitly lists 'Python Programming & Code Organization' in resume text, but code repository inspection found 0 implementation files, tests, or configuration artifacts.",
+          "severity": "CRITICAL LAG"
+        },
+        {
+          "skill_name": "Experiment Reproducibility & Leakage Prevention",
+          "resume_claim": "Claimed as a bullet-point on resume",
+          "proof_status": "NO REPOSITORY PROOF OF WORK",
+          "explanation": "Candidate explicitly lists 'Experiment Reproducibility & Leakage Prevention' in resume text, but code repository inspection found 0 implementation files, tests, or configuration artifacts.",
+          "severity": "CRITICAL LAG"
+        },
+        {
+          "skill_name": "APIs & Model Serving",
+          "resume_claim": "Claimed as a bullet-point on resume",
+          "proof_status": "NO REPOSITORY PROOF OF WORK",
+          "explanation": "Candidate explicitly lists 'APIs & Model Serving' in resume text, but code repository inspection found 0 implementation files, tests, or configuration artifacts.",
+          "severity": "CRITICAL LAG"
+        },
+        {
+          "skill_name": "Automated Testing, Version Control & Docs",
+          "resume_claim": "Claimed as a bullet-point on resume",
+          "proof_status": "NO REPOSITORY PROOF OF WORK",
+          "explanation": "Candidate explicitly lists 'Automated Testing, Version Control & Docs' in resume text, but code repository inspection found 0 implementation files, tests, or configuration artifacts.",
+          "severity": "CRITICAL LAG"
+        },
+        {
+          "skill_name": "Deployment & Basic Monitoring",
+          "resume_claim": "Claimed as a bullet-point on resume",
+          "proof_status": "NO REPOSITORY PROOF OF WORK",
+          "explanation": "Candidate explicitly lists 'Deployment & Basic Monitoring' in resume text, but code repository inspection found 0 implementation files, tests, or configuration artifacts.",
+          "severity": "CRITICAL LAG"
+        },
+        {
+          "skill_name": "Spring Boot & RESTful Microservices",
+          "resume_claim": "Claimed as a bullet-point on resume",
+          "proof_status": "NO REPOSITORY PROOF OF WORK",
+          "explanation": "Candidate explicitly lists 'Spring Boot & RESTful Microservices' in resume text, but code repository inspection found 0 implementation files, tests, or configuration artifacts.",
+          "severity": "CRITICAL LAG"
+        }
+      ],
+      "lagging_areas": [
+        {
+          "skill_name": "Python Programming & Code Organization",
+          "deficit_type": "Unverified Keyword Claim",
+          "severity": "High Deficit",
+          "observed_gap": "Mentioned on resume, but no proof of work (zero assertions/artifacts in GitHub repository).",
+          "rag_standard": "Modular Python repository with clear functions/classes, type hints, and PEP8 compliance."
+        },
+        {
+          "skill_name": "Data Preparation & Exploratory Analysis",
+          "deficit_type": "Missing from Resume & Code",
+          "severity": "Critical Deficit",
+          "observed_gap": "Required by Job Description, but completely absent from candidate's profile and code repositories.",
+          "rag_standard": "Data-cleaning pipeline with documented train/val/test split strategy and handling of missing values."
+        },
+        {
+          "skill_name": "Model Training, Validation & Evaluation",
+          "deficit_type": "Missing from Resume & Code",
+          "severity": "Critical Deficit",
+          "observed_gap": "Required by Job Description, but completely absent from candidate's profile and code repositories.",
+          "rag_standard": "Baseline model compared against justified alternatives; metrics explained in context without naive accuracy reliance."
+        },
+        {
+          "skill_name": "Experiment Reproducibility & Leakage Prevention",
+          "deficit_type": "Unverified Keyword Claim",
+          "severity": "High Deficit",
+          "observed_gap": "Mentioned on resume, but no proof of work (zero assertions/artifacts in GitHub repository).",
+          "rag_standard": "Leakage-free Scikit-Learn Pipelines with held-out test splits and seed locking."
+        },
+        {
+          "skill_name": "APIs & Model Serving",
+          "deficit_type": "Unverified Keyword Claim",
+          "severity": "High Deficit",
+          "observed_gap": "Mentioned on resume, but no proof of work (zero assertions/artifacts in GitHub repository).",
+          "rag_standard": "Model exposed through REST API with input schema validation, status codes, and defensive error handling."
+        },
+        {
+          "skill_name": "Automated Testing, Version Control & Docs",
+          "deficit_type": "Unverified Keyword Claim",
+          "severity": "High Deficit",
+          "observed_gap": "Mentioned on resume, but no proof of work (zero assertions/artifacts in GitHub repository).",
+          "rag_standard": "Automated pytest suite testing inference behavior, git branch hygiene, and reproducible README."
+        },
+        {
+          "skill_name": "Deployment & Basic Monitoring",
+          "deficit_type": "Unverified Keyword Claim",
+          "severity": "High Deficit",
+          "observed_gap": "Mentioned on resume, but no proof of work (zero assertions/artifacts in GitHub repository).",
+          "rag_standard": "Multi-stage Docker containerization with reproducible runtime environment and health probes."
+        },
+        {
+          "skill_name": "Spring Boot & RESTful Microservices",
+          "deficit_type": "Unverified Keyword Claim",
+          "severity": "High Deficit",
+          "observed_gap": "Mentioned on resume, but no proof of work (zero assertions/artifacts in GitHub repository).",
+          "rag_standard": "Spring Boot RESTful microservices with layered architecture (Controller -> Service -> Repository)."
+        },
+        {
+          "skill_name": "Defensive Validation & Exception Handling",
+          "deficit_type": "Missing from Resume & Code",
+          "severity": "Critical Deficit",
+          "observed_gap": "Required by Job Description, but completely absent from candidate's profile and code repositories.",
+          "rag_standard": "Defensive DTO input validation with global @ControllerAdvice error interceptors."
+        },
+        {
+          "skill_name": "Unit & Integration Testing (JUnit/Mockito)",
+          "deficit_type": "Missing from Resume & Code",
+          "severity": "Critical Deficit",
+          "observed_gap": "Required by Job Description, but completely absent from candidate's profile and code repositories.",
+          "rag_standard": "JUnit and Mockito test coverage validating edge inputs, repository queries, and service logic."
+        },
+        {
+          "skill_name": "Data Cleaning & Quality Validation",
+          "deficit_type": "Missing from Resume & Code",
+          "severity": "Critical Deficit",
+          "observed_gap": "Required by Job Description, but completely absent from candidate's profile and code repositories.",
+          "rag_standard": "Documented cleaning rules handling nulls/duplicates, validating data types and boundary constraints."
+        },
+        {
+          "skill_name": "Descriptive Statistics & Business Interpretation",
+          "deficit_type": "Missing from Resume & Code",
+          "severity": "Critical Deficit",
+          "observed_gap": "Required by Job Description, but completely absent from candidate's profile and code repositories.",
+          "rag_standard": "Rigorous statistical analysis distinguishing correlation from causation with clear executive takeaway notes."
+        }
+      ],
+      "prescribed_bootcamp_modules": [
+        "Automated Pytest & Mock Fixtures Intensive Workshop",
+        "Defensive REST APIs & Pydantic Validation Lab"
+      ],
+      "generated_at": "2026-10-17 02:46 UTC",
+      "candidate_id": null,
+      "github_url": "https://github.com/aravind/diabetes-prediction-service",
+      "job_description": "Target Role: Machine Learning Engineer (from CareerLens RAG Knowledge Base)\r\nRole Purpose: Build, evaluate, package, deploy, and monitor machine-learning systems.\r\n\r\nRequired Competency Standards:\r\n1. Python programming, code organization, clean functions/classes, and type hints.\r\n2. Data preparation, exploratory analysis, and data-quality checks.\r\n3. Statistics and machine-learning algorithm fundamentals.\r\n4. Model training, validation, baseline comparison, and evaluation beyond naive accuracy.\r\n5. Experiment reproducibility and strict train/test data leakage prevention.\r\n6. APIs and model serving (FastAPI/Flask) with input validation and error handling.\r\n7. Automated testing (pytest), version control (Git), and documentation.\r\n8. Containerization (Docker), deployment, and basic monitoring.",
+      "timestamp": "2026-10-17T02:46:44.651472",
+      "_id": "bb310308-ecd8-4959-87e7-ced424b4b666",
+      "created_at": "2026-10-17T02:46:44.651528"
+    },
+    {
+      "report_id": "audit-931d156b",
+      "candidate_name": "Karunambika S",
+      "candidate_email": "harinicadbury@gmail.com",
+      "target_job_title": "Java Backend Developer",
+      "overall_readiness_score": 0,
+      "keyword_match_score": 10,
+      "gap_differential": 10,
+      "summary_headline": "Candidate demonstrates 0% verified proof-of-work readiness against the required Job Description (Word match is 10%).",
+      "placement_verdict": "NOT PLACEMENT READY (Critical Evidence Deficit)",
+      "placement_recommendation": "Candidate relies heavily on unverified resume claims with insufficient repository proof of work. Immediate remediation required.",
+      "total_jd_competencies": 10,
+      "verified_skills_count": 0,
+      "lagging_skills_count": 10,
+      "verified_skills": [],
+      "unverified_claims": [
+        {
+          "skill_name": "Automated Testing, Version Control & Docs",
+          "resume_claim": "Claimed as a bullet-point on resume",
+          "proof_status": "NO REPOSITORY PROOF OF WORK",
+          "explanation": "Candidate explicitly lists 'Automated Testing, Version Control & Docs' in resume text, but code repository inspection found 0 implementation files, tests, or configuration artifacts.",
+          "severity": "CRITICAL LAG"
+        }
+      ],
+      "lagging_areas": [
+        {
+          "skill_name": "Java Syntax, OOP & Collections",
+          "deficit_type": "Missing from Resume & Code",
+          "severity": "Critical Deficit",
+          "observed_gap": "Required by Job Description, but completely absent from candidate's profile and code repositories.",
+          "rag_standard": "Modern Java syntax, separation of concerns, collections framework, and clean OOP class hierarchy."
+        },
+        {
+          "skill_name": "Spring Boot & RESTful Microservices",
+          "deficit_type": "Missing from Resume & Code",
+          "severity": "Critical Deficit",
+          "observed_gap": "Required by Job Description, but completely absent from candidate's profile and code repositories.",
+          "rag_standard": "Spring Boot RESTful microservices with layered architecture (Controller -> Service -> Repository)."
+        },
+        {
+          "skill_name": "SQL & Relational Database Persistence",
+          "deficit_type": "Missing from Resume & Code",
+          "severity": "Critical Deficit",
+          "observed_gap": "Required by Job Description, but completely absent from candidate's profile and code repositories.",
+          "rag_standard": "Database schema modeling with ACID guarantees, JPA/Hibernate queries, and migration discipline."
+        },
+        {
+          "skill_name": "Defensive Validation & Exception Handling",
+          "deficit_type": "Missing from Resume & Code",
+          "severity": "Critical Deficit",
+          "observed_gap": "Required by Job Description, but completely absent from candidate's profile and code repositories.",
+          "rag_standard": "Defensive DTO input validation with global @ControllerAdvice error interceptors."
+        },
+        {
+          "skill_name": "Unit & Integration Testing (JUnit/Mockito)",
+          "deficit_type": "Missing from Resume & Code",
+          "severity": "Critical Deficit",
+          "observed_gap": "Required by Job Description, but completely absent from candidate's profile and code repositories.",
+          "rag_standard": "JUnit and Mockito test coverage validating edge inputs, repository queries, and service logic."
+        },
+        {
+          "skill_name": "APIs & Model Serving",
+          "deficit_type": "Missing from Resume & Code",
+          "severity": "Critical Deficit",
+          "observed_gap": "Required by Job Description, but completely absent from candidate's profile and code repositories.",
+          "rag_standard": "Model exposed through REST API with input schema validation, status codes, and defensive error handling."
+        },
+        {
+          "skill_name": "Automated Testing, Version Control & Docs",
+          "deficit_type": "Unverified Keyword Claim",
+          "severity": "High Deficit",
+          "observed_gap": "Mentioned on resume, but no proof of work (zero assertions/artifacts in GitHub repository).",
+          "rag_standard": "Automated pytest suite testing inference behavior, git branch hygiene, and reproducible README."
+        },
+        {
+          "skill_name": "Deployment & Basic Monitoring",
+          "deficit_type": "Missing from Resume & Code",
+          "severity": "Critical Deficit",
+          "observed_gap": "Required by Job Description, but completely absent from candidate's profile and code repositories.",
+          "rag_standard": "Multi-stage Docker containerization with reproducible runtime environment and health probes."
+        },
+        {
+          "skill_name": "SQL Querying, Aggregation & Window Functions",
+          "deficit_type": "Missing from Resume & Code",
+          "severity": "Critical Deficit",
+          "observed_gap": "Required by Job Description, but completely absent from candidate's profile and code repositories.",
+          "rag_standard": "Complex SQL queries answering concrete business questions with joins, CTEs, and window functions."
+        },
+        {
+          "skill_name": "Data Cleaning & Quality Validation",
+          "deficit_type": "Missing from Resume & Code",
+          "severity": "Critical Deficit",
+          "observed_gap": "Required by Job Description, but completely absent from candidate's profile and code repositories.",
+          "rag_standard": "Documented cleaning rules handling nulls/duplicates, validating data types and boundary constraints."
+        }
+      ],
+      "prescribed_bootcamp_modules": [
+        "Automated Pytest & Mock Fixtures Intensive Workshop",
+        "Defensive REST APIs & Pydantic Validation Lab"
+      ],
+      "generated_at": "2026-10-17 02:50 UTC",
+      "candidate_id": null,
+      "github_url": "https://github.com/imnafeez/PROVENIX---An-AI-powered-employability-and-career-Readiness-Analyzer",
+      "job_description": "Target Role: Java Backend Developer (from CareerLens RAG Knowledge Base)\r\nRole Purpose: Design and implement server-side applications, APIs, business logic, data access, and reliable integrations.\r\n\r\nRequired Competency Standards:\r\n1. Java syntax, collections, exception hierarchies, and object-oriented design.\r\n2. Data structures and algorithmic problem solving.\r\n3. SQL and relational database fundamentals (schema design, ACID transactions, queries).\r\n4. HTTP protocol, REST API design, status codes, and JSON serialization.\r\n5. Spring Boot framework fundamentals and layered architecture (Controller -> Service -> Repository).\r\n6. Defensive request validation, global error handling, and security basics.\r\n7. Unit and integration testing (JUnit, Mockito).\r\n8. Git version control, configuration management outside source code, logging, and deployment.",
+      "timestamp": "2026-10-17T02:50:25.466283",
+      "_id": "c3fbdf63-5ea0-45bc-87f0-ce02d668bf66",
+      "created_at": "2026-10-17T02:50:25.466328"
+    },
+    {
+      "report_id": "audit-29986518",
+      "candidate_name": "Alex Chen",
+      "candidate_email": "",
+      "target_job_title": "Backend Developer",
+      "overall_readiness_score": 0,
+      "keyword_match_score": 56,
+      "gap_differential": 56,
+      "summary_headline": "Candidate demonstrates 0% verified proof-of-work readiness against the required Job Description (Word match is 56%).",
+      "placement_verdict": "NOT PLACEMENT READY (Critical Evidence Deficit)",
+      "placement_recommendation": "Candidate relies heavily on unverified resume claims with insufficient repository proof of work. Immediate remediation required.",
+      "total_jd_competencies": 9,
+      "verified_skills_count": 0,
+      "lagging_skills_count": 9,
+      "verified_skills": [],
+      "unverified_claims": [
+        {
+          "skill_name": "Spring Boot & RESTful Microservices",
+          "resume_claim": "Claimed as a bullet-point on resume",
+          "proof_status": "NO REPOSITORY PROOF OF WORK",
+          "explanation": "Candidate explicitly lists 'Spring Boot & RESTful Microservices' in resume text, but code repository inspection found 0 implementation files, tests, or configuration artifacts.",
+          "severity": "CRITICAL LAG"
+        },
+        {
+          "skill_name": "SQL & Relational Database Persistence",
+          "resume_claim": "Claimed as a bullet-point on resume",
+          "proof_status": "NO REPOSITORY PROOF OF WORK",
+          "explanation": "Candidate explicitly lists 'SQL & Relational Database Persistence' in resume text, but code repository inspection found 0 implementation files, tests, or configuration artifacts.",
+          "severity": "CRITICAL LAG"
+        },
+        {
+          "skill_name": "Python Programming & Code Organization",
+          "resume_claim": "Claimed as a bullet-point on resume",
+          "proof_status": "NO REPOSITORY PROOF OF WORK",
+          "explanation": "Candidate explicitly lists 'Python Programming & Code Organization' in resume text, but code repository inspection found 0 implementation files, tests, or configuration artifacts.",
+          "severity": "CRITICAL LAG"
+        },
+        {
+          "skill_name": "APIs & Model Serving",
+          "resume_claim": "Claimed as a bullet-point on resume",
+          "proof_status": "NO REPOSITORY PROOF OF WORK",
+          "explanation": "Candidate explicitly lists 'APIs & Model Serving' in resume text, but code repository inspection found 0 implementation files, tests, or configuration artifacts.",
+          "severity": "CRITICAL LAG"
+        },
+        {
+          "skill_name": "SQL Querying, Aggregation & Window Functions",
+          "resume_claim": "Claimed as a bullet-point on resume",
+          "proof_status": "NO REPOSITORY PROOF OF WORK",
+          "explanation": "Candidate explicitly lists 'SQL Querying, Aggregation & Window Functions' in resume text, but code repository inspection found 0 implementation files, tests, or configuration artifacts.",
+          "severity": "CRITICAL LAG"
+        }
+      ],
+      "lagging_areas": [
+        {
+          "skill_name": "Java Syntax, OOP & Collections",
+          "deficit_type": "Missing from Resume & Code",
+          "severity": "Critical Deficit",
+          "observed_gap": "Required by Job Description, but completely absent from candidate's profile and code repositories.",
+          "rag_standard": "Modern Java syntax, separation of concerns, collections framework, and clean OOP class hierarchy."
+        },
+        {
+          "skill_name": "Spring Boot & RESTful Microservices",
+          "deficit_type": "Unverified Keyword Claim",
+          "severity": "High Deficit",
+          "observed_gap": "Mentioned on resume, but no proof of work (zero assertions/artifacts in GitHub repository).",
+          "rag_standard": "Spring Boot RESTful microservices with layered architecture (Controller -> Service -> Repository)."
+        },
+        {
+          "skill_name": "SQL & Relational Database Persistence",
+          "deficit_type": "Unverified Keyword Claim",
+          "severity": "High Deficit",
+          "observed_gap": "Mentioned on resume, but no proof of work (zero assertions/artifacts in GitHub repository).",
+          "rag_standard": "Database schema modeling with ACID guarantees, JPA/Hibernate queries, and migration discipline."
+        },
+        {
+          "skill_name": "Defensive Validation & Exception Handling",
+          "deficit_type": "Missing from Resume & Code",
+          "severity": "Critical Deficit",
+          "observed_gap": "Required by Job Description, but completely absent from candidate's profile and code repositories.",
+          "rag_standard": "Defensive DTO input validation with global @ControllerAdvice error interceptors."
+        },
+        {
+          "skill_name": "Unit & Integration Testing (JUnit/Mockito)",
+          "deficit_type": "Missing from Resume & Code",
+          "severity": "Critical Deficit",
+          "observed_gap": "Required by Job Description, but completely absent from candidate's profile and code repositories.",
+          "rag_standard": "JUnit and Mockito test coverage validating edge inputs, repository queries, and service logic."
+        },
+        {
+          "skill_name": "Python Programming & Code Organization",
+          "deficit_type": "Unverified Keyword Claim",
+          "severity": "High Deficit",
+          "observed_gap": "Mentioned on resume, but no proof of work (zero assertions/artifacts in GitHub repository).",
+          "rag_standard": "Modular Python repository with clear functions/classes, type hints, and PEP8 compliance."
+        },
+        {
+          "skill_name": "APIs & Model Serving",
+          "deficit_type": "Unverified Keyword Claim",
+          "severity": "High Deficit",
+          "observed_gap": "Mentioned on resume, but no proof of work (zero assertions/artifacts in GitHub repository).",
+          "rag_standard": "Model exposed through REST API with input schema validation, status codes, and defensive error handling."
+        },
+        {
+          "skill_name": "Deployment & Basic Monitoring",
+          "deficit_type": "Missing from Resume & Code",
+          "severity": "Critical Deficit",
+          "observed_gap": "Required by Job Description, but completely absent from candidate's profile and code repositories.",
+          "rag_standard": "Multi-stage Docker containerization with reproducible runtime environment and health probes."
+        },
+        {
+          "skill_name": "SQL Querying, Aggregation & Window Functions",
+          "deficit_type": "Unverified Keyword Claim",
+          "severity": "High Deficit",
+          "observed_gap": "Mentioned on resume, but no proof of work (zero assertions/artifacts in GitHub repository).",
+          "rag_standard": "Complex SQL queries answering concrete business questions with joins, CTEs, and window functions."
+        }
+      ],
+      "prescribed_bootcamp_modules": [
+        "Automated Pytest & Mock Fixtures Intensive Workshop",
+        "Defensive REST APIs & Pydantic Validation Lab"
+      ],
+      "generated_at": "2026-10-17 03:48 UTC",
+      "candidate_id": null,
+      "github_url": "",
+      "job_description": "Python, FastAPI, Docker, SQL",
+      "timestamp": "2026-10-17T03:48:29.764659",
+      "_id": "8d5a78fb-4f2e-4a42-9f9f-2780559493e4",
+      "created_at": "2026-10-17T03:48:29.764685"
+    },
+    {
+      "report_id": "audit-8d46b8bf",
+      "candidate_name": "Alex Chen",
+      "candidate_email": "",
+      "target_job_title": "Machine Learning Engineer",
+      "overall_readiness_score": 0,
+      "keyword_match_score": 60,
+      "gap_differential": 60,
+      "summary_headline": "Candidate demonstrates 0% verified proof-of-work readiness against the required Job Description (Word match is 60%).",
+      "placement_verdict": "NOT PLACEMENT READY (Critical Evidence Deficit)",
+      "placement_recommendation": "Candidate relies heavily on unverified resume claims with insufficient repository proof of work. Immediate remediation required.",
+      "total_jd_competencies": 10,
+      "verified_skills_count": 0,
+      "lagging_skills_count": 10,
+      "verified_skills": [],
+      "unverified_claims": [
+        {
+          "skill_name": "Python Programming & Code Organization",
+          "resume_claim": "Claimed as a bullet-point on resume",
+          "proof_status": "NO REPOSITORY PROOF OF WORK",
+          "explanation": "Candidate explicitly lists 'Python Programming & Code Organization' in resume text, but code repository inspection found 0 implementation files, tests, or configuration artifacts.",
+          "severity": "CRITICAL LAG"
+        },
+        {
+          "skill_name": "Model Training, Validation & Evaluation",
+          "resume_claim": "Claimed as a bullet-point on resume",
+          "proof_status": "NO REPOSITORY PROOF OF WORK",
+          "explanation": "Candidate explicitly lists 'Model Training, Validation & Evaluation' in resume text, but code repository inspection found 0 implementation files, tests, or configuration artifacts.",
+          "severity": "CRITICAL LAG"
+        },
+        {
+          "skill_name": "APIs & Model Serving",
+          "resume_claim": "Claimed as a bullet-point on resume",
+          "proof_status": "NO REPOSITORY PROOF OF WORK",
+          "explanation": "Candidate explicitly lists 'APIs & Model Serving' in resume text, but code repository inspection found 0 implementation files, tests, or configuration artifacts.",
+          "severity": "CRITICAL LAG"
+        },
+        {
+          "skill_name": "Automated Testing, Version Control & Docs",
+          "resume_claim": "Claimed as a bullet-point on resume",
+          "proof_status": "NO REPOSITORY PROOF OF WORK",
+          "explanation": "Candidate explicitly lists 'Automated Testing, Version Control & Docs' in resume text, but code repository inspection found 0 implementation files, tests, or configuration artifacts.",
+          "severity": "CRITICAL LAG"
+        },
+        {
+          "skill_name": "Deployment & Basic Monitoring",
+          "resume_claim": "Claimed as a bullet-point on resume",
+          "proof_status": "NO REPOSITORY PROOF OF WORK",
+          "explanation": "Candidate explicitly lists 'Deployment & Basic Monitoring' in resume text, but code repository inspection found 0 implementation files, tests, or configuration artifacts.",
+          "severity": "CRITICAL LAG"
+        },
+        {
+          "skill_name": "Spring Boot & RESTful Microservices",
+          "resume_claim": "Claimed as a bullet-point on resume",
+          "proof_status": "NO REPOSITORY PROOF OF WORK",
+          "explanation": "Candidate explicitly lists 'Spring Boot & RESTful Microservices' in resume text, but code repository inspection found 0 implementation files, tests, or configuration artifacts.",
+          "severity": "CRITICAL LAG"
+        }
+      ],
+      "lagging_areas": [
+        {
+          "skill_name": "Python Programming & Code Organization",
+          "deficit_type": "Unverified Keyword Claim",
+          "severity": "High Deficit",
+          "observed_gap": "Mentioned on resume, but no proof of work (zero assertions/artifacts in GitHub repository).",
+          "rag_standard": "Modular Python repository with clear functions/classes, type hints, and PEP8 compliance."
+        },
+        {
+          "skill_name": "Data Preparation & Exploratory Analysis",
+          "deficit_type": "Missing from Resume & Code",
+          "severity": "Critical Deficit",
+          "observed_gap": "Required by Job Description, but completely absent from candidate's profile and code repositories.",
+          "rag_standard": "Data-cleaning pipeline with documented train/val/test split strategy and handling of missing values."
+        },
+        {
+          "skill_name": "Model Training, Validation & Evaluation",
+          "deficit_type": "Unverified Keyword Claim",
+          "severity": "High Deficit",
+          "observed_gap": "Mentioned on resume, but no proof of work (zero assertions/artifacts in GitHub repository).",
+          "rag_standard": "Baseline model compared against justified alternatives; metrics explained in context without naive accuracy reliance."
+        },
+        {
+          "skill_name": "Experiment Reproducibility & Leakage Prevention",
+          "deficit_type": "Missing from Resume & Code",
+          "severity": "Critical Deficit",
+          "observed_gap": "Required by Job Description, but completely absent from candidate's profile and code repositories.",
+          "rag_standard": "Leakage-free Scikit-Learn Pipelines with held-out test splits and seed locking."
+        },
+        {
+          "skill_name": "APIs & Model Serving",
+          "deficit_type": "Unverified Keyword Claim",
+          "severity": "High Deficit",
+          "observed_gap": "Mentioned on resume, but no proof of work (zero assertions/artifacts in GitHub repository).",
+          "rag_standard": "Model exposed through REST API with input schema validation, status codes, and defensive error handling."
+        },
+        {
+          "skill_name": "Automated Testing, Version Control & Docs",
+          "deficit_type": "Unverified Keyword Claim",
+          "severity": "High Deficit",
+          "observed_gap": "Mentioned on resume, but no proof of work (zero assertions/artifacts in GitHub repository).",
+          "rag_standard": "Automated pytest suite testing inference behavior, git branch hygiene, and reproducible README."
+        },
+        {
+          "skill_name": "Deployment & Basic Monitoring",
+          "deficit_type": "Unverified Keyword Claim",
+          "severity": "High Deficit",
+          "observed_gap": "Mentioned on resume, but no proof of work (zero assertions/artifacts in GitHub repository).",
+          "rag_standard": "Multi-stage Docker containerization with reproducible runtime environment and health probes."
+        },
+        {
+          "skill_name": "Spring Boot & RESTful Microservices",
+          "deficit_type": "Unverified Keyword Claim",
+          "severity": "High Deficit",
+          "observed_gap": "Mentioned on resume, but no proof of work (zero assertions/artifacts in GitHub repository).",
+          "rag_standard": "Spring Boot RESTful microservices with layered architecture (Controller -> Service -> Repository)."
+        },
+        {
+          "skill_name": "SQL & Relational Database Persistence",
+          "deficit_type": "Missing from Resume & Code",
+          "severity": "Critical Deficit",
+          "observed_gap": "Required by Job Description, but completely absent from candidate's profile and code repositories.",
+          "rag_standard": "Database schema modeling with ACID guarantees, JPA/Hibernate queries, and migration discipline."
+        },
+        {
+          "skill_name": "SQL Querying, Aggregation & Window Functions",
+          "deficit_type": "Missing from Resume & Code",
+          "severity": "Critical Deficit",
+          "observed_gap": "Required by Job Description, but completely absent from candidate's profile and code repositories.",
+          "rag_standard": "Complex SQL queries answering concrete business questions with joins, CTEs, and window functions."
+        }
+      ],
+      "prescribed_bootcamp_modules": [
+        "Automated Pytest & Mock Fixtures Intensive Workshop",
+        "Defensive REST APIs & Pydantic Validation Lab"
+      ],
+      "generated_at": "2026-10-17 03:48 UTC",
+      "candidate_id": null,
+      "github_url": "",
+      "job_description": "Python, FastAPI, Docker, SQL, pytest",
+      "timestamp": "2026-10-17T03:48:56.062319",
+      "_id": "71658bdb-06bb-4ce9-8b4e-09ae2117f3b5",
+      "created_at": "2026-10-17T03:48:56.062340"
+    },
+    {
+      "report_id": "audit-fd0bdb63",
+      "candidate_name": "Candidate: Jordan Lee",
+      "candidate_email": "",
+      "target_job_title": "Machine Learning Engineer",
+      "overall_readiness_score": 67,
+      "keyword_match_score": 67,
+      "gap_differential": 0,
+      "summary_headline": "Candidate demonstrates 67% verified proof-of-work readiness against the required Job Description (Word match is 67%).",
+      "placement_verdict": "CONDITIONAL (Pre-Placement Bootcamp Prescribed)",
+      "placement_recommendation": "Candidate has foundational programming knowledge, but lags behind in production engineering (Experiment Reproducibility & Leakage Prevention, Defensive Validation & Exception Handling). Mandate a 2-week intensive bootcamp before placement shortlisting.",
+      "total_jd_competencies": 12,
+      "verified_skills_count": 8,
+      "lagging_skills_count": 4,
+      "verified_skills": [
+        {
+          "skill_name": "Python Programming & Code Organization",
+          "status": "Verified from Candidate Resume",
+          "evidence_snippet": "Skills: Python, scikit-learn, FastAPI, pytest, Docker, SQL, Pandas, NumPy",
+          "source_ref": "Candidate Resume Submission",
+          "project_name": "Resume Experience & Projects",
+          "rag_standard": "Modular Python repository with clear functions/classes, type hints, and PEP8 compliance."
+        },
+        {
+          "skill_name": "Data Preparation & Exploratory Analysis",
+          "status": "Verified from Candidate Resume",
+          "evidence_snippet": "Skills: Python, scikit-learn, FastAPI, pytest, Docker, SQL, Pandas, NumPy",
+          "source_ref": "Candidate Resume Submission",
+          "project_name": "Resume Experience & Projects",
+          "rag_standard": "Data-cleaning pipeline with documented train/val/test split strategy and handling of missing values."
+        },
+        {
+          "skill_name": "Model Training, Validation & Evaluation",
+          "status": "Verified with Code & Repository Artifacts",
+          "evidence_snippet": "Demonstrated in project 'Built REST API using FastAPI and trained scikit-learn random forest baseline with 89% ROC-AUC. Added unit tests using pytest.': Repository project implementation",
+          "source_ref": "Extracted Portfolio Projects",
+          "project_name": "Built REST API using FastAPI and trained scikit-learn random forest baseline with 89% ROC-AUC. Added unit tests using pytest.",
+          "rag_standard": "Baseline model compared against justified alternatives; metrics explained in context without naive accuracy reliance."
+        },
+        {
+          "skill_name": "APIs & Model Serving",
+          "status": "Verified with Code & Repository Artifacts",
+          "evidence_snippet": "Demonstrated in project 'Built REST API using FastAPI and trained scikit-learn random forest baseline with 89% ROC-AUC. Added unit tests using pytest.': Repository project implementation",
+          "source_ref": "Extracted Portfolio Projects",
+          "project_name": "Built REST API using FastAPI and trained scikit-learn random forest baseline with 89% ROC-AUC. Added unit tests using pytest.",
+          "rag_standard": "Model exposed through REST API with input schema validation, status codes, and defensive error handling."
+        },
+        {
+          "skill_name": "Automated Testing, Version Control & Docs",
+          "status": "Verified with Code & Repository Artifacts",
+          "evidence_snippet": "Demonstrated in project 'Built REST API using FastAPI and trained scikit-learn random forest baseline with 89% ROC-AUC. Added unit tests using pytest.': Repository project implementation",
+          "source_ref": "Extracted Portfolio Projects",
+          "project_name": "Built REST API using FastAPI and trained scikit-learn random forest baseline with 89% ROC-AUC. Added unit tests using pytest.",
+          "rag_standard": "Automated pytest suite testing inference behavior, git branch hygiene, and reproducible README."
+        },
+        {
+          "skill_name": "Deployment & Basic Monitoring",
+          "status": "Verified from Candidate Resume",
+          "evidence_snippet": "Skills: Python, scikit-learn, FastAPI, pytest, Docker, SQL, Pandas, NumPy",
+          "source_ref": "Candidate Resume Submission",
+          "project_name": "Resume Experience & Projects",
+          "rag_standard": "Multi-stage Docker containerization with reproducible runtime environment and health probes."
+        },
+        {
+          "skill_name": "Spring Boot & RESTful Microservices",
+          "status": "Verified with Code & Repository Artifacts",
+          "evidence_snippet": "Demonstrated in project 'Built REST API using FastAPI and trained scikit-learn random forest baseline with 89% ROC-AUC. Added unit tests using pytest.': Repository project implementation",
+          "source_ref": "Extracted Portfolio Projects",
+          "project_name": "Built REST API using FastAPI and trained scikit-learn random forest baseline with 89% ROC-AUC. Added unit tests using pytest.",
+          "rag_standard": "Spring Boot RESTful microservices with layered architecture (Controller -> Service -> Repository)."
+        },
+        {
+          "skill_name": "Data Cleaning & Quality Validation",
+          "status": "Verified from Candidate Resume",
+          "evidence_snippet": "Skills: Python, scikit-learn, FastAPI, pytest, Docker, SQL, Pandas, NumPy",
+          "source_ref": "Candidate Resume Submission",
+          "project_name": "Resume Experience & Projects",
+          "rag_standard": "Documented cleaning rules handling nulls/duplicates, validating data types and boundary constraints."
+        }
+      ],
+      "unverified_claims": [],
+      "lagging_areas": [
+        {
+          "skill_name": "Experiment Reproducibility & Leakage Prevention",
+          "deficit_type": "Missing from Resume (Skill Gap)",
+          "severity": "Critical Deficit",
+          "observed_gap": "Required by Job Description, but absent from candidate's resume.",
+          "rag_standard": "Leakage-free Scikit-Learn Pipelines with held-out test splits and seed locking."
+        },
+        {
+          "skill_name": "Defensive Validation & Exception Handling",
+          "deficit_type": "Missing from Resume (Skill Gap)",
+          "severity": "Critical Deficit",
+          "observed_gap": "Required by Job Description, but absent from candidate's resume.",
+          "rag_standard": "Defensive DTO input validation with global @ControllerAdvice error interceptors."
+        },
+        {
+          "skill_name": "Unit & Integration Testing (JUnit/Mockito)",
+          "deficit_type": "Missing from Resume (Skill Gap)",
+          "severity": "Critical Deficit",
+          "observed_gap": "Required by Job Description, but absent from candidate's resume.",
+          "rag_standard": "JUnit and Mockito test coverage validating edge inputs, repository queries, and service logic."
+        },
+        {
+          "skill_name": "Descriptive Statistics & Business Interpretation",
+          "deficit_type": "Missing from Resume (Skill Gap)",
+          "severity": "Critical Deficit",
+          "observed_gap": "Required by Job Description, but absent from candidate's resume.",
+          "rag_standard": "Rigorous statistical analysis distinguishing correlation from causation with clear executive takeaway notes."
+        }
+      ],
+      "prescribed_bootcamp_modules": [
+        "Automated Pytest & Mock Fixtures Intensive Workshop"
+      ],
+      "generated_at": "2026-10-17 04:12 UTC",
+      "candidate_id": null,
+      "github_url": "",
+      "job_description": "Target Role: Machine Learning Engineer (from CareerLens RAG Knowledge Base)\r\nRole Purpose: Build, evaluate, package, deploy, and monitor machine-learning systems.\r\n\r\nRequired Competency Standards:\r\n1. Python programming, code organization, clean functions/classes, and type hints.\r\n2. Data preparation, exploratory analysis, and data-quality checks.\r\n3. Statistics and machine-learning algorithm fundamentals.\r\n4. Model training, validation, baseline comparison, and evaluation beyond naive accuracy.\r\n5. Experiment reproducibility and strict train/test data leakage prevention.\r\n6. APIs and model serving (FastAPI/Flask) with input validation and error handling.\r\n7. Automated testing (pytest), version control (Git), and documentation.\r\n8. Containerization (Docker), deployment, and basic monitoring.",
+      "timestamp": "2026-10-17T04:12:41.006563",
+      "_id": "4dd6e1d1-09e6-40c1-8295-866cf8bb09f3",
+      "created_at": "2026-10-17T04:12:41.006617"
+    }
+  ],
+  "ats_resumes": [],
+  "resumes": [
+    {
+      "_id": "fc66df79-b01d-436e-b37b-0f91cea883ef",
+      "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
+      "original_filename": "KARUNAMBIKA-RESUME.pdf",
+      "stored_path": "C:\\projects\\CAREERLIFT\\backend\\data\\uploads\\fc66df79-b01d-436e-b37b-0f91cea883ef_KARUNAMBIKA-RESUME.pdf",
+      "status": "Processed",
+      "raw_text_length": 3468,
+      "pages_count": 1,
+      "extracted_skills": [
+        {
+          "raw_term": "python",
+          "normalized_name": "Python Programming",
+          "page_number": 1,
+          "text_snippet": "...S PROJECTS LANGUAGES CERTIFICATIONS AmbulanceMed C   Java   Python Video  and  Poster  editing Kongu  Engineering  College , p..."
+        },
+        {
+          "raw_term": "git",
+          "normalized_name": "Git Version Control & Documentation",
+          "page_number": 1,
+          "text_snippet": "...,  Tenkasi 2024 HTML CSS Javascript Tools Technical  Skills Git Github Soft  Skills Communication Problem-solving Served  a..."
+        },
+        {
+          "raw_term": "java",
+          "normalized_name": "Core Java & OOP",
+          "page_number": 1,
+          "text_snippet": "...-AI & DS PROJECTS LANGUAGES CERTIFICATIONS AmbulanceMed C   Java   Python Video  and  Poster  editing Kongu  Engineering  Co..."
+        },
+        {
+          "raw_term": "react",
+          "normalized_name": "React Frontend Architecture",
+          "page_number": 1,
+          "text_snippet": "...uest  statuses.Integrated  interactive  maps  using Leaflet/React-Leaflet  for  geospatial  tracking Advanced  C  Programming..."
+        },
+        {
+          "raw_term": "typescript",
+          "normalized_name": "TypeScript & Type Safety",
+          "page_number": 1,
+          "text_snippet": "....io  for  chat  and  notifications CampusBridge Tech  Stack:TypeScript ,  Tailwind  CSS , Node.js , Express.js ,  MongoDB MedRoute..."
+        },
+        {
+          "raw_term": "javascript",
+          "normalized_name": "JavaScript & Modern Web",
+          "page_number": 1,
+          "text_snippet": "...asic )  \u2013  Certified Full  stack  foundation  with  Java ,  Javascript and  Database-Certified CampusBridge Built  a  dedicated  M..."
+        },
+        {
+          "raw_term": "node",
+          "normalized_name": "Node.js & Express Architecture",
+          "page_number": 1,
+          "text_snippet": "...ions CampusBridge Tech  Stack:TypeScript ,  Tailwind  CSS , Node.js , Express.js ,  MongoDB MedRoute OpenAI Linux  ( Basic )..."
+        },
+        {
+          "raw_term": "mongodb",
+          "normalized_name": "NoSQL Databases & MongoDB",
+          "page_number": 1,
+          "text_snippet": "...Association   Tech  Stack:React.js ,  Vite ,  Express.js ,  MongoDB , Socket.io  for  chat  and  notifications CampusBridge Tec..."
+        },
+        {
+          "raw_term": "socket.io",
+          "normalized_name": "Real-Time Systems & WebSockets",
+          "page_number": 1,
+          "text_snippet": "...d  a  real-time  tracking  and notification  system  using  Socket.io  to  provide live  updates  on  ambulance  locations  and e..."
+        },
+        {
+          "raw_term": "leaflet",
+          "normalized_name": "Geospatial & Interactive Mapping",
+          "page_number": 1,
+          "text_snippet": "...ncy  request  statuses.Integrated  interactive  maps  using Leaflet/React-Leaflet  for  geospatial  tracking Advanced  C  Progr..."
+        },
+        {
+          "raw_term": "vite",
+          "normalized_name": "Modern Frontend Tooling (Vite)",
+          "page_number": 1,
+          "text_snippet": "...tive  Member  of  AI  Association   Tech  Stack:React.js ,  Vite ,  Express.js ,  MongoDB , Socket.io  for  chat  and  notif..."
+        },
+        {
+          "raw_term": "tailwind",
+          "normalized_name": "Tailwind CSS & Responsive UI",
+          "page_number": 1,
+          "text_snippet": "...and  notifications CampusBridge Tech  Stack:TypeScript ,  Tailwind  CSS , Node.js , Express.js ,  MongoDB MedRoute OpenAI Linu..."
+        },
+        {
+          "raw_term": "c",
+          "normalized_name": "Systems Programming in C",
+          "page_number": 1,
+          "text_snippet": "...k a r u n a m b i k a s e n t h i l k u m a r @ g m a i l . c o m T e n k a s i  w w w . l i n k e d i n . c o m / i n /..."
+        },
+        {
+          "raw_term": "linux",
+          "normalized_name": "Linux & Shell Environment",
+          "page_number": 1,
+          "text_snippet": "...wind  CSS , Node.js , Express.js ,  MongoDB MedRoute OpenAI Linux  ( Basic )---EmbeddedDocumentLinks---http://www.linkedin.co..."
+        },
+        {
+          "raw_term": "html",
+          "normalized_name": "HTML5 & Semantic Web",
+          "page_number": 1,
+          "text_snippet": "...% SSLC St.Michaels  Girls ,  Hr.Sec.School ,  Tenkasi 2024 HTML CSS Javascript Tools Technical  Skills Git Github Soft  Ski..."
+        },
+        {
+          "raw_term": "css",
+          "normalized_name": "CSS3 & Responsive Design",
+          "page_number": 1,
+          "text_snippet": "...LC St.Michaels  Girls ,  Hr.Sec.School ,  Tenkasi 2024 HTML CSS Javascript Tools Technical  Skills Git Github Soft  Skills..."
+        }
+      ],
+      "extracted_projects": [
+        {
+          "title": "CampusBridge - Alumni Management Portal",
+          "repo_url": "https://github.com/KARUNAMBIKASENTHIL/Alumni-Management-Portal",
+          "technologies": [
+            "React.js",
+            "Vite",
+            "Express.js",
+            "MongoDB",
+            "Socket.io",
+            "WebSockets"
+          ],
+          "claimed_impact": "MERN-stack social platform enabling isolated college networks for student-alumni interaction featuring live messaging, notifications, and mentorship matching."
+        },
+        {
+          "title": "MedRoute - Emergency Medical Response Platform",
+          "repo_url": "https://github.com/KARUNAMBIKASENTHIL/MedRoute",
+          "technologies": [
+            "TypeScript",
+            "Node.js",
+            "Express.js",
+            "MongoDB",
+            "Socket.io",
+            "Leaflet",
+            "React"
+          ],
+          "claimed_impact": "Full-stack real-time emergency response platform connecting patients with hospitals and ambulance drivers with live GPS tracking via Socket.io and interactive maps with Leaflet."
+        }
+      ],
+      "education": "B.Tech - AI & DS",
+      "detected_links": {
+        "github": "https://github.com/KARUNAMBIKASENTHIL",
+        "github_repos": [
+          "https://github.com/KARUNAMBIKASENTHIL/Alumni-Management-Portal",
+          "https://github.com/KARUNAMBIKASENTHIL/MedRoute"
+        ],
+        "leetcode": "https://leetcode.com/u/KarunambikaSenthil",
+        "linkedin": "https://www.linkedin.com/in/karunambikas"
+      },
+      "ambiguities": [],
+      "created_at": "2026-10-17T04:03:52.166428"
+    }
+  ],
+  "analysis_reports": [
+    {
+      "id": "d1f47ade-3702-4773-b3ec-340bb4c7479b",
+      "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
+      "timestamp": "2026-10-17T04:05:02.760357",
+      "date": "2026-10-17",
+      "resume_version": "KARUNAMBIKA-RESUME.pdf",
+      "sources_available": [
+        "KARUNAMBIKA-RESUME.pdf",
+        "GitHub (KARUNAMBIKASENTHIL)",
+        "LeetCode Profile",
+        "LinkedIn Profile",
+        "GitHub Repository"
+      ],
+      "target_role": "mle",
+      "target_role_name": "Machine Learning Engineer",
+      "overall_readiness_score": 52.8,
+      "previous_score": null,
+      "score_delta": null,
+      "category_breakdown": {
+        "Demonstrated Coverage": 0.53,
+        "Evidence Completeness": 62.5,
+        "Assessment Confidence": 74.5
+      },
+      "supported_skills_count": 5,
+      "partially_supported_count": 0,
+      "not_yet_verified_count": 3,
+      "conflicting_count": 0,
+      "skill_evaluations": [
+        {
+          "skill_id": "python",
+          "name": "Python Programming",
+          "category": "Core Programming",
+          "importance_weight": 0.95,
+          "status": "Supported",
+          "coverage_value": 0.85,
+          "confidence": 0.85,
+          "evidence_count": 1,
+          "artifacts": [
+            {
+              "source": "GitHub: GitHub Repository",
+              "observed": "Demonstrated in repository 'GitHub Repository'. Architecture: Standard Script / Flat Layout",
+              "file_path": "https://github.com/KARUNAMBIKASENTHIL",
+              "code_snippet": null
+            }
+          ],
+          "evaluation_reason": "Evaluated across 1 artifact(s). Status: Supported."
+        },
+        {
+          "skill_id": "ml_modeling",
+          "name": "Machine Learning Algorithms & Training",
+          "category": "Modeling",
+          "importance_weight": 0.9,
+          "status": "Supported",
+          "coverage_value": 0.85,
+          "confidence": 0.75,
+          "evidence_count": 1,
+          "artifacts": [
+            {
+              "source": "Resume (KARUNAMBIKA-RESUME.pdf)",
+              "observed": "Extracted from page 1 of resume 'KARUNAMBIKA-RESUME.pdf'. Context: ...k a r u n a m b i k a s e n t h i l k u m a r @ g m a i l . c o m T e n k a s i  w w w . l i n k e d i n . c o m / i n /... Corroborated by project experience 'CampusBridge - Alumni Management Portal'.",
+              "file_path": "Resume: Page 1",
+              "code_snippet": "...k a r u n a m b i k a s e n t h i l k u m a r @ g m a i l . c o m T e n k a s i  w w w . l i n k e d i n . c o m / i n /..."
+            }
+          ],
+          "evaluation_reason": "Evaluated across 1 artifact(s). Status: Supported."
+        },
+        {
+          "skill_id": "model_evaluation",
+          "name": "Model Evaluation & Leakage Prevention",
+          "category": "Validation",
+          "importance_weight": 0.85,
+          "status": "Not yet verified",
+          "coverage_value": 0.0,
+          "confidence": 0.0,
+          "evidence_count": 0,
+          "artifacts": [],
+          "evaluation_reason": "No observable evidence found in uploaded resumes or connected repositories for Model Evaluation & Leakage Prevention."
+        },
+        {
+          "skill_id": "api_development",
+          "name": "Model Serving & REST APIs",
+          "category": "Software Engineering",
+          "importance_weight": 0.85,
+          "status": "Not yet verified",
+          "coverage_value": 0.0,
+          "confidence": 0.0,
+          "evidence_count": 0,
+          "artifacts": [],
+          "evaluation_reason": "No observable evidence found in uploaded resumes or connected repositories for Model Serving & REST APIs."
+        },
+        {
+          "skill_id": "testing",
+          "name": "Automated Testing & Code Quality",
+          "category": "Software Engineering",
+          "importance_weight": 0.75,
+          "status": "Supported",
+          "coverage_value": 0.85,
+          "confidence": 0.75,
+          "evidence_count": 1,
+          "artifacts": [
+            {
+              "source": "Resume (KARUNAMBIKA-RESUME.pdf)",
+              "observed": "Extracted from page 1 of resume 'KARUNAMBIKA-RESUME.pdf'. Context: ...k a r u n a m b i k a s e n t h i l k u m a r @ g m a i l . c o m T e n k a s i  w w w . l i n k e d i n . c o m / i n /... Corroborated by project experience 'CampusBridge - Alumni Management Portal'.",
+              "file_path": "Resume: Page 1",
+              "code_snippet": "...k a r u n a m b i k a s e n t h i l k u m a r @ g m a i l . c o m T e n k a s i  w w w . l i n k e d i n . c o m / i n /..."
+            }
+          ],
+          "evaluation_reason": "Evaluated across 1 artifact(s). Status: Supported."
+        },
+        {
+          "skill_id": "deployment",
+          "name": "Containerization & Deployment",
+          "category": "DevOps & MLOps",
+          "importance_weight": 0.8,
+          "status": "Supported",
+          "coverage_value": 0.85,
+          "confidence": 0.75,
+          "evidence_count": 1,
+          "artifacts": [
+            {
+              "source": "Resume (KARUNAMBIKA-RESUME.pdf)",
+              "observed": "Extracted from page 1 of resume 'KARUNAMBIKA-RESUME.pdf'. Context: ...k a r u n a m b i k a s e n t h i l k u m a r @ g m a i l . c o m T e n k a s i  w w w . l i n k e d i n . c o m / i n /... Corroborated by project experience 'CampusBridge - Alumni Management Portal'.",
+              "file_path": "Resume: Page 1",
+              "code_snippet": "...k a r u n a m b i k a s e n t h i l k u m a r @ g m a i l . c o m T e n k a s i  w w w . l i n k e d i n . c o m / i n /..."
+            }
+          ],
+          "evaluation_reason": "Evaluated across 1 artifact(s). Status: Supported."
+        },
+        {
+          "skill_id": "data_processing",
+          "name": "Data Wrangling & Pipeline Engineering",
+          "category": "Data",
+          "importance_weight": 0.8,
+          "status": "Not yet verified",
+          "coverage_value": 0.0,
+          "confidence": 0.0,
+          "evidence_count": 0,
+          "artifacts": [],
+          "evaluation_reason": "No observable evidence found in uploaded resumes or connected repositories for Data Wrangling & Pipeline Engineering."
+        },
+        {
+          "skill_id": "version_control_docs",
+          "name": "Git Version Control & Documentation",
+          "category": "Engineering Standards",
+          "importance_weight": 0.7,
+          "status": "Supported",
+          "coverage_value": 0.85,
+          "confidence": 0.62,
+          "evidence_count": 2,
+          "artifacts": [
+            {
+              "source": "Resume (KARUNAMBIKA-RESUME.pdf)",
+              "observed": "Extracted from page 1 of resume 'KARUNAMBIKA-RESUME.pdf'. Context: ...,  Tenkasi 2024 HTML CSS Javascript Tools Technical  Skills Git Github Soft  Skills Communication Problem-solving Served  a...",
+              "file_path": "Resume: Page 1",
+              "code_snippet": "...,  Tenkasi 2024 HTML CSS Javascript Tools Technical  Skills Git Github Soft  Skills Communication Problem-solving Served  a..."
+            },
+            {
+              "source": "Resume (KARUNAMBIKA-RESUME.pdf)",
+              "observed": "Extracted from page 1 of resume 'KARUNAMBIKA-RESUME.pdf'. Context: ...k a r u n a m b i k a s e n t h i l k u m a r @ g m a i l . c o m T e n k a s i  w w w . l i n k e d i n . c o m / i n /... Corroborated by project experience 'CampusBridge - Alumni Management Portal'.",
+              "file_path": "Resume: Page 1",
+              "code_snippet": "...k a r u n a m b i k a s e n t h i l k u m a r @ g m a i l . c o m T e n k a s i  w w w . l i n k e d i n . c o m / i n /..."
+            }
+          ],
+          "evaluation_reason": "Evaluated across 2 artifact(s). Status: Supported."
+        }
+      ],
+      "projects_referenced": [
+        "Resume Work History",
+        "GitHub Repository",
+        "MedRoute - Emergency Medical Response Platform",
+        "CampusBridge - Alumni Management Portal"
+      ],
+      "consistency_summary": "Active observation window",
+      "observation_window": "Current Profile",
+      "recommendations": [
+        "Model Evaluation & Leakage Prevention",
+        "Model Serving & REST APIs",
+        "Data Wrangling & Pipeline Engineering"
+      ],
+      "roadmap_version": "v1.0",
+      "methodology_version": "v1.2.0-deterministic",
+      "_id": "2bbe15ac-7221-45aa-89db-20fc9594ac93",
+      "created_at": "2026-10-17T04:05:02.760431"
+    }
+  ],
+  "assessments": [
+    {
+      "overall_readiness_score": 52.8,
+      "demonstrated_coverage": 0.53,
+      "evidence_completeness": 62.5,
+      "assessment_confidence": 74.5,
+      "methodology_version": "v1.2.0-deterministic",
+      "role_id": "mle",
+      "role_name": "Machine Learning Engineer",
+      "skill_evaluations": [
+        {
+          "skill_id": "python",
+          "name": "Python Programming",
+          "category": "Core Programming",
+          "importance_weight": 0.95,
+          "status": "Supported",
+          "coverage_value": 0.85,
+          "confidence": 0.85,
+          "evidence_count": 1,
+          "artifacts": [
+            {
+              "source": "GitHub: GitHub Repository",
+              "observed": "Demonstrated in repository 'GitHub Repository'. Architecture: Standard Script / Flat Layout",
+              "file_path": "https://github.com/KARUNAMBIKASENTHIL",
+              "code_snippet": null
+            }
+          ],
+          "evaluation_reason": "Evaluated across 1 artifact(s). Status: Supported."
+        },
+        {
+          "skill_id": "ml_modeling",
+          "name": "Machine Learning Algorithms & Training",
+          "category": "Modeling",
+          "importance_weight": 0.9,
+          "status": "Supported",
+          "coverage_value": 0.85,
+          "confidence": 0.75,
+          "evidence_count": 1,
+          "artifacts": [
+            {
+              "source": "Resume (KARUNAMBIKA-RESUME.pdf)",
+              "observed": "Extracted from page 1 of resume 'KARUNAMBIKA-RESUME.pdf'. Context: ...k a r u n a m b i k a s e n t h i l k u m a r @ g m a i l . c o m T e n k a s i  w w w . l i n k e d i n . c o m / i n /... Corroborated by project experience 'CampusBridge - Alumni Management Portal'.",
+              "file_path": "Resume: Page 1",
+              "code_snippet": "...k a r u n a m b i k a s e n t h i l k u m a r @ g m a i l . c o m T e n k a s i  w w w . l i n k e d i n . c o m / i n /..."
+            }
+          ],
+          "evaluation_reason": "Evaluated across 1 artifact(s). Status: Supported."
+        },
+        {
+          "skill_id": "model_evaluation",
+          "name": "Model Evaluation & Leakage Prevention",
+          "category": "Validation",
+          "importance_weight": 0.85,
+          "status": "Not yet verified",
+          "coverage_value": 0.0,
+          "confidence": 0.0,
+          "evidence_count": 0,
+          "artifacts": [],
+          "evaluation_reason": "No observable evidence found in uploaded resumes or connected repositories for Model Evaluation & Leakage Prevention."
+        },
+        {
+          "skill_id": "api_development",
+          "name": "Model Serving & REST APIs",
+          "category": "Software Engineering",
+          "importance_weight": 0.85,
+          "status": "Not yet verified",
+          "coverage_value": 0.0,
+          "confidence": 0.0,
+          "evidence_count": 0,
+          "artifacts": [],
+          "evaluation_reason": "No observable evidence found in uploaded resumes or connected repositories for Model Serving & REST APIs."
+        },
+        {
+          "skill_id": "testing",
+          "name": "Automated Testing & Code Quality",
+          "category": "Software Engineering",
+          "importance_weight": 0.75,
+          "status": "Supported",
+          "coverage_value": 0.85,
+          "confidence": 0.75,
+          "evidence_count": 1,
+          "artifacts": [
+            {
+              "source": "Resume (KARUNAMBIKA-RESUME.pdf)",
+              "observed": "Extracted from page 1 of resume 'KARUNAMBIKA-RESUME.pdf'. Context: ...k a r u n a m b i k a s e n t h i l k u m a r @ g m a i l . c o m T e n k a s i  w w w . l i n k e d i n . c o m / i n /... Corroborated by project experience 'CampusBridge - Alumni Management Portal'.",
+              "file_path": "Resume: Page 1",
+              "code_snippet": "...k a r u n a m b i k a s e n t h i l k u m a r @ g m a i l . c o m T e n k a s i  w w w . l i n k e d i n . c o m / i n /..."
+            }
+          ],
+          "evaluation_reason": "Evaluated across 1 artifact(s). Status: Supported."
+        },
+        {
+          "skill_id": "deployment",
+          "name": "Containerization & Deployment",
+          "category": "DevOps & MLOps",
+          "importance_weight": 0.8,
+          "status": "Supported",
+          "coverage_value": 0.85,
+          "confidence": 0.75,
+          "evidence_count": 1,
+          "artifacts": [
+            {
+              "source": "Resume (KARUNAMBIKA-RESUME.pdf)",
+              "observed": "Extracted from page 1 of resume 'KARUNAMBIKA-RESUME.pdf'. Context: ...k a r u n a m b i k a s e n t h i l k u m a r @ g m a i l . c o m T e n k a s i  w w w . l i n k e d i n . c o m / i n /... Corroborated by project experience 'CampusBridge - Alumni Management Portal'.",
+              "file_path": "Resume: Page 1",
+              "code_snippet": "...k a r u n a m b i k a s e n t h i l k u m a r @ g m a i l . c o m T e n k a s i  w w w . l i n k e d i n . c o m / i n /..."
+            }
+          ],
+          "evaluation_reason": "Evaluated across 1 artifact(s). Status: Supported."
+        },
+        {
+          "skill_id": "data_processing",
+          "name": "Data Wrangling & Pipeline Engineering",
+          "category": "Data",
+          "importance_weight": 0.8,
+          "status": "Not yet verified",
+          "coverage_value": 0.0,
+          "confidence": 0.0,
+          "evidence_count": 0,
+          "artifacts": [],
+          "evaluation_reason": "No observable evidence found in uploaded resumes or connected repositories for Data Wrangling & Pipeline Engineering."
+        },
+        {
+          "skill_id": "version_control_docs",
+          "name": "Git Version Control & Documentation",
+          "category": "Engineering Standards",
+          "importance_weight": 0.7,
+          "status": "Supported",
+          "coverage_value": 0.85,
+          "confidence": 0.62,
+          "evidence_count": 2,
+          "artifacts": [
+            {
+              "source": "Resume (KARUNAMBIKA-RESUME.pdf)",
+              "observed": "Extracted from page 1 of resume 'KARUNAMBIKA-RESUME.pdf'. Context: ...,  Tenkasi 2024 HTML CSS Javascript Tools Technical  Skills Git Github Soft  Skills Communication Problem-solving Served  a...",
+              "file_path": "Resume: Page 1",
+              "code_snippet": "...,  Tenkasi 2024 HTML CSS Javascript Tools Technical  Skills Git Github Soft  Skills Communication Problem-solving Served  a..."
+            },
+            {
+              "source": "Resume (KARUNAMBIKA-RESUME.pdf)",
+              "observed": "Extracted from page 1 of resume 'KARUNAMBIKA-RESUME.pdf'. Context: ...k a r u n a m b i k a s e n t h i l k u m a r @ g m a i l . c o m T e n k a s i  w w w . l i n k e d i n . c o m / i n /... Corroborated by project experience 'CampusBridge - Alumni Management Portal'.",
+              "file_path": "Resume: Page 1",
+              "code_snippet": "...k a r u n a m b i k a s e n t h i l k u m a r @ g m a i l . c o m T e n k a s i  w w w . l i n k e d i n . c o m / i n /..."
+            }
+          ],
+          "evaluation_reason": "Evaluated across 2 artifact(s). Status: Supported."
+        }
+      ],
+      "positive_contributors": [
+        "Python Programming (Supported)",
+        "Machine Learning Algorithms & Training (Supported)",
+        "Automated Testing & Code Quality (Supported)",
+        "Containerization & Deployment (Supported)",
+        "Git Version Control & Documentation (Supported)"
+      ],
+      "missing_evidence": [
+        "Model Evaluation & Leakage Prevention",
+        "Model Serving & REST APIs",
+        "Data Wrangling & Pipeline Engineering"
+      ],
+      "formula_explanation": "Deterministic Formula: Score = 100 \u00d7 (\u03a3 w_i \u00d7 c_i) / (\u03a3 w_i). Evaluated 8 competencies with total weight 6.60. Sum of weighted coverage is 3.49, resulting in 52.8%. Evidence completeness is 62.5% (5/8 role requirements examined). Scoring Methodology Version: v1.2.0-deterministic.",
+      "timestamp": "2026-10-17T04:05:02.747339",
+      "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
+      "id": "51c784c1-962e-45d1-b0fb-eb678bcfd840",
+      "_id": "c9544085-99f0-4c23-a270-2fb6a6b21082",
+      "created_at": "2026-10-17T04:05:02.748102"
+    }
+  ],
+  "roadmaps": [
+    {
+      "user_id": "22b07b7b-5b30-4f4f-a252-42577e9bac5a",
+      "target_role": "Machine Learning Engineer",
+      "id": "0ee6b44c-2fe7-447c-a5d5-e32a6013da3e",
+      "starting_point_summary": "Evaluated evidence against Machine Learning Engineer. Identified 13 verified strengths and 7 priority gap(s).",
+      "verified_strengths": [
+        "Python",
+        "React Frontend Architecture",
+        "TypeScript & Type Safety",
+        "Node.js & Express Architecture",
+        "NoSQL Databases & MongoDB",
+        "Real-Time Systems & WebSockets",
+        "Geospatial & Interactive Mapping",
+        "Modern Frontend Tooling (Vite)",
+        "Systems Programming in C",
+        "FastAPI",
+        "pandas",
+        "pytest",
+        "scikit-learn"
+      ],
+      "not_yet_verified": [
+        "Git Version Control & Documentation",
+        "Core Java & OOP",
+        "JavaScript & Modern Web",
+        "Tailwind CSS & Responsive UI",
+        "Linux & Shell Environment",
+        "HTML5 & Semantic Web",
+        "CSS3 & Responsive Design"
+      ],
+      "milestones": [
+        {
+          "id": "55fbc29a-8b02-4c55-a851-876e0eb67bb3",
+          "step_number": 1,
+          "title": "Containerize Model Service with Docker & Health Checks",
+          "skill_gap": "Containerization & Deployment",
+          "why_this_matters": "Essential for Machine Learning Engineer roles to ensure reliable, reproducible hosting outside local notebooks.",
+          "tasks": [
+            "Write a multi-stage Dockerfile pinning Python version and non-root user",
+            "Add /health and /metadata endpoints to the existing model service",
+            "Configure docker-compose.yml with resource limits",
+            "Test local container execution with mock prediction payloads"
+          ],
+          "deliverable": "Dockerfile, docker-compose.yml, and container execution logs.",
+          "verification_criteria": "Observable Dockerfile in repo and working GET /health HTTP 200 response.",
+          "estimated_duration": "4-6 days (Est.)",
+          "source_files": [
+            "job_roles/machine_learning_engineer.md",
+            "skill_criteria/deployment.md",
+            "project_guides/deploy_ml_model.md"
+          ],
+          "status": "planned",
+          "evidence_submitted": null,
+          "reassessed_at": null
+        },
+        {
+          "id": "c1967fd0-9df8-442c-ad39-10077247f582",
+          "step_number": 2,
+          "title": "Implement Automated Regression & Boundary Test Suite",
+          "skill_gap": "Automated Testing & Code Quality",
+          "why_this_matters": "Proves that model predictions, data preprocessing, and API endpoints handle invalid inputs safely.",
+          "tasks": [
+            "Install pytest and configure conftest.py fixtures",
+            "Write unit tests for data cleaning functions testing NaN and extreme values",
+            "Write API endpoint tests for 422 Unprocessable Entity error responses",
+            "Run pytest with coverage report and commit to repository"
+          ],
+          "deliverable": "tests/ directory with test_api.py and test_pipeline.py achieving >75% coverage.",
+          "verification_criteria": "Minimum 5 passing automated assertions verifying preprocessing logic and error handling.",
+          "estimated_duration": "3-5 days (Est.)",
+          "source_files": [
+            "project_guides/test_ml_model.md",
+            "job_roles/machine_learning_engineer.md"
+          ],
+          "status": "planned",
+          "evidence_submitted": null,
+          "reassessed_at": null
+        }
+      ],
+      "first_action": "Begin Milestone 1: Containerize Model Service with Docker & Health Checks. Address the Containerization & Deployment gap.",
+      "reassessment_checkpoint": "After completing Milestone 1 deliverables, submit your repository link or artifact for instant reassessment.",
+      "created_at": "2026-10-17T04:05:02.851435",
+      "updated_at": "2026-10-17T04:05:02.851453",
+      "_id": "70c9eed8-1be6-472d-b5c0-749c54d39c88"
+    }
+  ]
+}
